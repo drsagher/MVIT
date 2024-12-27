@@ -60,7 +60,23 @@ From a casual perspective, AI is often thought of as "smart machines" that can t
 
 [The Case for Causal AI](https://ssir.org/articles/entry/the_case_for_causal_ai)
 
-## 04. Weak and Strong AI
+## 04. [Weak and Strong AI](https://ki.thws.de/en/about/strong-vs-weak-ai-a-definition/)
+Weak AI, also known as Narrow AI, is designed to perform a specific task, such as facial recognition, language translation, or playing chess. It is trained on a specific dataset and is not capable of general reasoning or decision-making. Weak AI is typically used to automate tasks, provide insights, or assist humans in specific domains.
+Strong AI, also known as Artificial General Intelligence (AGI), refers to a hypothetical AI system that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence. Strong AI would be able to reason, solve problems, and make decisions in a general and abstract way, without being limited to a specific domain or task. It would also be able to learn, adapt, and improve itself over time, potentially leading to significant advancements in various fields.
+### The key differences between Weak and Strong AI are:
+- Narrow vs. General: Weak AI is designed for a specific task, while Strong AI is designed to be general-purpose.
+- Task-oriented vs. Cognitive: Weak AI focuses on automating tasks, while Strong AI aims to replicate human-like cognition and intelligence.
+- Limited vs. Unlimited: Weak AI has limited capabilities, while Strong AI has the potential to surpass human intelligence in many areas.
+
+[Strong AI vs. Weak AI](https://builtin.com/artificial-intelligence/strong-ai-weak-ai)
+
+[Elon Musk Creates the Largest Artificial Intelligence Supercomputer](https://www.youtube.com/watch?v=piHqVpCnYfo)
+
+[ChatGPT, Gemini & Claude Are WEAK AI, Here's What a STRONG AI Can Do](https://www.youtube.com/watch?v=q64fDUsWHr0)
+
+[Architects are STRONG, AI is WEAK](https://www.youtube.com/watch?v=mJNClqBTvfs)
+
+[Research talk: Numerical weak AI and symbolic strong AI](https://www.youtube.com/watch?v=oFbObl5qbbk)
 
 ## 05. Foundation of AI
 
