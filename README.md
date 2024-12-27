@@ -1,4 +1,5 @@
-# [MVIT](https://www.mvut.us/)
+# [MVIT](https://www.mvut.us/, "Empowering People with AI")
+### Empowering People with AI
 Mvit Ignite Curiosity and Illuminate Possibilities. We empower people by offering Online and On-Site Career Building Opportunities and Lifelong Learning, Leading in Computer Science, Information Technology, Business Management, Custom Software, Web Application, Communication Skill, Leadership Training and Research Methodologies.
 
 ## Web Technology Specialist Training (WTST)
@@ -19,4 +20,6 @@ Mvit Ignite Curiosity and Illuminate Possibilities. We empower people by offerin
 - [Advance Professional Certificate in Web Development (APCWD)](https://www.mvut.us/pages/study/programs/msfsd)
 - [Certificate of Philosophy in Web Development (CPWD)](https://www.mvut.us/pages/study/programs/phdfsd)
 
-Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy. [Click to Apply](https://www.mvut.us/pages/apply) 
+Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy. 
+
+[APPLY NOW](https://www.mvut.us/pages/apply) 
