@@ -1,4 +1,7 @@
+<img src="mvut_flame.png" alt="Alt Text" width="75" >
+
 # [MVIT](https://www.mvut.us/, "Empowering People with AI")
+
 ### Empowering People with AI
 Mvit Ignite Curiosity and Illuminate Possibilities. We empower people by offering Online and On-Site Career Building Opportunities and Lifelong Learning, Leading in Computer Science, Information Technology, Business Management, Custom Software, Web Application, Communication Skill, Leadership Training and Research Methodologies.
 
@@ -22,4 +25,4 @@ Mvit Ignite Curiosity and Illuminate Possibilities. We empower people by offerin
 
 Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy. 
 
-[APPLY NOW](https://www.mvut.us/pages/apply) 
+[APPLY NOW!](https://www.mvut.us/pages/apply) 
