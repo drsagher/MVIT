@@ -80,6 +80,8 @@ Strong AI, also known as Artificial General Intelligence (AGI), refers to a hypo
 
 [Research talk: Numerical weak AI and symbolic strong AI](https://www.youtube.com/watch?v=oFbObl5qbbk)
 
+[Yuval Noah Harari Explains How Social Media Is Hacking The Human Brain](https://www.youtube.com/watch?v=B7zu8zyOibc)
+
 ## 05. Foundation of AI
 
 ## 06. Precursor and Birth of AI
