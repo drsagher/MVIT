@@ -5,6 +5,8 @@
 
 [The Results & Features of a Person with a High IQ - Jordan Peterson](https://www.youtube.com/watch?v=KyKWGQS745E)
 
+[Exceeding Human Intelligence (HI)](https://www.youtube.com/watch?v=MGJpR591oaM)
+
 [Intelligence](https://www.hopkinsmedicine.org/news/articles/2020/10/qa--what-is-intelligence) is a mental quality that consists of 
 - Ability to learn by experience
 - Ability to Solve problems
