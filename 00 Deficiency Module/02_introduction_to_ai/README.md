@@ -1,9 +1,11 @@
 # Introduction to Artificial Intelligence (AI)
 
 ## 01. What is Intelligence?
-Intelligence refers to the ability to learn, reason, problem-solve, and adapt to new situations, encompassing various cognitive abilities such as learning, reasoning, and memory. It can manifest in different forms, including verbal, spatial, mathematical, emotional, and social intelligence. Theories of intelligence, such as [Gardner's Multiple Intelligences Theory](https://www.youtube.com/watch?v=iYgO8jZTFuQ) and [Sternberg's Triarchic Theory](https://www.thoughtco.com/triarchic-theory-of-intelligence-4172497), propose that there are multiple types of intelligence, while [Binet's Intelligence Quotient (IQ) Theory](https://psychclassics.yorku.ca/Binet/binet1.htm) measures intelligence through standardized tests. Overall, intelligence is a complex and multifaceted construct that is not fully captured by a single definition or measurement, and researchers continue to explore and debate its nature and implications.
+[Intelligence](https://www.dni.gov/index.php/what-we-do/what-is-intelligence) refers to the ability to learn, reason, problem-solve, and adapt to new situations, encompassing various cognitive abilities such as learning, reasoning, and memory. It can manifest in different forms, including verbal, spatial, mathematical, emotional, and social intelligence. [Theories](https://www.verywellmind.com/theories-of-intelligence-2795035) of intelligence, such as [Gardner's Multiple Intelligences Theory](https://www.youtube.com/watch?v=iYgO8jZTFuQ) and [Sternberg's Triarchic Theory](https://www.thoughtco.com/triarchic-theory-of-intelligence-4172497), propose that there are multiple types of intelligence, while [Binet's Intelligence Quotient (IQ) Theory](https://psychclassics.yorku.ca/Binet/binet1.htm) measures intelligence through standardized tests. Overall, intelligence is a complex and multifaceted construct that is not fully captured by a single definition or measurement, and researchers continue to explore and debate its nature and implications.
 
-Intelligence is a mental quality that consists of 
+[The Results & Features of a Person with a High IQ - Jordan Peterson](https://www.youtube.com/watch?v=KyKWGQS745E)
+
+[Intelligence](https://www.hopkinsmedicine.org/news/articles/2020/10/qa--what-is-intelligence) is a mental quality that consists of 
 - Ability to learn by experience
 - Ability to Solve problems
 - Ability to reason about things
@@ -22,6 +24,11 @@ Intelligence is a mental quality that consists of
 9. Communication and Expression: The ability to express thoughts and ideas effectively, both verbally and in writing.
 10. Self-Awareness and Reflection: The ability to understand one's own strengths, weaknesses, and motivations, and to reflect on one's own thought processes and behaviors.
 
+[Howard Gardner on Multiple Intelligences](https://www.youtube.com/watch?v=iYgO8jZTFuQ&t=11s)
+
+[12 traits emotionally intelligent people share by Daniel Goleman](https://www.youtube.com/watch?v=cr8sLxde1m8)
+
+
 ## 02. What is Artificial Intelligence (AI)
 AI is one of the most transformative technologies of our era, but its definition, scope, and implications remain a topic of debate. Is AI simply a tool created to perform tasks, or is it a stepping stone toward creating machines that replicate human intelligence? This debate explores different perspectives on the nature and purpose of AI.
 
@@ -31,10 +38,22 @@ This highlights AI as a field of engineering, not a replacement for human cognit
 
 Complete Interview by [John McCarthy (1927-2011) on Artificial Intelligence](https://www.youtube.com/watch?v=Ozipf13jRr4) 
 
-### Difference Between Human Intelligence and Artificial Intelligence
-Human Intelligence (HI) and Artificial Intelligence (AI) differ fundamentally in their origin, learning, reasoning, and contextual understanding. HI arises from the human brain, learns through experience and emotions, and employs logical, intuitive, and creative reasoning, whereas AI is created by humans, learns through data and algorithms, and uses rule-based and statistical reasoning. Additionally, HI possesses emotional intelligence, empathy, and social skills, adapts to new situations, and exhibits creativity and self-awareness, whereas AI lacks emotional intelligence, struggles with contextual understanding, and relies on patterns and algorithms for creativity. While AI excels in processing vast amounts of data, performing complex calculations, and scaling to meet demands, HI remains unique and superior in areas requiring creativity, empathy, and complex decision-making, highlighting the distinct strengths and limitations of each type of intelligence.
+### [Difference Between Human Intelligence and Artificial Intelligence](https://www.geeksforgeeks.org/difference-between-artificial-intelligence-and-human-intelligence/)
+[Human Intelligence (HI)](https://www.britannica.com/science/human-intelligence-psychology) and Artificial Intelligence (AI) differ fundamentally in their origin, learning, reasoning, and contextual understanding. HI arises from the human brain, learns through experience and emotions, and employs logical, intuitive, and creative reasoning, whereas AI is created by humans, learns through data and algorithms, and uses rule-based and statistical reasoning. Additionally, HI possesses emotional intelligence, empathy, and social skills, adapts to new situations, and exhibits creativity and self-awareness, whereas AI lacks emotional intelligence, struggles with contextual understanding, and relies on patterns and algorithms for creativity. While AI excels in processing vast amounts of data, performing complex calculations, and scaling to meet demands, HI remains unique and superior in areas requiring creativity, empathy, and complex decision-making, highlighting the distinct strengths and limitations of each type of intelligence.
+
+[Artificial Intelligence vs. Human Intelligence](https://online.maryville.edu/blog/ai-vs-human-intelligence/)
 
 ## 03. AI from a Formal and Casual Perspective
+From a formal perspective, AI refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making. This involves the use of algorithms, statistical models, and computer programs to enable machines to understand, interpret, and generate human-like language, vision, and behavior.
+From a casual perspective, AI is often thought of as "smart machines" that can think and act like humans. This can include virtual assistants like Siri or Alexa, self-driving cars, and personalized recommendation systems. In this view, AI is seen as a tool that can make our lives easier, more convenient, and more enjoyable, by automating routine tasks, providing helpful insights, and enhancing our interactions with technology. Overall, both perspectives highlight the potential of AI to transform the way we live, work, and interact with each other, and demonstrate the need for a multidisciplinary approach to understanding and developing AI systems that are both effective and responsible.
+
+[A Formal Model for Artificial Intelligence Applications in Automation Systems](https://arxiv.org/html/2407.03183v1)
+
+[The AI Future Has Arrived: Here's What You Should Do About It](https://www.youtube.com/watch?v=wRLTfC_PMKU)
+
+[Casual AI: The Rise of Accessible and User-Friendly Artificial Intelligence](https://www.linkedin.com/pulse/casual-ai-rise-accessible-user-friendly-artificial-prof-ahmed-banafa-bqeac/)
+
+[The Case for Causal AI](https://ssir.org/articles/entry/the_case_for_causal_ai)
 
 ## 04. Weak and Strong AI
 
