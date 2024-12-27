@@ -1,9 +1,9 @@
 <img src="mvut_flame.png" alt="Alt Text" width="75" >
 
 # [MVIT](https://www.mvut.us/, "Empowering People with AI")
-
 ### Empowering People with AI
-Mvit Ignite Curiosity and Illuminate Possibilities. We empower people by offering Online and On-Site Career Building Opportunities and Lifelong Learning, Leading in Computer Science, Information Technology, Business Management, Custom Software, Web Application, Communication Skill, Leadership Training and Research Methodologies.
+Mansha Institute of Technologies (MVIT) is a beacon of excellence in technology education, empowering individuals to unlock their full potential. By offering comprehensive programs in Computer Science from primary to PhD levels, MVIT fosters a culture of logical inquiry, human compassion, and intelligent innovation. With a focus on academic excellence, integrity, and empathy, MVIT produces well-rounded professionals equipped to drive technological progress and positively impact society. Through its certifications and non-academic degrees, MVIT bridges the gap between theory and practice, preparing students for successful careers and lifelong learning. By joining MVIT, individuals become part of a vibrant community that values diversity, creativity, and entrepreneurship, shaping the next generation of technology leaders.
+We Ignite Curiosity and Illuminate Possibilities. We empower people by offering Online and On-Site Career Building Opportunities and Lifelong Learning, Leading in Computer Science, Information Technology, Business Management, Custom Software, Web Application, Communication Skill, Leadership Training and Research Methodologies.
 
 ## Web Technology Specialist Training (WTST)
 - [Next-Generation Web Development with Python (NXGDP)](https://www.mvut.us/pages/study/programs/nxgd)
