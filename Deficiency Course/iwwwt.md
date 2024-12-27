@@ -206,41 +206,39 @@ The presentation layer deals with the formatting and representation of data, ens
 
 The application layer provides high-level services to end users, such as email, file transfer, and web browsing. It includes protocols that enable application programs to access network services, and provides interfaces for users to interact with network applications.
 
-# **CHAPTER 3**
+## CHAPTER 3 INTERNET TECHNOLOGY
 
-# **INTERNET TECHNOLOGY**
-
-## **3.1 What is an Internet**
+### 3.1 What is an Internet
 
 The internet is a global network of interconnected computers and servers that communicate with each other using standardized communication protocols. It allows users to access and share information, communicate with one another, and perform a wide range of online activities, such as shopping, banking, and social networking. The internet enables people all over the world to connect with one another and access vast amounts of information, making it an incredibly powerful tool for education, research, and innovation. The internet has become an integral part of modern life, and it continues to evolve and transform the way we live, work, and communicate.
 
-## **3.2 What are Communication Technologies**
+### 3.2 What are Communication Technologies
 
 Communication technologies are technologies that enable the transfer of information, data, and messages between people or machines. There are many different types of communication technologies, including:
 
-### **3.2.1 Wired Communication Technologies**
+#### 3.2.1 Wired Communication Technologies
 
 These are communication technologies that use physical wires or cables to transmit data, such as telephone lines, Ethernet cables, and USB cables.
 
-### **3.2.2 Wireless Communication Technologies**
+#### 3.2.2 Wireless Communication Technologies
 
 These are communication technologies that use wireless signals to transmit data, such as Wi-Fi, Bluetooth, cellular networks, and satellite communication.
 
-### **3.2.3 Internet-based Communication Technologies**
+#### 3.2.3 Internet-based Communication Technologies
 
 These are communication technologies that rely on the internet to transmit data, such as email, instant messaging, social media, and video conferencing.
 
-### **3.2.4 Broadcast Communication Technologies**
+#### 3.2.4 Broadcast Communication Technologies
 
 These are communication technologies that transmit information to a large audience simultaneously, such as radio and television broadcasts.
 
-### **3.2.5 Collaborative Communication Technologies**
+#### 3.2.5 Collaborative Communication Technologies
 
 These are communication technologies that enable people to work together on a project or task, such as collaborative software, group chat applications, and virtual meeting platforms.
 
 Communication technologies play a vital role in modern society, facilitating communication, collaboration, and information sharing on a global scale. They have transformed the way we work, learn, and interact with one another, making it easier than ever to connect and communicate with people all over the world.
 
-## **3.3 World Wide Web**
+### 3.3 World Wide Web
 
 The World Wide Web (WWW or Web) is an interconnected system of resources and documents, accessible through the Internet. It was created by Sir Tim Berners-Lee in 1989 as a way for researchers to share information and collaborate with each other.
 
@@ -250,141 +248,139 @@ The Web has had a profound impact on society, transforming the way we communicat
 
 Overall, the World Wide Web has become an essential part of modern life, connecting people, businesses, and organizations from all over the world and providing access to a wealth of information and resources
 
-## **3.4 Introduction to World Wide Web Technologies**
+### 3.4 Introduction to World Wide Web Technologies
 
 The World Wide Web (WWW or Web) is a vast network of interconnected resources and documents, accessed through the Internet. The Web is a global platform for sharing and accessing information, and it has revolutionized the way we communicate, work, learn, and access services.
 
 Web technologies are the tools and protocols used to create, deliver, and interact with content on the Web. Here are some of the key technologies used in the Web:
 
-### **3.4.1 HTML**
+#### 3.4.1 HTML
 
 HTML (Hypertext Markup Language) is the standard markup language used to create and structure content on the Web. HTML is used to define the structure of web pages, including headings, paragraphs, lists, images, links, and more.
 
-### **3.4.2 CSS**
+#### 3.4.2 CSS
 
 CSS (Cascading Style Sheets) is used to style and format HTML content. CSS allows web designers to control the layout, fonts, colors, and other visual aspects of web pages, making them visually appealing and user-friendly.
 
-### **3.4.3 JavaScript**
+#### 3.4.3 JavaScript
 
 JavaScript is a scripting language used to add interactive features and functionality to web pages. JavaScript can be used to create animations, pop-ups, forms, and other dynamic elements on a web page.
 
-### **3.4.4 Server-Side Scripting Languages**
+#### 3.4.4 Server-Side Scripting Languages
 
 Server-side scripting languages, such as PHP, Python, and Ruby, are used to build web applications that run on the server-side. These languages are used to process user inputs, generate dynamic content, and interact with databases.
 
-### **3.4.5 Web Servers**
+#### 3.4.5 Web Servers
 
 A web server is a software program that delivers content to web clients, such as web browsers. Popular web servers include Apache, Nginx, and Microsoft IIS.
 
-### **3.4.6 Content Management Systems (CMS)**
+#### 3.4.6 Content Management Systems (CMS)
 
 CMSs are software platforms that allow non-technical users to create, manage, and publish digital content, typically for websites. CMSs provide a user-friendly interface for content creation and management, and are commonly used to create blogs, e-commerce websites, and other online platforms.
 
 Overall, Web technologies have revolutionized the way we interact with information, and they continue to evolve and improve as new technologies and standards are developed. The Web has become a central part of our daily lives, and it has opened up new opportunities for businesses, education, entertainment, and more.
 
-## **3.5 Types of Internet Devices**
+### 3.5 Types of Internet Devices
 
 There are many types of internet devices that are used to connect to the internet and access online content. Some common types of internet devices include:
 
-### **3.5.1 Computers**
+#### 3.5.1 Computers
 
 This includes desktops, laptops, and tablets that can connect to the internet using wired or wireless connections.
 
-### **3.5.2 Smartphones**
+#### 3.5.2 Smartphones
 
 Mobile phones that can connect to the internet using cellular data or Wi-Fi connections.
 
-### **3.5.3 Smart TVs**
+#### 3.5.3 Smart TVs
 
 Televisions with built-in internet connectivity, which allows users to stream content from online sources.
 
-### **3.5.4 Streaming Devices**
+#### 3.5.4 Streaming Devices
 
 Devices such as Apple TV, Roku, and Amazon Fire Stick that can be connected to a TV to stream content from online sources.
 
-### **3.5.5 Gaming Consoles**
+#### 3.5.5 Gaming Consoles
 
 Consoles such as Xbox and PlayStation that can connect to the internet to play online games and access online content.
 
-### **3.5.6 Smart Home Devices**
+#### 3.5.6 Smart Home Devices
 
 Devices such as smart speakers, smart thermostats, and smart security systems that can connect to the internet and be controlled remotely.
 
-### **3.5.7 Wearable Devices**
+#### 3.5.7 Wearable Devices
 
 Devices such as smartwatches and fitness trackers that can connect to the internet to access online content and track user activity.
 
-### **3.5.8 Internet of Things (IoT) Devices**
+#### 3.5.8 Internet of Things (IoT) Devices
 
 Devices such as smart refrigerators, door locks, and lighting systems that can connect to the internet and be controlled remotely.
 
 These devices can be connected to the internet using various methods, such as Wi-Fi, Ethernet, cellular data, and Bluetooth. They allow users to access a vast array of online content, including websites, streaming services, social media, email, and more. The widespread use of internet devices has led to a revolution in the way we consume and interact with digital content, and has enabled new types of services and applications that were not possible before.
 
-# **CHAPTER 4**
+## CHAPTER 4 INFORMATION COMMUNICATION SECURITY
 
-# **INFORMATION COMMUNICATION SECURITY**
-
-## **4.1 Describe The System of Information Processing**
+### 4.1 Describe The System of Information Processing
 
 The system of information processing refers to the process of collecting, organizing, storing, retrieving, and using information to achieve specific goals or objectives. Here is an overview of the steps involved in the information processing system:
 
-### **4.1.1 Input**
+#### 4.1.1 Input
 
 The first step in the information processing system is to collect data or information from various sources. This can be done manually or through automated systems, such as sensors or data feeds.
 
-### **4.1.2 Processing**
+#### 4.1.2 Processing
 
 Once the data has been collected, it must be organized and processed into a usable form. This may involve sorting, filtering, analyzing, or transforming the data to meet specific requirements or standards.
 
-### **4.1.3 Storage**
+#### 4.1.3 Storage
 
 Once the data has been processed, it must be stored for future use. This can be done using various storage technologies, such as hard drives, cloud storage, or databases.
 
-### **4.1.4 Retrieval**
+#### 4.1.4 Retrieval
 
 When the data is needed, it can be retrieved from storage and made available for use. This may involve searching for specific data or retrieving a set of data that meets certain criteria.
 
-### **4.1.5 Output**
+#### 4.1.5 Output
 
 Once the data has been retrieved, it can be used to create reports, charts, or other visualizations that provide useful information for decision-making.
 
-### **4.1.6 Feedback**
+#### 4.1.6 Feedback
 
 The final step in the information processing system is feedback, which involves evaluating the output and using it to improve the input or processing stages. This can be done through data analysis, user feedback, or other evaluation methods.
 
 Overall, the system of information processing is a cyclical process that involves collecting, organizing, storing, retrieving, and using data to achieve specific goals or objectives. By following these steps and continuously evaluating and improving the process, organizations can make better decisions and improve their performance.
 
-## **4.2 How Internet and Information Security Can Be Achieved**
+### 4.2 How Internet and Information Security Can Be Achieved
 
 Internet and information security are important considerations in today's digital age, as the internet has become a primary means of communication and information exchange. Here are some strategies for achieving internet and information security:
 
-### **4.2.1 Use Strong Passwords**
+#### 4.2.1 Use Strong Passwords
 
 One of the simplest ways to improve internet security is to use strong, unique passwords for all online accounts. A strong password should be at least 12 characters long, contain a mix of uppercase and lowercase letters, numbers, and symbols, and not include easily guessed information.
 
-### **4.2.2 Keep Software Up to Date**
+#### 4.2.2 Keep Software Up to Date
 
 Software updates often include security patches that address known vulnerabilities, so it's important to keep all software, including operating systems, web browsers, and antivirus programs, up to date.
 
-### **4.2.3 Use Encryption**
+#### 4.2.3 Use Encryption
 
 Encryption helps to protect sensitive information by encoding it in a way that can only be decoded with a specific key. This is particularly important for sensitive information like financial data or personal health information.
 
-### **4.2.4 Be Wary of Suspicious Emails and Links**
+#### 4.2.4 Be Wary of Suspicious Emails and Links
 
 Phishing attacks are a common way for hackers to gain access to sensitive information. It's important to be cautious of emails or links from unknown sources, and to verify the legitimacy of any requests for personal or financial information.
 
-### **4.2.5 Use Firewalls and Anti-Malware Software**
+#### 4.2.5 Use Firewalls and Anti-Malware Software
 
 Firewalls and anti-malware software can help to prevent unauthorized access to your computer or network, and can also help to identify and remove malicious software.
 
-### **4.2.6 Practice Good Data Hygiene**
+#### 4.2.6 Practice Good Data Hygiene
 
 Regularly backing up important data, minimizing the amount of sensitive information stored on your computer or mobile device, and using two-factor authentication can all help to improve information security.
 
 Overall, achieving internet and information security requires a combination of good practices, technical solutions, and ongoing vigilance. By following these strategies and staying up to date on the latest security threats and best practices, it is possible to stay safe and secure online.
 
-## **4.3 Firewall**
+### 4.3 Firewall
 
 A firewall is a security device or software program that monitors and controls incoming and outgoing network traffic based on a set of predefined security rules.
 
@@ -396,7 +392,7 @@ Firewalls work by analyzing incoming and outgoing network traffic, inspecting pa
 
 Overall, firewalls are an essential component of network security, helping to protect organizations from a wide range of security threats and keeping their data and systems safe from unauthorized access and malicious activity.
 
-## **4.4 Content Management Systems**
+### 4.4 Content Management Systems
 
 A Content Management System (CMS) is a software application that allows users to create, manage, and publish digital content, typically for websites or other online platforms. The main purpose of a CMS is to simplify the process of creating and managing digital content, especially for non-technical users.
 
@@ -404,27 +400,27 @@ A typical CMS has a user-friendly interface that allows users to create and edit
 
 Some of the key features of a CMS include:
 
-### **4.4.1 Content Creation and Editing**
+#### 4.4.1 Content Creation and Editing
 
 Users can create and edit digital content using a variety of tools and features, such as text editors, image editors, and multimedia content managers.
 
-### **4.4.2 Content Organization**
+#### 4.4.2 Content Organization
 
 CMSs provide a way to organize and categorize content for easier management and retrieval, such as tagging or categorizing content.
 
-### **4.4.3 Content Storage and Retrieval**
+#### 4.4.3 Content Storage and Retrieval
 
 Digital content is stored in a database or file system, and can be easily retrieved and displayed on a website or other online platform.
 
-### **4.4.4 Access Control**
+#### 4.4.4 Access Control
 
 CMSs allow administrators to control who can access and edit digital content, and to set permissions and roles for users.
 
-### **4.4.5 Workflow Management**
+#### 4.4.5 Workflow Management
 
 Some CMSs provide workflow tools that allow users to collaborate on content creation and editing, and to manage the approval and publishing process.
 
-### **4.5.6 Template Management**
+#### 4.5.6 Template Management
 
 CMSs provide a way to manage the design and layout of a website or other online platform, typically through templates or themes that can be customized or created from scratch.
 
