@@ -38,10 +38,15 @@ This highlights AI as a field of engineering, not a replacement for human cognit
 
 Complete Interview by [John McCarthy (1927-2011) on Artificial Intelligence](https://www.youtube.com/watch?v=Ozipf13jRr4) 
 
+[This New AI is 430,000 Times Faster Than Reality (AGI Robots Soon)](https://www.youtube.com/watch?v=7yqoUeb7Xr0)
+
 ### [Difference Between Human Intelligence and Artificial Intelligence](https://www.geeksforgeeks.org/difference-between-artificial-intelligence-and-human-intelligence/)
 [Human Intelligence (HI)](https://www.britannica.com/science/human-intelligence-psychology) and Artificial Intelligence (AI) differ fundamentally in their origin, learning, reasoning, and contextual understanding. HI arises from the human brain, learns through experience and emotions, and employs logical, intuitive, and creative reasoning, whereas AI is created by humans, learns through data and algorithms, and uses rule-based and statistical reasoning. Additionally, HI possesses emotional intelligence, empathy, and social skills, adapts to new situations, and exhibits creativity and self-awareness, whereas AI lacks emotional intelligence, struggles with contextual understanding, and relies on patterns and algorithms for creativity. While AI excels in processing vast amounts of data, performing complex calculations, and scaling to meet demands, HI remains unique and superior in areas requiring creativity, empathy, and complex decision-making, highlighting the distinct strengths and limitations of each type of intelligence.
 
 [Artificial Intelligence vs. Human Intelligence](https://online.maryville.edu/blog/ai-vs-human-intelligence/)
+
+[The Potential for AI in Science and Mathematics - Terence Tao](https://www.youtube.com/watch?v=_sTDSO74D8Q)
+
 
 ## 03. AI from a Formal and Casual Perspective
 From a formal perspective, AI refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making. This involves the use of algorithms, statistical models, and computer programs to enable machines to understand, interpret, and generate human-like language, vision, and behavior.
