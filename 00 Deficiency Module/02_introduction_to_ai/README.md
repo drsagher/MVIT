@@ -42,6 +42,12 @@ Complete Interview by [John McCarthy (1927-2011) on Artificial Intelligence](htt
 
 [This New AI is 430,000 Times Faster Than Reality (AGI Robots Soon)](https://www.youtube.com/watch?v=7yqoUeb7Xr0)
 
+[AI Is More Dangerous Than Most People Think – Yuval Noah Harari](https://www.youtube.com/watch?v=_mjVK8Di-cs)
+
+[Use of Artificial Intelligence](https://www.macfound.org/about/our-policies/artificial-intelligence)
+
+[Artificial Intelligence And Human Rights](https://www.youtube.com/watch?v=ErIEjpvAgck)
+
 ### [Difference Between Human Intelligence and Artificial Intelligence](https://www.geeksforgeeks.org/difference-between-artificial-intelligence-and-human-intelligence/)
 [Human Intelligence (HI)](https://www.britannica.com/science/human-intelligence-psychology) and Artificial Intelligence (AI) differ fundamentally in their origin, learning, reasoning, and contextual understanding. HI arises from the human brain, learns through experience and emotions, and employs logical, intuitive, and creative reasoning, whereas AI is created by humans, learns through data and algorithms, and uses rule-based and statistical reasoning. Additionally, HI possesses emotional intelligence, empathy, and social skills, adapts to new situations, and exhibits creativity and self-awareness, whereas AI lacks emotional intelligence, struggles with contextual understanding, and relies on patterns and algorithms for creativity. While AI excels in processing vast amounts of data, performing complex calculations, and scaling to meet demands, HI remains unique and superior in areas requiring creativity, empathy, and complex decision-making, highlighting the distinct strengths and limitations of each type of intelligence.
 
@@ -49,6 +55,9 @@ Complete Interview by [John McCarthy (1927-2011) on Artificial Intelligence](htt
 
 [The Potential for AI in Science and Mathematics - Terence Tao](https://www.youtube.com/watch?v=_sTDSO74D8Q)
 
+[What Is an AI Anyway? | Mustafa Suleyman | TED](https://www.youtube.com/watch?v=KKNCiRWd_j0)
+
+[Andrew Ng: Opportunities in AI](https://www.youtube.com/watch?v=5p248yoa3oE&t=63s)
 
 ## 03. AI from a Formal and Casual Perspective
 From a formal perspective, AI refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making. This involves the use of algorithms, statistical models, and computer programs to enable machines to understand, interpret, and generate human-like language, vision, and behavior.
@@ -83,6 +92,15 @@ Strong AI, also known as Artificial General Intelligence (AGI), refers to a hypo
 [Yuval Noah Harari Explains How Social Media Is Hacking The Human Brain](https://www.youtube.com/watch?v=B7zu8zyOibc)
 
 ## 05. Foundation of AI
+The [foundation of Artificial Intelligence (AI)](https://skillfloor.medium.com/the-foundation-of-artificial-intelligence-3f90fb6f1348) is built on several key concepts and technologies, including Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Robotics. These fields rely on mathematical and computational disciplines such as Linear Algebra, Calculus, Probability, and Statistics. Additionally, algorithms and data structures play a crucial role in enabling efficient processing and analysis of data. By combining these concepts and technologies, AI systems can learn, reason, and interact with humans, ultimately enabling them to perform tasks that typically require human intelligence.
+
+[Foundation of Artificial Intelligence](https://kingbond470.medium.com/foundation-of-artificial-intelligence-7d0df133db26)
+
+[The History and Foundations of AI](https://www.bbk.ac.uk/courses/modules/sc03/SC03018S7)
+
+[Foundations of AI and Data Science](https://www.caidas.uni-wuerzburg.de/research-pillars/foundations-of-ai-and-data-science/)
+
+[What are foundation models?](https://research.ibm.com/blog/what-are-foundation-models)
 
 ## 06. Precursor and Birth of AI
 
