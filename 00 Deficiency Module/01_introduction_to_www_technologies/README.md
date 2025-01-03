@@ -40,6 +40,7 @@ Today, the relationship between life and technology continues to evolve and shap
 
 ### 1.2 Technology Impacts On Human Life
 
+
 Technology has had a profound impact on human life in many ways. Here are some examples:
 
 #### 1.2.1 Communication
@@ -67,6 +68,14 @@ Technology has transformed the way we work, making it possible for people to wor
 Technology has the potential to help address some of the world's biggest environmental challenges, such as climate change and resource depletion. For example, renewable energy technologies can help reduce greenhouse gas emissions, while smart grid and energy efficiency technologies can help reduce energy consumption.
 
 Overall, technology has had a significant impact on human life, enabling new forms of communication, education, healthcare, entertainment, work, and environmental sustainability. However, it has also raised concerns about privacy, security, social isolation, and the ethical implications of new technologies.
+
+### Learning Suppourtive Material
+
+[Dr. Victoria Lorrimar: Human Flourishing in a Technological World](https://www.youtube.com/watch?v=zU6JEgwYetI)
+
+[Technology Is Reinventing Humanity | Jordan Nguyen | TEDxSydney](https://www.youtube.com/watch?v=VxuWIXdYYyQ)
+
+[How technology impacts human behavior](https://www.youtube.com/watch?v=z_578GihaQY)
 
 ### 1.3 Web 3 and Metaverse
 
@@ -108,6 +117,11 @@ Ultimately, the debate between machines and humans is not an either/or propositi
 
 [Evolution of Technology: Past, Present and Future](https://medium.com/@ja4401722/evolution-of-technology-past-present-and-future-566b267545d)
 
+[12 Predictions for the Future of Technology | Vinod Khosla | TED](https://www.youtube.com/watch?v=Pj9QnO9rZkE)
+
+[Experts Predict the Future of Technology, AI & Humanity | Tech Support | WIRED](https://www.youtube.com/watch?v=82L9Y_PVHUs)
+
+[Microsoft's Transformational Impact on the Hall of Human Life](https://www.youtube.com/watch?v=IeTZjoCjOd0)
 
 ## CHAPTER 2 COMPUTER NETWORKS
 
