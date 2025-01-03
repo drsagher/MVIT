@@ -4,6 +4,12 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 
 [How Life Will Look Like In 2050](https://www.youtube.com/watch?v=6_q_LHq85Cs)
 
+[Top 10 Emerging Technologies of 2024 (According to Science)](https://www.youtube.com/watch?v=wXc2tao51D4)
+
+[History of Technology](https://www.youtube.com/watch?v=EepDX_P28ic)
+
+[From Ancient Inventions to Modern Marvels: The Fascinating History of Technology](https://www.youtube.com/watch?v=aC65E6nKWik)
+
 ## CHAPTER 1 TECHNOLOGY EVOLUTION AND FUTURE
 
 ### 1.1 Historical Perspectives of Life and Technologies
