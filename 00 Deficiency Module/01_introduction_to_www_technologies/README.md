@@ -111,9 +111,6 @@ Together, web 3 and the metaverse are creating a new paradigm for digital techno
 [From hype to reality: Convergence of Web3, Metaverse and Digital Twins](https://www.youtube.com/watch?v=an6y1cUI1tk)
 
 
-
-
-
 ### 1.4 Future of Metaverse
 
 The metaverse is still in its early stages, but it has already generated a lot of interest and excitement as a potential next frontier of the internet. While there is no one-size-fits-all vision of what the metaverse will look like in the future, there are a few trends and possibilities that are worth exploring.
@@ -128,6 +125,13 @@ Of course, there are also challenges and risks associated with the metaverse, su
 
 Overall, the future of the metaverse is still uncertain, but it offers exciting possibilities for innovation, creativity, and social interaction. As this technology continues to evolve, it will be important to strike a balance between innovation and responsible stewardship, to ensure that the metaverse serves the needs and interests of all users.
 
+[Future of The Metaverse (2030 – 10,000 A.D.+)](https://www.youtube.com/watch?v=OD8jADtNzTY)
+
+[The Metaverse Explained – And What Comes Next | Insider Business](https://www.youtube.com/watch?v=jFUVZDPrB7U)
+
+[Gaming’s Biggest Opportunities and the Future of the Metaverse](https://www.youtube.com/watch?v=49bQkTeLcAI)
+
+[How will businesses use the metaverse?](https://www.youtube.com/watch?v=LEgHRAQ1HmE)
 ### 1.5 Machines verses Human
 
 The debate between machines and humans is a complex and ongoing discussion, particularly as technology continues to advance and machines become more sophisticated. There are many different perspectives on the topic, and it's important to consider both the benefits and potential drawbacks of machines versus humans.
