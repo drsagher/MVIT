@@ -87,6 +87,33 @@ The metaverse, on the other hand, is a virtual universe that is built on top of 
 
 Together, web 3 and the metaverse are creating a new paradigm for digital technology, one that emphasizes user control, transparency, and community. They offer exciting new opportunities for creators, developers, and businesses, as well as enabling new forms of social interaction and creativity. However, they also raise important questions about privacy, security, and governance, as well as the potential for new forms of inequality and exclusion. As these technologies continue to evolve, it will be important to ensure that they serve the needs and interests of all users, and that they contribute to a more equitable and sustainable future.
 
+### Articles
+[Web3 vs. Metaverse: The Differences and Connections](https://hedera.com/learning/metaverse/web3-vs-metaverse)
+
+[Web 3.0 vs. Metaverse: A detailed comparison [UPDATED]](https://www.blockchain-council.org/metaverse/web-3-0-vs-metaverse/)
+
+[Differences between metaverse and web3](https://www.telefonica.com/en/communication-room/blog/differences-between-metaverse-and-web3/)
+
+[The Important Difference Between Web3 And The Metaverse](https://www.forbes.com/sites/bernardmarr/2022/02/22/the-important-difference-between-web3-and-the-metaverse/)
+
+### Videos
+
+[Web3/Metaverse Chat With Mark Zuckerberg](https://www.youtube.com/watch?v=iwyyxEJCIuU)
+
+[Difference between Web3 & Metaverse? | Blockchain Council](https://www.youtube.com/watch?v=tsCq0HPDCNU)
+
+[Metaverse and Web3 of the People, by the People, for the People | Andrew Kwan](https://www.youtube.com/watch?v=9digvdKz4_Y)
+
+[The Dream of Digital Ownership, Powered by the Metaverse | Yat Siu | TED](https://www.youtube.com/watch?v=IPvR43dRmRY)
+
+[What Is The Difference Between Web3 And The Metaverse?](https://www.youtube.com/watch?v=BCr6XxOd9eE)
+
+[From hype to reality: Convergence of Web3, Metaverse and Digital Twins](https://www.youtube.com/watch?v=an6y1cUI1tk)
+
+
+
+
+
 ### 1.4 Future of Metaverse
 
 The metaverse is still in its early stages, but it has already generated a lot of interest and excitement as a potential next frontier of the internet. While there is no one-size-fits-all vision of what the metaverse will look like in the future, there are a few trends and possibilities that are worth exploring.
