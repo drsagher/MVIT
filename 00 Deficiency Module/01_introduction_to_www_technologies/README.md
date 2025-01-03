@@ -155,6 +155,38 @@ Another consideration is the potential impact of machines on the job market. As 
 
 Ultimately, the debate between machines and humans is not an either/or proposition. Both machines and humans have their strengths and limitations, and the optimal approach will depend on the specific task or situation at hand. In many cases, a combination of machine and human capabilities may be the most effective and efficient solution. It's important to continue exploring the potential of both machines and humans, while also considering the ethical, social, and economic implications of their use.
 
+[Humans are not Machines (and vice versa)](https://www.youtube.com/watch?v=S-Ht7rleAXc)
+
+[The Human-or-Machine Issue: Turing-Inspired Reflections on an Everyday Matter](https://cacm.acm.org/research/the-human-or-machine-issue-turing-inspired-reflections-on-an-everyday-matter/)
+
+[Humans vs. Machines: Seven Myths (and Realities)](https://glocalthinking.com/en/humans-vs-machines-seven-myths-and-realities/)
+
+[HUMANS VS MACHINES](https://www.linkedin.com/pulse/humans-vs-machines-swathi-chandran/)
+
+[The Dissolving Border Between Humans and Machines](https://www.youtube.com/watch?v=TMMELW3amXg)
+
+[AI Machines and the New Super Humans | Inma Martinez](https://www.youtube.com/watch?v=NJ3mXJqqSJ8)
+
+[Augmented Intelligence - A Marriage between Machine and Human | Simon Stiebellehner](https://www.youtube.com/watch?v=26_U--eHn34)
+
+[Human justice and machine intelligence | Joanna Bryson](https://www.youtube.com/watch?v=uI7XC7WGyqk)
+
+[Can machines Think Like Humans? | Samuel Bosch](https://www.youtube.com/watch?v=IP0HXomV4j8)
+
+[Human and Machine Intelligence](https://www.youtube.com/watch?v=YcnyzsWxCDQ)
+
+[Human Intelligence (HI) versus Machine Intelligence (AI)](https://www.youtube.com/watch?v=KM2KnZ4qSA4)
+
+[Will humans merge with machines?](https://www.youtube.com/watch?v=q57H0YiOavE)
+
+[When do we want our machines to be more human | Jeremy Goslin](https://www.youtube.com/watch?v=Lt8mSB0cCvw)
+
+[AI and Human Uniqueness: Are We Just Sophisticated Computing Machines?](https://www.youtube.com/watch?v=28l9Voprs3c)
+
+[Human vs Machine: Who can be more human? | Sean Kelly and Lex Fridman](https://www.youtube.com/watch?v=s6C087xfn0c)
+
+[Humans + Machines Panel - Artificial Intelligence and Global Security Summit]()
+
 ### Knowledge Extension
 
 [Evolution of Technology: Past, Present and Future](https://medium.com/@ja4401722/evolution-of-technology-past-present-and-future-566b267545d)
@@ -164,6 +196,10 @@ Ultimately, the debate between machines and humans is not an either/or propositi
 [Experts Predict the Future of Technology, AI & Humanity | Tech Support | WIRED](https://www.youtube.com/watch?v=82L9Y_PVHUs)
 
 [Microsoft's Transformational Impact on the Hall of Human Life](https://www.youtube.com/watch?v=IeTZjoCjOd0)
+
+[The Future of Work - Humans and Machines Lecture Series by Robert Skidelsky](https://www.youtube.com/watch?v=gVB6Hcgz4ks)
+
+[Understanding the Machine: Can Humans and AI Work Together?](https://www.youtube.com/watch?v=KhS_lpT7Eis)
 
 ## CHAPTER 2 COMPUTER NETWORKS
 
