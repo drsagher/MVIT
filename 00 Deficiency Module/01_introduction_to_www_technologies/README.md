@@ -2,6 +2,8 @@
 
 The Introduction to World Wide Web Technologies course provides a comprehensive overview of the fundamental technologies that drive the web, exploring the history and evolution of the web, as well as key concepts, protocols, and languages that enable web development, including HTML, CSS, and JavaScript. Through a combination of lectures, discussions, and hands-on exercises, students gain a solid understanding of the web's underlying infrastructure and develop skills to design, build, and maintain web applications. This course is ideal for students interested in web development and design, professionals seeking to expand their skill set, and anyone curious about the technologies powering the web, with objectives including understanding web history, learning fundamental technologies, exploring web development frameworks, and developing hands-on skills, ultimately providing a solid foundation for further exploration and learning in this rapidly evolving field.
 
+[How Life Will Look Like In 2050](https://www.youtube.com/watch?v=6_q_LHq85Cs)
+
 ## CHAPTER 1 TECHNOLOGY EVOLUTION AND FUTURE
 
 ### 1.1 Historical Perspectives of Life and Technologies
@@ -95,6 +97,11 @@ On the other hand, humans have certain capabilities that machines cannot replica
 Another consideration is the potential impact of machines on the job market. As machines become more advanced and capable, there is concern that they may replace human workers in certain industries and professions. This could lead to job loss, income inequality, and social disruption, particularly for low-skilled workers who may not have the necessary training or education to adapt to new technologies.
 
 Ultimately, the debate between machines and humans is not an either/or proposition. Both machines and humans have their strengths and limitations, and the optimal approach will depend on the specific task or situation at hand. In many cases, a combination of machine and human capabilities may be the most effective and efficient solution. It's important to continue exploring the potential of both machines and humans, while also considering the ethical, social, and economic implications of their use.
+
+### Knowledge Extension
+
+[Evolution of Technology: Past, Present and Future](https://medium.com/@ja4401722/evolution-of-technology-past-present-and-future-566b267545d)
+
 
 ## CHAPTER 2 COMPUTER NETWORKS
 
