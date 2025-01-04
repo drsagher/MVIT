@@ -297,6 +297,15 @@ An application server is a computer that runs and manages applications and servi
 
 A proxy server is a computer that acts as an intermediary between clients and servers. It can be used to improve security, filter web content, and improve network performance by caching frequently accessed content.
 
+### Study Material
+
+[Client-Server Architecture](https://www.youtube.com/watch?v=2JevepuPlYM)
+
+[Client-Server Definition](https://www.heavy.ai/technical-glossary/client-server)
+
+[The client/server model](https://www.ibm.com/docs/en/cics-tx/10.1.0?topic=computing-clientserver-model)
+
+
 ### 2.5 Seven Layers of OSI
 
 The OSI (Open Systems Interconnection) model is a conceptual framework used to describe the communication protocols used in computer networks. It defines a set of seven layers that describe the different stages of network communication, from the physical transmission of data to the application-level interaction between end users. The seven layers of the OSI model are:
@@ -328,6 +337,18 @@ The presentation layer deals with the formatting and representation of data, ens
 #### 2.5.7 Application Layer
 
 The application layer provides high-level services to end users, such as email, file transfer, and web browsing. It includes protocols that enable application programs to access network services, and provides interfaces for users to interact with network applications.
+
+### Study Material
+
+[Understanding the OSI Model](https://www.youtube.com/watch?v=owDh6FNJUog)
+
+[What is the OSI Model](https://aws.amazon.com/what-is/osi-model/)
+
+[OSI model](https://en.wikipedia.org/wiki/OSI_model)
+
+[7 Layers, Attack Types, Firewalls & TCP/IP Layers](https://www.youtube.com/watch?v=ZyLk5aDc1gs)
+
+[Cybersecurity Architecture: Networks](https://www.youtube.com/watch?v=sesacY7Xz3c)
 
 ## CHAPTER 3 INTERNET TECHNOLOGY
 
