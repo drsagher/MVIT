@@ -207,6 +207,11 @@ Ultimately, the debate between machines and humans is not an either/or propositi
 
 A computer network is a group of interconnected devices, such as computers, servers, printers, and other hardware, that are linked together to allow for communication and resource sharing. The primary purpose of a computer network is to facilitate the exchange of data and information between devices, either within a local area network (LAN) or over a wide area network (WAN). Networks can be classified based on their size and geographic area, with LANs typically serving a small geographic area such as a home or office, and WANs spanning large geographic areas and typically connecting multiple LANs. Computer networks are essential for modern communication and enable a wide range of applications, such as email, instant messaging, file sharing, video conferencing, and online collaboration. Networks can be wired, using physical cables and connectors, or wireless, using radio waves to connect devices. Networks are typically managed by network administrators who ensure that the network is secure, reliable, and efficient. They are responsible for configuring and maintaining network hardware and software, ensuring that devices can communicate with one another, and implementing security measures to protect against unauthorized access and cyber-attacks. Overall, computer networks have become an essential part of modern life, enabling communication and collaboration between people and devices across the world.
 
+[Computer Networking Course - Network Engineering [CompTIA Network+ Exam Prep]](https://www.youtube.com/watch?v=qiQR5rTSshw)
+
+[Basics of Computer Networking](https://www.geeksforgeeks.org/basics-computer-networking/)
+
+
 ### 2.2 Types of Computer Networks
 
 There are several types of computer networks, each with different characteristics and purposes. Here are some of the most common types of computer networks:
@@ -238,6 +243,19 @@ A VPN is a network that provides secure access to a private network over the pub
 #### 2.2.7 Cloud Network
 
 A cloud network is a network that uses cloud computing technology to provide on-demand access to computing resources, such as servers, storage, and applications. Cloud networks are typically used by organizations that require scalable and flexible computing resources.
+
+### Study Material
+
+[Classification of Computer Networks](https://www.youtube.com/watch?v=9BIN99rHOCQ)
+
+[Computer Networking Explained](https://www.youtube.com/watch?v=tSodBEAJz9Y)
+
+[What is computer networking?](https://www.ibm.com/topics/networking)
+
+[Types of area networks – LAN, MAN and WAN](https://www.geeksforgeeks.org/types-of-area-networks-lan-man-and-wan/)
+
+[11 Types of Computer Networks](https://www.indeed.com/career-advice/career-development/types-of-networks)
+
 
 ### 2.3 Client Server Model
 
