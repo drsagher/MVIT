@@ -352,9 +352,25 @@ The application layer provides high-level services to end users, such as email, 
 
 ## CHAPTER 3 INTERNET TECHNOLOGY
 
+[Internet History, Technology, and Security by Dr. Chuck](https://www.youtube.com/watch?v=47NRaBVxgVM)
+
+[How does the internet work?](https://www.youtube.com/watch?v=zN8YNNHcaZc&t=1183s)
+
+[Google Data Center Security: 6 Layers Deep](https://www.youtube.com/watch?v=kd33UVZhnAA)
+
+
 ### 3.1 What is an Internet
 
 The internet is a global network of interconnected computers and servers that communicate with each other using standardized communication protocols. It allows users to access and share information, communicate with one another, and perform a wide range of online activities, such as shopping, banking, and social networking. The internet enables people all over the world to connect with one another and access vast amounts of information, making it an incredibly powerful tool for education, research, and innovation. The internet has become an integral part of modern life, and it continues to evolve and transform the way we live, work, and communicate.
+
+[Internet 101 | National Geographic](https://www.youtube.com/watch?v=O31TcSo3Unk)
+
+[Marc Andreessen: Future of the Internet, Technology, and AI | Lex Fridman Podcast](https://www.youtube.com/watch?v=-hxeDjAxvJ8)
+
+[Computer Scientist Explains the Internet in 5 Levels of Difficulty | WIRED](https://www.youtube.com/watch?v=0EqKnvzo3no)
+
+[Internet Technology and History with Charles Severance](https://www.youtube.com/watch?v=Ob9cgyZ7e2U)
+
 
 ### 3.2 What are Communication Technologies
 
@@ -381,6 +397,11 @@ These are communication technologies that transmit information to a large audien
 These are communication technologies that enable people to work together on a project or task, such as collaborative software, group chat applications, and virtual meeting platforms.
 
 Communication technologies play a vital role in modern society, facilitating communication, collaboration, and information sharing on a global scale. They have transformed the way we work, learn, and interact with one another, making it easier than ever to connect and communicate with people all over the world.
+
+[The Impact of Technology on Communication | Grant Dillard | TEDxBrentwoodCollegeSchool](https://www.youtube.com/watch?v=D3mNn0btW6s)
+
+[Quantum Communications](https://www.youtube.com/watch?v=m6SIOLL_Cio)
+
 
 ### 3.3 World Wide Web
 
@@ -463,6 +484,9 @@ Devices such as smart refrigerators, door locks, and lighting systems that can c
 These devices can be connected to the internet using various methods, such as Wi-Fi, Ethernet, cellular data, and Bluetooth. They allow users to access a vast array of online content, including websites, streaming services, social media, email, and more. The widespread use of internet devices has led to a revolution in the way we consume and interact with digital content, and has enabled new types of services and applications that were not possible before.
 
 ## CHAPTER 4 INFORMATION COMMUNICATION SECURITY
+
+
+
 
 ### 4.1 Describe The System of Information Processing
 
