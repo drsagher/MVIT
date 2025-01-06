@@ -358,6 +358,7 @@ The application layer provides high-level services to end users, such as email, 
 
 [Google Data Center Security: 6 Layers Deep](https://www.youtube.com/watch?v=kd33UVZhnAA)
 
+[What Is Web3 And How Can It Change The World?](https://www.youtube.com/watch?v=3A4izoJhT90)
 
 ### 3.1 What is an Internet
 
@@ -371,6 +372,7 @@ The internet is a global network of interconnected computers and servers that co
 
 [Internet Technology and History with Charles Severance](https://www.youtube.com/watch?v=Ob9cgyZ7e2U)
 
+[What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 
 ### 3.2 What are Communication Technologies
 
@@ -412,6 +414,13 @@ The Web allows users to access a vast array of digital content, including web pa
 The Web has had a profound impact on society, transforming the way we communicate, work, learn, and access services. It has enabled the growth of e-commerce, online banking, social media, and other digital platforms, as well as making information accessible to anyone with an Internet connection.
 
 Overall, the World Wide Web has become an essential part of modern life, connecting people, businesses, and organizations from all over the world and providing access to a wealth of information and resources
+
+[Sir Tim Berners-Lee on how he came up with the Internet | Washington Post Live](https://www.youtube.com/watch?v=fbV82k-ExT0)
+
+[Tim Berners-Lee: How This Guy Invented the World Wide Web](https://www.youtube.com/watch?v=GUrDI6OkJfU)
+
+[A brief history of the World Wide Web](https://www.youtube.com/watch?v=sSqZ_hJu9zA)
+
 
 ### 3.4 Introduction to World Wide Web Technologies
 
