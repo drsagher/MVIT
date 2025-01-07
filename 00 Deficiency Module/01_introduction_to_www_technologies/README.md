@@ -476,11 +476,32 @@ Server-side scripting languages, such as PHP, Python, and Ruby, are used to buil
 
 A web server is a software program that delivers content to web clients, such as web browsers. Popular web servers include Apache, Nginx, and Microsoft IIS.
 
+[What is a web server?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server)
+
+[Web Server and Its Type](https://www.geeksforgeeks.org/web-server-and-its-type/)
+
+[Web server versus application server](https://www.ibm.com/think/topics/web-server-application-server)
+
+[What is a Server? Servers vs Desktops Explained](https://www.youtube.com/watch?v=UjCDWCeHCzY)
+
+[Web Hosting vs Web Server: Learn the Difference](https://www.youtube.com/watch?v=7mr1jKdQfkU)
+
+
 #### 3.4.6 Content Management Systems (CMS)
 
 CMSs are software platforms that allow non-technical users to create, manage, and publish digital content, typically for websites. CMSs provide a user-friendly interface for content creation and management, and are commonly used to create blogs, e-commerce websites, and other online platforms.
 
 Overall, Web technologies have revolutionized the way we interact with information, and they continue to evolve and improve as new technologies and standards are developed. The Web has become a central part of our daily lives, and it has opened up new opportunities for businesses, education, entertainment, and more.
+
+[What's a CMS? How Does a CMS Actually Work?](https://www.youtube.com/watch?v=A48pINVBuJs)
+
+[What is a content management system (CMS)?](https://www.ibm.com/think/topics/content-management-system)
+
+[Types of content management systems (CMS)](https://www.oracle.com/pk/content-management/what-is-cms/)
+
+[Content Management System (CMS)](https://www.youtube.com/watch?v=iMfZiFk5c_I)
+
+[Some Popular CMS](https://www.youtube.com/watch?v=BCBen___q8Q)
 
 ### 3.5 Types of Internet Devices
 
@@ -520,12 +541,23 @@ Devices such as smart refrigerators, door locks, and lighting systems that can c
 
 These devices can be connected to the internet using various methods, such as Wi-Fi, Ethernet, cellular data, and Bluetooth. They allow users to access a vast array of online content, including websites, streaming services, social media, email, and more. The widespread use of internet devices has led to a revolution in the way we consume and interact with digital content, and has enabled new types of services and applications that were not possible before.
 
+[Network Devices (Hub, Repeater, Bridge, Switch, Router, Gateways and Brouter)](https://www.geeksforgeeks.org/network-devices-hub-repeater-bridge-switch-router-gateways/)
 
+[Types of Internet Connection](https://www.geeksforgeeks.org/types-of-internet-connection/)
 
+[Internet Connection Types](https://www.youtube.com/watch?v=kQrVg5mb-iU)
+
+[Network Devices Explained | Hub, Bridge, Router, Switch](https://www.youtube.com/watch?v=eMamgWllRFY)
+
+[What is the Internet?](https://www.cloudflare.com/learning/network-layer/how-does-the-internet-work/)
+
+[Network Fundamentals - Switches, LANs, Routers and Other Networking Devices](https://www.uhcl.edu/information-security/tips-best-practices/routers)
+
+[What is the Internet of Things (IoT)?](https://www.ibm.com/think/topics/internet-of-things)
+
+[Network Devices - CompTIA A+ ](https://www.youtube.com/watch?v=1cS5JPULDdY)
 
 ## CHAPTER 4 INFORMATION COMMUNICATION SECURITY
-
-
 
 
 ### 4.1 Describe The System of Information Processing
