@@ -2,6 +2,8 @@
 
 The Introduction to World Wide Web Technologies course provides a comprehensive overview of the fundamental technologies that drive the web, exploring the history and evolution of the web, as well as key concepts, protocols, and languages that enable web development, including HTML, CSS, and JavaScript. Through a combination of lectures, discussions, and hands-on exercises, students gain a solid understanding of the web's underlying infrastructure and develop skills to design, build, and maintain web applications. This course is ideal for students interested in web development and design, professionals seeking to expand their skill set, and anyone curious about the technologies powering the web, with objectives including understanding web history, learning fundamental technologies, exploring web development frameworks, and developing hands-on skills, ultimately providing a solid foundation for further exploration and learning in this rapidly evolving field.
 
+[The World Wide Web](https://www.youtube.com/watch?v=guvsH5OFizE&t=15s)
+
 [How Life Will Look Like In 2050](https://www.youtube.com/watch?v=6_q_LHq85Cs)
 
 [Top 10 Emerging Technologies of 2024 (According to Science)](https://www.youtube.com/watch?v=wXc2tao51D4)
@@ -426,23 +428,49 @@ Overall, the World Wide Web has become an essential part of modern life, connect
 
 The World Wide Web (WWW or Web) is a vast network of interconnected resources and documents, accessed through the Internet. The Web is a global platform for sharing and accessing information, and it has revolutionized the way we communicate, work, learn, and access services.
 
+[Web technology for developers](https://developer.mozilla.org/en-US/docs/Web)
+
+[Web Technology](https://www.geeksforgeeks.org/web-technology/)
+
+[How The Web Works - The Big Picture](https://www.youtube.com/watch?v=hJHvdBlSxug)
+
+[A brief history of the World Wide Web](https://www.youtube.com/watch?v=sSqZ_hJu9zA&t=36s)
+
+[Web and HTTP protocol tutorial](https://www.youtube.com/watch?v=qcALGDn0zpk)
+
 Web technologies are the tools and protocols used to create, deliver, and interact with content on the Web. Here are some of the key technologies used in the Web:
 
 #### 3.4.1 HTML
 
 HTML (Hypertext Markup Language) is the standard markup language used to create and structure content on the Web. HTML is used to define the structure of web pages, including headings, paragraphs, lists, images, links, and more.
+[Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content)
 
 #### 3.4.2 CSS
 
 CSS (Cascading Style Sheets) is used to style and format HTML content. CSS allows web designers to control the layout, fonts, colors, and other visual aspects of web pages, making them visually appealing and user-friendly.
+[CSS styling basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
 
 #### 3.4.3 JavaScript
 
 JavaScript is a scripting language used to add interactive features and functionality to web pages. JavaScript can be used to create animations, pop-ups, forms, and other dynamic elements on a web page.
 
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 #### 3.4.4 Server-Side Scripting Languages
 
 Server-side scripting languages, such as PHP, Python, and Ruby, are used to build web applications that run on the server-side. These languages are used to process user inputs, generate dynamic content, and interact with databases.
+
+[Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Introduction)
+
+[Top Server-side Scripting Languages & Frameworks](https://www.orientsoftware.com/blog/server-side-scripting-languages/)
+
+[Server-side scripting](https://en.wikipedia.org/wiki/Server-side_scripting)
+
+[Client-side vs Server-side, Front-end vs Back-end](https://www.youtube.com/watch?v=7GRKUaQ8Spk)
+
+[What is server-side scripting?](https://www.lenovo.com/us/en/glossary/server-side-scripting/?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOoq6tvlIGML5ZWs9dENaSBLU2L5ShptHTPaxDyyoyVMC2F4KiPtT)
+
+[Understanding Client-side and Server-side Programming](https://www.youtube.com/watch?v=auiUHABlKhk)
 
 #### 3.4.5 Web Servers
 
@@ -491,6 +519,9 @@ Devices such as smartwatches and fitness trackers that can connect to the intern
 Devices such as smart refrigerators, door locks, and lighting systems that can connect to the internet and be controlled remotely.
 
 These devices can be connected to the internet using various methods, such as Wi-Fi, Ethernet, cellular data, and Bluetooth. They allow users to access a vast array of online content, including websites, streaming services, social media, email, and more. The widespread use of internet devices has led to a revolution in the way we consume and interact with digital content, and has enabled new types of services and applications that were not possible before.
+
+
+
 
 ## CHAPTER 4 INFORMATION COMMUNICATION SECURITY
 
