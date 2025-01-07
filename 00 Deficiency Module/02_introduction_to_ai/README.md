@@ -147,6 +147,8 @@ Current trends in Artificial Intelligence (AI) include increased adoption across
 ## 08. Role of AI
 Artificial Intelligence (AI) plays a multifaceted role in various industries and aspects of life, transforming the way we live, work, and interact. AI automates repetitive tasks, analyzes vast amounts of data to provide insights and predictions, and assists in solving complex problems. It also enhances customer service through chatbots and virtual assistants, improves healthcare outcomes through medical diagnosis and personalized medicine, and optimizes education through personalized learning and adaptive assessments. Additionally, AI detects and prevents cyber threats, optimizes traffic flow and transportation, generates music and art, and accelerates scientific discovery and innovation. Overall, AI has a profound impact on various aspects of society, economy, and individual lives, and its potential to continue shaping the future is vast.
 
+[Bill Gates on possibility, AI, and humanity](https://www.youtube.com/watch?v=KeGYI69sWvw)
+
 [What is artificial intelligence (AI)?](https://www.ibm.com/think/topics/artificial-intelligence)
 
 [The role of artificial intelligence in achieving the Sustainable Development Goals](https://www.nature.com/articles/s41467-019-14108-y)
@@ -168,6 +170,10 @@ Artificial Intelligence (AI) plays a multifaceted role in various industries and
 [What are AI Agents?](https://www.youtube.com/watch?v=F8NKVhkZZWI&t=10s)
 
 [What is Retrieval-Augmented Generation (RAG)?](https://www.youtube.com/watch?v=T-D1OfcDW1M)
+
+[AI for Science with Sir Paul Nurse, Demis Hassabis, Jennifer Doudna, and John Jumper](https://www.youtube.com/watch?v=nQKmVhLIGcs)
+
+[The Dark Side Of Extreme Intelligence - Jordan Peterson](https://www.youtube.com/watch?v=83xLPeUaS6Q)
 
 ## 09. What is Logic?
 
