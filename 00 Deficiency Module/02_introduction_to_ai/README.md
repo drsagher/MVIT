@@ -105,6 +105,13 @@ The [foundation of Artificial Intelligence (AI)](https://skillfloor.medium.com/t
 [What are foundation models?](https://research.ibm.com/blog/what-are-foundation-models)
 
 ## 06. Precursor and Birth of AI
+The precursor to Artificial Intelligence (AI) dates back to the mid-20th century with computer scientists and mathematicians like Alan Turing, Marvin Minsky, and John McCarthy exploring machine intelligence. Influential milestones include Charles Babbage's Analytical Engine (1837), Ada Lovelace's Notes on the Analytical Engine (1843), and Turing's Turing Machine (1936). The birth of AI is often attributed to the 1956 Dartmouth Summer Research Project on Artificial Intelligence, led by John McCarthy, where the first AI program, Logical Theorist, was developed. Despite facing challenges and funding cuts in the 1970s and 1980s, AI research experienced a resurgence in the 1990s with advances in computing power, data storage, and machine learning algorithms, leading to significant breakthroughs in areas like natural language processing, computer vision, and robotics.
+
+[Meet the Creators of AI](https://www.youtube.com/watch?v=I4V_SfbogBw)
+
+[A Brief History of AI](https://www.youtube.com/watch?v=eSj80Zr6TEE)
+
+[The AI PC revolution is here](https://www.youtube.com/watch?v=ccpxLpS5DP8)
 
 ## 07. Trends, Technologies, and Tools for AI
 
