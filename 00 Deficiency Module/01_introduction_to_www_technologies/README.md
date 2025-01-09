@@ -14,6 +14,8 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 
 ## CHAPTER 1 TECHNOLOGY EVOLUTION AND FUTURE
 
+[Watch chapter summary in Urdu](https://www.youtube.com/watch?v=vzdMSBRMpq4)
+
 ### 1.1 Historical Perspectives of Life and Technologies
 
 Throughout history, life and technology have been deeply intertwined, each shaping and influencing the other in profound ways. Here are some key historical perspectives on the relationship between life and technology:
@@ -215,6 +217,7 @@ A computer network is a group of interconnected devices, such as computers, serv
 
 
 ### 2.2 Types of Computer Networks
+[Types of Computer Networks in Urdu]https://youtu.be/a8CD8Snn028?si=YCvIpVG2e1sEdefg
 
 There are several types of computer networks, each with different characteristics and purposes. Here are some of the most common types of computer networks:
 
