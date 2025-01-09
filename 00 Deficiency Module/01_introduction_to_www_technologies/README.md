@@ -217,7 +217,8 @@ A computer network is a group of interconnected devices, such as computers, serv
 
 
 ### 2.2 Types of Computer Networks
-[Types of Computer Networks in Urdu]https://youtu.be/a8CD8Snn028?si=YCvIpVG2e1sEdefg
+
+[Types of Computer Networks in Urdu](https://youtu.be/a8CD8Snn028?si=YCvIpVG2e1sEdefg)
 
 There are several types of computer networks, each with different characteristics and purposes. Here are some of the most common types of computer networks:
 
