@@ -26,3 +26,6 @@ There are several types of programming, including:
 
 These categories are not mutually exclusive, and many programming projects combine elements from multiple categories.
 
+## Chapterization
+[00 Introduction to Programming]('00 Introduction to Programming/Readme.md')
+
