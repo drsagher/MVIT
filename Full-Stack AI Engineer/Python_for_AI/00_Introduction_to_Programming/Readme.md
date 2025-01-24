@@ -312,3 +312,164 @@ Event-driven programming is a programming paradigm in which the flow of the prog
 •	Game Development: Event-driven programming is used in game development, particularly in games that require real-time user interaction.
 •	Desktop Applications: Event-driven programming is used in desktop applications, particularly in applications that require real-time user interaction.
 
+# 04 Data Structures and Algorithms
+
+## Introduction to data structures (Arrays, Linked Lists, Stacks, Queues)
+
+### Arrays
+-	Definition: A collection of elements of the same data type stored in contiguous memory locations.
+-	Characteristics: Fixed size, homogeneous elements, and random access.
+-	Operations: Indexing, slicing, appending, inserting, deleting, searching, and sorting.
+-	Advantages: Fast access and modification, efficient memory usage.
+-	Disadvantages: Fixed size, insertion and deletion can be slow.
+
+### Linked Lists
+-	Definition: A dynamic collection of elements, where each element points to the next element.
+-	Characteristics: Dynamic size, heterogeneous elements, and sequential access.
+-	Operations: Insertion, deletion, searching, and traversal.
+-	Advantages: Dynamic size, efficient insertion and deletion.
+-	Disadvantages: Slow search and access.
+
+### Stacks
+-	Definition: A Last-In-First-Out (LIFO) data structure, where elements are added and removed from the top.
+-	Characteristics: LIFO order, elements are added and removed from the top.
+-	Operations: Push, pop, peek, and isEmpty.
+-	Advantages: Efficient addition and removal of elements.
+-	Disadvantages: Limited access to elements.
+
+### Queues
+-	Definition: A First-In-First-Out (FIFO) data structure, where elements are added to the end and removed from the front.
+-	Characteristics: FIFO order, elements are added to the end and removed from the front.
+-	Operations: Enqueue, dequeue, peek, and isEmpty.
+-	Advantages: Efficient addition and removal of elements.
+-	Disadvantages: Limited access to elements.
+
+These data structures are fundamental building blocks for more complex data structures and algorithms. Understanding their characteristics, operations, advantages, and disadvantages is essential for effective programming.
+
+## Sorting and Searching Algorithms
+
+### Sorting Algorithms
+-	Bubble Sort: Works by repeatedly swapping the adjacent elements if they are in wrong order.
+-	Selection Sort: Works by selecting the smallest element from the unsorted portion of the list and swapping it with the first unsorted element.
+-	Insertion Sort: Works by iterating through the list one element at a time, inserting each element into its proper position within the previously sorted portion of the list.
+-	Merge Sort: Works by dividing the list into smaller sublists, sorting each sublist, and then merging the sorted sublists back together.
+-	Quick Sort: Works by selecting a pivot element, partitioning the list around the pivot, and recursively sorting the sublists.
+-	Heap Sort: Works by building a heap from the list, then repeatedly removing the largest element from the heap and placing it at the end of the list.
+-	Radix Sort: Works by sorting the list based on the digits of the elements, starting from the least significant digit.
+
+### Searching Algorithms
+-	Linear Search: Works by iterating through the list one element at a time, checking if each element matches the target value.
+-	Binary Search: Works by repeatedly dividing the list in half and searching for the target value within one of the two halves.
+-	Hash Table Search: Works by using a hash function to map the target value to a specific index in the hash table, then checking if the value is present at that index.
+
+## Graphs and Trees
+
+### Graphs:
+
+#### Definition
+A graph is a non-linear data structure consisting of nodes (vertices) connected by edges.
+
+#### Types:
+-	Undirected Graph: Edges have no direction.
+-	Directed Graph: Edges have direction.
+-	Weighted Graph: Edges have weights or labels.
+-	Unweighted Graph: Edges have no weights or labels.
+
+#### Graph Terminology
+-	Vertex: A node in the graph.
+-	Edge: A connection between two vertices.
+-	Neighbor: A vertex connected to another vertex by an edge.
+-	Degree: The number of edges incident on a vertex.
+
+#### Graph Operations
+-	Insertion: Adding a new vertex or edge.
+-	Deletion: Removing a vertex or edge.
+-	Traversal: Visiting each vertex in a specific order.
+
+### Trees:
+
+#### Definition 
+A tree is a connected, undirected graph with no cycles.
+
+#### Types
+-	Binary Tree: Each vertex has at most two children.
+-	B-Tree: A self-balancing search tree.
+-	Heap: A specialized tree-based data structure.
+
+#### Tree Terminology
+-	Root: The topmost vertex.
+-	Leaf: A vertex with no children.
+-	Parent: A vertex that has a child.
+-	Child: A vertex that has a parent.
+-	Sibling: Vertices that share the same parent.
+
+#### Tree Operations:
+-	Insertion: Adding a new vertex.
+-	Deletion: Removing a vertex.
+-	Traversal: Visiting each vertex in a specific order.
+
+### Graph and Tree Algorithms:
+
+#### Graph Algorithms
+-	Breadth-First Search (BFS): Traversing a graph level by level.
+-	Depth-First Search (DFS): Traversing a graph by exploring as far as possible along each branch.
+-	Dijkstra's Algorithm: Finding the shortest path between two vertices.
+
+#### Tree Algorithms
+-	In order Traversal: Visiting the left subtree, the root, and then the right subtree.
+-	Preorder Traversal: Visiting the root, the left subtree, and then the right subtree.
+-	Post order Traversal: Visiting the left subtree, the right subtree, and then the root.
+
+### Applications
+
+#### Graphs
+-	Social Network Analysis: Modeling relationships between people.
+-	Traffic Patterns: Analyzing traffic flow and optimizing routes.
+-	Recommendation Systems: Suggesting products based on user behavior.
+
+#### Trees
+-	File Systems: Organizing files and directories.
+-	Database Indexing: Efficiently retrieving data.
+-	Compilers: Parsing and analyzing source code.
+
+
+## Big-O Notation and Complexity Analysis
+
+### Big-O Notation
+Big-O notation is a mathematical notation that describes the complexity of an algorithm, which is the amount of time or space it requires as the input size increases.
+-	O (1) - Constant time complexity (fastest)
+Example: Accessing an array by its index
+-	O (log n) - Logarithmic time complexity
+Example: Binary search in an array
+-	O(n) - Linear time complexity
+Example: Finding an element in an array by iterating through it
+-	O (n log n) - Linearithmic time complexity
+Example: Merging two sorted arrays
+-	O(n^2) - Quadratic time complexity
+Example: Bubble sort algorithm
+-	O(2^n) - Exponential time complexity
+Example: Recursive algorithm for calculating Fibonacci numbers
+-	O(n!) - Factorial time complexity (slowest)
+Example: Brute-force algorithm for solving the traveling salesman problem
+Note that the actual processing time may vary depending on the specific algorithm, hardware, and input data. However, in general, algorithms with lower complexity classes tend to be faster and more efficient.
+
+### Complexity Analysis
+Complexity analysis is the process of determining the complexity of an algorithm.
+Steps to Analyze Complexity
+-	Identify the input size: Determine the size of the input, usually represented as 'n'.
+-	Count the operations: Count the number of operations performed by the algorithm, such as loops, conditional statements, and array accesses.
+-	Express the complexity: Express the complexity using Big-O notation, based on the number of operations and the input size.
+
+### Examples
+-	Linear Search: The time complexity of linear search is O(n), where n is the size of the array.
+-	Binary Search: The time complexity of binary search is O (log n), where n is the size of the array.
+-	Bubble Sort: The time complexity of bubble sort is O(n^2), where n is the size of the array.
+
+### Best Practices
+-	Use Big-O notation: Use Big-O notation to express the complexity of an algorithm.
+-	Analyze the worst-case scenario: Analyze the worst-case scenario to determine the upper bound of the complexity.
+-	Ignore lower-order terms: Ignore lower-order terms when expressing the complexity using Big-O notation.
+-	Use approximation: Use approximation to simplify the complexity analysis.
+
+
+# Programming Languages
