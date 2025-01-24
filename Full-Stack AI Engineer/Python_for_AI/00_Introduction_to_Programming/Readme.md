@@ -411,26 +411,26 @@ A tree is a connected, undirected graph with no cycles.
 -	Deletion: Removing a vertex.
 -	Traversal: Visiting each vertex in a specific order.
 
-### 5.4 Graph and Tree Algorithms:
+## 5.4 Graph and Tree Algorithms:
 
-#### 5.4.1 Graph Algorithms
+### 5.4.1 Graph Algorithms
 -	Breadth-First Search (BFS): Traversing a graph level by level.
 -	Depth-First Search (DFS): Traversing a graph by exploring as far as possible along each branch.
 -	Dijkstra's Algorithm: Finding the shortest path between two vertices.
 
-#### 5.4.2 Tree Algorithms
+### 5.4.2 Tree Algorithms
 -	In order Traversal: Visiting the left subtree, the root, and then the right subtree.
 -	Preorder Traversal: Visiting the root, the left subtree, and then the right subtree.
 -	Post order Traversal: Visiting the left subtree, the right subtree, and then the root.
 
-### 5.5 Applications
+## 5.5 Applications
 
-#### 5.5.1 Graphs
+### 5.5.1 Graphs
 -	Social Network Analysis: Modeling relationships between people.
 -	Traffic Patterns: Analyzing traffic flow and optimizing routes.
 -	Recommendation Systems: Suggesting products based on user behavior.
 
-#### 5.5.2 Trees
+### 5.5.2 Trees
 -	File Systems: Organizing files and directories.
 -	Database Indexing: Efficiently retrieving data.
 -	Compilers: Parsing and analyzing source code.
@@ -438,7 +438,7 @@ A tree is a connected, undirected graph with no cycles.
 
 ## 5.6 Big-O Notation and Complexity Analysis
 
-### Big-O Notation
+### 5.6.1 Big-O Notation
 Big-O notation is a mathematical notation that describes the complexity of an algorithm, which is the amount of time or space it requires as the input size increases.
 -	O (1) - Constant time complexity (fastest)
 Example: Accessing an array by its index
@@ -456,40 +456,41 @@ Example: Recursive algorithm for calculating Fibonacci numbers
 Example: Brute-force algorithm for solving the traveling salesman problem
 Note that the actual processing time may vary depending on the specific algorithm, hardware, and input data. However, in general, algorithms with lower complexity classes tend to be faster and more efficient.
 
-### Complexity Analysis
+### 5.6.2 Complexity Analysis
 Complexity analysis is the process of determining the complexity of an algorithm.
+
 Steps to Analyze Complexity
 -	Identify the input size: Determine the size of the input, usually represented as 'n'.
 -	Count the operations: Count the number of operations performed by the algorithm, such as loops, conditional statements, and array accesses.
 -	Express the complexity: Express the complexity using Big-O notation, based on the number of operations and the input size.
 
-### Examples
+### 5.6.3 Examples
 -	Linear Search: The time complexity of linear search is O(n), where n is the size of the array.
 -	Binary Search: The time complexity of binary search is O (log n), where n is the size of the array.
 -	Bubble Sort: The time complexity of bubble sort is O(n^2), where n is the size of the array.
 
-### Best Practices
+### 5.6.4 Best Practices
 -	Use Big-O notation: Use Big-O notation to express the complexity of an algorithm.
 -	Analyze the worst-case scenario: Analyze the worst-case scenario to determine the upper bound of the complexity.
 -	Ignore lower-order terms: Ignore lower-order terms when expressing the complexity using Big-O notation.
 -	Use approximation: Use approximation to simplify the complexity analysis.
 
 
-# Chapter 05 Programming Languages
+# Lesson 6 Programming Languages
 
-## 5.1 Introduction to programming languages (syntax, semantics, features)
+## 6.1 Introduction to programming languages (syntax, semantics, features)
 
-### 5.1.1 Syntax
+### 6.1.1 Syntax
 -	Syntax: The set of rules that govern the structure of a programming language.
 -	Tokens: Basic building blocks of a programming language, such as keywords, identifiers, literals, operators, and symbols.
 -	Grammar: A set of rules that define the syntax of a programming language.
 
-### 5.1.2 Semantics
+### 6.1.2 Semantics
 -	Semantics: The meaning of a programming language, including the behavior of its constructs and the relationships between them.
 -	Static Semantics: The analysis of a program's syntax and structure without executing it.
 -	Dynamic Semantics: The analysis of a program's behavior during execution.
 
-### 5.1.3 Features
+### 6.1.3 Features
 -	Variables: Named storage locations that hold values.
 -	Data Types: Classification of data into types, such as integers, floating-point numbers, characters, and strings.
 -	Operators: Symbols used to perform operations, such as arithmetic, comparison, and logical operators.
@@ -497,14 +498,63 @@ Steps to Analyze Complexity
 -	Functions: Blocks of code that perform a specific task and can be reused.
 -	Object-Oriented Programming (OOP): A programming paradigm that organizes software design around objects and classes.
 
-### 5.1.4 Programming Paradigms
+### 6.1.4 Programming Paradigms
 -	Imperative Programming: Focuses on describing how to perform a task.
 -	Functional Programming: Focuses on describing what the task is.
 -	Object-Oriented Programming (OOP): Focuses on organizing software design around objects and classes.
 -	Declarative Programming: Focuses on describing what the task is, without specifying how to perform it.
 
-### 5.1.5 Examples of Programming Languages
+### 6.1.5 Examples of Programming Languages
 -	Imperative Programming: C, C++, Java
 -	Functional Programming: Haskell, Lisp, Scheme
 -	Object-Oriented Programming (OOP): Java, C++, Python
 -	Declarative Programming: Prolog, SQL
+
+## 6.2 Comparison of programming languages (Python, Java, C++, JavaScript)
+The comparison of programming languages such as Python, Java, C++, and JavaScript reveals distinct strengths and weaknesses. Python excels in simplicity, readability, and versatility, making it ideal for data science, machine learning, and web development. Java, known for its platform independence and robust security features, is widely used for Android app development, enterprise software, and web applications. C++, a high-performance language, is preferred for building operating systems, games, and other high-performance applications. JavaScript, primarily used for client-side scripting, dominates web development, enabling dynamic and interactive web pages. Each language has its unique ecosystem, use cases, and communities, making the choice of language dependent on the specific project requirements, personal preferences, and goals.
+
+## 6.3 Language-specific features and applications
+
+### 6.3.1 Python:
+#### 6.3.1.1 Features
+-	Dynamic typing
+-	Object-oriented programming
+-	High-level abstractions
+-	Extensive libraries (e.g., NumPy, pandas, scikit-learn)
+
+#### 6.3.1.2 Applications
+-	Data science and machine learning
+-	Web development (e.g., Django, Flask)
+-	Automation and scripting
+-	Scientific computing and research
+-	Education and academia
+
+### 6.3.2 JavaScript:
+#### 6.3.2.1 Features
+-	Dynamically typed
+-	Object-oriented programming
+-	First-class functions
+-	Client-side scripting for web development
+
+#### 6.3.2.2 Applications
+-	Web development (e.g., React, Angular, Vue.js)
+-	Front-end development and user interface design
+-	Mobile app development (e.g., React Native, Ionic)
+-	Server-side programming with Node.js
+-	Desktop applications (e.g., Electron, NW.js)
+
+### 6.3.3 Java:
+#### 6.3.3.1 Features
+-	Statically typed
+-	Object-oriented programming
+-	Platform independence (e.g., Android, desktop, web)
+-	Large community and ecosystem
+
+#### 6.3.3.2 Applications
+-	Android app development
+-	Web development (e.g., Spring, Hibernate)
+-	Enterprise software development
+-	Desktop applications (e.g., Eclipse, NetBeans)
+-	Machine learning and data science
+
+
