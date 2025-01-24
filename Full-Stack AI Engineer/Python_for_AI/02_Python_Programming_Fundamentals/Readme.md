@@ -1,61 +1,19 @@
 # 02 Python Programming Fundamentals
+Dive deep into the future of programming with this comprehensive guide to Quantum Computing, Cloud Systems, Machine Learning, and VR Development
 
-## Python Installation
-Here's a step-by-step guide to installing Python and essential tools on various operating systems:
+## Installation
 
-### Windows
-#### Installing Python
+[Install VS Code](https://code.visualstudio.com/)
 
-1. Go to the official Python download page: https://www.python.org/downloads/
-2. Click on the latest version of Python (e.g., Python 3.10).
-3. Select the Windows installer (e.g., python-3.10.0-amd64.exe) and download it.
-4. Run the installer and follow the prompts to install Python.
+[Install Python Plugin](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-#### Essential Tools
+[Install mypy VS Code Extension](https://marketplace.visualstudio.com/items?itemName=matangover.mypy)
 
-1. pip: The package installer for Python. Comes bundled with Python.
-2. IDLE: A basic IDE for Python. Comes bundled with Python.
-3. PyCharm: A popular IDE for Python. Download from https://www.jetbrains.com/pycharm/
-4. Visual Studio Code: A lightweight, open-source code editor. Download from https://code.visualstudio.com/
-5. Git: A version control system. Download from https://git-scm.com/download/win
-6. Jupyter Notebook: An interactive environment for working with Python. Install using pip: pip install jupyter
+## Type Hints
+Type hints are a feature in Python that allows developers to specify the expected data types of function parameters, return types, and variables. Introduced in Python 3.5, type hints provide a way to add type annotations to code, making it easier to understand, maintain, and debug. Type hints are not enforced at runtime, but rather serve as documentation and can be used by third-party tools such as type checkers, IDEs, and linters to provide additional features like code completion, error detection, and code optimization. By using type hints, developers can improve the readability and maintainability of their code, reduce errors, and make it easier for others to understand their codebase. For example, a function with type hints might look like def greeting(name: str) -> str:, indicating that the function takes a string parameter and returns a string value.
 
-### MacOS
-
-#### Installing Python
-
-1. Open the Terminal app.
-2. Install Python using Homebrew: brew install python
-3. Verify the installation: python --version
-
-#### Essential Tools
-
-1. pip: Comes bundled with Python.
-2. IDLE: Comes bundled with Python.
-3. PyCharm: Download from https://www.jetbrains.com/pycharm/
-4. Visual Studio Code: Download from https://code.visualstudio.com/
-5. Git: Install using Homebrew: brew install git
-6. Jupyter Notebook: Install using pip: pip install jupyter
-
-### Linux
-
-#### Installing Python
-
-1. Open the Terminal app.
-2. Install Python using the package manager:
-    - Ubuntu/Debian: sudo apt-get install python3
-    - Red Hat/CentOS: sudo yum install python3
-    - Fedora: sudo dnf install python3
-3. Verify the installation: python --version
-
-#### Essential Tools
-
-1. pip: Comes bundled with Python.
-2. IDLE: Comes bundled with Python.
-3. PyCharm: Download from https://www.jetbrains.com/pycharm/
-4. Visual Studio Code: Download from https://code.visualstudio.com/
-5. Git: Install using the package manager:
-    - Ubuntu/Debian: sudo apt-get install git
-    - Red Hat/CentOS: sudo yum install git
-    - Fedora: sudo dnf install git
-6. Jupyter Notebook: Install using pip: pip install jupyter
+## Reference Books
+- [Python Crash Course, 3rd Edition](https://www.amazon.com/Python-Crash-Course-Eric-Matthes/dp/1718502702)
+- [Python Programming for Beginners]()
+- [Type hints cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+- [Python Cheat Sheet for Beginners](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
