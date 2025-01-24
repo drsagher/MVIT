@@ -315,7 +315,7 @@ Event-driven programming is a programming paradigm in which the flow of the prog
 •	Game Development: Event-driven programming is used in game development, particularly in games that require real-time user interaction.
 •	Desktop Applications: Event-driven programming is used in desktop applications, particularly in applications that require real-time user interaction.
 
-# 04 Data Structures and Algorithms
+# Lesson 04 Data Structures and Algorithms
 
 ## Introduction to data structures (Arrays, Linked Lists, Stacks, Queues)
 
@@ -476,3 +476,35 @@ Steps to Analyze Complexity
 
 
 # Chapter 05 Programming Languages
+
+## 5.1 Introduction to programming languages (syntax, semantics, features)
+
+### 5.1.1 Syntax
+-	Syntax: The set of rules that govern the structure of a programming language.
+-	Tokens: Basic building blocks of a programming language, such as keywords, identifiers, literals, operators, and symbols.
+-	Grammar: A set of rules that define the syntax of a programming language.
+
+### 5.1.2 Semantics
+-	Semantics: The meaning of a programming language, including the behavior of its constructs and the relationships between them.
+-	Static Semantics: The analysis of a program's syntax and structure without executing it.
+-	Dynamic Semantics: The analysis of a program's behavior during execution.
+
+### 5.1.3 Features
+-	Variables: Named storage locations that hold values.
+-	Data Types: Classification of data into types, such as integers, floating-point numbers, characters, and strings.
+-	Operators: Symbols used to perform operations, such as arithmetic, comparison, and logical operators.
+-	Control Structures: Statements that control the flow of a program, such as conditional statements, loops, and functions.
+-	Functions: Blocks of code that perform a specific task and can be reused.
+-	Object-Oriented Programming (OOP): A programming paradigm that organizes software design around objects and classes.
+
+### 5.1.4 Programming Paradigms
+-	Imperative Programming: Focuses on describing how to perform a task.
+-	Functional Programming: Focuses on describing what the task is.
+-	Object-Oriented Programming (OOP): Focuses on organizing software design around objects and classes.
+-	Declarative Programming: Focuses on describing what the task is, without specifying how to perform it.
+
+### 5.1.5 Examples of Programming Languages
+-	Imperative Programming: C, C++, Java
+-	Functional Programming: Haskell, Lisp, Scheme
+-	Object-Oriented Programming (OOP): Java, C++, Python
+-	Declarative Programming: Prolog, SQL
