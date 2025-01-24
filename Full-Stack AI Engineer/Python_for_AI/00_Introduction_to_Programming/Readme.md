@@ -1,4 +1,4 @@
-# 00 Introduction
+# Chapter 01 Introduction
 
 ## Big Picture
 
@@ -21,7 +21,7 @@ The art of problem-solving by machines refers to the ability of computers and al
 -	Artificial intelligence: Using machines to simulate human thought processes, such as reasoning, decision-making, and problem-solving.
 By leveraging these techniques, machines can solve complex problems in fields like mathematics, science, engineering, and finance, freeing humans to focus on higher-level thinking and creativity.
 
-# 01 Introduction to Programming
+# Chapter 02 Introduction to Programming
 
 ## What is Programming?
 
@@ -57,7 +57,7 @@ Moreover, programming has enabled the creation of smart homes, cities, and infra
 
 Preparing for the future of programming requires a proactive and adaptable approach. As technology continues to evolve at a rapid pace, programmers must stay up-to-date with the latest trends, tools, and methodologies. This involves continuously learning new programming languages, frameworks, and technologies, as well as exploring emerging areas like artificial intelligence, machine learning, and data science. Additionally, developers should focus on developing soft skills like communication, collaboration, and problem-solving, which are essential for success in an increasingly complex and interconnected world. By staying curious, being open to new ideas, and embracing a growth mindset, programmers can position themselves for success and play a key role in shaping the future of technology.
 
-# 02 Programming Fundamentals
+# Chapter 03 Programming Fundamentals
 
 ## Variables, data types, and operators
 
@@ -183,7 +183,7 @@ Understanding I/O operations is essential for developing interactive programs th
 -	Loops: Repeating a block of code for a specified number of times.
 Understanding the basic syntax and semantics of programming languages is essential for writing effective and efficient code.
 
-# 03 Programming Paradigms
+# Chapter 04 Programming Paradigms
 
 ## Procedural Programming
 
@@ -475,4 +475,4 @@ Steps to Analyze Complexity
 -	Use approximation: Use approximation to simplify the complexity analysis.
 
 
-# Programming Languages
+# Chapter 05 Programming Languages
