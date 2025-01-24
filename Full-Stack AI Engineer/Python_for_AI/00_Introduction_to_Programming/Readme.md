@@ -185,48 +185,48 @@ Understanding the basic syntax and semantics of programming languages is essenti
 
 # Lesson 4 Programming Paradigms
 
-## Procedural Programming
+## 4.1 Procedural Programming
 
-### Definition
+### 4.1.1 Definition
 Procedural programming is a programming paradigm that focuses on procedures or functions that perform specific tasks. It is based on the concept of a procedure call, where a program invokes a procedure to perform a specific task.
 
-### Characteristics
+### 4.1.2 Characteristics
 -	Procedures: Procedural programming is centered around procedures, which are blocks of code that perform specific tasks.
 -	Top-down approach: Procedural programming uses a top-down approach, where a program is broken down into smaller procedures that are solved individually.
 -	Focus on procedures: The focus is on the procedures themselves, rather than the data being manipulated.
 -	Use of variables: Variables are used to store and manipulate data.
 
-### Key Concepts
+### 4.1.3 Key Concepts
 -	Functions: Functions are reusable blocks of code that perform specific tasks.
 -	Parameters: Parameters are values passed to a procedure or function.
 -	Return values: Return values are values returned by a procedure or function.
 -	Scope: Scope refers to the region of a program where a variable or procedure is defined and accessible.
 
-### Advantages
+### 4.1.4 Advantages
 -	Easy to learn: Procedural programming is a straightforward and easy-to-learn paradigm.
 -	Efficient: Procedural programming can be efficient, as procedures can be reused.
 -	Flexible: Procedural programming allows for flexible programming, as procedures can be modified or replaced.
 
-### Disadvantages
+### 4.1.5 Disadvantages
 -	Code duplication: Procedural programming can lead to code duplication, as procedures may be repeated.
 -	Difficulty in maintaining large programs: Procedural programming can make it difficult to maintain large programs, as procedures may become complex and difficult to manage.
 
-### Examples of Procedural Programming Languages
+### 4.1.6 Examples of Procedural Programming Languages
 -	C: C is a classic example of a procedural programming language.
 -	Pascal: Pascal is another example of a procedural programming language.
 -	BASIC: BASIC is a simple procedural programming language.
 
-### Real-World Applications
+### 4.1.7 Real-World Applications
 -	Operating systems: Procedural programming is used in operating systems, such as Windows and Linux.
 -	Games: Procedural programming is used in game development, such as in game engines like Unity.
 -	Embedded systems: Procedural programming is used in embedded systems, such as traffic lights and microwave ovens.
 
-## Object-Oriented Programming (OOP)
+## 4.2 Object-Oriented Programming (OOP)
 
-### Definition
+### 4.2.1 Definition
 Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects and classes. It's based on the idea of organizing and structuring software design around data, or objects, rather than functions and logic.
 
-### Key Concepts
+### 4.2.2 Key Concepts
 -	Classes: A class is a blueprint or template that defines the properties and behavior of an object.
 -	Objects: An object is an instance of a class, and has its own set of attributes (data) and methods (functions).
 -	Inheritance: Inheritance is the mechanism by which one class can inherit the properties and behavior of another class.
@@ -234,113 +234,113 @@ Object-Oriented Programming (OOP) is a programming paradigm that revolves around
 -	Encapsulation: Encapsulation is the concept of bundling data and methods that operate on that data within a single unit, making it harder for other parts of the program to access or modify the data directly.
 -	Abstraction: Abstraction is the concept of showing only the necessary information to the outside world while hiding the internal details.
 
-### Principles
+### 4.2.3 Principles
 -	Single Responsibility Principle (SRP): A class should have only one reason to change.
 -	Open-Closed Principle (OCP): A class should be open for extension but closed for modification.
 -	Liskov Substitution Principle (LSP): Subtypes should be substitutable for their base types.
 -	Interface Segregation Principle (ISP): A client should not be forced to depend on interfaces it does not use.
 -	Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules, but both should depend on abstractions.
 
-### Benefits
+### 4.2.4 Benefits
 -	Modularity: OOP promotes modularity, making it easier to develop and maintain large systems.
 -	Reusability: OOP enables code reusability, reducing development time and costs.
 -	Easier Maintenance: OOP makes it easier to modify and extend existing code.
 -	Improved Readability: OOP promotes self-documenting code, making it easier for others to understand.
 
-### Real-World Applications
+### 4.2.5 Real-World Applications
 -	Web Development: OOP is widely used in web development frameworks such as Ruby on Rails and Django.
 -	Mobile App Development: OOP is used in mobile app development frameworks such as Android and iOS.
 -	Game Development: OOP is used in game development engines such as Unity and Unreal Engine.
 -	Enterprise Software: OOP is used in enterprise software development for large-scale systems.
 
-## Functional Programming
+## 4.3 Functional Programming
 
-### Definition
+### 4.3.1 Definition
 
 Functional programming is a programming paradigm that emphasizes the use of pure functions, immutability, and the avoidance of changing state.
 
-### Key Concepts
+### 4.3.2 Key Concepts
 -	Pure Functions: Functions that always return the same output given the same inputs, without side effects.
 -	Immutability: Data that cannot be changed once created.
 -	Recursion: A function that calls itself repeatedly until it reaches a base case.
 -	Higher-Order Functions: Functions that take other functions as arguments or return functions as output.
 -	Lambda Functions: Small, anonymous functions that can be defined inline.
 
-### Principles
+### 4.3.3 Principles
 -	Declarative Programming: Focus on what the program should accomplish, rather than how it should accomplish it.
 -	Immutable Data: Avoid changing state by using immutable data structures.
 -	Function Composition: Break down complex functions into smaller, reusable functions.
 -	Avoid Side Effects: Minimize or eliminate side effects, such as changing external state or performing I/O operations.
 
-### Benefits
+### 4.3.4 Benefits
 -	Easier Debugging: Pure functions and immutability make it easier to debug and test code.
 -	Improved Code Reusability: Higher-order functions and function composition enable code reusability.
 -	Better Concurrency: Immutable data and pure functions make it easier to write concurrent code.
 
-### Real-World Applications
+### 4.3.5 Real-World Applications
 -	Data Processing: Functional programming is well-suited for data processing and analysis.
 -	Machine Learning: Functional programming can be used to implement machine learning algorithms.
 -	Web Development: Functional programming can be used for web development, especially with frameworks like React.
 -	Distributed Systems: Functional programming can be used to write concurrent and distributed systems.
 
-## Event-driven Programming
+## 4.4 Event-driven Programming
 
-### Definition
+### 4.4.1 Definition
 Event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user interactions, network requests, or timer events.
 
-### Key Concepts
+### 4.4.2 Key Concepts
 -	Events: Events are occurrences that trigger a response in the program.
 -	Event Handlers: Event handlers are functions that are called in response to an event.
 -	Event Loop: The event loop is the mechanism that waits for events to occur and calls the corresponding event handlers.
 -	Asynchronous Programming: Event-driven programming often involves asynchronous programming, where the program continues to run while waiting for events to occur.
 
-### Characteristics
+### 4.4.3 Characteristics
 -	Decoupling: Event-driven programming decouples the event producer from the event consumer, allowing for greater flexibility and scalability.
 -	Loose Coupling: Event-driven programming promotes loose coupling between components, making it easier to modify and maintain the program.
 -	Reactive Programming: Event-driven programming is a form of reactive programming, where the program reacts to events rather than following a predetermined sequence.
 
-### Benefits
+### 4.4.4 Benefits
 -	Improved Responsiveness: Event-driven programming allows for improved responsiveness, as the program can respond immediately to user interactions.
 -	Scalability: Event-driven programming promotes scalability, as the program can handle multiple events concurrently.
 -	Flexibility: Event-driven programming provides flexibility, as event handlers can be easily added or modified.
 
-### Common Event-Driven Programming Languages
+### 4.4.5 Common Event-Driven Programming Languages
 -	JavaScript: JavaScript is a popular language for event-driven programming, particularly in web development.
 -	Python: Python is often used for event-driven programming, especially with frameworks like Twisted and Tornado.
 -	Java: Java is used for event-driven programming, particularly in Android app development.
 
-### Real-World Applications
+### 4.4.6 Real-World Applications
 •	Web Development: Event-driven programming is widely used in web development, particularly with frameworks like React and Angular.
 •	Mobile App Development: Event-driven programming is used in mobile app development, particularly in Android and iOS apps.
 •	Game Development: Event-driven programming is used in game development, particularly in games that require real-time user interaction.
 •	Desktop Applications: Event-driven programming is used in desktop applications, particularly in applications that require real-time user interaction.
 
-# Lesson 04 Data Structures and Algorithms
+# Lesson 5 Data Structures and Algorithms
 
-## Introduction to data structures (Arrays, Linked Lists, Stacks, Queues)
+## 5.1 Introduction to data structures (Arrays, Linked Lists, Stacks, Queues)
 
-### Arrays
+### 5.1.1 Arrays
 -	Definition: A collection of elements of the same data type stored in contiguous memory locations.
 -	Characteristics: Fixed size, homogeneous elements, and random access.
 -	Operations: Indexing, slicing, appending, inserting, deleting, searching, and sorting.
 -	Advantages: Fast access and modification, efficient memory usage.
 -	Disadvantages: Fixed size, insertion and deletion can be slow.
 
-### Linked Lists
+### 5.1.2 Linked Lists
 -	Definition: A dynamic collection of elements, where each element points to the next element.
 -	Characteristics: Dynamic size, heterogeneous elements, and sequential access.
 -	Operations: Insertion, deletion, searching, and traversal.
 -	Advantages: Dynamic size, efficient insertion and deletion.
 -	Disadvantages: Slow search and access.
 
-### Stacks
+### 5.1.3 Stacks
 -	Definition: A Last-In-First-Out (LIFO) data structure, where elements are added and removed from the top.
 -	Characteristics: LIFO order, elements are added and removed from the top.
 -	Operations: Push, pop, peek, and isEmpty.
 -	Advantages: Efficient addition and removal of elements.
 -	Disadvantages: Limited access to elements.
 
-### Queues
+### 5.1.4 Queues
 -	Definition: A First-In-First-Out (FIFO) data structure, where elements are added to the end and removed from the front.
 -	Characteristics: FIFO order, elements are added to the end and removed from the front.
 -	Operations: Enqueue, dequeue, peek, and isEmpty.
@@ -349,9 +349,9 @@ Event-driven programming is a programming paradigm in which the flow of the prog
 
 These data structures are fundamental building blocks for more complex data structures and algorithms. Understanding their characteristics, operations, advantages, and disadvantages is essential for effective programming.
 
-## Sorting and Searching Algorithms
+## 5.2 Sorting and Searching Algorithms
 
-### Sorting Algorithms
+### 5.2.1 Sorting Algorithms
 -	Bubble Sort: Works by repeatedly swapping the adjacent elements if they are in wrong order.
 -	Selection Sort: Works by selecting the smallest element from the unsorted portion of the list and swapping it with the first unsorted element.
 -	Insertion Sort: Works by iterating through the list one element at a time, inserting each element into its proper position within the previously sorted portion of the list.
@@ -360,83 +360,83 @@ These data structures are fundamental building blocks for more complex data stru
 -	Heap Sort: Works by building a heap from the list, then repeatedly removing the largest element from the heap and placing it at the end of the list.
 -	Radix Sort: Works by sorting the list based on the digits of the elements, starting from the least significant digit.
 
-### Searching Algorithms
+### 5.2.2 Searching Algorithms
 -	Linear Search: Works by iterating through the list one element at a time, checking if each element matches the target value.
 -	Binary Search: Works by repeatedly dividing the list in half and searching for the target value within one of the two halves.
 -	Hash Table Search: Works by using a hash function to map the target value to a specific index in the hash table, then checking if the value is present at that index.
 
-## Graphs and Trees
+## 5.3 Graphs and Trees
 
-### Graphs:
+### 5.3.1 Graphs:
 
-#### Definition
+#### 5.3.1.2 Definition
 A graph is a non-linear data structure consisting of nodes (vertices) connected by edges.
 
-#### Types:
+#### 5.3.1.3 Types:
 -	Undirected Graph: Edges have no direction.
 -	Directed Graph: Edges have direction.
 -	Weighted Graph: Edges have weights or labels.
 -	Unweighted Graph: Edges have no weights or labels.
 
-#### Graph Terminology
+#### 5.3.1.4 Graph Terminology
 -	Vertex: A node in the graph.
 -	Edge: A connection between two vertices.
 -	Neighbor: A vertex connected to another vertex by an edge.
 -	Degree: The number of edges incident on a vertex.
 
-#### Graph Operations
+#### 5.3.1.5 Graph Operations
 -	Insertion: Adding a new vertex or edge.
 -	Deletion: Removing a vertex or edge.
 -	Traversal: Visiting each vertex in a specific order.
 
-### Trees:
+### 5.3.2 Trees:
 
-#### Definition 
+#### 5.3.2.1 Definition 
 A tree is a connected, undirected graph with no cycles.
 
-#### Types
+#### 5.3.2.2 Types
 -	Binary Tree: Each vertex has at most two children.
 -	B-Tree: A self-balancing search tree.
 -	Heap: A specialized tree-based data structure.
 
-#### Tree Terminology
+#### 5.3.2.3 Tree Terminology
 -	Root: The topmost vertex.
 -	Leaf: A vertex with no children.
 -	Parent: A vertex that has a child.
 -	Child: A vertex that has a parent.
 -	Sibling: Vertices that share the same parent.
 
-#### Tree Operations:
+#### 5.3.2.4 Tree Operations:
 -	Insertion: Adding a new vertex.
 -	Deletion: Removing a vertex.
 -	Traversal: Visiting each vertex in a specific order.
 
-### Graph and Tree Algorithms:
+### 5.4 Graph and Tree Algorithms:
 
-#### Graph Algorithms
+#### 5.4.1 Graph Algorithms
 -	Breadth-First Search (BFS): Traversing a graph level by level.
 -	Depth-First Search (DFS): Traversing a graph by exploring as far as possible along each branch.
 -	Dijkstra's Algorithm: Finding the shortest path between two vertices.
 
-#### Tree Algorithms
+#### 5.4.2 Tree Algorithms
 -	In order Traversal: Visiting the left subtree, the root, and then the right subtree.
 -	Preorder Traversal: Visiting the root, the left subtree, and then the right subtree.
 -	Post order Traversal: Visiting the left subtree, the right subtree, and then the root.
 
-### Applications
+### 5.5 Applications
 
-#### Graphs
+#### 5.5.1 Graphs
 -	Social Network Analysis: Modeling relationships between people.
 -	Traffic Patterns: Analyzing traffic flow and optimizing routes.
 -	Recommendation Systems: Suggesting products based on user behavior.
 
-#### Trees
+#### 5.5.2 Trees
 -	File Systems: Organizing files and directories.
 -	Database Indexing: Efficiently retrieving data.
 -	Compilers: Parsing and analyzing source code.
 
 
-## Big-O Notation and Complexity Analysis
+## 5.6 Big-O Notation and Complexity Analysis
 
 ### Big-O Notation
 Big-O notation is a mathematical notation that describes the complexity of an algorithm, which is the amount of time or space it requires as the input size increases.
