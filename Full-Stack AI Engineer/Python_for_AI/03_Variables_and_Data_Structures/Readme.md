@@ -96,3 +96,85 @@ x = 5
 x = 10
 print(x)
 ```
+
+## Examples of Code for each variable and data structure
+
+Here are examples of code for each variable and data structure:
+
+### Integer
+```
+x = 5
+print(x)  # Output: 5
+print(type(x))  # Output: <class 'int'>
+```
+
+### Float
+```
+x = 3.14
+print(x)  # Output: 3.14
+print(type(x))  # Output: <class 'float'>
+```
+
+### Complex
+```
+x = 3 + 4j
+print(x)  # Output: (3+4j)
+print(type(x))  # Output: <class 'complex'>
+```
+
+### String
+```
+x = "Hello, World!"
+print(x)  # Output: Hello, World!
+print(type(x))  # Output: <class 'str'>
+```
+
+### Boolean
+```
+x = True
+print(x)  # Output: True
+print(type(x))  # Output: <class 'bool'>
+```
+
+### List
+```
+fruits = ["apple", "banana", "cherry"]
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
+print(type(fruits))  # Output: <class 'list'>
+```
+
+### Tuple
+```
+fruits = ("apple", "banana", "cherry")
+print(fruits)  # Output: ('apple', 'banana', 'cherry')
+print(type(fruits))  # Output: <class 'tuple'>
+```
+
+### Dictionary
+```
+person = {"name": "John", "age": 30, "city": "New York"}
+print(person)  # Output: {'name': 'John', 'age': 30, 'city': 'New York'}
+print(type(person))  # Output: <class 'dict'>
+```
+
+### Set
+```
+colors = {"red", "green", "blue"}
+print(colors)  # Output: {'red', 'green', 'blue'}
+print(type(colors))  # Output: <class 'set'>
+```
+
+### Bytes
+```
+x = b"Hello, World!"
+print(x)  # Output: b'Hello, World!'
+print(type(x))  # Output: <class 'bytes'>
+```
+
+### Bytearray
+```
+x = bytearray(b"Hello, World!")
+print(x)  # Output: bytearray(b'Hello, World!')
+print(type(x))  # Output: <class 'bytearray'>
+```
+
