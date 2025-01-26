@@ -6,3 +6,5 @@ Learning Python for Artificial Intelligence is a highly rewarding investment in 
 [01 Introduction to AI with Python](01_Introduction_to_AI_with_Python/Readme.md)
 
 [02 Python Programming Fundamentals](02_Python_Programming_Fundamentals/Readme.md)
+
+[03 Variables and Data Structures](03_Variables_and_Data_Structures/Readme.md)
