@@ -5,32 +5,15 @@ In Python, variables are used to store and manipulate data. A variable is a name
 When a variable is declared and assigned a value, a series of steps occur to store the data in memory. Firstly, the compiler allocates a small amount of memory to store the variable name and its associated data type. Next, a block of memory is allocated to store the assigned value, with the size of the block depending on the data type. The value is then stored in the allocated memory block, and the memory address of the block is associated with the variable name. Finally, the compiler keeps track of the memory address, allowing it to access the stored value when the variable is used in the code. For example, when assigning the value 5 to the variable x, the compiler allocates a 4-byte memory block, stores the value 5, and associates the memory address with the variable name x, allowing it to retrieve the value when needed.
 
 ### Process Understandings
-Step 1: Variable Declaration
-
-When a variable is declared, the compiler allocates a small amount of memory to store the variable's name and its associated data type.
-
-Step 2: Memory Allocation
-
-When a value is assigned to the variable, the compiler allocates a block of memory to store the value. The size of the memory block depends on the data type of the variable.
-
-Step 3: Value Storage
-
-The assigned value is stored in the allocated memory block. The memory address of the block is associated with the variable name.
-
-Step 4: Memory Addressing
-
-The compiler keeps track of the memory address associated with each variable. When the variable is used in the code, the compiler uses the memory address to access the stored value.
-
-Example
-
-Suppose we declare a variable x and assign it the value 5:
-
-
+- Step 1: Variable Declaration: When a variable is declared, the compiler allocates a small amount of memory to store the variable's name and its associated data type.
+- Step 2: Memory Allocation: When a value is assigned to the variable, the compiler allocates a block of memory to store the value. The size of the memory block depends on the data type of the variable.
+- Step 3: Value Storage: The assigned value is stored in the allocated memory block. The memory address of the block is associated with the variable name.
+- Step 4: Memory Addressing: The compiler keeps track of the memory address associated with each variable. When the variable is used in the code, the compiler uses the memory address to access the stored value.
+- Example: Suppose we declare a variable x and assign it the value 5:
+```
 x = 5
-
-
+```
 Here's what happens in memory:
-
 1. Variable Declaration: The compiler allocates a small amount of memory to store the variable name x and its associated data type int.
 2. Memory Allocation: The compiler allocates a block of memory to store the value 5. Since x is an int, the memory block is 4 bytes (32 bits) in size.
 3. Value Storage: The value 5 is stored in the allocated memory block. The memory address of the block is associated with the variable name x.
@@ -55,6 +38,33 @@ Example: Assigning a Value to a Variable
 x = 5
 y = "Hello"
 ```
+
+### Memory size of various data structures in Python
+
+Here is a table showing the memory size of various data structures in Python:
+
+| Data Structure | Memory Size (bytes) |
+| --- | --- |
+| Integer (int) | 8 (28 bytes for small integers) |
+| Float (float) | 8 |
+| Complex (complex) | 16 |
+| String (str) | 50-100 (depending on length) |
+| Boolean (bool) | 1 |
+| List (list) | 56 + 8 * len(list) |
+| Tuple (tuple) | 40 + 8 * len(tuple) |
+| Dictionary (dict) | 140 + 8 * len(dict) |
+| Set (set) | 112 + 8 * len(set) |
+| Bytes (bytes) | len(bytes) |
+| Bytearray (bytearray) | len(bytearray) + 1 |
+
+Note:
+
+- The memory sizes listed are approximate and may vary depending on the Python implementation and the system architecture.
+- The memory size of a list, tuple, dictionary, or set includes the overhead of the container itself, as well as the memory required to store each element.
+- The memory size of a string includes the overhead of the string object itself, as well as the memory required to store the string data.
+- The memory size of an integer can vary depending on its value. Small integers (in the range -5 to 256) are stored in a single byte, while larger integers are stored in multiple bytes.
+
+NOTE: You can use the sys.getsizeof() function to get the exact memory size of an object in Python.
 
 ### Data Types of Variables
 
