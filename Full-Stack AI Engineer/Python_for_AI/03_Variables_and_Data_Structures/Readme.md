@@ -5,11 +5,7 @@ In Python, variables are used to store and manipulate data. A variable is a name
 When a variable is declared and assigned a value, a series of steps occur to store the data in memory. Firstly, the compiler allocates a small amount of memory to store the variable name and its associated data type. Next, a block of memory is allocated to store the assigned value, with the size of the block depending on the data type. The value is then stored in the allocated memory block, and the memory address of the block is associated with the variable name. Finally, the compiler keeps track of the memory address, allowing it to access the stored value when the variable is used in the code. For example, when assigning the value 5 to the variable x, the compiler allocates a 4-byte memory block, stores the value 5, and associates the memory address with the variable name x, allowing it to retrieve the value when needed.
 
 ### Process Understandings
-- Step 1: Variable Declaration: When a variable is declared, the compiler allocates a small amount of memory to store the variable's name and its associated data type.
-- Step 2: Memory Allocation: When a value is assigned to the variable, the compiler allocates a block of memory to store the value. The size of the memory block depends on the data type of the variable.
-- Step 3: Value Storage: The assigned value is stored in the allocated memory block. The memory address of the block is associated with the variable name.
-- Step 4: Memory Addressing: The compiler keeps track of the memory address associated with each variable. When the variable is used in the code, the compiler uses the memory address to access the stored value.
-- Example: Suppose we declare a variable x and assign it the value 5:
+
 ```
 x = 5
 ```
