@@ -178,6 +178,50 @@ print(x)  # Output: bytearray(b'Hello, World!')
 print(type(x))  # Output: <class 'bytearray'>
 ```
 
+## Mutable and Immutable data structures
+
+Here's a differentiation between mutable and immutable data structures:
+
+### Mutable Data Structures
+
+- Can be modified after creation
+- Changes made to the data structure affect the original data
+- Examples:
+    - Lists ([])
+    - Dictionaries ({})
+    - Sets (set())
+    - Bytearrays (bytearray())
+
+### Immutable Data Structures
+
+- Cannot be modified after creation
+- Changes made to the data structure create a new copy of the data
+- Examples:
+    - Tuples (())
+    - Strings ("" or '')
+    - Integers (int)
+    - Floats (float)
+    - Complex numbers (complex)
+    - Frozensets (frozenset())
+
+### Key differences:
+
+1. Modifiability: Mutable data structures can be modified, while immutable data structures cannot.
+2. Memory allocation: When a mutable data structure is modified, the changes are made in-place, without allocating new memory. Immutable data structures, on the other hand, allocate new memory for each modification.
+3. Thread safety: Immutable data structures are inherently thread-safe, as multiple threads cannot modify them simultaneously. Mutable data structures require synchronization mechanisms to ensure thread safety.
+4. Hashability: Immutable data structures can be hashed, making them suitable for use as dictionary keys or set elements. Mutable data structures cannot be hashed.
+
+### When to use each:
+
+1. Use mutable data structures:
+    - When frequent modifications are necessary.
+    - When working with large datasets that need to be updated efficiently.
+2. Use immutable data structures:
+    - When data integrity is crucial, and modifications should be explicit.
+    - When working with multi-threaded environments, where thread safety is essential.
+    - When using data structures as dictionary keys or set elements.
+
+
 ## Key Takeaways
 1. Choose variable names that accurately describe the variable's purpose.
 2. Be aware of the scope of your variables to avoid unexpected behavior.
