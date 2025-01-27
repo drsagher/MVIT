@@ -23,11 +23,8 @@ Here's a simplified illustration of the memory layout:
 
 In this example, the memory address 1000 is associated with the variable x, and the value 5 is stored at that address.
 
-
-In Python, a variable is a name given to a value. Variables are used to store and manipulate data in a program.
 ### Declaring Variables in Python
-
-In Python, you don't need to declare variables before using them. You can assign a value to a variable using the assignment operator (=).
+A variable is a name given to a value. Variables are used to store and manipulate data in a program. In Python, you don't need to declare variables before using them. You can assign a value to a variable using the assignment operator (=).
 
 Example: Assigning a Value to a Variable
 ```
@@ -199,30 +196,6 @@ An immutable data structure is a data structure that cannot be modified after it
 - Examples: Tuples, Strings, Integers, Floats, Complex numbers, Frozensets
 
 In summary, mutable data structures can be modified in-place, while immutable data structures cannot be modified and require creating a new copy when changes are made.
-
-## Difference between mutable and immutable data structures:
-
-### Mutable Data Structures
-
-- Can be modified after creation
-- Changes made to the data structure affect the original data
-- Examples:
-    - Lists ([])
-    - Dictionaries ({})
-    - Sets (set())
-    - Bytearrays (bytearray())
-
-### Immutable Data Structures
-
-- Cannot be modified after creation
-- Changes made to the data structure create a new copy of the data
-- Examples:
-    - Tuples (())
-    - Strings ("" or '')
-    - Integers (int)
-    - Floats (float)
-    - Complex numbers (complex)
-    - Frozensets (frozenset())
 
 ### Key differences:
 
