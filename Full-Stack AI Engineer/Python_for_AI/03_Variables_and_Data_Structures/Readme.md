@@ -180,7 +180,31 @@ print(type(x))  # Output: <class 'bytearray'>
 
 ## Mutable and Immutable data structures
 
-Here's a differentiation between mutable and immutable data structures:
+### Mutable Data Structures
+
+A mutable data structure is a data structure that can be modified after it is created. Mutable data structures can be changed in-place, meaning that the original data structure is altered. This can be done by adding, removing, or modifying elements within the data structure.
+
+#### Characteristics of Mutable Data Structures
+
+- Can be modified after creation
+- Changes are made in-place
+- Original data structure is altered
+- Examples: Lists, Dictionaries, Sets, Bytearrays
+
+### Immutable Data Structures
+
+An immutable data structure is a data structure that cannot be modified after it is created. Immutable data structures cannot be changed in-place; instead, a new copy of the data structure is created when modifications are made.
+
+#### Characteristics of Immutable Data Structures
+
+- Cannot be modified after creation
+- Changes create a new copy of the data structure
+- Original data structure remains unchanged
+- Examples: Tuples, Strings, Integers, Floats, Complex numbers, Frozensets
+
+In summary, mutable data structures can be modified in-place, while immutable data structures cannot be modified and require creating a new copy when changes are made.
+
+## Difference between mutable and immutable data structures:
 
 ### Mutable Data Structures
 
