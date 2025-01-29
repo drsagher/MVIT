@@ -59,6 +59,64 @@ Note:
 
 NOTE: You can use the sys.getsizeof() function to get the exact memory size of an object in Python.
 
+### Use the sys.getsizeof()
+```
+import sys
+
+# Integer
+x = 10
+print(f"Memory size of integer {x}: {sys.getsizeof(x)} bytes")
+
+# Float
+y = 3.14
+print(f"Memory size of float {y}: {sys.getsizeof(y)} bytes")
+
+# String
+name = "John Doe"
+print(f"Memory size of string '{name}': {sys.getsizeof(name)} bytes")
+
+# List
+fruits = ["apple", "banana", "cherry"]
+print(f"Memory size of list {fruits}: {sys.getsizeof(fruits)} bytes")
+
+# Tuple
+colors = ("red", "green", "blue")
+print(f"Memory size of tuple {colors}: {sys.getsizeof(colors)} bytes")
+
+# Dictionary
+person = {"name": "John", "age": 30}
+print(f"Memory size of dictionary {person}: {sys.getsizeof(person)} bytes")
+
+# Set
+numbers = {1, 2, 3, 4, 5}
+print(f"Memory size of set {numbers}: {sys.getsizeof(numbers)} bytes")
+
+# Bytes
+byte_data = b"Hello, World!"
+print(f"Memory size of bytes {byte_data}: {sys.getsizeof(byte_data)} bytes")
+
+# Bytearray
+byte_array = bytearray(b"Hello, World!")
+print(f"Memory size of bytearray {byte_array}: {sys.getsizeof(byte_array)} bytes")
+
+# Array
+import array
+arr = array.array('i', [1, 2, 3, 4, 5])
+print(f"Memory size of array {arr}: {sys.getsizeof(arr)} bytes")
+
+# None
+none_value = None
+print(f"Memory size of None: {sys.getsizeof(none_value)} bytes")
+
+# Boolean
+bool_value = True
+print(f"Memory size of boolean {bool_value}: {sys.getsizeof(bool_value)} bytes")
+
+# Complex number
+complex_value = 3 + 4j
+print(f"Memory size of complex number {complex_value}: {sys.getsizeof(complex_value)} bytes")
+```
+
 ### Data Types of Variables
 
 Python variables can hold different data types, including:
@@ -71,15 +129,16 @@ Python variables can hold different data types, including:
 - Tuple (tuple): ordered, immutable collections of values, e.g., (1, 2, 3), ("a", "b", "c"), etc.
 
 Example: Variables with Different Data Types
-
+```
 x = 5  # integer variable
 y = 3.14  # float variable
 name = "John"  # string variable
 isAdmin = True  # boolean variable
 numbers = [1, 2, 3, 4, 5]  # list variable
 colors = ("red", "green", "blue")  # tuple variable
-
+```
 ### Reassigning Variables
+Reassigning variables is a fundamental concept in programming that allows developers to update the value of a variable after it has been declared. This technique is essential for simplifying code, improving readability, and reducing memory usage. By reassigning variables, developers can adapt to changing requirements, support dynamic typing, and write more efficient and effective code. Whether it's swapping values, simplifying calculations, or updating variables in a loop, reassigning variables is a crucial skill for any programmer to master.
 
 In Python, you can reassign a variable to hold a different value.
 
