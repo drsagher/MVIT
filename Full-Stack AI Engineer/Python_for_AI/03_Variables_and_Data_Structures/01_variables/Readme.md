@@ -4,46 +4,42 @@ A variable is a symbolic name or identifier that represents a value stored in me
 ## Introduction to Variables
 When a variable is declared and assigned a value, a series of steps occur to store the data in memory. Firstly, the compiler allocates a small amount of memory to store the variable name and its associated data type. Next, a block of memory is allocated to store the assigned value, with the size of the block depending on the data type. The value is then stored in the allocated memory block, and the memory address of the block is associated with the variable name. Finally, the compiler keeps track of the memory address, allowing it to access the stored value when the variable is used in the code. For example, when assigning the value 5 to the variable x, the compiler allocates a 4-byte memory block, stores the value 5, and associates the memory address with the variable name x, allowing it to retrieve the value when needed.
 
-### Process Understandings
+## Primitive Data Types
+Python, unlike some statically typed languages (e.g., C, Java), does not have "primitive" data types in the strictest sense. Instead, all data types in Python are objects. However, Python includes basic built-in types that behave similarly to primitives in other languages. These are lightweight and commonly used for simple values. The core "primitive-like" data types in Python are:
+- Integers (int)
+- Floating-Point Numbers (float)
+- Booleans (bool)
+- Strings (str) (used to represent characters and text)
+```
+# Integers (int)
+a = 10       # Positive integer
+b = -5       # Negative integer
+c = 0        # Zero
+d = 12345678901234567890  # Extremely large integer (allowed in Python)
+
+# Floating-Point Numbers (float)
+x = int(3.9)   # x = 3 (truncates decimal)
+y = int("42")  # y = 42
+a = 3.14        # Standard float
+b = -0.5        # Negative float
+c = 2.0         # Float equivalent of integer 2
+d = 6.022e23    # Scientific notation (Avogadro's number)
+
+# Booleans (bool)
+a = True
+b = False
+c = (5 > 3)    # c = True
+d = (10 == 20) # d = False
+if 0:          # Evaluates to False
+if "Hello":    # Evaluates to True (non-empty string)
+
+# Strings (str)
+char = 'A'          # Single character (string of length 1)
+text = "Hello"      # Multi-character string
+multiline = """Line 1
+Line 2"""           # Multi-line string
 
 ```
-x = 5
-```
-Here's what happens in memory:
-1. Variable Declaration: The compiler allocates a small amount of memory to store the variable name x and its associated data type int.
-2. Memory Allocation: The compiler allocates a block of memory to store the value 5. Since x is an int, the memory block is 4 bytes (32 bits) in size.
-3. Value Storage: The value 5 is stored in the allocated memory block. The memory address of the block is associated with the variable name x.
-4. Memory Addressing: The compiler keeps track of the memory address associated with x. When x is used in the code, the compiler uses the memory address to access the stored value 5.
-
-Here's a simplified illustration of the memory layout:
-
-| Memory Address | Value |
-| --- | --- |
-| 1000 (x) | 5 |
-
-In this example, the memory address 1000 is associated with the variable x, and the value 5 is stored at that address.
-
-### Data Types of Variables
-
-Python variables can hold different data types, including:
-
-- Integers (int): whole numbers, e.g., 1, 2, 3, etc.
-- Floats (float): decimal numbers, e.g., 3.14, -0.5, etc.
-- Strings (str): sequences of characters, e.g., "hello", 'hello', etc. Strings can be enclosed in single quotes or double quotes.
-- Boolean (bool): true or false values
-- List (list): ordered collections of values, e.g., [1, 2, 3], ["a", "b", "c"], etc.
-- Tuple (tuple): ordered, immutable collections of values, e.g., (1, 2, 3), ("a", "b", "c"), etc.
-
-Example: Variables with Different Data Types
-```
-x = 5  # integer variable
-y = 3.14  # float variable
-name = "John"  # string variable
-isAdmin = True  # boolean variable
-numbers = [1, 2, 3, 4, 5]  # list variable
-colors = ("red", "green", "blue")  # tuple variable
-```
-
 ## Purpose of Variables in Programming
 Variables serve several key purposes in programming:
 - Data Storage: Variables allow programs to store data temporarily or permanently for later use.
