@@ -23,6 +23,11 @@ We Ignite Curiosity and Illuminate Possibilities. We empower people by offering 
 - [Advance Professional Certificate in Web Development (APCWD)](https://www.mvut.us/pages/study/programs/msfsd)
 - [Certificate of Philosophy in Web Development (CPWD)](https://www.mvut.us/pages/study/programs/phdfsd)
 
+## Micro Learning Modules
+Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
+
+[List of Micro Modules](Courses/Readme.md)
+
 Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy. 
 
 [APPLY NOW!](https://www.mvut.us/pages/apply) 
