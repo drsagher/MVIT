@@ -515,12 +515,12 @@ Use ```_blank``` sparingly:
 
 ---
 
-### Key Notes:
+#### 6. Key Notes:
 - **Default**: `target="_self"` is implied if omitted.
 - **Security**: Always use `rel="noopener noreferrer"` with `target="_blank"` for external links.
 - **Accessibility**: Indicate when links open in new tabs (e.g., `(opens in new tab)` in anchor text).
 
-#### 6. Other Target Attributes
+#### 7. Other Target Attributes
 While _blank and _self are most common, HTML supports additional values:
 - ```_parent```: Opens in the parent frame (used in framesets).
 - ```_top```: Opens in the full body of the window (escaping frames).
