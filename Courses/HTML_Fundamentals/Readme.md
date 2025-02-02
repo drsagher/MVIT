@@ -274,5 +274,69 @@ HTML Elements and Tags are the building blocks of a web page, used to define the
 | ```<summary>``` | Summary or caption for a details element | ```<summary>Summary text</summary>``` |
 | ```<time>``` | Date or time | ```<time>2022-07-25</time>``` |
 
+## Lesson 4 Working with Links
+In HTML, URLs (Uniform Resource Locators) are used to link to resources like web pages, images, scripts, or stylesheets. These URLs can be structured as absolute or relative, each serving different purposes and use cases. Below is a breakdown of their differences, syntax, and best practices.
+### Absolute vs. relative URLs
+#### 1. Absolute URLs
+An absolute URL specifies the complete path to a resource, including the protocol (e.g., https://), domain name, and full directory structure. It provides an exact location, independent of the current page’s location.
 
+Syntax:
+```protocol://domain/path/to/resource```
+Example:
+```
+<a href="https://www.example.com/blog/post.html">Read Post</a>
+<img src="https://www.example.com/images/logo.png">
+```
+
+Key Features:
+- Self-contained: Works from any location (even outside the website).
+- External links: Required when linking to resources on a different domain.
+- Explicit: No ambiguity in resolving the resource’s location.
+
+Pros:
+- Guaranteed to work regardless of the current page’s URL.
+- Essential for cross-domain resources (e.g., loading a CDN-hosted library).
+
+Cons:
+- Longer and harder to read/maintain.
+- Less portable: Requires updating all links if the domain changes.
+
+#### 2. Relative URLs
+A relative URL specifies a path relative to the current page’s location. It omits the protocol and domain, relying on the browser to resolve the full path based on the current page’s URL.
+
+Syntax Types:
+- Same Directory:```<a href="contact.html">Contact</a>  <!-- Looks in the current folder -->```
+- Subdirectory: ```<img src="images/photo.jpg">       <!-- Looks in the "images" subfolder -->```
+- Parent Directory:```<a href="../index.html">Home</a>   <!-- "../" moves up one directory -->```
+- Root-Relative (starts with /):```<link href="/styles/main.css">     <!-- Starts from the domain root -->```
+
+Key Features:
+- Portable: Works even if the domain changes (e.g., moving from dev to production).
+- Shorter: Cleaner code and easier maintenance for internal links.
+- Context-dependent: Paths are resolved relative to the current page’s URL.
+
+Pros:
+- Simplifies site structure updates (e.g., reorganizing directories).
+- Reduces redundancy in code.
+
+Cons:
+- May break if files are moved without updating relative paths.
+- Not suitable for external resources.
+
+#### 3. When to Use Each
+When deciding between absolute and relative URLs in HTML, it's essential to consider the context and purpose of the link. Absolute URLs, which include the full domain name and path (e.g., ```https://www.example.com/path/to/resource```, should be used when linking to external websites, resources that may be accessed directly, or when migrating content to a new domain. On the other hand, relative URLs, which specify the path relative to the current document (e.g., ```/path/to/resource or ../path/to/resource```), are suitable for internal linking within a website, as they simplify maintenance, reduce the risk of broken links, and improve page loading times. By choosing the right type of URL, developers can ensure their website's architecture is robust, scalable, and user-friendly.
+
+#### 4. The ```<base>``` Tag: Overriding Relative URL Context
+The HTML ```<base>``` tag in the ```<head>``` section defines a default base URL for relative links on a page. For example:```<base href="https://www.example.com/blog/">```
+All relative URLs (e.g., post.html) will resolve to https://www.example.com/blog/post.html. Use with caution, as it affects all links on the page.
+
+#### 5. Best Practices
+- Use relative URLs for internal resources to improve maintainability.
+- Use absolute URLs for external resources or when sharing links outside your site.
+- Test relative paths thoroughly to avoid broken links after restructuring files.
+- For root-relative paths (/path), ensure your site is hosted at the domain root.
+
+By understanding the differences between absolute and relative URLs, you can create more flexible, maintainable, and efficient HTML structures. Choose the right type based on context to ensure seamless navigation and resource loading.
+
+### Linking to external pages, internal sections (anchor links), emails (mailto:), and files (PDFs, etc.)
 
