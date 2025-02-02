@@ -256,3 +256,23 @@ HTML Elements and Tags are the building blocks of a web page, used to define the
 | ```<figcaption>``` | Caption for a figure | ```<figcaption>Caption text</figcaption>``` |
 | ```<canvas>``` | Canvas for dynamic graphics | ```<canvas id="canvas" width="400" height="200"></canvas>``` |
 
+###  HTML Semantic Tags
+
+| Tag | Description | Example |
+| --- | --- | --- |
+| ```<article>``` | Independent piece of content | ```<article>...</article>``` |
+| ```<aside>``` | Tangential content | ```<aside>...</aside>``` |
+| ```<details>``` | Details with a disclosure widget | ```<details>...</details>``` |
+| ```<figcaption>``` | Caption for a figure | ```<figcaption>Caption text</figcaption>``` |
+| ```<figure>``` | Figure with a caption | ```<figure>...</figure>``` |
+| ```<footer>``` | Footer section | ```<footer>...</footer>``` |
+| ```<header>``` | Header section | ```<header>...</header>``` |
+| ```<main>``` | Main content section | ```<main>...</main>``` |
+| ```<mark>``` | Highlighted text | ```<mark>Highlighted text</mark>``` |
+| ```<nav>``` | Navigation section | ```<nav>...</nav>``` |
+| ```<section>``` | Section of related content | ```<section>...</section>``` |
+| ```<summary>``` | Summary or caption for a details element | ```<summary>Summary text</summary>``` |
+| ```<time>``` | Date or time | ```<time>2022-07-25</time>``` |
+
+
+
