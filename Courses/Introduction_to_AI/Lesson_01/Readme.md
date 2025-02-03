@@ -1,4 +1,4 @@
-# Introduction to Artificial Intelligence (AI)
+# Lesson 01 Introduction to Artificial Intelligence (AI)
 AI is one of the most transformative technologies of our era, but its definition, scope, and implications remain a topic of debate. Is AI simply a tool created to perform tasks, or is it a stepping stone toward creating machines that replicate human intelligence? This debate explores different perspectives on the nature and purpose of AI.
 
 ## 01. What is Intelligence?
