@@ -1,5 +1,7 @@
 # LESSON 01 TECHNOLOGY EVOLUTION AND FUTURE
 
+[Watch chapter summary in Urdu](https://www.youtube.com/watch?v=vzdMSBRMpq4)
+
 ## 1.1 Historical Perspectives of Life and Technologies
 
 Throughout history, life and technology have been deeply intertwined, each shaping and influencing the other in profound ways. Here are some key historical perspectives on the relationship between life and technology:
@@ -27,6 +29,7 @@ The 20th century saw the rapid development of new technologies, including automo
 Today, the relationship between life and technology continues to evolve and shape the world we live in. From artificial intelligence and robotics to biotechnology and space exploration, the possibilities for innovation and discovery are endless.
 
 ## 1.2 Technology Impacts On Human Life
+
 
 Technology has had a profound impact on human life in many ways. Here are some examples:
 
@@ -56,6 +59,14 @@ Technology has the potential to help address some of the world's biggest environ
 
 Overall, technology has had a significant impact on human life, enabling new forms of communication, education, healthcare, entertainment, work, and environmental sustainability. However, it has also raised concerns about privacy, security, social isolation, and the ethical implications of new technologies.
 
+## Learning Suppourtive Material
+
+[Dr. Victoria Lorrimar: Human Flourishing in a Technological World](https://www.youtube.com/watch?v=zU6JEgwYetI)
+
+[Technology Is Reinventing Humanity | Jordan Nguyen | TEDxSydney](https://www.youtube.com/watch?v=VxuWIXdYYyQ)
+
+[How technology impacts human behavior](https://www.youtube.com/watch?v=z_578GihaQY)
+
 ## 1.3 Web 3 and Metaverse
 
 Web 3 and the metaverse are two closely related concepts that are shaping the future of the internet and digital technology. While they are distinct ideas, they are often discussed together because they both represent a shift towards more immersive and decentralized experiences.
@@ -65,6 +76,30 @@ Web 3 refers to the next generation of the internet, which is characterized by d
 The metaverse, on the other hand, is a virtual universe that is built on top of the internet and web 3 technologies. It is a fully immersive, shared digital space where users can interact with each other, explore new environments, and engage in a wide range of activities such as gaming, socializing, and commerce. The metaverse is often compared to the internet itself, but with a more three-dimensional and interactive interface. It is seen as a new frontier for innovation and creativity, with the potential to transform many aspects of our lives.
 
 Together, web 3 and the metaverse are creating a new paradigm for digital technology, one that emphasizes user control, transparency, and community. They offer exciting new opportunities for creators, developers, and businesses, as well as enabling new forms of social interaction and creativity. However, they also raise important questions about privacy, security, and governance, as well as the potential for new forms of inequality and exclusion. As these technologies continue to evolve, it will be important to ensure that they serve the needs and interests of all users, and that they contribute to a more equitable and sustainable future.
+
+## Articles
+[Web3 vs. Metaverse: The Differences and Connections](https://hedera.com/learning/metaverse/web3-vs-metaverse)
+
+[Web 3.0 vs. Metaverse: A detailed comparison [UPDATED]](https://www.blockchain-council.org/metaverse/web-3-0-vs-metaverse/)
+
+[Differences between metaverse and web3](https://www.telefonica.com/en/communication-room/blog/differences-between-metaverse-and-web3/)
+
+[The Important Difference Between Web3 And The Metaverse](https://www.forbes.com/sites/bernardmarr/2022/02/22/the-important-difference-between-web3-and-the-metaverse/)
+
+## Videos
+
+[Web3/Metaverse Chat With Mark Zuckerberg](https://www.youtube.com/watch?v=iwyyxEJCIuU)
+
+[Difference between Web3 & Metaverse? | Blockchain Council](https://www.youtube.com/watch?v=tsCq0HPDCNU)
+
+[Metaverse and Web3 of the People, by the People, for the People | Andrew Kwan](https://www.youtube.com/watch?v=9digvdKz4_Y)
+
+[The Dream of Digital Ownership, Powered by the Metaverse | Yat Siu | TED](https://www.youtube.com/watch?v=IPvR43dRmRY)
+
+[What Is The Difference Between Web3 And The Metaverse?](https://www.youtube.com/watch?v=BCr6XxOd9eE)
+
+[From hype to reality: Convergence of Web3, Metaverse and Digital Twins](https://www.youtube.com/watch?v=an6y1cUI1tk)
+
 
 ## 1.4 Future of Metaverse
 
@@ -80,6 +115,24 @@ Of course, there are also challenges and risks associated with the metaverse, su
 
 Overall, the future of the metaverse is still uncertain, but it offers exciting possibilities for innovation, creativity, and social interaction. As this technology continues to evolve, it will be important to strike a balance between innovation and responsible stewardship, to ensure that the metaverse serves the needs and interests of all users.
 
+[Future of The Metaverse (2030 – 10,000 A.D.+)](https://www.youtube.com/watch?v=OD8jADtNzTY)
+
+[The Metaverse Explained – And What Comes Next | Insider Business](https://www.youtube.com/watch?v=jFUVZDPrB7U)
+
+[Gaming’s Biggest Opportunities and the Future of the Metaverse](https://www.youtube.com/watch?v=49bQkTeLcAI)
+
+[How will businesses use the metaverse?](https://www.youtube.com/watch?v=LEgHRAQ1HmE)
+
+[The Future of the Metaverse: Trends and Opportunities](https://medium.com/@shaziaimam56/the-future-of-the-metaverse-trends-and-opportunities-358c3e57aa44)
+
+[The Future of the Metaverse](https://www.elon.edu/u/imagining/surveys/xiv-2022/future-of-metaverse-web3-2040/)
+
+[Can the Metaverse Replace Reality in the Future](https://www.youtube.com/watch?v=qTSDsxk4Oig)
+
+[Facebook gives a glimpse of metaverse, its planned virtual reality world](https://www.youtube.com/watch?v=SAL2JZxpoGY)
+
+[The future of Meta's virtual reality headsets and the metaverse](https://www.youtube.com/watch?v=WHeijcTa2UY)
+
 ## 1.5 Machines verses Human
 
 The debate between machines and humans is a complex and ongoing discussion, particularly as technology continues to advance and machines become more sophisticated. There are many different perspectives on the topic, and it's important to consider both the benefits and potential drawbacks of machines versus humans.
@@ -91,3 +144,49 @@ On the other hand, humans have certain capabilities that machines cannot replica
 Another consideration is the potential impact of machines on the job market. As machines become more advanced and capable, there is concern that they may replace human workers in certain industries and professions. This could lead to job loss, income inequality, and social disruption, particularly for low-skilled workers who may not have the necessary training or education to adapt to new technologies.
 
 Ultimately, the debate between machines and humans is not an either/or proposition. Both machines and humans have their strengths and limitations, and the optimal approach will depend on the specific task or situation at hand. In many cases, a combination of machine and human capabilities may be the most effective and efficient solution. It's important to continue exploring the potential of both machines and humans, while also considering the ethical, social, and economic implications of their use.
+
+[Humans are not Machines (and vice versa)](https://www.youtube.com/watch?v=S-Ht7rleAXc)
+
+[The Human-or-Machine Issue: Turing-Inspired Reflections on an Everyday Matter](https://cacm.acm.org/research/the-human-or-machine-issue-turing-inspired-reflections-on-an-everyday-matter/)
+
+[Humans vs. Machines: Seven Myths (and Realities)](https://glocalthinking.com/en/humans-vs-machines-seven-myths-and-realities/)
+
+[HUMANS VS MACHINES](https://www.linkedin.com/pulse/humans-vs-machines-swathi-chandran/)
+
+[The Dissolving Border Between Humans and Machines](https://www.youtube.com/watch?v=TMMELW3amXg)
+
+[AI Machines and the New Super Humans | Inma Martinez](https://www.youtube.com/watch?v=NJ3mXJqqSJ8)
+
+[Augmented Intelligence - A Marriage between Machine and Human | Simon Stiebellehner](https://www.youtube.com/watch?v=26_U--eHn34)
+
+[Human justice and machine intelligence | Joanna Bryson](https://www.youtube.com/watch?v=uI7XC7WGyqk)
+
+[Can machines Think Like Humans? | Samuel Bosch](https://www.youtube.com/watch?v=IP0HXomV4j8)
+
+[Human and Machine Intelligence](https://www.youtube.com/watch?v=YcnyzsWxCDQ)
+
+[Human Intelligence (HI) versus Machine Intelligence (AI)](https://www.youtube.com/watch?v=KM2KnZ4qSA4)
+
+[Will humans merge with machines?](https://www.youtube.com/watch?v=q57H0YiOavE)
+
+[When do we want our machines to be more human | Jeremy Goslin](https://www.youtube.com/watch?v=Lt8mSB0cCvw)
+
+[AI and Human Uniqueness: Are We Just Sophisticated Computing Machines?](https://www.youtube.com/watch?v=28l9Voprs3c)
+
+[Human vs Machine: Who can be more human? | Sean Kelly and Lex Fridman](https://www.youtube.com/watch?v=s6C087xfn0c)
+
+[Humans + Machines Panel - Artificial Intelligence and Global Security Summit]()
+
+## Knowledge Extension
+
+[Evolution of Technology: Past, Present and Future](https://medium.com/@ja4401722/evolution-of-technology-past-present-and-future-566b267545d)
+
+[12 Predictions for the Future of Technology | Vinod Khosla | TED](https://www.youtube.com/watch?v=Pj9QnO9rZkE)
+
+[Experts Predict the Future of Technology, AI & Humanity | Tech Support | WIRED](https://www.youtube.com/watch?v=82L9Y_PVHUs)
+
+[Microsoft's Transformational Impact on the Hall of Human Life](https://www.youtube.com/watch?v=IeTZjoCjOd0)
+
+[The Future of Work - Humans and Machines Lecture Series by Robert Skidelsky](https://www.youtube.com/watch?v=gVB6Hcgz4ks)
+
+[Understanding the Machine: Can Humans and AI Work Together?](https://www.youtube.com/watch?v=KhS_lpT7Eis)
