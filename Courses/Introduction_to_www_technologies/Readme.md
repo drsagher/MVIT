@@ -24,3 +24,5 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 [LESSON 5 SOFTWARE DEVELOPMENT LIFE CYCLE](Lesson_05/Readme.md)
 
 [LESSON 6 PROGRAMMING FUNDAMENTALS](Lesson_06/Readme.md)
+
+[LESSON 7 INTRODUCTION TO DATABASES](Lesson_07/Readme.md)
