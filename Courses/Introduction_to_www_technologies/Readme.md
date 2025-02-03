@@ -27,6 +27,7 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 
 [LESSON 12 INTRODUCTION TO OPERATING SYSTEMS](Lesson_12/Readme.md)
 
+[CHAPTER 13 CODE EDITORS](Lesson_13/Readme.md)
 
 
 # Knowledge Extension
