@@ -14,3 +14,5 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 # Lessons details
 
 [LESSON 01 TECHNOLOGY EVOLUTION AND FUTURE](Lesson_01/Readme.md)
+
+[LESSON 02 COMPUTER NETWORKS](Lesson_02/Readme.md)
