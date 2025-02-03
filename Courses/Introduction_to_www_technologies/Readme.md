@@ -26,3 +26,5 @@ The Introduction to World Wide Web Technologies course provides a comprehensive 
 [LESSON 6 PROGRAMMING FUNDAMENTALS](Lesson_06/Readme.md)
 
 [LESSON 7 INTRODUCTION TO DATABASES](Lesson_07/Readme.md)
+
+[LESSON 8 APPLICATION PROGRAMMING INTERFACE](Lesson_08/Readme.md)
