@@ -1,4 +1,4 @@
-# Software Engineering
+# MVC-301 Software Engineering
 Welcome to Software Engineering, a comprehensive course that delves into the principles, methodologies, and best practices of designing, developing, testing, and maintaining complex software systems. In this course, you will explore the fundamentals of software engineering, including software development life cycles, requirements gathering, system design, programming languages, testing and validation, and project management. You will also examine advanced topics such as software architecture, design patterns, and DevOps, as well as emerging trends like artificial intelligence, machine learning, and cloud computing. Through a combination of lectures, discussions, case studies, and hands-on projects, you will gain a deep understanding of the software engineering discipline and develop the skills and knowledge necessary to succeed as a software engineer in today's fast-paced and rapidly evolving technological landscape.
 
 ## Role of AI in Current Software Engineering
