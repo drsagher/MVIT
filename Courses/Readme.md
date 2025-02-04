@@ -11,3 +11,5 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-300 Information Security](Information_Security/Readme.md)
 
 [MVC-301 Software Engineering](Software_Engineering/Readme.md)
+
+[MVC-302 Data Structures](Data_Structures/Readme.md)
