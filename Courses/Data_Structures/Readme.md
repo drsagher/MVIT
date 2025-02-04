@@ -4,6 +4,8 @@ Welcome to Data Structures, a comprehensive course that explores the fundamental
 ## Course Outline
 Introduction to data structures; Arrays, Stacks, Queues, Priority Queues, Linked Lists, Trees, and Graphs. Recursion, sorting and searching algorithms, Hashing, Storage and retrieval properties and techniques for the various data structures. Algorithm Complexity, Polynomial and Intractable Algorithms, Classes of Efficient Algorithms, Divide and Conquer, Dynamic, Greedy
 
+[Lesson 01 Introduction to Data Structures](Lesson_01/Readme.md)
+
 ## Reference Material:
 1. Data Abstraction and Problem Solving with C++, 2nd ed, Frank M. Carrano, Paul Helman, Robert Veroff, Addison-Wesley, 1998.
 2. Data Structures and Algorithms (SAMS teach yourself), Lafore, Sams Publishing, 1999.
