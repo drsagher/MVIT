@@ -289,3 +289,28 @@ HTML form elements enable diverse data collection, from simple text to complex f
 | ```height``` | Specifies the height of an element | ```<img height="100">``` |
 | ```hidden``` | Specifies that an element should be hidden | ```<input type="hidden">``` |
 | ```high``` | Specifies the high value of a meter
+
+
+## HTML Form Submission ```GET``` vs ```POST``` Method
+When a user submits a form, the browser sends a request to the server with the form data. The action attribute of the form element specifies the URL where the form data will be sent, while the method attribute determines the HTTP method to use. The two most common methods are GET and POST. The GET method appends the form data to the URL as query parameters, whereas the POST method sends the data in the request body. Generally, GET is used for retrieving data, while POST is used for creating, updating, or deleting data. When to use GET: retrieving data, searching, or filtering. When to use POST: creating, updating, or deleting data, or when sending sensitive information. It's essential to choose the correct method to ensure the security and integrity of the data being transmitted.
+
+### GET vs POST
+
+|  | GET | POST |
+| --- | --- | --- |
+| Method | Retrieve data | Create, update, or delete data |
+| Data | Appended to URL as query parameters | Sent in request body |
+| Security | Data visible in URL, not secure for sensitive info | Data not visible in URL, more secure for sensitive info |
+| Cacheable | Yes | No |
+| Bookmarkable | Yes | No |
+| Example | GET /users/123 | POST /users |
+| Code Example | ```fetch('https://example.com/api/users/123')``` | ```fetch('https://example.com/api/users', { method: 'POST', body: JSON.stringify({ name: 'John Doe', email: 'john.doe@example.com' }) })``` |
+| Use Cases | Retrieving data, searching, filtering | Creating, updating, or deleting data, sending sensitive information |
+
+Note:
+
+- GET requests should be used for retrieving data, while POST requests should be used for creating, updating, or deleting data.
+- GET requests are visible in the URL, while POST requests are not.
+- GET requests are cacheable, while POST requests are not.
+- GET requests are bookmarkable, while POST requests are not.
+
