@@ -5,23 +5,12 @@
 Mansha Institute of Technologies (MVIT) is a beacon of excellence in technology education, empowering individuals to unlock their full potential. By offering comprehensive programs in Computer Science from primary to PhD levels, MVIT fosters a culture of logical inquiry, human compassion, and intelligent innovation. With a focus on academic excellence, integrity, and empathy, MVIT produces well-rounded professionals equipped to drive technological progress and positively impact society. Through its certifications and non-academic degrees, MVIT bridges the gap between theory and practice, preparing students for successful careers and lifelong learning. By joining MVIT, individuals become part of a vibrant community that values diversity, creativity, and entrepreneurship, shaping the next generation of technology leaders.
 We Ignite Curiosity and Illuminate Possibilities. We empower people by offering Online and On-Site Career Building Opportunities and Lifelong Learning, Leading in Computer Science, Information Technology, Business Management, Custom Software, Web Application, Communication Skill, Leadership Training and Research Methodologies.
 
-## Web Technology Specialist Training (WTST)
-- [Next-Generation Web Development with Python (NXGDP)](https://www.mvut.us/pages/study/programs/nxgd)
-- [Full Stack Development with Next.js (FSDN)](https://www.mvut.us/pages/study/programs/fsdn)
-- [Full Stack PHP Development (FSP)](https://www.mvut.us/pages/study/programs/php)
-- [Office Management and Work Ethics (OM&WE)](https://www.mvut.us/pages/study/programs/omc)
-## Corporate Language Certification for Business (CLCB)
-- [Corporate Communication for IT Professionals (CCIP)](https://www.mvut.us/pages/study/programs/ccipc)
-## Computer Science Professional Studies (CSPS)
-- [Junior Computer Science Certificate (JCSC)](https://www.mvut.us/pages/study/programs/psc)
-- [Senior Computer Science Certificate (SCSC)](https://www.mvut.us/pages/study/programs/esc)
-- [Advance Computer Science Certificate (ACSC)](https://www.mvut.us/pages/study/programs/ssc)
-- [Professional Computer Science Certificate (PCSC)](https://www.mvut.us/pages/study/programs/hssc)
-- [Premier Certificate in Computer Science (PCCS)](https://www.mvut.us/pages/study/programs/bscs)
-- [Certified Web Professional in Full Stack Next.js (CWP FSN)](https://www.mvut.us/pages/study/programs/pgdfsn)
-- [Certified Web Professional in Full Stack PHP (CWP FSP)](https://www.mvut.us/pages/study/programs/pgdfsp)
-- [Advance Professional Certificate in Web Development (APCWD)](https://www.mvut.us/pages/study/programs/msfsd)
-- [Certificate of Philosophy in Web Development (CPWD)](https://www.mvut.us/pages/study/programs/phdfsd)
+## Professional Certifications
+Elevate your career prospects with our Professional Certifications in AI Engineering and Fullstack Development. Designed to validate your expertise and skills, these certifications demonstrate your proficiency in cutting-edge technologies and methodologies. As an AI Engineer, you'll showcase your ability to design, develop, and deploy intelligent systems, while as a Fullstack Developer, you'll highlight your expertise in building comprehensive web applications from front-end to back-end. By earning these certifications, you'll unlock new opportunities, enhance your credibility, and stay ahead in the competitive tech industry.
+
+[M800 Fullstack Developer](Professional_Certifications/Fullstack_Developer/Readme.md)
+
+[M900 AI Engineer](Professional_Certifications/AI_Engineer/Readme.md)
 
 ## Micro Learning Modules
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
