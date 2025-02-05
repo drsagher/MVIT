@@ -6,4 +6,4 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 [M800 Fullstack Developer](Fullstack_Developer/Readme.md)
 
 
-You can [apply online](https://www.mvut.us/pages/apply) in any of these Certification.
+You can apply online for these certifications on the MVIT Official Website([Click to apply](https://www.mvut.us/pages/apply)).
