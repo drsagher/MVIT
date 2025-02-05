@@ -184,5 +184,63 @@ Example:
   </optgroup>
 </select>
 ```
+### 6. The ```<button>``` Element
+Creates a clickable button.
 
+Attributes:
+- ```type```: submit, reset, or button.
 
+Example:
+```
+<button type="submit">Submit</button>
+```
+
+### 7. The ```<fieldset>``` and <legend> Elements
+Groups related form controls.
+- ```<fieldset>```: Wraps elements.
+- ```<legend>```: Provides a caption.
+
+Example:
+```
+<fieldset>
+  <legend>Account Details</legend>
+  <!-- Inputs here -->
+</fieldset>
+```
+
+### 8. The ```<datalist>``` Element
+Provides autocomplete suggestions for <input>.
+
+Attributes:
+- ```id```: Linked to an input’s list attribute.
+
+Example:
+```
+<input type="text" list="browsers">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist>
+```
+
+### 9. The ```<output>``` Element
+Displays calculation results.
+
+Attributes:
+- ```for```: Associates with contributing elements.
+
+Example:
+
+```
+<input type="number" id="a" value="10"> +
+<input type="number" id="b" value="20"> =
+<output name="result" for="a b">30</output>
+```
+
+### 10. Additional Attributes (HTML5)
+- ```autofocus```: Automatically focuses the input.
+- ```pattern```: Regex validation (e.g., ```pattern="[A-Za-z]{3}"```).
+- ```form```: Associates input with a form outside its parent.
+
+### Conclusion
+HTML form elements enable diverse data collection, from simple text to complex files. Proper use of labels, validation attributes, and semantic grouping enhances usability and accessibility. Combining these elements allows developers to create intuitive and robust forms tailored to user needs.
