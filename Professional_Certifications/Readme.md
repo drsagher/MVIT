@@ -4,3 +4,6 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 [M900 AI Engineer](AI_Engineer/Readme.md)
 
 [M800 Fullstack Developer](Fullstack_Developer/Readme.md)
+
+
+You can [apply online](https://www.mvut.us/pages/apply) in any of these Certification.
