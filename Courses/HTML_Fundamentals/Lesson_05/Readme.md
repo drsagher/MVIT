@@ -244,3 +244,48 @@ Example:
 
 ### Conclusion
 HTML form elements enable diverse data collection, from simple text to complex files. Proper use of labels, validation attributes, and semantic grouping enhances usability and accessibility. Combining these elements allows developers to create intuitive and robust forms tailored to user needs.
+
+## HTML Attributes
+
+| Attribute | Description | Example |
+| --- | --- | --- |
+| ```accept``` | Specifies the types of files that can be submitted | ```<input type="file" accept="image/*">``` |
+| ```action``` | Specifies the URL of the form processor | ```<form action="/submit-form">``` |
+| ```align``` | Specifies the alignment of an element | ```<img src="image.jpg" align="center">``` |
+| ```alt``` | Specifies the alternate text for an image | ```<img src="image.jpg" alt="An image">``` |
+| ```async``` | Specifies that a script should be executed asynchronously | ```<script src="script.js" async>``` |
+| ```autocomplete``` | Specifies whether a form field should have autocomplete enabled | ```<input type="text" autocomplete="off">``` |
+| ```autofocus``` | Specifies that a form field should automatically get focus when the page loads | ```<input type="text" autofocus>``` |
+| ```bgcolor``` | Specifies the background color of an element | ```<body bgcolor="#f2f2f2">``` |
+| ```border``` | Specifies the border width of an element | ```<img src="image.jpg" border="1">``` |
+| ```challenge``` | Specifies the challenge to be used for HTTP authentication | ```<keygen challenge="myChallenge">``` |
+| ```charset``` | Specifies the character encoding of a document | ```<meta charset="UTF-8">``` |
+| ```checked``` | Specifies that a checkbox or radio button should be checked by default | ```<input type="checkbox" checked>``` |
+| ```cite``` | Specifies the source of a quotation or a reference to a source | ```<blockquote cite="https://www.example.com">``` |
+| ```class``` | Specifies the class of an element | ```<p class="myClass">``` |
+| ```color``` | Specifies the color of an element | ```<hr color="#f2f2f2">``` |
+| ```cols``` | Specifies the number of columns in a textarea | ```<textarea cols="50">``` |
+| ```colspan``` | Specifies the number of columns that a table cell should span | ```<td colspan="2">``` |
+| ```content``` | Specifies the content of a meta tag | ```<meta content="My page" name="description">``` |
+| ```contenteditable``` | Specifies whether the content of an element is editable | ```<p contenteditable="true">``` |
+| ```contextmenu``` | Specifies the context menu to be used for an element | ```<div contextmenu="myMenu">``` |
+| ```controls``` | Specifies that a video or audio element should have controls | ```<video controls>``` |
+| ```coords``` | Specifies the coordinates of a map element | ```<map coords="0,0,100,100">``` |
+| ```data``` | Specifies the URL of the data source for an object element | ```<object data="myData.txt">``` |
+| ```datetime``` | Specifies the date and time of an element | ```<time datetime="2022-07-22T14:30:00">``` |
+| ```default``` | Specifies that a track element should be enabled by default | ```<track default> ```|
+| ```defer``` | Specifies that a script should be executed after the page has finished parsing | ```<script defer>``` |
+| ```dir``` | Specifies the direction of text in an element | ```<p dir="rtl">``` |
+| ```dirname``` | Specifies the direction of text in an input field | ```<input type="text" dirname="myDir">``` |
+| ```disabled``` | Specifies that a form field or button should be disabled | ```<input type="text" disabled>``` |
+| ```download``` | Specifies that a link should be downloaded rather than navigated to | ```<a download>``` |
+| ```draggable``` | Specifies whether an element is draggable | ```<img draggable="true">``` |
+| ```dropzone``` | Specifies whether an element is a drop zone | ```<div dropzone>``` |
+| ```enctype``` | Specifies the encoding type of a form | ```<form enctype="multipart/form-data">``` |
+| ```for``` | Specifies the element that a label is associated with | ```<label for="myInput">``` |
+| ```form``` | Specifies the form that an input field or button belongs to | ```<input type="text" form="myForm">``` |
+| ```formaction``` | Specifies the URL of the form processor for a button | ```<button formaction="/submit-form">``` |
+| ```headers``` | Specifies the headers for a table cell | ```<td headers="myHeader">``` |
+| ```height``` | Specifies the height of an element | ```<img height="100">``` |
+| ```hidden``` | Specifies that an element should be hidden | ```<input type="hidden">``` |
+| ```high``` | Specifies the high value of a meter
