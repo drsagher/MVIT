@@ -3,6 +3,8 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 
 [M100 Core Web Technologies](CWT/Readme.md)
 
+[M200 Core Programming Languages](CPL/Readme.md)
+
 [M900 AI Engineer](AI_Engineer/Readme.md)
 
 [M800 Fullstack Developer](Fullstack_Developer/Readme.md)
