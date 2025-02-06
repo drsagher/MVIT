@@ -10,3 +10,5 @@ In this comprehensive course, students will learn the essential concepts and tec
 [Lesson 04 Working with Links](Lesson_04/Readme.md)
 
 [Lesson 05 HTML Form Elements](Lesson_05/Readme.md)
+
+[Lesson 06 HTML Tables](Lesson_06/Readme.md)
