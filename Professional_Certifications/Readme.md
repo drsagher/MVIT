@@ -7,6 +7,8 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 
 [M300 Mathematical Concepts for Programming and AI Engineering](DLCP/Readme.md)
 
+[M400 Responsive Web Design and Development](RWD/Readme.md)
+
 [M800 Fullstack Developer](Fullstack_Developer/Readme.md)
 
 [M900 AI Engineer](AI_Engineer/Readme.md)
