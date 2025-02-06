@@ -3,6 +3,8 @@ Welcome to Programming Fundamentals, a comprehensive course designed to equip yo
 
 The following outlines the roadmap for Core Programming Languages:
 
+[MVC-21 Data Structures and Algorithms](/Courses/DSA/Readme.md)
+
 [MVC-13 Database Management Systems](/Courses/DBMS/Readme.md)
 
 [MVC-28 Typescript Programming](/Courses/TS/Readme.md)
