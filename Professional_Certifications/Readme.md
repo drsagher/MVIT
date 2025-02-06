@@ -5,6 +5,8 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 
 [M200 Core Programming Languages](CPL/Readme.md)
 
+[M300 Mathematical Concepts for Programming and AI Engineering](DLCP/Readme.md)
+
 [M800 Fullstack Developer](Fullstack_Developer/Readme.md)
 
 [M900 AI Engineer](AI_Engineer/Readme.md)
