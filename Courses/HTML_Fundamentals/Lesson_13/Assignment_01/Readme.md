@@ -1,4 +1,6 @@
-# Assignment_01
+# Assignment 01 HTML Forms
+
+Total Marks: [ 10 x 5 = 50 ]
 
 ## Question 1: Creating a Simple Form
 Create an HTML form that allows users to submit their name, email address, and phone number. The form should have the following elements:
