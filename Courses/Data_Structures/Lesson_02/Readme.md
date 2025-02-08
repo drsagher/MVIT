@@ -104,9 +104,26 @@ def binary_search(arr, target):
 
 #### C. Interpolation Search:
 Estimates the position of the target using formula:
-pos = low + ((target - arr[low]) * (high - low)) // (arr[high] - arr[low])
-Time: O(log log n) for uniformly distributed data.
+```pos = low + ((target - arr[low]) * (high - low)) // (arr[high] - arr[low])```
+```Time: O(log log n)``` for uniformly distributed data.
 
 Trade-offs:
-Sorting data (O(n log n)) + Binary Search (O(log n)) is efficient for multiple searches.
+Sorting data ```(O(n log n))``` + Binary Search ```(O(log n))``` is efficient for multiple searches.
 Linear Search is better for single searches on unsorted data.
+
+## 4. Connections Between Topics
+Recursion in Sorting: Merge Sort and Quick Sort use recursion for divide-and-conquer.
+Sorting for Efficient Searching: Binary Search requires sorted data, highlighting the interplay between algorithms.
+
+## 5. Real-World Applications
+Recursion: File system traversal, backtracking algorithms.
+Merge Sort: External sorting (large datasets on disk).
+Quick Sort: Standard library sorting (e.g., C++ qsort).
+Binary Search: Databases, debugging (finding broken versions).
+
+## 6. Key Takeaways
+Recursion simplifies code but risks stack overflow.
+Sorting algorithms balance speed, space, and stability.
+Searching efficiency depends on pre-processing (sorting).
+Next Steps: Explore dynamic programming (recursion with memoization) and hybrid sorting algorithms (e.g., Timsort).
+
