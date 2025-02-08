@@ -16,3 +16,5 @@ In this comprehensive course, students will learn the essential concepts and tec
 [Lesson 07 HTML Embedding Media](Lesson_07/Readme.md)
 
 [Lesson 08 HTML5 Features](Lesson_08/Readme.md)
+
+[Lesson 09 Meta Tags and SEO Basics](Lesson_09/Readme.md)
