@@ -1,4 +1,5 @@
 # Lesson 13 Hands-on Practices
+All assignments are mandatory and must be submitted by every student within the designated deadline. Each assignment carries equal weight in terms of marks.
 
 
 [Assignment No.1 HTML Form Elements](Assignment_01/Readme.md)
