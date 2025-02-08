@@ -145,7 +145,76 @@ HTML emojis are a way to add visual interest and personality to web pages using 
 | 😾 | ```&#x1F63E;``` | ```<p>This is a crying cat face &#x1F63E;</p>``` |
 | 😿 | ```&#x1F63F;``` | ```<p>This is a weary cat face &#x1F63F;</p>```| 
 
+## Character Entities
+Character entities in HTML are used to represent special characters that cannot be represented directly in the code. These entities are represented by a combination of ampersands, hash symbols, and semicolons. For example, the copyright symbol can be represented using the entity &copy;, and the ampersand symbol can be represented using the entity &amp;. Character entities are used to avoid conflicts with HTML syntax and to ensure that special characters are displayed correctly in web browsers. They are also used to represent characters that are not available on all keyboards, such as the Euro symbol &euro;. By using character entities, developers can ensure that their web pages display correctly and consistently across different browsers and platforms.
 
+### Symbol Entities
+
+| Symbol | Entity Code |
+| --- | --- |
+| & (Ampersand) | ```&amp;``` |
+| < (Less-than) | ```&lt;``` |
+| > (Greater-than) | ```&gt;``` |
+| " (Quotation mark) | ```&quot;``` |
+| ' (Apostrophe) | ```&#x27;``` |
+| (Copyright) | ```&copy;``` |
+| (Registered trademark) | ```&reg;``` |
+| (Trademark) | ```&trade;``` |
+| € (Euro) | ```&euro;``` |
+| £ (Pound) | ```&pound;``` |
+| ¥ (Yen) | ```&yen;``` |
+| § (Section) | ```&sect;``` |
+| ¶ (Paragraph) | ```&para;``` |
+| • (Bullet) | ```&bull;``` |
+| · (Middle dot) | ```&middot;``` |
+| ‣ (Horizontal ellipsis) | ```&hellip;``` |
+| ⁂ (Care of) | ```&incareof;``` |
+
+Math Entities
+| Symbol | Entity Code |
+| --- | --- |
+| + (Plus) | ```&plus;``` |
+| - (Minus) | ```&minus;``` |
+| × (Multiplication) | ```&times;``` |
+| ÷ (Division) | ```&divide;``` |
+| = (Equal) | ```&equals;``` |
+| ≠ (Not equal) | ```&ne;``` |
+| < (Less-than) | ```&lt;``` |
+| > (Greater-than) | ```&gt;``` |
+| ≤ (Less-than or equal) | ```&le;``` |
+| ≥ (Greater-than or equal) | ```&ge;``` |
+| ± (Plus-minus) | ```&plusmn;``` |
+| ∑ (Summation) | ```&sum;``` |
+| ∫ (Integral) | ```&int;``` |
+| ∞ (Infinity) | ```&infin;``` |
+
+Greek Entities
+| Symbol | Entity Code |
+| --- | --- |
+| α (Alpha) | ```&alpha;``` |
+| β (Beta) | ```&beta;``` |
+| γ (Gamma) | ```&gamma;``` |
+| δ (Delta) | ```&delta;``` |
+| ε (Epsilon) | ```&epsilon;``` |
+| ζ (Zeta) | ```&zeta;``` |
+| η (Eta) | ```&eta;``` |
+| θ (Theta) | ```&theta;``` |
+| ι (Iota) | ```&iota;``` |
+| κ (Kappa) | ```&kappa;``` |
+| λ (Lambda) | ```&lambda;``` |
+| μ (Mu) | ```&mu;``` |
+| ν (Nu) | ```&nu;``` |
+| ξ (Xi) | ```&xi;``` |
+| ο (Omicron) | ```&omicron;``` |
+| π (Pi) | ```&pi;``` |
+| ρ (Rho) | ```&rho;``` |
+| σ (Sigma) | ```&sigma;``` |
+| τ (Tau) | ```&tau;``` |
+| υ (Upsilon) | ```&upsilon;``` |
+| φ (Phi) | ```&phi;``` |
+| χ (Chi) | ```&chi;``` |
+| ψ (Psi) | ```&psi;``` |
+| ω (Omega) | ```&omega;``` |
 
 ## Reference:
 [Currency Entities and ASCII Character Code ](https://www.toptal.com/designers/htmlarrows/symbols/)
