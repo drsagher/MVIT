@@ -20,3 +20,10 @@ All assignments are mandatory and must be submitted by every student within the 
 
 
 [Assignment No. 7 Page division with HTML Semantic Tags](Assignment_07/Readme.md)
+
+
+## Grading Scheme
+- Assignments = 40%
+- Quizes = 10%
+- Final Project = 20%
+- Final Exam = 30%
