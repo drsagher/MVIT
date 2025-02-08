@@ -1,4 +1,4 @@
-# Meta Tags and SEO Basics
+# Lesson 09 Meta Tags and SEO Basics
 Meta tags and SEO basics are essential components of search engine optimization, helping websites rank higher in search engine results pages (SERPs). Meta tags, such as title tags, meta descriptions, and keyword tags, provide crucial information about a web page's content to search engines. Meanwhile, SEO basics involve optimizing website elements like header tags, content, images, and internal linking to improve crawlability, indexability, and user experience. Additionally, technical optimization techniques like page speed optimization, mobile-friendliness, and SSL encryption also play a vital role in enhancing website visibility and ranking. By mastering meta tags and SEO basics, website owners can improve their online presence, drive more traffic, and increase conversions.
 
 ## Meta Tags
