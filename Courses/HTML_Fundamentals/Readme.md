@@ -12,3 +12,5 @@ In this comprehensive course, students will learn the essential concepts and tec
 [Lesson 05 HTML Form Elements](Lesson_05/Readme.md)
 
 [Lesson 06 HTML Tables](Lesson_06/Readme.md)
+
+[Lesson 07 HTML Embedding Media](Lesson_07/Readme.md)
