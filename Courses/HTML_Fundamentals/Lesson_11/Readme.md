@@ -109,6 +109,43 @@ Here is a list of HTML symbols with their symbol code and usage:
 | ™ | ```&trade;``` | ```<p>&trade; Trademark</p>``` |
 | ‣ | ```&bull;``` | ```<p>&bull; Bullet point</p>``` |
 
+## HTML Emojis
+HTML emojis are a way to add visual interest and personality to web pages using small digital images or icons. Emojis can be used to convey emotions, illustrate concepts, and add tone to text. In HTML, emojis can be represented using Unicode characters, which can be copied and pasted directly into HTML code. For example, the smiling face emoji 🙂 can be represented using the Unicode character &#x1F600;. Emojis can also be used in combination with text to create more expressive and engaging content. With the increasing use of emojis in digital communication, HTML emojis have become a popular way to add visual flair and personality to web pages.
+
+### Emojis Code with Examples
+
+| Emoji | Code | Example |
+| --- | --- | --- |
+| 🙂 | ```&#x1F600;``` | ```<p>I'm feeling happy &#x1F600;</p>``` |
+| 😊 | ```+&#x1F601```; | ```<p>This is a great day &#x1F601;</p>``` |
+| 😍 | ```&#x1F60D;``` | ```<p>I love this book &#x1F60D;</p>``` |
+| 😘 | ```&#x1F618;``` | ```<p>Thanks for the kiss &#x1F618;</p>``` |
+| 😗 | ```&#x1F617;``` | ```<p>This is a great restaurant &#x1F617;</p>``` |
+| 😙 | ```&#x1F619;``` | ```<p>This is a beautiful view &#x1F619;</p>``` |
+| 😚 | ```&#x1F61A;``` | ```<p>This is a great party &#x1F61A;</p>``` |
+| 😛 | ```&#x1F61B;``` | ```<p>This is a funny joke &#x1F61B;</p>``` |
+| 😝 | ```&#x1F61D;``` | ```<p>This is a great adventure &#x1F61D;</p>``` |
+| 😞 | ```&#x1F61E;``` | ```<p>This is a sad day &#x1F61E;</p> |
+| 😟 | ```&#x1F61F;``` | ```<p>This is a tough challenge &#x1F61F;</p>``` |
+| 😠 | ```&#x1F620;``` | ```<p>This is an angry face &#x1F620;</p> |
+| 😡 | ```&#x1F621;``` | ```<p>This is a furious face &#x1F621;</p>``` |
+| 😢 | ```&#x1F622;``` | ```<p>This is a crying face &#x1F622;</p>``` |
+| 😭 | ```&#x1F62D;``` | ```<p>This is a loudly crying face &#x1F62D;</p>```` |
+| 😳 | ```&#x1F633;``` | ```<p>This is a flushed face &#x1F633;</p>``` |
+| 😴 | ```&#x1F634;``` | ```<p>This is a sleeping face &#x1F634;</p>``` |
+| 😵 | ```&#x1F635;``` | ```<p>This is a dizzy face &#x1F635;</p>``` |
+| 😶 | ```&#x1F636;``` | ```<p>This is a face with open mouth &#x1F636;</p>``` |
+| 😷 | ```&#x1F637;``` | ```<p>This is a face with thermometer &#x1F637;</p>``` |
+| 😸 | ```&#x1F638;``` | ```<p>This is a smiling cat face &#x1F638;</p>``` |
+| 😹 | ```&#x1F639;``` | ```<p>This is a joyful cat face &#x1F639;</p>``` |
+| 😺 | ```&#x1F63A;``` | ```<p>This is a smiling cat face with heart eyes &#x1F63A;</p>``` |
+| 😻 | ```&#x1F63B;``` | ```<p>This is a smiling cat face with smiling eyes &#x1F63B;</p>``` |
+| 😼 | ```&#x1F63C;``` | ```<p>This is a cat face with wry smile &#x1F63C;</p>``` |
+| 😽 | ```&#x1F63D;``` | ```<p>This is a kissing cat face &#x1F63D;</p>``` |
+| 😾 | ```&#x1F63E;``` | ```<p>This is a crying cat face &#x1F63E;</p>``` |
+| 😿 | ```&#x1F63F;``` | ```<p>This is a weary cat face &#x1F63F;</p>```| 
+
+
 
 ## Reference:
 [Currency Entities and ASCII Character Code ](https://www.toptal.com/designers/htmlarrows/symbols/)
