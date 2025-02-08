@@ -6,6 +6,9 @@ Introduction to data structures; Arrays, Stacks, Queues, Priority Queues, Linked
 
 [Lesson 01 Introduction to Data Structures](Lesson_01/Readme.md)
 
+[Lesson 02 Recursion, Sorting, and Searching Algorithms](Lesson_02/Readme.md)
+
+
 ## Reference Material:
 1. Data Abstraction and Problem Solving with C++, 2nd ed, Frank M. Carrano, Paul Helman, Robert Veroff, Addison-Wesley, 1998.
 2. Data Structures and Algorithms (SAMS teach yourself), Lafore, Sams Publishing, 1999.
