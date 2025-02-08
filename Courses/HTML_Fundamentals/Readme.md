@@ -20,3 +20,7 @@ In this comprehensive course, students will learn the essential concepts and tec
 [Lesson 09 Meta Tags and SEO Basics](Lesson_09/Readme.md)
 
 [Lesson 10 Accessibility](Lesson_10/Readme.md)
+
+[Lesson 11 HTML Symbols, Emojis and Character Entities](Lesson_11/Readme.md)
+
+
