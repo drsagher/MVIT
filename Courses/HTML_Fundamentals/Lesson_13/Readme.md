@@ -10,3 +10,6 @@
 [Assignment No. 3 HTML Audio, Video, and Images](Assignment_03/Readme.md)
 
 [Assignment No. 4 HTML Tables](Assignment_04/Readme.md)
+
+
+[Assignment No. 5 Lists and Footer Element](Assignment_05/Readme.md)
