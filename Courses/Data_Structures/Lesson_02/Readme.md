@@ -28,3 +28,85 @@ Pros & Cons:
 Advanced Topics:
 Tail Recursion: A recursive call is the last operation. Some languages optimize this to avoid stack growth.
 Indirect Recursion: Functions A and B call each other (e.g., A → B → A).
+
+## 2. Sorting Algorithms
+
+### Overview:
+Sorting rearranges data in ascending/descending order. Key metrics include time complexity, space complexity, and stability (preserves order of equal elements).
+
+### A. O(n²) Algorithms
+
+#### Bubble Sort:
+Compares adjacent elements and swaps them if out of order.
+Time: O(n²) worst/average case; Space: O(1).
+Use Case: Small datasets or educational purposes.
+
+#### Selection Sort:
+Selects the smallest element and swaps it into place.
+Time: O(n²); Space: O(1).
+Unstable (e.g., swaps can disrupt order).
+
+#### Insertion Sort:
+Builds a sorted array by inserting elements one at a time.
+Time: O(n²) worst case, O(n) best (already sorted); Space: O(1).
+Use Case: Small or nearly sorted data.
+
+### B. O(n log n) Algorithms
+#### Merge Sort:
+Divide & Conquer: Splits the array, sorts subarrays, and merges them.
+Time: O(n log n); Space: O(n) (not in-place).
+Stable; ideal for linked lists/external sorting.
+
+#### Quick Sort:
+Selects a pivot, partitions the array into elements < pivot and > pivot, then recurses.
+Time: O(n log n) average, O(n²) worst (bad pivot choice); Space: O(log n) stack.
+Unstable but fast in practice.
+
+#### Heap Sort:
+Builds a max-heap and repeatedly extracts the maximum element.
+Time: O(n log n); Space: O(1).
+Use Case: In-place sorting with guaranteed O(n log n).
+
+### C. Non-Comparison Sorts
+#### Counting Sort:
+Counts occurrences of each element (works for integer keys in a range).
+Time: O(n + k), where k is the range of keys.
+
+#### Radix Sort:
+Sorts by processing digits from least to most significant.
+Time: O(nk) for k digits.
+
+## 3. Searching Algorithms
+
+#### A. Linear Search:
+Checks each element sequentially.
+Time: O(n); Space: O(1).
+Use Case: Unsorted data or small datasets.
+
+#### B. Binary Search:
+Requires a sorted array. Repeatedly divides the search interval in half.
+Time: O(log n); Space: O(1) (iterative) or O(log n) (recursive).
+
+Example:
+```
+def binary_search(arr, target):
+    low, high = 0, len(arr)-1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+```
+
+#### C. Interpolation Search:
+Estimates the position of the target using formula:
+pos = low + ((target - arr[low]) * (high - low)) // (arr[high] - arr[low])
+Time: O(log log n) for uniformly distributed data.
+
+Trade-offs:
+Sorting data (O(n log n)) + Binary Search (O(log n)) is efficient for multiple searches.
+Linear Search is better for single searches on unsorted data.
