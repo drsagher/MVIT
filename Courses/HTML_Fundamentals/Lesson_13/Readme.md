@@ -13,3 +13,6 @@
 
 
 [Assignment No. 5 Lists and Footer Element](Assignment_05/Readme.md)
+
+
+[Assignment No. 6 HTML Symbols, Emojis and Character Entities](Assignment_06/Readme.md)
