@@ -5,3 +5,6 @@
 
 
 [Assignment No. 2 HTML Navigation](Assignment_02/Readme.md)
+
+
+[Assignment No. 3 HTML Audio, Video, and Images](Assignment_03/Readme.md)
