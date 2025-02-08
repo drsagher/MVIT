@@ -23,4 +23,6 @@ In this comprehensive course, students will learn the essential concepts and tec
 
 [Lesson 11 HTML Symbols, Emojis and Character Entities](Lesson_11/Readme.md)
 
+[Lesson 12 Best Practices](Lesson_12/Readme.md)
+
 
