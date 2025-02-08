@@ -8,6 +8,8 @@ Introduction to data structures; Arrays, Stacks, Queues, Priority Queues, Linked
 
 [Lesson 02 Recursion, Sorting, and Searching Algorithms](Lesson_02/Readme.md)
 
+[Lesson 03 Hashing, Storage and Retrieval Properties and Techniques](Lesson_03/Readme.md)
+
 
 ## Reference Material:
 1. Data Abstraction and Problem Solving with C++, 2nd ed, Frank M. Carrano, Paul Helman, Robert Veroff, Addison-Wesley, 1998.
