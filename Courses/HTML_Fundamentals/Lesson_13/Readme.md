@@ -18,4 +18,4 @@
 [Assignment No. 6 HTML Symbols, Emojis and Character Entities](Assignment_06/Readme.md)
 
 
-[Assignment No. 07 Page division with HTML Semantic Tags](Assignment_07/Readme.md)
+[Assignment No. 7 Page division with HTML Semantic Tags](Assignment_07/Readme.md)
