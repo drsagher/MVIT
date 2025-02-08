@@ -25,4 +25,6 @@ In this comprehensive course, students will learn the essential concepts and tec
 
 [Lesson 12 Best Practices](Lesson_12/Readme.md)
 
+[Lesson 13 Hands-on Practices](Lesson_13/Readme.md)
+
 
