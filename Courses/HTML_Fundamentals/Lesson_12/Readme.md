@@ -19,7 +19,7 @@
 
 ### 5. Not using semantic HTML
 - Make sure to use semantic HTML elements, such as ```<header>```, ```<nav>```, ```<main>```, ```<section>```, ```<article>```, ```<aside>```, ```<footer>```, to provide meaning to the structure of your HTML document.
-- Example: ```<header><h1>Page Title</h1></header>``` instead of ````<div><h1>Page Title</h1></div>```
+- Example: ```<header><h1>Page Title</h1></header>``` instead of ```<div><h1>Page Title</h1></div>```
 
 ### 6. Not testing for accessibility
 - Make sure to test your HTML document for accessibility, to ensure that it can be used by people with disabilities.
