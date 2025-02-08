@@ -125,12 +125,12 @@ HTML emojis are a way to add visual interest and personality to web pages using 
 | 😚 | ```&#x1F61A;``` | ```<p>This is a great party &#x1F61A;</p>``` |
 | 😛 | ```&#x1F61B;``` | ```<p>This is a funny joke &#x1F61B;</p>``` |
 | 😝 | ```&#x1F61D;``` | ```<p>This is a great adventure &#x1F61D;</p>``` |
-| 😞 | ```&#x1F61E;``` | ```<p>This is a sad day &#x1F61E;</p> |
+| 😞 | ```&#x1F61E;``` | ```<p>This is a sad day &#x1F61E;</p>``` |
 | 😟 | ```&#x1F61F;``` | ```<p>This is a tough challenge &#x1F61F;</p>``` |
-| 😠 | ```&#x1F620;``` | ```<p>This is an angry face &#x1F620;</p> |
+| 😠 | ```&#x1F620;``` | ```<p>This is an angry face &#x1F620;</p>``` |
 | 😡 | ```&#x1F621;``` | ```<p>This is a furious face &#x1F621;</p>``` |
 | 😢 | ```&#x1F622;``` | ```<p>This is a crying face &#x1F622;</p>``` |
-| 😭 | ```&#x1F62D;``` | ```<p>This is a loudly crying face &#x1F62D;</p>```` |
+| 😭 | ```&#x1F62D;``` | ```<p>This is a loudly crying face &#x1F62D;</p>``` |
 | 😳 | ```&#x1F633;``` | ```<p>This is a flushed face &#x1F633;</p>``` |
 | 😴 | ```&#x1F634;``` | ```<p>This is a sleeping face &#x1F634;</p>``` |
 | 😵 | ```&#x1F635;``` | ```<p>This is a dizzy face &#x1F635;</p>``` |
