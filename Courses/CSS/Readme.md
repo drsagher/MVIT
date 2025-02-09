@@ -8,3 +8,5 @@ By the end of this course, learners will be able to:
 - Use modern CSS features like Flexbox, Grid, and CSS variables.
 - Optimize CSS for performance and accessibility.
 - Work with preprocessors (e.g., Sass & Less) and frameworks (e.g., Bootstrap and Tailwind CSS).
+
+[Lesson 1 Introduction to CSS](Lesson_01/Readme.md)
