@@ -106,7 +106,45 @@ Style specific parts of an element.
 - Inserts content before/after an element.
 - Example: ``` .note::before { content: "⚠️"; } /* Adds an icon before .note elements */ ```
 
+### b. ::first-line and ::first-letter
+- Styles the first line or letter of text.
+- Example: ``` p::first-letter { font-size: 2em; } ```
 
+## 6. Specificity and Best Practices
+### Specificity Hierarchy
+- Determines which styles are applied when conflicts arise. Calculated as a tuple:
+(```inline styles, IDs, classes/attributes/pseudo-classes, elements/pseudo-elements```).
+- Inline styles (e.g., ```style="..."```) have the highest specificity.
+- ```!important``` overrides all specificity (use sparingly).
 
+###  Best Practices
+- Use classes for styling (low specificity, reusable).
+- Avoid overly specific selectors (e.g., div#header ul.nav li a).
+- Leverage CSS methodologies like BEM for maintainability.
 
+## Advanced Selectors (CSS4+)
+### a. :has() (Parent Selector)
+- Targets elements containing specific children.
+- Syntax: ```parent:has(child)```
+- Example: ``` div:has(> img) { border: 1px solid black; } /* Styles divs containing direct <img> */ ```
+
+### b. :focus-visible
+- Styles focus states only when using keyboard navigation.
+- Example: ``` button:focus-visible { outline: 2px solid blue; } ```
+
+## Example Combining Selectors
+```
+/* Styles links in the navbar with class "active" */
+nav#main-nav a.active:hover { 
+  color: red; 
+}
+
+/* Styles every third list item in an ordered list */
+ol > li:nth-of-type(3n) { 
+  font-weight: bold; 
+}
+```
+
+## Conclusion
+CSS selectors offer precise control over styling by targeting elements based on type, attributes, state, and relationships. Mastering them allows for efficient, maintainable stylesheets. Always consider specificity and browser compatibility when using advanced features.
 
