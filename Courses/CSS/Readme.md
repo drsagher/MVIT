@@ -9,4 +9,8 @@ By the end of this course, learners will be able to:
 - Optimize CSS for performance and accessibility.
 - Work with preprocessors (e.g., Sass & Less) and frameworks (e.g., Bootstrap and Tailwind CSS).
 
+## Studies
+
 [Lesson 1 Introduction to CSS](Lesson_01/Readme.md)
+
+[Lesson 02 CSS Selectors](Lesson_02/Readme.md)
