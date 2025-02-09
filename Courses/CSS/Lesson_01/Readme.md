@@ -1,0 +1,3 @@
+# Lesson 01 Introduction to CSS
+Cascading Style Sheets (CSS) is a fundamental language used to control the visual styling and layout of web pages. CSS works in tandem with HTML, allowing developers to separate presentation from structure and create visually appealing, user-friendly, and responsive websites. With CSS, you can manipulate elements such as colors, fonts, spacing, and positioning, as well as create complex layouts, animations, and effects. Whether you're building a simple blog or a complex web application, CSS is an essential tool for bringing your vision to life and creating a seamless user experience.
+
