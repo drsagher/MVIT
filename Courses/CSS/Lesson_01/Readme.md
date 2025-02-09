@@ -132,7 +132,7 @@ p {
 - Avoid Inline CSS except for temporary testing or overriding styles.
 - Combine Methods when necessary (e.g., external styles + occasional internal overrides).
 
-## CSS Hierarchy
+### CSS Hierarchy
 
 | Style Type | Description | Example | Priority |
 | --- | --- | --- | --- |
