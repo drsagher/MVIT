@@ -17,16 +17,16 @@ Welcome to the world of JavaScript, the versatile and powerful programming langu
 #### History of JavaScript
 JavaScript, born out of the need for dynamic web pages, has come a long way since its inception in 1995 by Brendan Eich at Netscape. Initially called 'Mocha', it was later renamed to JavaScript, and its popularity soared with the rise of the web. Over the years, JavaScript has evolved through various versions, with ECMAScript (ES) being the standardized specification. Meanwhile, JavaScript engines, such as SpiderMonkey (Firefox), V8 (Google Chrome), and JavaScriptCore (Safari), have been developed to interpret and execute JavaScript code. These engines have become increasingly sophisticated, enabling faster execution, better memory management, and improved security. As a result, modern web browsers have become capable of running complex JavaScript applications, with many browsers now supporting advanced features like Just-In-Time (JIT) compilation, caching, and concurrency. With the browser's JavaScript engine at its core, the web has transformed into a dynamic, interactive, and immersive platform, revolutionizing the way we experience and interact with online content.
 
-#### Basic syntax and data types
+#### Basic Syntax and Data Types
 Here is a rundown of JavaScript's basic syntax and data types:
 
-Basic Syntax
+##### Basic Syntax
 - JavaScript is case-sensitive
 - Statements are separated by semicolons (;)
 - Code blocks are defined by curly brackets ({})
 - Comments are denoted by // for single-line comments and /* */ for multi-line comments
 
-Data Types
+##### Data Types
 Primitive Data Types
 - Number: represents numeric values (e.g., 42, 3.14)
 - String: represents sequences of characters (e.g., "hello", 'hello')
@@ -34,46 +34,40 @@ Primitive Data Types
 - Null: represents the absence of any object value
 - Undefined: represents an uninitialized or non-existent variable
 
-Complex Data Types
+##### Complex Data Types
 - Object: represents a collection of key-value pairs (e.g., { name: 'John', age: 30 })
 - Array: represents an ordered collection of values (e.g., [1, 2, 3], ['a', 'b', 'c'])
 - Function: represents a block of code that can be executed (e.g., function greet(name) { console.log('Hello, ' + name); })
 
-Variables and Declarations
+##### Variables and Declarations
 - var: declares a variable with function scope
 - let: declares a variable with block scope
 - const: declares a constant with block scope
 
-Operators
-- Arithmetic Operators: +, -, *, /, %, etc.
-- Comparison Operators: ==, !=, ===, !==, >, <, etc.
-- Logical Operators: &&, ||, !
-- Assignment Operators: =, +=, -=, *=, /=, etc.
-
-#### Variables and operators
+#### Variables and Operators
 Here's a detailed overview of JavaScript variables and operators:
 
-Variables in JavaScript
+##### Variables in JavaScript
 In JavaScript, a variable is a container that holds a value. Variables are used to store and manipulate data in a program.
 
-Declaring Variables
+##### Declaring Variables
 There are three ways to declare variables in JavaScript:
 
 - var: The var keyword is used to declare a variable with function scope.
 - let: The let keyword is used to declare a variable with block scope.
 - const: The const keyword is used to declare a constant with block scope.
 
-Variable Naming Rules
+##### Variable Naming Rules
 Here are some rules to keep in mind when naming variables:
 
 - Variable names can contain letters, digits, underscores, and dollar signs.
 - Variable names cannot start with a digit.
 - Variable names are case-sensitive.
 
-Assigning Values to Variables
+##### Assigning Values to Variables
 You can assign a value to a variable using the assignment operator (=).
 
-Data Types
+##### Data Types
 JavaScript is a dynamically-typed language, which means that you don't need to specify the data type of a variable when you declare it. JavaScript supports the following data types:
 
 - Number
@@ -85,10 +79,10 @@ JavaScript is a dynamically-typed language, which means that you don't need to s
 - Array
 - Function
 
-Operators in JavaScript
+##### Operators in JavaScript
 Operators are symbols used to perform operations on variables and values.
 
-Arithmetic Operators
+##### Arithmetic Operators
 Arithmetic operators are used to perform mathematical operations.
 
 | Operator | Description | Example |
@@ -101,7 +95,7 @@ Arithmetic operators are used to perform mathematical operations.
 | ++ | Increment | a++ |
 | -- | Decrement | a-- |
 
-Comparison Operators
+##### Comparison Operators
 Comparison operators are used to compare values.
 
 | Operator | Description | Example |
@@ -115,7 +109,7 @@ Comparison operators are used to compare values.
 | >= | Greater than or equal to | a >= b |
 | <= | Less than or equal to | a <= b |
 
-Logical Operators
+##### Logical Operators
 Logical operators are used to perform logical operations.
 
 | Operator | Description | Example |
@@ -124,7 +118,7 @@ Logical operators are used to perform logical operations.
 | || | Logical or | a || b |
 | ! | Logical not | !a |
 
-Assignment Operators
+##### Assignment Operators
 Assignment operators are used to assign values to variables.
 
 | Operator | Description | Example |
@@ -136,7 +130,7 @@ Assignment operators are used to assign values to variables.
 | /= | Divide and assign | a /= b |
 | %= | Modulus and assign | a %= b |
 
-Miscellaneous Operators
+##### Miscellaneous Operators
 Here are some miscellaneous operators:
 
 - typeof: Returns the data type of a value.
@@ -144,6 +138,7 @@ Here are some miscellaneous operators:
 - in: Returns true if a property exists in an object.
 - instanceof: Returns true if an object is an instance of a constructor.
 
+##### JavaScript Operators
 | Operator | Description | Code | Example |
 | --- | --- | --- | --- |
 | Arithmetic Operators |  |  |  |
