@@ -11,134 +11,53 @@ This lesson is designed to review the fundamental concepts of JavaScript, provid
 ## Unlocking JavaScript's Power
 Unlock the full potential of JavaScript and transform your web development skills with a deep dive into its powerful features. As the backbone of modern web development, JavaScript enables you to create dynamic, interactive, and responsive web applications that engage and captivate users. By mastering JavaScript, you'll be able to manipulate the Document Object Model (DOM), handle events, and create complex animations and effects. You'll also explore advanced concepts such as asynchronous programming, closures, and object-oriented programming, allowing you to build scalable, maintainable, and efficient code. With JavaScript, the possibilities are endless, and unlocking its power will take your web development skills to the next level.
 
-### 1. Introduction to JavaScript
+## Introduction to JavaScript
 Welcome to the world of JavaScript, the versatile and powerful programming language that drives the web. As the backbone of modern web development, JavaScript enables you to create dynamic, interactive, and responsive web applications that engage and captivate users. With JavaScript, you can add functionality to your websites, create mobile and desktop applications, and even develop server-side applications. Whether you're a beginner or an experienced developer, JavaScript offers a wide range of possibilities, from simple scripting to complex enterprise-level applications. In this introduction to JavaScript, you'll learn the basics of the language, including syntax, data types, variables, and control structures, providing a solid foundation for further learning and exploration.
 
-#### History of JavaScript
+## History of JavaScript
 JavaScript, born out of the need for dynamic web pages, has come a long way since its inception in 1995 by Brendan Eich at Netscape. Initially called 'Mocha', it was later renamed to JavaScript, and its popularity soared with the rise of the web. Over the years, JavaScript has evolved through various versions, with ECMAScript (ES) being the standardized specification. Meanwhile, JavaScript engines, such as SpiderMonkey (Firefox), V8 (Google Chrome), and JavaScriptCore (Safari), have been developed to interpret and execute JavaScript code. These engines have become increasingly sophisticated, enabling faster execution, better memory management, and improved security. As a result, modern web browsers have become capable of running complex JavaScript applications, with many browsers now supporting advanced features like Just-In-Time (JIT) compilation, caching, and concurrency. With the browser's JavaScript engine at its core, the web has transformed into a dynamic, interactive, and immersive platform, revolutionizing the way we experience and interact with online content.
 
-#### Basic Syntax and Data Types
+## Varibales and Variable Declaration
+
+| Variable Type | Declaration | Syntax | Code Example |
+| --- | --- | --- | --- |
+| Var | Function scope | ```var name = 'John';``` | ```var name = 'John'; console.log(name); // 'John'``` |
+| Let | Block scope | ```let name = 'John';``` | ```let name = 'John'; console.log(name); // 'John'``` |
+| Const | Block scope | ```const name = 'John';``` | ```const name = 'John'; console.log(name); // 'John'``` |
+| Global Variable | Outside any function | ```name = 'John';``` | ```name = 'John'; console.log(window.name); // 'John'``` |
+| Local Variable | Inside a function | ```function greet() { let name = 'John'; }``` | ```function greet() { let name = 'John'; console.log(name); } greet(); // 'John'``` |
+| Parameter Variable | As a function parameter | ```function greet(name) { console.log(name); }``` | ```function greet(name) { console.log(name); } greet('John'); // 'John'``` |
+
+Note:
+
+- Var is function scoped, which means it can be accessed throughout the function.
+- Let and Const are block scoped, which means they can only be accessed within the block they are declared in.
+- Global variables are declared outside any function and can be accessed from anywhere in the code.
+- Local variables are declared inside a function and can only be accessed within that function.
+- Parameter variables are declared as function parameters and can only be accessed within that function.
+
+
+## Basic Syntax and Data Types
 Here is a rundown of JavaScript's basic syntax and data types:
 
-##### Basic Syntax
-- JavaScript is case-sensitive
-- Statements are separated by semicolons (;)
-- Code blocks are defined by curly brackets ({})
-- Comments are denoted by // for single-line comments and /* */ for multi-line comments
+| Data Type | Description | Declaration | Code Example |
+| --- | --- | --- | --- |
+| Number | A numeric value | ```let num = 42;``` | ```console.log(num); // 42``` |
+| String | A sequence of characters | ```let str = 'hello';``` | ```console.log(str); // 'hello'``` |
+| Boolean | A true or false value | ```let isAdmin = true;``` | ```console.log(isAdmin); // true``` |
+| Null | The absence of any object value | ```let nullValue = null;``` | ```console.log(nullValue); // null``` |
+| Undefined | An uninitialized or non-existent variable | ```let undefinedValue;``` | ```console.log(undefinedValue); // undefined``` |
+| Object | A collection of key-value pairs | ```let person = { name: 'John', age: 30 };``` | ```console.log(person.name); // 'John'``` |
+| Array | An ordered collection of values | ```let colors = ['red', 'green', 'blue'];``` | ```console.log(colors[0]); // 'red'``` |
+| Function | A block of code that can be executed | ```function greet(name) { console.log('Hello, ' + name); }``` | ```greet('Alice'); // 'Hello, Alice'``` |
+| Symbol | A unique and immutable value | ```let symbol = Symbol('mySymbol');``` | ```console.log(symbol); // Symbol('mySymbol')``` |
+| BigInt | A large integer value | ```let bigInt = 12345678901234567890n;``` | ```console.log(bigInt); // 12345678901234567890n``` |
 
-##### Data Types
-Primitive Data Types
-- Number: represents numeric values (e.g., 42, 3.14)
-- String: represents sequences of characters (e.g., "hello", 'hello')
-- Boolean: represents true or false values
-- Null: represents the absence of any object value
-- Undefined: represents an uninitialized or non-existent variable
+Note: The n suffix is used to denote a BigInt value.
 
-##### Complex Data Types
-- Object: represents a collection of key-value pairs (e.g., { name: 'John', age: 30 })
-- Array: represents an ordered collection of values (e.g., [1, 2, 3], ['a', 'b', 'c'])
-- Function: represents a block of code that can be executed (e.g., function greet(name) { console.log('Hello, ' + name); })
-
-##### Variables and Declarations
-- var: declares a variable with function scope
-- let: declares a variable with block scope
-- const: declares a constant with block scope
-
-#### Variables and Operators
-Here's a detailed overview of JavaScript variables and operators:
-
-##### Variables in JavaScript
-In JavaScript, a variable is a container that holds a value. Variables are used to store and manipulate data in a program.
-
-##### Declaring Variables
-There are three ways to declare variables in JavaScript:
-
-- var: The var keyword is used to declare a variable with function scope.
-- let: The let keyword is used to declare a variable with block scope.
-- const: The const keyword is used to declare a constant with block scope.
-
-##### Variable Naming Rules
-Here are some rules to keep in mind when naming variables:
-
-- Variable names can contain letters, digits, underscores, and dollar signs.
-- Variable names cannot start with a digit.
-- Variable names are case-sensitive.
-
-##### Assigning Values to Variables
-You can assign a value to a variable using the assignment operator (=).
-
-##### Data Types
-JavaScript is a dynamically-typed language, which means that you don't need to specify the data type of a variable when you declare it. JavaScript supports the following data types:
-
-- Number
-- String
-- Boolean
-- Null
-- Undefined
-- Object
-- Array
-- Function
-
-##### Operators in JavaScript
+## Operators in JavaScript
 Operators are symbols used to perform operations on variables and values.
 
-##### Arithmetic Operators
-Arithmetic operators are used to perform mathematical operations.
-
-| Operator | Description | Example |
-| --- | --- | --- |
-| + | Addition | a + b |
-| - | Subtraction | a - b |
-| * | Multiplication | a \* b |
-| / | Division | a / b |
-| % | Modulus (remainder) | a % b |
-| ++ | Increment | a++ |
-| -- | Decrement | a-- |
-
-##### Comparison Operators
-Comparison operators are used to compare values.
-
-| Operator | Description | Example |
-| --- | --- | --- |
-| == | Equal to | a == b |
-| != | Not equal to | a != b |
-| === | Strictly equal to | a === b |
-| !== | Strictly not equal to | a !== b |
-| > | Greater than | a > b |
-| < | Less than | a < b |
-| >= | Greater than or equal to | a >= b |
-| <= | Less than or equal to | a <= b |
-
-##### Logical Operators
-Logical operators are used to perform logical operations.
-
-| Operator | Description | Example |
-| --- | --- | --- |
-| && | Logical and | a && b |
-| || | Logical or | a || b |
-| ! | Logical not | !a |
-
-##### Assignment Operators
-Assignment operators are used to assign values to variables.
-
-| Operator | Description | Example |
-| --- | --- | --- |
-| = | Assign | a = b |
-| += | Add and assign | a += b |
-| -= | Subtract and assign | a -= b |
-| *= | Multiply and assign | a \*= b |
-| /= | Divide and assign | a /= b |
-| %= | Modulus and assign | a %= b |
-
-##### Miscellaneous Operators
-Here are some miscellaneous operators:
-
-- typeof: Returns the data type of a value.
-- delete: Deletes a property from an object.
-- in: Returns true if a property exists in an object.
-- instanceof: Returns true if an object is an instance of a constructor.
-
-##### JavaScript Operators
 | Operator | Description | Code | Example |
 | --- | --- | --- | --- |
 | Arithmetic Operators |  |  |  |
@@ -169,6 +88,7 @@ Here are some miscellaneous operators:
 | *= | Multiply and assign | let product = 2; product *= 3; | product = 6 |
 | /= | Divide and assign | let quotient = 6; quotient /= 2; | quotient = 3 |
 | %= | Modulus and assign | let remainder = 17; remainder %= 5; | remainder = 2 |
+
 
 ### 2. Control Structures and Functions
 
