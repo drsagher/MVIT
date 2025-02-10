@@ -78,9 +78,9 @@ Operators are symbols used to perform operations on variables and values.
 | >= | Greater than or equal to | let isGreaterThanOrEqualTo = 3 >= 3; | isGreaterThanOrEqualTo = true |
 | <= | Less than or equal to | let isLessThanOrEqualTo = 2 <= 3; | isLessThanOrEqualTo = true |
 | Logical Operators |  |  |  |
-| && | Logical and | let isValid = true && true; | isValid = true |
-| || | Logical or | let isValid = true || false; | isValid = true |
-| ! | Logical not | let isNotValid = !true; | isNotValid = false |
+| && | Logical and | ```let isValid = true && true;``` | ```isValid = true``` |
+| || | Logical or | ``` let isValid = true || false; ``` | ```isValid = true``` |
+| ! | Logical not | ```let isNotValid = !true;``` | ```isNotValid = false``` |
 | Assignment Operators |  |  |  |
 | = | Assign | let name = 'John'; | name = 'John' |
 | += | Add and assign | let count = 0; count += 2; | count = 2 |
