@@ -17,65 +17,65 @@ The DOM tree structure is composed of the following components:
 
 | Property | Description | Code Example |
 | --- | --- | --- |
-| activeElement | Returns the currently active element in the document. | document.activeElement |
-| anchors | Returns a collection of all the anchor elements in the document. | document.anchors |
-| applets | Returns a collection of all the applet elements in the document. | document.applets |
-| body | Returns the body element of the document. | document.body |
-| characterSet | Returns the character set of the document. | document.characterSet |
-| charset | Returns the character set of the document. | document.charset |
-| compatMode | Returns the compatibility mode of the document. | document.compatMode |
-| cookie | Returns the cookie string of the document. | document.cookie |
-| defaultView | Returns the default view of the document. | document.defaultView |
-| designMode | Returns the design mode of the document. | document.designMode |
-| doctype | Returns the document type declaration of the document. | document.doctype |
-| documentElement | Returns the root element of the document. | document.documentElement |
-| domain | Returns the domain of the document. | document.domain |
-| embeds | Returns a collection of all the embed elements in the document. | document.embeds |
-| forms | Returns a collection of all the form elements in the document. | document.forms |
-| head | Returns the head element of the document. | document.head |
-| images | Returns a collection of all the image elements in the document. | document.images |
-| implementation | Returns the implementation of the document. | document.implementation |
-| inputEncoding | Returns the input encoding of the document. | document.inputEncoding |
-| lastModified | Returns the date and time the document was last modified. | document.lastModified |
-| links | Returns a collection of all the link elements in the document. | document.links |
-| location | Returns the location of the document. | document.location |
-| plugins | Returns a collection of all the plugin elements in the document. | document.plugins |
-| readyState | Returns the ready state of the document. | document.readyState |
-| referrer | Returns the referrer of the document. | document.referrer |
-| scripts | Returns a collection of all the script elements in the document. | document.scripts |
-| styleSheets | Returns a collection of all the style sheet elements in the document. | document.styleSheets |
-| title | Returns the title of the document. | document.title |
-| URL | Returns the URL of the document. | document.URL |
-| xmlEncoding | Returns the XML encoding of the document. | document.xmlEncoding |
-| xmlStandalone | Returns the XML standalone status of the document. | document.xmlStandalone |
-| xmlVersion | Returns the XML version of the document. | document.xmlVersion |
+| ```activeElement``` | Returns the currently active element in the document. | ```document.activeElement``` |
+| ```anchors``` | Returns a collection of all the anchor elements in the document. | ```document.anchors``` |
+| ```applets``` | Returns a collection of all the applet elements in the document. | ```document.applets``` |
+| ```body``` | Returns the body element of the document. | ```document.body``` |
+| ```characterSet``` | Returns the character set of the document. | ```document.characterSet``` |
+| ```charset``` | Returns the character set of the document. | ```document.charset``` |
+|``` compatMode``` | Returns the compatibility mode of the document. |``` document.compatMode``` |
+|``` cookie``` | Returns the cookie string of the document. |``` document.cookie``` |
+|``` defaultView ```| Returns the default view of the document. |``` document.defaultView``` |
+| ```designMode``` | Returns the design mode of the document. |``` document.designMode``` |
+|``` doctype``` | Returns the document type declaration of the document. | ```document.doctype``` |
+|``` documentElement``` | Returns the root element of the document. |``` document.documentElement``` |
+|``` domain``` | Returns the domain of the document. | ```document.domain``` |
+| ```embeds``` | Returns a collection of all the embed elements in the document. |``` document.embeds``` |
+|``` forms``` | Returns a collection of all the form elements in the document. |``` document.forms ```|
+|``` head``` | Returns the head element of the document. |``` document.head ```|
+|``` images``` | Returns a collection of all the image elements in the document. |``` document.images``` |
+|``` implementation``` | Returns the implementation of the document. |``` document.implementation``` |
+|``` inputEncoding``` | Returns the input encoding of the document. |``` document.inputEncoding``` |
+|``` lastModified``` | Returns the date and time the document was last modified. |``` document.lastModified ```|
+| ```links``` | Returns a collection of all the link elements in the document. |``` document.links``` |
+|``` location``` | Returns the location of the document. |``` document.location ```|
+|``` plugins``` | Returns a collection of all the plugin elements in the document. |``` document.plugins``` |
+|``` readyState``` | Returns the ready state of the document. |``` document.readyState``` |
+| ```referrer ```| Returns the referrer of the document. | ```document.referrer``` |
+|``` scripts``` | Returns a collection of all the script elements in the document. |``` document.scripts``` |
+|``` styleSheets``` | Returns a collection of all the style sheet elements in the document. |``` document.styleSheets``` |
+|``` title``` | Returns the title of the document. |``` document.title``` |
+|``` URL ```| Returns the URL of the document. |``` document.URL``` |
+|``` xmlEncoding``` | Returns the XML encoding of the document. |``` document.xmlEncoding``` |
+|``` xmlStandalone``` | Returns the XML standalone status of the document. |``` document.xmlStandalone``` |
+|``` xmlVersion``` | Returns the XML version of the document. |``` document.xmlVersion ```|
 
 ### Document Event Properties
 
 | Event Property | Description | Code Example |
 | --- | --- | --- |
-| onabort | Fires when the user aborts the loading of an image. | document.onabort = function(){ console.log("Image loading aborted"); }; |
-| onblur | Fires when the document loses focus. | document.onblur = function(){ console.log("Document lost focus"); }; |
-| onchange | Fires when the user changes the value of a form element. | document.onchange = function(){ console.log("Form element value changed"); }; |
-| onclick | Fires when the user clicks on an element. | document.onclick = function(){ console.log("Element clicked"); }; |
-| ondblclick | Fires when the user double-clicks on an element. | document.ondblclick = function(){ console.log("Element double-clicked"); }; |
-| onerror | Fires when an error occurs while loading an image or other external resource. | document.onerror = function(){ console.log("Error loading resource"); }; |
-| onfocus | Fires when the document gains focus. | document.onfocus = function(){ console.log("Document gained focus"); }; |
-| onkeydown | Fires when the user presses a key. | document.onkeydown = function(){ console.log("Key pressed"); }; |
-| onkeypress | Fires when the user presses a key and releases it. | document.onkeypress = function(){ console.log("Key pressed and released"); }; |
-| onkeyup | Fires when the user releases a key. | document.onkeyup = function(){ console.log("Key released"); }; |
-| onload | Fires when the document finishes loading. | document.onload = function(){ console.log("Document loaded"); }; |
-| onmousedown | Fires when the user presses a mouse button. | document.onmousedown = function(){ console.log("Mouse button pressed"); }; |
-| onmousemove | Fires when the user moves the mouse pointer. | document.onmousemove = function(){ console.log("Mouse pointer moved"); }; |
-| onmouseout | Fires when the user moves the mouse pointer out of an element. | document.onmouseout = function(){ console.log("Mouse pointer moved out of element"); }; |
-| onmouseover | Fires when the user moves the mouse pointer over an element. | document.onmouseover = function(){ console.log("Mouse pointer moved over element"); }; |
-| onmouseup | Fires when the user releases a mouse button. | document.onmouseup = function(){ console.log("Mouse button released"); }; |
-| onreset | Fires when the user resets a form. | document.onreset = function(){ console.log("Form reset"); }; |
-| onresize | Fires when the user resizes the window. | document.onresize = function(){ console.log("Window resized"); }; |
-| onscroll | Fires when the user scrolls the window. | document.onscroll = function(){ console.log("Window scrolled"); }; |
-| onselect | Fires when the user selects some text in a form element. | document.onselect = function(){ console.log("Text selected"); }; |
-| onsubmit | Fires when the user submits a form. | document.onsubmit = function(){ console.log("Form submitted"); }; |
-| onunload | Fires when the user unloads the document. | document.onunload = function(){ console.log("Document unloaded"); }; |
+|``` onabort``` | Fires when the user aborts the loading of an image. |``` document.onabort = function(){ console.log("Image loading aborted"); };``` |
+|``` onblur``` | Fires when the document loses focus. |``` document.onblur = function(){ console.log("Document lost focus"); };``` |
+|``` onchange``` | Fires when the user changes the value of a form element. |``` document.onchange = function(){ console.log("Form element value changed"); };``` |
+|``` onclick``` | Fires when the user clicks on an element. |``` document.onclick = function(){ console.log("Element clicked"); };``` |
+| ```ondblclick``` | Fires when the user double-clicks on an element. | ```document.ondblclick = function(){ console.log("Element double-clicked"); };``` |
+|``` onerror``` | Fires when an error occurs while loading an image or other external resource. |``` document.onerror = function(){ console.log("Error loading resource"); };``` |
+|``` onfocus``` | Fires when the document gains focus. |``` document.onfocus = function(){ console.log("Document gained focus"); };``` |
+|``` onkeydown``` | Fires when the user presses a key. |``` document.onkeydown = function(){ console.log("Key pressed"); };``` |
+|``` onkeypress``` | Fires when the user presses a key and releases it. |``` document.onkeypress = function(){ console.log("Key pressed and released"); };``` |
+|``` onkeyup``` | Fires when the user releases a key. |``` document.onkeyup = function(){ console.log("Key released"); };``` |
+|``` onload ```| Fires when the document finishes loading. | ```document.onload = function(){ console.log("Document loaded"); };``` |
+|``` onmousedown``` | Fires when the user presses a mouse button. |``` document.onmousedown = function(){ console.log("Mouse button pressed"); };``` |
+| ```onmousemove``` | Fires when the user moves the mouse pointer. |``` document.onmousemove = function(){ console.log("Mouse pointer moved"); };``` |
+|``` onmouseout``` | Fires when the user moves the mouse pointer out of an element. |``` document.onmouseout = function(){ console.log("Mouse pointer moved out of element"); };``` |
+|``` onmouseover``` | Fires when the user moves the mouse pointer over an element. |``` document.onmouseover = function(){ console.log("Mouse pointer moved over element"); };``` |
+|``` onmouseup``` | Fires when the user releases a mouse button. |``` document.onmouseup = function(){ console.log("Mouse button released"); }; ```|
+|``` onreset``` | Fires when the user resets a form. |``` document.onreset = function(){ console.log("Form reset"); }; ```|
+|``` onresize``` | Fires when the user resizes the window. |``` document.onresize = function(){ console.log("Window resized"); };``` |
+|``` onscroll ```| Fires when the user scrolls the window. |``` document.onscroll = function(){ console.log("Window scrolled"); };``` |
+|``` onselect``` | Fires when the user selects some text in a form element. |``` document.onselect = function(){ console.log("Text selected"); };``` |
+|``` onsubmit``` | Fires when the user submits a form. |``` document.onsubmit = function(){ console.log("Form submitted"); };``` |
+|``` onunload``` | Fires when the user unloads the document. |``` document.onunload = function(){ console.log("Document unloaded"); };``` |
 
  This table is not exhaustive and is based on the W3C DOM specification. Some event properties may not be supported in all browsers or versions.
 
