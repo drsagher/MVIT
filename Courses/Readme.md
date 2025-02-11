@@ -37,6 +37,7 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-114 Responsive Design with Figma](RDS/Readme.md)
 
+[MVC-100 Tailwind CSS](TW/Readme.md)
 
 
 ## M300 Mathematical Concepts for Programming and AI Engineering
