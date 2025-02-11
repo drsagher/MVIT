@@ -182,10 +182,12 @@ The HTML ```target``` attribute defines where a hyperlink (or form submission) w
 
 ### 1. target="_self" (Default Behavior)
 - What it does: Opens the linked resource in the same browsing context (e.g., the same tab or window). This is the default behavior if no target attribute is specified.
-- Syntax: ```<a href="page.html" target="_self">Link</a>
+- Syntax: ```<a href="page.html" target="_self">Link</a>```
+
+```
 <!-- Equivalent to omitting the target attribute -->
 <a href="page.html">Link</a> ```
-
+```
 Use Cases:
 - Navigating within the same website (e.g., internal menu links).
 - When you want to keep the user in the current tab/window.
