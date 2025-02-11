@@ -55,6 +55,11 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 [MVC-11 AI Software Engineering](AISE/Readme.md)
 
 
+## M400 Responsive Web Design and Development
+The course "Responsive Web Design and Development" is designed to equip students with the skills and knowledge needed to create responsive, mobile-friendly, and accessible websites that adapt to various devices, screen sizes, and orientations. The course outline includes the following topics: Introduction to Responsive Web Design, HTML5 and CSS3 fundamentals, Flexible Grid Systems, Responsive Images and Media, CSS Media Queries, Mobile-First Design, Accessibility and Usability, JavaScript and Responsive Design, and Testing and Debugging Responsive Websites. Students will learn how to use popular front-end frameworks such as Tailwind CSS, Bootstrap and Foundation, and will gain hands-on experience with designing and developing responsive websites using modern tools and technologies. By the end of the course, students will be able to design and develop responsive websites that provide an optimal user experience across various devices and platforms.
+
+
+
 ## Others
 
 [MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
