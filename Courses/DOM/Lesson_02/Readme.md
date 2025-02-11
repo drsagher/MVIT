@@ -136,3 +136,64 @@ function changeText() {
 ```
 In this example, we use the querySelector method to select elements by their class, ID, and even by a combination of both (e.g., #container p). We then change the text content, background color, and other styles of the selected elements.
 
+## Example-03 electing elements with ```querySelectorAll```
+
+### HTML
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecting Elements with querySelectorAll</title>
+</head>
+<body>
+	<h1 class="header">Selecting Elements with querySelectorAll</h1>
+	<p class="paragraph">This is a paragraph of text.</p>
+	<p class="paragraph">This is another paragraph of text.</p>
+	<button class="button" onclick="changeText()">Click Me!</button>
+
+	<div id="container">
+		<p class="container-paragraph">This is a paragraph inside a container.</p>
+		<p class="container-paragraph">This is another paragraph inside a container.</p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+```
+
+### JavaScript (script.js)
+```
+function changeText() {
+	// Select all paragraph elements by their class
+	var paragraphs = document.querySelectorAll(".paragraph");
+	// Change the text content of all paragraph elements
+	paragraphs.forEach(function(paragraph) {
+		paragraph.textContent = "New paragraph text!";
+	});
+
+	// Select all button elements by their class
+	var buttons = document.querySelectorAll(".button");
+	// Change the text content of all button elements
+	buttons.forEach(function(button) {
+		button.textContent = "Clicked!";
+	});
+
+	// Select all paragraph elements inside the container element
+	var containerParagraphs = document.querySelectorAll("#container .container-paragraph");
+	// Change the text content of all paragraph elements inside the container element
+	containerParagraphs.forEach(function(paragraph) {
+		paragraph.textContent = "New paragraph text inside container!";
+	});
+
+	// Select all header elements by their class
+	var headers = document.querySelectorAll(".header");
+	// Change the background color of all header elements
+	headers.forEach(function(header) {
+		header.style.backgroundColor = "lightblue";
+	});
+}
+```
+
+In this example, we use the querySelectorAll method to select multiple elements by their class, ID, and even by a combination of both (e.g., #container .container-paragraph). We then change the text content, background color, and other styles of the selected elements using the forEach method to iterate over the NodeList returned by querySelectorAll.
+
+
