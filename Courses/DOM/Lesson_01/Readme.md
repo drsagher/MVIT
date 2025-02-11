@@ -269,6 +269,32 @@ JavaScript provides several built-in data structures, including arrays, objects,
 
 
 #### Objects (creation, properties, methods)
+Object Concepts
+| Concept | Description | Code Example | Use Case |
+| --- | --- | --- | --- |
+| Object Creation | Create a new object using the Object constructor or the literal syntax {}. | ```let obj = new Object(); or let obj = {};``` | Create an object to store a collection of key-value pairs. |
+| Indexing | Access object properties using their key. | ```let obj = { name: 'John', age: 30 }; console.log(obj['name']); // 'John'``` | Access a specific property in an object. |
+| Dot Notation | Access object properties using dot notation. | ```let obj = { name: 'John', age: 30 }; console.log(obj.name); // 'John'``` | Access a specific property in an object. |
+| Bracket Notation | Access object properties using bracket notation. | ```let obj = { name: 'John', age: 30 }; console.log(obj['name']); // 'John'``` | Access a specific property in an object. |
+
+Object Methods
+| Method | Description | Code Example | Use Case |
+| --- | --- | --- | --- |
+| Object.keys() | Return an array of a given object's own enumerable property names. | let obj = { name: 'John', age: 30 }; console.log(Object.keys(obj)); // ['name', 'age'] | Get an array of an object's property names. |
+| Object.values() | Return an array of a given object's own enumerable property values. | let obj = { name: 'John', age: 30 }; console.log(Object.values(obj)); // ['John', 30] | Get an array of an object's property values. |
+| Object.entries() | Return an array of a given object's own enumerable string-keyed property [key, value] pairs. | let obj = { name: 'John', age: 30 }; console.log(Object.entries(obj)); // [['name', 'John'], ['age', 30]] | Get an array of an object's property key-value pairs. |
+| Object.assign() | Copy the values of all enumerable own properties from one or more source objects to a target object. | let obj1 = { name: 'John' }; let obj2 = { age: 30 }; Object.assign(obj1, obj2); console.log(obj1); // { name: 'John', age: 30 } | Merge two or more objects into a single object. |
+| Object.create() | Create a new object, using an existing object as the prototype of the newly created object. | let obj = { name: 'John' }; let newObj = Object.create(obj); console.log(newObj.name); // 'John' | Create a new object that inherits from an existing object. |
+| Object.freeze() | Freeze an object: that is, prevent new properties from being added to it; prevent existing properties from being removed; and prevent existing properties, or their enumerability, configurability, or writability, from being changed. | let obj = { name: 'John' }; Object.freeze(obj); obj.name = 'Jane'; console.log(obj.name); // 'John' | Prevent an object from being modified. |
+| Object.seal() | Seal an object, preventing new properties from being added and marking all existing properties as non-configurable. | let obj = { name: 'John' }; Object.seal(obj); obj.name = 'Jane'; console.log(obj.name); // 'Jane' | Prevent new properties from being added to an object. |
+| Object.isFrozen() | Determine if an object is frozen. | let obj = { name: 'John' }; Object.freeze(obj); console.log(Object.isFrozen(obj)); // true | Check if an object is frozen. |
+| Object.isSealed() | Determine if an object is sealed. | let obj = { name: 'John' }; Object.seal(obj); console.log(Object.isSealed(obj)); // true | Check if an object is sealed. |
+
+Object Iteration
+| Method | Description | Code Example | Use Case |
+| --- | --- | --- | --- |
+| for...in | Iterate over the enumerable properties of an object. | let obj = { name: 'John', age: 30 }; for (let key in obj) { console.log(key + ': ' + obj[key]); } | Iterate over an object's properties. |
+| for...of | Iterate over the values of an object's properties. | let obj = { name: 'John', age: 30 }; for (let value of Object.values(obj)) { console.log(value); } | Iterate over an object's property
 
 
 ### 5. Scope, Closures, and the "this" Keyword
