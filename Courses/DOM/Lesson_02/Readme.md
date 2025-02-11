@@ -16,10 +16,123 @@ The DOM tree structure is composed of the following components:
 ## Node Types
 The DOM defines several node types, each representing a specific type of node in the DOM tree. The following are the most common node types:
 
-- Node.ELEMENT_NODE (1): Represents an HTML element.
-- Node.TEXT_NODE (3): Represents a text node.
-- Node.COMMENT_NODE (8): Represents an HTML comment.
-- Node.DOCUMENT_NODE (9): Represents the document object.
+### ```Node.ELEMENT_NODE```: Represents an HTML element.
+```
+#### HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node.ELEMENT_NODE Example</title>
+</head>
+<body>
+	<div id="myDiv">Hello World!</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+```
+
+#### JavaScript ```script.js```
+```
+// Get the div element
+var div = document.getElementById("myDiv");
+
+// Check if the div is an element node
+if (div.nodeType === Node.ELEMENT_NODE) {
+	console.log("The div is an element node.");
+} else {
+	console.log("The div is not an element node.");
+}
+
+// Get the node name of the div
+console.log("Node name:", div.nodeName);
+
+// Get the node type of the div
+console.log("Node type:", div.nodeType);
+
+// Check if the div has child nodes
+if (div.hasChildNodes()) {
+	console.log("The div has child nodes.");
+} else {
+	console.log("The div does not have child nodes.");
+}
+
+// Get the child nodes of the div
+var childNodes = div.childNodes;
+console.log("Child nodes:", childNodes);
+```
+
+Output
+
+The div is an element node.
+Node name: DIV
+Node type: 1
+The div has child nodes.
+Child nodes: [text]
+
+In this example, we use the ```Node.ELEMENT_NODE``` constant to check if the ```div``` element is an element node. We also use other node properties and methods, such as ```nodeName```, ```nodeType```, ```hasChildNodes()```, and ```childNodes```, to get more information about the ```div``` element and its child nodes.
+
+### ```Node.TEXT_NODE```: Represents a text node.
+
+#### HTML
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node.TEXT_NODE Example</title>
+</head>
+<body>
+	<div id="myDiv">Hello <span>World!</span></div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+```
+
+#### JavaScript ```script.js```
+```
+// Get the div element
+var div = document.getElementById("myDiv");
+
+// Get the child nodes of the div
+var childNodes = div.childNodes;
+
+// Loop through the child nodes
+for (var i = 0; i < childNodes.length; i++) {
+	var node = childNodes[i];
+
+	// Check if the node is a text node
+	if (node.nodeType === Node.TEXT_NODE) {
+		console.log("Text node:", node.nodeValue);
+	} else {
+		console.log("Non-text node:", node.nodeName);
+	}
+}
+```
+
+Output
+Text node: Hello 
+Non-text node: SPAN
+Text node: World!
+
+In this example, we use the Node.TEXT_NODE constant to check if a node is a text node. We then use the nodeValue property to get the text content of the text node.
+
+Here's what's happening in the code:
+1. We get the ```div``` element using ```document.getElementById```.
+2. We get the child nodes of the ```div``` element using ```childNodes```.
+3. We loop through the child nodes using a for loop.
+4. For each node, we check if it's a text node using ```node.nodeType === Node.TEXT_NODE```.
+5. If it's a text node, we log its text content using ```node.nodeValue```.
+6. If it's not a text node, we log its node name using ```node.nodeName```.
+
+Remember that the ```nodeValue``` property only returns the text content of a text node, while the ```nodeName``` property returns the name of a non-text node (e.g. "SPAN").
+
+### Node.COMMENT_NODE (8): Represents an HTML comment.
+
+
+### Node.DOCUMENT_NODE (9): Represents the document object.
 
 ## Document Object
 The document object is the root node of the DOM tree. It provides access to the entire HTML document and allows you to manipulate its content, layout, and behavior.
