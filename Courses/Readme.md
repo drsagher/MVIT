@@ -50,6 +50,9 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-140 Calculus for Optimization](CFO/Readme.md)
 
+[MVC-40 Probability and Statistics for Data Science](SDS/Readme.md)
+
+
 
 ## Others
 
