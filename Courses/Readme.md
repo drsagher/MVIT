@@ -8,6 +8,8 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-D02 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
 
+[MVC-D03 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
+
 
 ## M100 Core Web Technologies
 
