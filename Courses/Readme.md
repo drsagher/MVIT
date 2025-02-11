@@ -52,6 +52,7 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-40 Probability and Statistics for Data Science](SDS/Readme.md)
 
+[MVC-11 AI Software Engineering](AISE/Readme.md)
 
 
 ## Others
