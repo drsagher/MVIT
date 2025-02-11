@@ -283,6 +283,7 @@ In JavaScript, selecting elements is a crucial step in manipulating and interact
 | querySelectorAll() | Returns a collection of elements that match the specified selector. | ```let elements = document.querySelectorAll('.myClass');``` | Selecting multiple elements by their class, tag name, or attribute. |
 
 ## Example-01 electing elements with ```getElementById```
+
 ## HTML
 ```
 <!DOCTYPE html>
@@ -300,7 +301,7 @@ In JavaScript, selecting elements is a crucial step in manipulating and interact
 </html>
 ```
 
-### JavaScript (script.js)
+### JavaScript ```script.js```
 ```
 function changeText() {
 	// Select the header element by its ID
@@ -323,6 +324,7 @@ function changeText() {
 In this example, we have an HTML page with a header, paragraph, and button. Each of these elements has a unique ID attribute. We use the getElementById method in our JavaScript code to select these elements and change their text content when the button is clicked.
 
 ## Example-02 electing elements with ```querySelector```
+
 ### HTML
 ```
 <!DOCTYPE html>
@@ -344,7 +346,8 @@ In this example, we have an HTML page with a header, paragraph, and button. Each
 </html>
 ```
 
-### JavaScript (script.js)
+### JavaScript ```script.js```
+
 ```
 function changeText() {
 	// Select the header element by its class
@@ -400,7 +403,7 @@ In this example, we use the querySelector method to select elements by their cla
 </html>
 ```
 
-### JavaScript (script.js)
+### JavaScript ```script.js```
 ```
 function changeText() {
 	// Select all paragraph elements by their class
