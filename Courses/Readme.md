@@ -35,9 +35,9 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-28 Typescript Programming](TS/Readme.md)
 
-[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
+[MVC-114 Responsive Design with Figma](RDS/Readme.md)
 
-[MVC-96 PHP Programming](PHP/Readme.md)
+
 
 ## M300 Mathematical Concepts for Programming and AI Engineering
 
@@ -46,7 +46,9 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 ## Others
 
+[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
 
+[MVC-96 PHP Programming](PHP/Readme.md)
 
 
 
