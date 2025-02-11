@@ -324,10 +324,58 @@ In JavaScript, closures are functions that have access to their own scope as wel
 
 
 ### 6. Built-in Methods and Functions
+JavaScript provides a wide range of built-in methods and functions that can be used to perform various tasks, such as manipulating strings, numbers, and dates, as well as working with arrays and objects. For example, the String object has methods like toUpperCase(), toLowerCase(), and trim() that can be used to manipulate strings. The Array object has methods like push(), pop(), and splice() that can be used to add, remove, and manipulate array elements. The Math object has functions like sin(), cos(), and sqrt() that can be used to perform mathematical calculations. Additionally, JavaScript also provides built-in functions like setTimeout(), setInterval(), and parseInt() that can be used to perform tasks like delaying code execution, repeating code execution, and converting strings to numbers. These built-in methods and functions can be used to simplify code and make it more efficient, and are an essential part of JavaScript programming.
 
 #### String methods (concat, substring, etc.)
+String Methods in JavaScript
+| Method | Description | Code Example | Concept |
+| --- | --- | --- | --- |
+| charAt() | Returns the character at the specified index. | let str = "Hello"; console.log(str.charAt(0)); // "H" | Indexing |
+| charCodeAt() | Returns the Unicode value of the character at the specified index. | let str = "Hello"; console.log(str.charCodeAt(0)); // 72 | Unicode values |
+| codePointAt() | Returns the Unicode code point of the character at the specified index. | let str = "Hello"; console.log(str.codePointAt(0)); // 72 | Unicode code points |
+| concat() | Concatenates two or more strings. | let str1 = "Hello"; let str2 = "World"; console.log(str1.concat(str2)); // "HelloWorld" | String concatenation |
+| endsWith() | Returns true if the string ends with the specified value. | let str = "Hello World"; console.log(str.endsWith("World")); // true | String matching |
+| fromCharCode() | Returns a string created from the specified sequence of Unicode values. | console.log(String.fromCharCode(72, 101, 108, 108, 111)); // "Hello" | Unicode values |
+| includes() | Returns true if the string contains the specified value. | let str = "Hello World"; console.log(str.includes("World")); // true | String matching |
+| indexOf() | Returns the index of the first occurrence of the specified value. | let str = "Hello World"; console.log(str.indexOf("World")); // 6 | Indexing |
+| lastIndexOf() | Returns the index of the last occurrence of the specified value. | let str = "Hello World"; console.log(str.lastIndexOf("World")); // 6 | Indexing |
+| localeCompare() | Compares two strings in the current locale. | let str1 = "Hello"; let str2 = "hello"; console.log(str1.localeCompare(str2)); // 1 | String comparison |
+| match() | Returns an array containing the matches of the specified regular expression. | let str = "Hello World"; console.log(str.match(/World/)); // ["World"] | Regular expressions |
+| normalize() | Returns the Unicode Normalization Form of the string. | let str = "café"; console.log(str.normalize("NFC")); // "café" | Unicode normalization |
+| padEnd() | Pads the string with the specified value to the end. | let str = "Hello"; console.log(str.padEnd(10, " World")); // "Hello World" | String padding |
+| padStart() | Pads the string with the specified value to the start. | let str = "Hello"; console.log(str.padStart(10, " World")); // " WorldHello" | String padding |
+| repeat() | Returns a string repeated the specified number of times. | let str = "Hello"; console.log(str.repeat(3)); // "HelloHelloHello" | String repetition |
+| replace() | Replaces the specified value with the specified replacement. | let str = "Hello World"; console.log(str.replace("World", "Universe")); // "Hello Universe" | String replacement |
+| search() | Returns the index of the first occurrence of the specified regular expression. | let str = "Hello World"; console.log(str.search(/World/)); // 6 | Regular expressions |
+| slice() | Returns a subset of the string. | let str = "Hello World"; console.log(str.slice(6, 11)); // "World" | String slicing |
+| split() | Splits the string into an array of substrings. | let str = "Hello World"; console.log(str.split(" ")); // ["Hello", "World"] | String splitting |
+| startsWith() | Returns true if the string starts with the specified value. | let str = "Hello World"; console.log(str.startsWith("Hello")); // true | String matching |
+| substring() | Returns a subset of the string. | let str = "Hello World"; console.log(str.substring(6, 11)); // "World" | String slicing |
+| toLocaleLowerCase() | Returns the string in lowercase, according to the current locale. | let str = "Hello"; console.log(str.toLocaleLowerCase()); // "hello" | String case conversion |
+| toLocaleUpperCase() | Returns the string in uppercase, according to the current locale. | let str = "hello"; console.log(str.toLocaleUpperCase()); // "HELLO" | String case conversion |
+| toLowerCase() | Returns the string in lowercase
+
 
 #### Array methods (push, pop, etc.)
+
+| Method | Description | Code Example | Concept |
+| --- | --- | --- | --- |
+| concat() | Merges two or more arrays into a new array. | let arr1 = [1, 2, 3]; let arr2 = [4, 5, 6]; console.log(arr1.concat(arr2)); // [1, 2, 3, 4, 5, 6] | Array merging |
+| copyWithin() | Copies a sequence of array elements within the array. | let arr = [1, 2, 3, 4, 5]; arr.copyWithin(0, 2); console.log(arr); // [3, 4, 5, 4, 5] | Array copying |
+| entries() | Returns an iterator object that contains the key-value pairs of the array. | let arr = [1, 2, 3]; for (let [key, value] of arr.entries()) { console.log(key + ': ' + value); } | Array iteration |
+| every() | Returns true if all elements in the array pass the test implemented by the provided function. | let arr = [1, 2, 3, 4, 5]; console.log(arr.every(x => x > 0)); // true | Array testing |
+| fill() | Fills all the elements of an array from a start index to an end index with a static value. | let arr = [1, 2, 3, 4, 5]; arr.fill(0, 2, 4); console.log(arr); // [1, 2, 0, 0, 5] | Array filling |
+| filter() | Creates a new array with all elements that pass the test implemented by the provided function. | let arr = [1, 2, 3, 4, 5]; console.log(arr.filter(x => x > 3)); // [4, 5] | Array filtering |
+| find() | Returns the first element in the array that satisfies the provided testing function. | let arr = [1, 2, 3, 4, 5]; console.log(arr.find(x => x > 3)); // 4 | Array searching |
+| findIndex() | Returns the index of the first element in the array that satisfies the provided testing function. | let arr = [1, 2, 3, 4, 5]; console.log(arr.findIndex(x => x > 3)); // 3 | Array searching |
+| forEach() | Calls a function once for each element in an array. | let arr = [1, 2, 3, 4, 5]; arr.forEach(x => console.log(x)); | Array iteration |
+| includes() | Determines whether an array includes a certain value among its entries. | let arr = [1, 2, 3, 4, 5]; console.log(arr.includes(3)); // true | Array searching |
+| indexOf() | Returns the first index at which a given element can be found in the array, or -1 if it is not present. | let arr = [1, 2, 3, 4, 5]; console.log(arr.indexOf(3)); // 2 | Array searching |
+| join() | Joins all elements of an array into a string. | let arr = [1, 2, 3, 4, 5]; console.log(arr.join(', ')); // "1, 2, 3, 4, 5" | Array joining |
+| keys() | Returns a new Array Iterator object that contains the keys for each index in the array. | let arr = [1, 2, 3, 4, 5]; for (let key of arr.keys()) { console.log(key); } | Array iteration |
+| lastIndexOf() | Returns the last index at which a given element can be found in the array, or -1 if it is not present. | let arr = [1, 2, 3, 4, 5]; console.log(arr.lastIndexOf(3)); // 2 | Array searching |
+| map() | Creates a new array with the results of applying the provided function on every element in this array. | let arr = [1, 2, 3, 4, 5]; console.log(arr.map(x => x * 2)); // [2, 4, 6, 8, 10] | Array transformation |
+| pop() | Removes the last element from an array and returns that element
 
 #### Math functions (abs, pow, etc.)
 
