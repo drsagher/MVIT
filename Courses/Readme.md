@@ -44,6 +44,10 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-21 Data Structures and Algorithms](DSA/Readme.md)
 
+[MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
+
+
+
 
 ## Others
 
