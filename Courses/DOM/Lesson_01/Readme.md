@@ -379,7 +379,61 @@ String Methods in JavaScript
 
 #### Math functions (abs, pow, etc.)
 
+| Function | Description | Code Example | Concept |
+| --- | --- | --- | --- |
+| Math.abs() | Returns the absolute value of a number. | console.log(Math.abs(-5)); // 5 | Absolute value |
+| Math.acos() | Returns the arccosine of a number. | console.log(Math.acos(0.5)); // 1.0471975511965974 | Trigonometry |
+| Math.acosh() | Returns the hyperbolic arccosine of a number. | console.log(Math.acosh(2)); // 1.3169578969248166 | Hyperbolic functions |
+| Math.asin() | Returns the arcsine of a number. | console.log(Math.asin(0.5)); // 0.5235987755982988 | Trigonometry |
+| Math.asinh() | Returns the hyperbolic arcsine of a number. | console.log(Math.asinh(1)); // 0.881373587019543 | Hyperbolic functions |
+| Math.atan() | Returns the arctangent of a number. | console.log(Math.atan(1)); // 0.7853981633974483 | Trigonometry |
+| Math.atan2() | Returns the arctangent of the quotient of two numbers. | console.log(Math.atan2(3, 4)); // 0.6435011087932793 | Trigonometry |
+| Math.atanh() | Returns the hyperbolic arctangent of a number. | console.log(Math.atanh(0.5)); // 0.5493061443340548 | Hyperbolic functions |
+| Math.cbrt() | Returns the cube root of a number. | console.log(Math.cbrt(27)); // 3 | Exponentiation |
+| Math.ceil() | Returns the smallest integer greater than or equal to a number. | console.log(Math.ceil(4.7)); // 5 | Rounding |
+| Math.cos() | Returns the cosine of a number. | console.log(Math.cos(Math.PI / 2)); // 6.123233995736766e-17 | Trigonometry |
+| Math.cosh() | Returns the hyperbolic cosine of a number. | console.log(Math.cosh(1)); // 1.5430806348152437 | Hyperbolic functions |
+| Math.exp() | Returns the exponential function of a number. | console.log(Math.exp(1)); // 2.718281828459045 | Exponentiation |
+| Math.expm1() | Returns the exponential function of a number minus 1. | console.log(Math.expm1(1)); // 1.718281828459045 | Exponentiation |
+| Math.floor() | Returns the largest integer less than or equal to a number. | console.log(Math.floor(4.7)); // 4 | Rounding |
+| Math.fround() | Returns the nearest single precision float representation of a number. | console.log(Math.fround(1.23456789)); // 1.23456788 | Floating point arithmetic |
+| Math.hypot() | Returns the square root of the sum of squares of its arguments. | console.log(Math.hypot(3, 4)); // 5 | Trigonometry |
+| Math.imul() | Returns the result of the 32-bit integer multiplication of two numbers. | console.log(Math.imul(2, 3)); // 6 | Integer arithmetic |
+| Math.log() | Returns the natural logarithm of a number. | console.log(Math.log(Math.E)); // 1 | Logarithms |
+| Math.log1p() | Returns the natural logarithm of 1 plus a number. | console.log(Math.log1p(1)); // 0.6931471805599453 | Logarithms |
+| Math.log2() | Returns the base-2 logarithm of a number. | console.log(Math.log2(8)); // 3 | Logarithms |
+| Math.log10() | Returns the base-10 logarithm of a number. | console.log(Math.log10(100)); // 2 | Logarithms |
+| Math.max() | Returns the largest of zero or more numbers. | console.log(Math.max(1, 2, 3)); // 3 | Comparison |
+| Math.min() | Returns the smallest of zero or more numbers. | console.log(Math.min(1, 2, 3)); // 1 |
+
 #### Date and time functions
+| Function | Description | Code Example | Concept |
+| --- | --- | --- | --- |
+| Date() | Creates a new Date object. | let date = new Date(); | Date creation |
+| getDate() | Returns the day of the month (1-31) of the Date object. | let date = new Date(); console.log(date.getDate()); | Date component |
+| getDay() | Returns the day of the week (0-6) of the Date object. | let date = new Date(); console.log(date.getDay()); | Date component |
+| getFullYear() | Returns the full year (4 digits) of the Date object. | let date = new Date(); console.log(date.getFullYear()); | Date component |
+| getHours() | Returns the hour (0-23) of the Date object. | let date = new Date(); console.log(date.getHours()); | Date component |
+| getMilliseconds() | Returns the milliseconds (0-999) of the Date object. | let date = new Date(); console.log(date.getMilliseconds()); | Date component |
+| getMinutes() | Returns the minutes (0-59) of the Date object. | let date = new Date(); console.log(date.getMinutes()); | Date component |
+| getMonth() | Returns the month (0-11) of the Date object. | let date = new Date(); console.log(date.getMonth()); | Date component |
+| getSeconds() | Returns the seconds (0-59) of the Date object. | let date = new Date(); console.log(date.getSeconds()); | Date component |
+| getTime() | Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC. | let date = new Date(); console.log(date.getTime()); | Timestamp |
+| getTimezoneOffset() | Returns the time zone offset in minutes from UTC. | let date = new Date(); console.log(date.getTimezoneOffset()); | Time zone |
+| getUTCDate() | Returns the day of the month (1-31) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCDate()); | Date component |
+| getUTCDay() | Returns the day of the week (0-6) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCDay()); | Date component |
+| getUTCFullYear() | Returns the full year (4 digits) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCFullYear()); | Date component |
+| getUTCHours() | Returns the hour (0-23) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCHours()); | Date component |
+| getUTCMilliseconds() | Returns the milliseconds (0-999) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCMilliseconds()); | Date component |
+| getUTCMinutes() | Returns the minutes (0-59) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCMinutes()); | Date component |
+| getUTCMonth() | Returns the month (0-11) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCMonth()); | Date component |
+| getUTCSeconds() | Returns the seconds (0-59) of the Date object in UTC. | let date = new Date(); console.log(date.getUTCSeconds()); | Date component |
+| setDate() | Sets the day of the month (1-31) of the Date object. | let date = new Date(); date.setDate(15); | Date modification |
+| setFullYear() | Sets the full year (4 digits) of the Date object. | let date = new Date(); date.setFullYear(2022); | Date modification |
+| setHours() | Sets the hour (0-23) of the Date object. | let date = new Date(); date.setHours(12); | Date modification |
+| setMilliseconds() | Sets the milliseconds (0-999) of the Date object. | let date = new Date(); date.setMilliseconds(500); | Date modification |
+| setMinutes() | Sets the minutes (0-59) of the Date object. | let date = new Date(); date.setMinutes(30); | Date modification |
+| setMonth() | Sets the month (0-11) of the Date object. | `let date = new
 
 
 ## Target Audience:
