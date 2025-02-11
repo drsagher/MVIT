@@ -48,6 +48,8 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-139 Linear Algebra for Machine Learning](LAML/Readme.md)
 
+[MVC-140 Calculus for Optimization](CFO/Readme.md)
+
 
 ## Others
 
