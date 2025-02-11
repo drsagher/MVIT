@@ -4,9 +4,9 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 ## Deficiency semester
 The deficiency semester is designed to bridge the gap in foundational knowledge for students pursuing a Fullstack AI Engineer program. This semester focuses on two crucial subjects: Introduction to World Wide Web Technologies and Introduction to Artificial Intelligence. In the World Wide Web Technologies course, students will learn the fundamentals of web development, including HTML, CSS, JavaScript, and web frameworks, enabling them to build dynamic and interactive web applications. In the Artificial Intelligence course, students will explore the basics of AI, including machine learning, natural language processing, and computer vision, providing a solid foundation for advanced AI topics in subsequent semesters. By completing these courses, students will gain a comprehensive understanding of both web development and AI principles, preparing them for success in the Fullstack AI Engineer program.
 
-[MVC-D02 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
-
 [MVC-D01 Introduction to World Wide Web Technologies](Introduction_to_www_technologies/Readme.md)
+
+[MVC-D02 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
 
 
 ## M100 Core Web Technologies
@@ -18,6 +18,9 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 [MVC-15 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
 
 [MVC-111 Version Control and Collaboration](VCS/Readme.md)
+
+[MVC-107 Prompt Engineering and LLMs](PE/Readme.md)
+
 
 
 ## M200 Core Programming Languages 
