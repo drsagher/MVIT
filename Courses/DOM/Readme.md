@@ -4,3 +4,5 @@ Unlock the full potential of your web applications with a deep understanding of 
 [Lesson 01 JavaScript Fundamentals](Lesson_01/Readme.md)
 
 [Lesson 02 DOM Fundamentals](Lesson_02/Readme.md)
+
+[Lesson 03 Document Properties](Lesson_03/Readme.md)
