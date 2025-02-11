@@ -272,7 +272,7 @@ The document object has several properties and methods that allow you to interac
 
 By understanding the DOM tree structure, node types, and document object, you can effectively manipulate and interact with HTML documents using JavaScript.
 
-## Selecting elements: getElementById, querySelector, querySelectorAll:
+## Selecting elements: ```getElementById```, ```querySelector```, ```querySelectorAll```:
 In JavaScript, selecting elements is a crucial step in manipulating and interacting with web pages. There are several methods to select elements, including getElementById(), querySelector(), and querySelectorAll(). The getElementById() method is used to select a single element by its unique ID, while the querySelector() method is used to select the first element that matches a specified CSS selector. The querySelectorAll() method, on the other hand, is used to select all elements that match a specified CSS selector, returning a NodeList that can be iterated over. These methods provide a powerful way to target specific elements on a web page, allowing developers to add event listeners, modify styles, and update content dynamically. By mastering these selection methods, developers can efficiently and effectively interact with web pages, creating dynamic and engaging user experiences.
 
 
