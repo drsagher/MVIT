@@ -46,7 +46,7 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
 
-
+[MVC-139 Linear Algebra for Machine Learning](LAML/Readme.md)
 
 
 ## Others
