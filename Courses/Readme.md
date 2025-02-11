@@ -6,9 +6,15 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-D02 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
 
-[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
-
 [MVC-93 HTML Fundamentlals](HTML_Fundamentals/Readme.md)
+
+[MVC-94 Cascading Style Sheets - CSS](CSS/Readme.md)
+
+[MVC-15 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
+
+[MVC-138 JavaScript DOM and Performance Optimization](DOM/Readme.md)
+
+[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
 
 [MVC-300 Information Security](Information_Security/Readme.md)
 
