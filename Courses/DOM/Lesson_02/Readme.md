@@ -43,55 +43,96 @@ In JavaScript, selecting elements is a crucial step in manipulating and interact
 | querySelector() | Returns the first element that matches the specified selector. | ```let element = document.querySelector('#myId');``` | Selecting a single element by its ID, class, tag name, or attribute. |
 | querySelectorAll() | Returns a collection of elements that match the specified selector. | ```let elements = document.querySelectorAll('.myClass');``` | Selecting multiple elements by their class, tag name, or attribute. |
 
-``` *getElementById() Examples* ```
+## Example-01 electing elements with ```getElementById```
+## HTML
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecting Elements with getElementById</title>
+</head>
+<body>
+	<h1 id="header">Selecting Elements with getElementById</h1>
+	<p id="paragraph">This is a paragraph of text.</p>
+	<button id="button" onclick="changeText()">Click Me!</button>
 
-- Selecting a single element by its ID:
-```
-let element = document.getElementById('myId');
-console.log(element); // <div id="myId">Hello World!</div>
-```
-- Trying to select an element that doesn't exist:
-```
-let element = document.getElementById('nonExistentId');
-console.log(element); // null
-```
-
-``` *querySelector() Examples* ```
-- Selecting a single element by its ID:
-```
-let element = document.querySelector('#myId');
-console.log(element); // <div id="myId">Hello World!</div>
-```
-- Selecting a single element by its class:
-```
-let element = document.querySelector('.myClass');
-console.log(element); // <div class="myClass">Hello World!</div>
-```
-- Selecting a single element by its tag name:
-```
-let element = document.querySelector('div');
-console.log(element); // <div>Hello World!</div>
-```
-- Trying to select an element that doesn't exist:
-```
-let element = document.querySelector('#nonExistentId');
-console.log(element); // null
+	<script src="script.js"></script>
+</body>
+</html>
 ```
 
-``` *querySelectorAll() Examples*```
-- Selecting multiple elements by their class:
+### JavaScript (script.js)
 ```
-let elements = document.querySelectorAll('.myClass');
-console.log(elements); // NodeList [ <div class="myClass">Hello World!</div>, <div class="myClass">Goodbye World!</div> ]
+function changeText() {
+	// Select the header element by its ID
+	var header = document.getElementById("header");
+	// Change the text content of the header element
+	header.textContent = "New Header Text!";
+
+	// Select the paragraph element by its ID
+	var paragraph = document.getElementById("paragraph");
+	// Change the text content of the paragraph element
+	paragraph.textContent = "New paragraph text!";
+
+	// Select the button element by its ID
+	var button = document.getElementById("button");
+	// Change the text content of the button element
+	button.textContent = "Clicked!";
+}
 ```
-- Selecting multiple elements by their tag name:
+
+In this example, we have an HTML page with a header, paragraph, and button. Each of these elements has a unique ID attribute. We use the getElementById method in our JavaScript code to select these elements and change their text content when the button is clicked.
+
+## Example-02 electing elements with ```querySelector```
+### HTML
 ```
-let elements = document.querySelectorAll('div');
-console.log(elements); // NodeList [ <div>Hello World!</div>, <div>Goodbye World!</div> ]
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecting Elements with querySelector</title>
+</head>
+<body>
+	<h1 class="header">Selecting Elements with querySelector</h1>
+	<p class="paragraph">This is a paragraph of text.</p>
+	<button class="button" onclick="changeText()">Click Me!</button>
+
+	<div id="container">
+		<p>This is a paragraph inside a container.</p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
 ```
-- Trying to select elements that don't exist:
+
+### JavaScript (script.js)
 ```
-let elements = document.querySelectorAll('#nonExistentId');
-console.log(elements); // NodeList []
+function changeText() {
+	// Select the header element by its class
+	var header = document.querySelector(".header");
+	// Change the text content of the header element
+	header.textContent = "New Header Text!";
+
+	// Select the paragraph element by its class
+	var paragraph = document.querySelector(".paragraph");
+	// Change the text content of the paragraph element
+	paragraph.textContent = "New paragraph text!";
+
+	// Select the button element by its class
+	var button = document.querySelector(".button");
+	// Change the text content of the button element
+	button.textContent = "Clicked!";
+
+	// Select the container element by its ID
+	var container = document.querySelector("#container");
+	// Change the background color of the container element
+	container.style.backgroundColor = "lightblue";
+
+	// Select the paragraph element inside the container element
+	var containerParagraph = document.querySelector("#container p");
+	// Change the text content of the paragraph element inside the container element
+	containerParagraph.textContent = "New paragraph text inside container!";
+}
 ```
-Note: The ```querySelectorAll()``` method returns a NodeList, which is an array-like object that can be iterated over using a for loop or the ```forEach()``` method.
+In this example, we use the querySelector method to select elements by their class, ID, and even by a combination of both (e.g., #container p). We then change the text content, background color, and other styles of the selected elements.
+
