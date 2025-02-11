@@ -32,3 +32,64 @@ The document object has several properties and methods that allow you to interac
 - *document.createTextNode()*: Creates a new text node with the specified text content.
 
 By understanding the DOM tree structure, node types, and document object, you can effectively manipulate and interact with HTML documents using JavaScript.
+
+## Selecting elements: getElementById, querySelector, querySelectorAll:
+
+| Method | Description | Code Example | Use Case |
+| --- | --- | --- | --- |
+| getElementById() | Returns an element with the specified ID. | ```let element = document.getElementById('myId');``` | Selecting a single element by its unique ID. |
+| querySelector() | Returns the first element that matches the specified selector. | ```let element = document.querySelector('#myId');``` | Selecting a single element by its ID, class, tag name, or attribute. |
+| querySelectorAll() | Returns a collection of elements that match the specified selector. | ```let elements = document.querySelectorAll('.myClass');``` | Selecting multiple elements by their class, tag name, or attribute. |
+
+``` *getElementById() Examples* ```
+
+- Selecting a single element by its ID:
+```
+let element = document.getElementById('myId');
+console.log(element); // <div id="myId">Hello World!</div>
+```
+- Trying to select an element that doesn't exist:
+```
+let element = document.getElementById('nonExistentId');
+console.log(element); // null
+```
+
+``` *querySelector() Examples* ```
+- Selecting a single element by its ID:
+```
+let element = document.querySelector('#myId');
+console.log(element); // <div id="myId">Hello World!</div>
+```
+- Selecting a single element by its class:
+```
+let element = document.querySelector('.myClass');
+console.log(element); // <div class="myClass">Hello World!</div>
+```
+- Selecting a single element by its tag name:
+```
+let element = document.querySelector('div');
+console.log(element); // <div>Hello World!</div>
+```
+- Trying to select an element that doesn't exist:
+```
+let element = document.querySelector('#nonExistentId');
+console.log(element); // null
+```
+
+``` *querySelectorAll() Examples*```
+- Selecting multiple elements by their class:
+```
+let elements = document.querySelectorAll('.myClass');
+console.log(elements); // NodeList [ <div class="myClass">Hello World!</div>, <div class="myClass">Goodbye World!</div> ]
+```
+- Selecting multiple elements by their tag name:
+```
+let elements = document.querySelectorAll('div');
+console.log(elements); // NodeList [ <div>Hello World!</div>, <div>Goodbye World!</div> ]
+```
+- Trying to select elements that don't exist:
+```
+let elements = document.querySelectorAll('#nonExistentId');
+console.log(elements); // NodeList []
+```
+Note: The ```querySelectorAll()``` method returns a NodeList, which is an array-like object that can be iterated over using a for loop or the ```forEach()``` method.
