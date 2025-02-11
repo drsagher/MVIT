@@ -176,8 +176,97 @@ In JavaScript, inheritance allows one object to inherit the properties and metho
 
 
 ### 4. Data Structures
+JavaScript provides several built-in data structures, including arrays, objects, sets, maps, and weak maps, which can be used to store and manipulate data efficiently. Arrays are ordered collections of values that can be accessed by index, while objects are unordered collections of key-value pairs that can be accessed by key. Sets are collections of unique values, while maps are collections of key-value pairs that can be accessed by key. Weak maps are similar to maps, but they allow the garbage collector to remove entries when the key is no longer referenced. Additionally, JavaScript also provides several data structure libraries and frameworks, such as Lodash and Immutable.js, which provide additional data structures and utilities for working with data. By using these data structures, developers can write more efficient, scalable, and maintainable code, and solve complex problems in a more elegant and efficient way.
 
-#### Arrays (creation, indexing, methods)
+### JavaScript Arrays Complete Reference
+
+#### Array Creation
+
+| Concept               | Description                          | Code Example                          | Use Case                              |
+|-----------------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| Array Literal         | Create array using square brackets   | `let arr = [1, 2, 3];`                | Most common array creation method     |
+| Array Constructor     | Create array with `new Array()`      | `let arr = new Array(1, 2, 3);`       | Less common, creates empty array if single number passed |
+| Array.of()            | Creates array from arguments         | `let arr = Array.of(1, 2, 3);`        | Avoid constructor ambiguity with single numeric argument |
+| Array.from()          | Creates array from array-like object | `let arr = Array.from('hello');`      | Convert NodeList, strings, or iterables to arrays |
+| Split String          | Create array from split string       | `let arr = 'a,b,c'.split(',');`       | Parsing CSV data or splitting strings |
+
+#### Array Indexing & Basic Operations
+
+| Concept               | Description                          | Code Example                          | Use Case                              |
+|-----------------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| Index Access          | Access elements with bracket notation | `arr[0]`                             | Accessing first element               |
+| Negative Indexing      | Access from end using `length`       | `arr[arr.length - 1]`                | Get last element                      |
+| Length Property        | Get/set array length                 | `arr.length = 5;`                     | Truncating or extending arrays        |
+| Modification           | Change elements by index             | `arr[2] = 'new';`                     | Updating array elements               |
+| Existence Check        | Check if index exists                | `2 in arr`                            | Verifying sparse arrays               |
+| Iteration              | Loop through elements                | `for (let item of arr) { ... }`       | Processing each element in sequence   |
+| Spread Operator        | Expand array elements                | `[...arr1, ...arr2]`                  | Merging arrays or function arguments  |
+
+#### Array Methods
+
+###### Mutator Methods (Modify Original Array)
+
+| Method       | Description                          | Code Example                          | Use Case                              |
+|--------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| push()       | Add elements to end                  | `arr.push(4);`                        | Building stacks                       |
+| pop()        | Remove last element                  | `let last = arr.pop();`               | Stack implementations                 |
+| shift()      | Remove first element                 | `let first = arr.shift();`            | Queue implementations                 |
+| unshift()    | Add elements to beginning            | `arr.unshift(0);`                     | Adding priority items                 |
+| splice()     | Add/remove elements                  | `arr.splice(2, 1, 'a', 'b');`         | Modifying array at specific position  |
+| sort()       | Sort elements                        | `arr.sort((a, b) => a - b);`          | Ordering data                         |
+| reverse()    | Reverse array order                  | `arr.reverse();`                      | Displaying data in reverse            |
+| fill()       | Fill array with value                | `new Array(5).fill(0);`               | Initializing arrays with default values |
+| copyWithin() | Copy array portion                   | `arr.copyWithin(0, 3, 5);`            | Optimized array manipulation          |
+
+##### Accessor Methods (Return New Array)
+
+| Method       | Description                          | Code Example                          | Use Case                              |
+|--------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| concat()     | Merge arrays                         | `arr1.concat(arr2);`                  | Combining datasets                    |
+| slice()      | Extract portion                      | `arr.slice(1, 3);`                    | Pagination or data chunks             |
+| join()       | Create string from elements          | `arr.join('-');`                      | Generating CSV or URL slugs           |
+| indexOf()    | Find element index                   | `arr.indexOf('apple');`               | Checking element existence            |
+| lastIndexOf()| Find last occurrence index           | `arr.lastIndexOf('apple');`           | Finding recent matches                |
+| includes()   | Check element existence              | `arr.includes('apple');`              | Modern existence check                |
+| toString()   | Convert to string                    | `arr.toString();`                     | Simple array representation           |
+
+##### Iteration Methods
+
+| Method       | Description                          | Code Example                          | Use Case                              |
+|--------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| forEach()    | Execute function for each element    | `arr.forEach(item => console.log(item));` | Side effect operations          |
+| map()        | Create new transformed array         | `arr.map(x => x * 2);`                | Data transformation pipelines         |
+| filter()     | Create filtered array                | `arr.filter(x => x > 10);`            | Search results filtering              |
+| reduce()     | Accumulate values                    | `arr.reduce((sum, x) => sum + x, 0);` | Aggregations and calculations         |
+| reduceRight()| Reduce from right-to-left            | `arr.reduceRight((acc, x) => ...);`   | Right-associative operations          |
+| find()       | Find first matching element          | `arr.find(x => x.age > 18);`          | Database-like queries                 |
+| findIndex()  | Find index of first match            | `arr.findIndex(x => x > 10);`         | Locating element positions            |
+| some()       | Test if any element matches          | `arr.some(x => x < 0);`               | Validation checks                     |
+| every()      | Test if all elements match           | `arr.every(x => x.valid);`            | Complete data validation              |
+| entries()    | Get index/value pairs                | `for (let [i, v] of arr.entries())`   | Need both index and value             |
+| keys()       | Get array indices                    | `for (let i of arr.keys())`           | Index-only iteration                  |
+| values()     | Get array values                     | `for (let v of arr.values())`         | Value-only iteration                  |
+
+##### Other Important Methods/Properties
+
+| Method/Property | Description                          | Code Example                          | Use Case                              |
+|-----------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| flat()          | Flatten nested arrays                | `arr.flat(2);`                        | Processing nested data structures     |
+| flatMap()       | Map then flatten                     | `arr.flatMap(x => [x, x*2]);`         | Combined mapping/flattening           |
+| Array.isArray() | Check if value is array              | `Array.isArray(arr);`                 | Type checking                         |
+| at()            | Access elements with negative index  | `arr.at(-1);`                         | Modern last element access            |
+| toLocaleString()| Localized string representation      | `arr.toLocaleString();`               | Internationalization                  |
+
+#### Advanced Concepts
+
+| Concept               | Description                          | Code Example                          | Use Case                              |
+|-----------------------|--------------------------------------|---------------------------------------|---------------------------------------|
+| Sparse Arrays         | Arrays with empty slots              | `let arr = [1,,3];`                   | Memory optimization                   |
+| Array-like Objects    | Objects with numeric keys and length | `Array.from(arguments);`              | Working with DOM collections          |
+| Typed Arrays          | Fixed-type numeric arrays            | `new Int32Array(10);`                 | Binary data processing                 |
+| Destructuring         | Extract values into variables        | `let [first, second] = arr;`          | Clean value extraction                 |
+| Array Buffer          | Raw binary data buffer               | `new ArrayBuffer(16);`                | Low-level binary operations            |
+
 
 #### Objects (creation, properties, methods)
 
