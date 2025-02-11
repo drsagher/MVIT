@@ -1,13 +1,15 @@
 # Lesson 02 DOM Fundamentals
-The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of nodes, where each node corresponds to an element, attribute, or piece of text. The DOM allows developers to interact with and manipulate the document's content, layout, and behavior. It provides a way to access and modify elements, attributes, and text nodes, as well as to respond to events such as clicks, keyboard input, and page loads. Understanding the DOM is essential for building dynamic web applications, as it allows developers to create, modify, and control the behavior of web pages. The DOM is composed of several key components, including elements, attributes, text nodes, and events, which work together to provide a powerful and flexible way to interact with web documents.
+The Document Object Model (DOM) is a programming interface for HTML documents. It represents the structure of a document as a tree of nodes, where each node corresponds to an element, attribute, or piece of text. The DOM allows developers to interact with and manipulate the document's content, layout, and behavior. It provides a way to access and modify elements, attributes, and text nodes, as well as to respond to events such as clicks, keyboard input, and page loads. 
+
+Understanding the DOM is essential for building dynamic web applications, as it allows developers to create, modify, and control the behavior of web pages. The DOM is composed of several key components, including elements, attributes, text nodes, and events, which work together to provide a powerful and flexible way to interact with web documents.
 
 ## DOM Tree Structure
 The DOM tree structure is a hierarchical representation of an HTML document. It consists of a root node, which is the document object, and various child nodes, which represent the different elements, attributes, and text content of the HTML document.
 
 The DOM tree structure is composed of the following components:
-- Root Node: The document object, which is the topmost node of the DOM tree.
-- Element Nodes: Represent HTML elements, such as div, p, img, etc.
-- Attribute Nodes: Represent the attributes of HTML elements, such as id, class, src, etc.
+- Root Node: The document object, which is the top most node of the DOM tree.
+- Element Nodes: Represent HTML elements, such as ```div```, ```p```, ```img```, etc.
+- Attribute Nodes: Represent the attributes of HTML elements, such as ```id```, ```class```, ```src```, etc.
 - Text Nodes: Represent the text content of HTML elements.
 - Comment Nodes: Represent HTML comments.
 
