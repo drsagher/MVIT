@@ -63,5 +63,60 @@ In this example, we use document.activeElement to get the currently focused elem
 
 Note that document.activeElement returns the currently focused element, or null if no element is focused. Also, the focus event is used to track changes to the active element, and the event.target property is used to get the element that triggered the event.
 
+## Example 02 ```document.body```
+
+#### HTML
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Body Example</title>
+	<style>
+		body {
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Document Body Example</h1>
+	<p>This is a paragraph of text.</p>
+
+	<script src="script.js"></script>
+</body>
+</html>
+```
+
+#### JavaScript ```script.js```
+```
+// Get the body element
+var body = document.body;
+
+// Log the body element to the console
+console.log("Body element:", body);
+
+// Change the background color of the body
+body.style.backgroundColor = "lightblue";
+
+// Add a new paragraph to the body
+var newParagraph = document.createElement("p");
+newParagraph.textContent = "This is a new paragraph of text.";
+body.appendChild(newParagraph);
+
+// Get the child elements of the body
+var childElements = body.children;
+console.log("Child elements:", childElements);
+```
+
+In this example, we use ```document.body``` to get the body element of the HTML document. We then use the ```style``` property to change the background color of the body element. We also use the ```createElement``` method to create a new p element and append it to the body element using the ```appendChild``` method. Finally, we use the children property to get the child elements of the body element and log them to the console.
+
+Note that document.body returns the body element of the HTML document, or null if the document does not have a body element.
+
+Output:
+Body element: ```<body>...</body>```
+Child elements: ```HTMLCollection(3) [h1, p, p]```
 
 
+This program demonstrates the following properties and methods of the ```document.body``` object:
+- ```style```: sets or gets the inline style of the element
+- ```appendChild```: adds a new child element to the element
+- ```children```: returns a collection of the child elements of the element
