@@ -10,6 +10,8 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-D03 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
 
+[MVC-D04 Secrets of Programming with Math and Logic](SPML/Readme.md)
+
 
 ## M100 Core Web Technologies
 
