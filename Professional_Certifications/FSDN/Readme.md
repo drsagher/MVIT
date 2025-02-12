@@ -1,5 +1,6 @@
 # [Full Stack Development with Next.js (FSDN)](https://www.mvut.us/pages/study/programs/fsdn)
 
+### Eligibility : [M100 Connecting the Dots]()
 
 ## Term-I
 
@@ -13,8 +14,6 @@
 
 
 ## Term-II
-
-[MVC-144 Secrets of Programming with Math and Logic]()
 
 [MVC-13 Database Management Systems -DBMS]()
 
@@ -39,8 +38,6 @@
 [MVC-119 API Development with Next]()
 
 [MVC-125 Authentication (OAuth, JWT, Next AUTH)]()
-
-[MVC-107 Prompt Engineering and LLMs]()
 
 [MVC-48 Final Project]()
 
