@@ -52,33 +52,33 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 
 [MVC-40 Probability and Statistics for Data Science](SDS/Readme.md)
 
-[MVC-11 AI Software Engineering](AISE/Readme.md)
-
 
 ## M400 Responsive Web Design and Development
 
+[MVC-11 AI Software Engineering](AISE/Readme.md)
+
+
 ## M500 Databases and Retrieval Techniques
 
-## M600 Building Scalable Applications
-
-## M700 Containerization and Cloud Computing
-
-## M800 Fullstack Developer
-
-
-## M900 AI Engineer
-
-
-
-## Others
+## M600 Programming Trinity
 
 [MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
 
 [MVC-96 PHP Programming](PHP/Readme.md)
 
 
+## M700 Containerization and Cloud Computing
+
+## M800 Building Scalable Applications for Businesses
+
+## M900 Designing and Developing Android and iOS Applications
+
+## M1000 Fullstack Developer
+
+## M2000 AI Engineer
 
 
+## Apex College, Pakpattan
 
 [MVC-300 Information Security](Information_Security/Readme.md)
 
