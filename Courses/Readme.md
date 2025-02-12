@@ -3,13 +3,18 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M100 Connecting the Dots
 
-[MVC-143 Introduction to World Wide Web Technologies](Introduction_to_www_technologies/Readme.md)
+MVC-143 Microsoft Office Essentials for Web Developers
+MVC-144 Secrets of Programming with Math and Logic
+MVC-107 Prompt Engineering and LLMs
+MVC-15 Introduction to JavaScript Programming
+MVC-10 Digital Literacy and Online Professional Skills
 
-[MVC-144 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
 
-[MVC-D03 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
+[MVC-143 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
 
-[MVC-D04 Secrets of Programming with Math and Logic](SPML/Readme.md)
+[MVC-144 Secrets of Programming with Math and Logic](SPML/Readme.md)
+
+[MVC-107 Prompt Engineering and LLMs](PE/Readme.md)
 
 [MVC-15 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
 
@@ -92,3 +97,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-301 Software Engineering](Software_Engineering/Readme.md)
 
 [MVC-302 Data Structures](Data_Structures/Readme.md)
+
+
+[MVC-D03 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
