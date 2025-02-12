@@ -3,13 +3,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M100 Connecting the Dots
 
-MVC-143 Microsoft Office Essentials for Web Developers
-MVC-144 Secrets of Programming with Math and Logic
-MVC-107 Prompt Engineering and LLMs
-MVC-15 Introduction to JavaScript Programming
-MVC-10 Digital Literacy and Online Professional Skills
-
-
 [MVC-143 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
 
 [MVC-144 Secrets of Programming with Math and Logic](SPML/Readme.md)
@@ -39,22 +32,25 @@ MVC-10 Digital Literacy and Online Professional Skills
 
 
 
-## M200 Core Programming Languages 
+## M300 Fullstack Fundamentals
 
 [MVC-138 JavaScript DOM and Performance Optimization](DOM/Readme.md)
 
 [MVC-13 Database Management Systems -DBMS](DBMS/Readme.md)
 
-
-
 [MVC-114 Responsive Design with Figma](RDS/Readme.md)
 
-
-
-
-## M300 Mathematical Concepts for Programming
-
 [MVC-21 Data Structures and Algorithms](DSA/Readme.md)
+
+[MVC-105 PostgreSQL and Next.js Full Stack Applications](PsqlNext/Readme.md)
+
+[MVC-120 Bootstrap](Bootstrap/Readme.md)
+
+
+## M400 Programming Trinity
+
+
+
 
 [MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
 
