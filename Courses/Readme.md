@@ -103,5 +103,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-801 AI Agents Development with Next.js](NextAI/Readme.md)
 
+[MVC-802 Building Intelligent Cloud Native Microservices](Microservices/Readme.md)
+
 
 
