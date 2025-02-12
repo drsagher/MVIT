@@ -60,7 +60,24 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-11 AI Software Engineering](AISE/Readme.md)
 
 
-## sdsads
+## M500 APIs Development
+MVC-118 Fast API Framework
+MVC-87 MEAN Stack Development
+MVC-32 MERN Stack Development
+MVC-142 ASP.NET MVC
+
+
+## M600 Containerization and Cloud Computing
+MVC-122 Serverless deployment (AWS Lambda)
+MVC-123 Containerization (Docker)
+MVC-124 Orchestration (Kubernetes)
+MVC-125 Authentication (OAuth, JWT, Next AUTH)
+MVC-102 Full Stack Development with Laravel
+MVC-20 Operating Systems
+
+
+## M700 Mathematical Concepts for Programming
+
 [MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
 
 [MVC-139 Linear Algebra for Machine Learning](LAML/Readme.md)
@@ -70,38 +87,4 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-40 Probability and Statistics for Data Science](SDS/Readme.md)
 
 
-## M400 Responsive Web Design and Development
 
-
-
-
-## M500 Databases and Retrieval Techniques
-
-## M600 Programming Trinity
-
-
-
-
-
-
-## M700 Containerization and Cloud Computing
-
-## M800 Building Scalable Applications for Businesses
-
-## M900 Designing and Developing Android and iOS Applications
-
-## M1000 Fullstack Developer
-
-## M2000 AI Engineer
-
-
-## Apex College, Pakpattan
-
-[MVC-300 Information Security](Information_Security/Readme.md)
-
-[MVC-301 Software Engineering](Software_Engineering/Readme.md)
-
-[MVC-302 Data Structures](Data_Structures/Readme.md)
-
-
-[MVC-D03 Introduction to Artificial Intelligence (AI)](Introduction_to_AI/Readme.md)
