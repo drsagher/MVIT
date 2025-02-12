@@ -22,8 +22,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-111 Version Control and Collaboration](VCS/Readme.md)
 
-[MVC-107 Prompt Engineering and LLMs](PE/Readme.md)
-
 [MVC-28 Typescript Programming](TS/Readme.md)
 
 [MVC-100 Tailwind CSS](TW/Readme.md)
