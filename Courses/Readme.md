@@ -49,9 +49,18 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M400 Programming Trinity
 
+[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
+
+[MVC-96 PHP Programming](PHP/Readme.md)
+
+[MVC-141 C#.Net Programming](Csharp/Readme.md)
+
+[MVC-119 API Development with Next](APINext/Readme.md)
+
+[MVC-11 AI Software Engineering](AISE/Readme.md)
 
 
-
+## sdsads
 [MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
 
 [MVC-139 Linear Algebra for Machine Learning](LAML/Readme.md)
@@ -63,16 +72,16 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M400 Responsive Web Design and Development
 
-[MVC-11 AI Software Engineering](AISE/Readme.md)
+
 
 
 ## M500 Databases and Retrieval Techniques
 
 ## M600 Programming Trinity
 
-[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
 
-[MVC-96 PHP Programming](PHP/Readme.md)
+
+
 
 
 ## M700 Containerization and Cloud Computing
