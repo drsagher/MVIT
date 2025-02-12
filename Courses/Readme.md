@@ -40,7 +40,7 @@ The deficiency semester is designed to bridge the gap in foundational knowledge 
 [MVC-100 Tailwind CSS](TW/Readme.md)
 
 
-## M300 Mathematical Concepts for Programming and AI Engineering
+## M300 Mathematical Concepts for Programming
 
 [MVC-21 Data Structures and Algorithms](DSA/Readme.md)
 
