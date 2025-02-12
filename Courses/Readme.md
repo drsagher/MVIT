@@ -105,5 +105,5 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-802 Building Intelligent Cloud Native Microservices](Microservices/Readme.md)
 
-
+[MVC-803 Intelligent Humanoid Robotics and Physical AI Systems](IHR/Readme.md)
 
