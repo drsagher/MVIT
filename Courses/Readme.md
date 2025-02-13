@@ -28,6 +28,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-26 Next.js and Vercel Deployment](NextVercel/Readme.md)
 
+[MVC-148 Advanced Techniques for Improved Search Engine Rankings](SEO/Readme.md)
 
 
 ## M300 Fullstack Fundamentals
