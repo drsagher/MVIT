@@ -4,3 +4,6 @@ Introduction to JavaScript Programming" is a foundational course designed to equ
 [Lesson 1 Expectations for Web Developers](Lesson_01/Readme.md)
 
 [Lesson 2 Data Types and Variables](Lesson_02/Readme.md)
+
+[Lesson 3 A Comprehensive Study of Complex Data Structures](Lesson_03/Readme.md)
+
