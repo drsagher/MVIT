@@ -69,14 +69,14 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-142 ASP.NET MVC]()
 
-[MVC-145 Cloud Computing Fundamentals](CCF/Readme.md)
+[MVC-102 Full Stack Development with Laravel]()
 
 [MVC- 146 Cyber Security Fundamentals](CSF/Readme.md)
 
 
 ## M600 Containerization and Cloud Computing
 
-[MVC-122 Serverless deployment (AWS Lambda)]()
+[MVC-122 Serverless Deployment (AWS Lambda)]()
 
 [MVC-123 Containerization (Docker)]()
 
@@ -84,7 +84,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-125 Authentication (OAuth, JWT, Next AUTH)]()
 
-[MVC-102 Full Stack Development with Laravel]()
+[MVC-145 Cloud Computing Fundamentals](CCF/Readme.md)
 
 [MVC-20 Operating Systems]()
 
