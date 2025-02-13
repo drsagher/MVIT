@@ -68,6 +68,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-142 ASP.NET MVC]()
 
+[MVC-145 Cloud Computing Fundamentals](CCF/Readme.md)
+
 
 ## M600 Containerization and Cloud Computing
 
