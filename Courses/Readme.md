@@ -100,6 +100,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-72 Artificial Intelligence and Machine Learning]()
 
+[MVC-147 Introduction to Blockchain Technology](BC/Readme.md)
+
 
 ## M800 Autonomous AI and Agentic Web
 
