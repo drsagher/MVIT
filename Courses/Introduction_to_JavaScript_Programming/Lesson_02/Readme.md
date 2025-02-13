@@ -55,3 +55,46 @@ Note:
 ## Data Memorization
 In JavaScript, variables play a crucial role in data memorization, allowing developers to store and manipulate data in a program. When a variable is declared, a memory location is allocated to store the variable's value. The variable's name serves as a reference to this memory location, enabling developers to access and modify the stored value. JavaScript variables can hold various data types, including numbers, strings, booleans, objects, and arrays, each requiring a specific amount of memory to store. As variables are reassigned or go out of scope, the memory allocated to them is released, allowing for efficient memory management. Understanding how JavaScript variables interact with memory is essential for writing efficient, scalable, and bug-free code, particularly when working with large datasets or complex applications.
 
+
+## The Use of ```typeof``` operator
+The typeof operator is a versatile tool in JavaScript that allows developers to determine the data type of a variable, expression, or value. By using typeof, developers can check if a variable is a number, string, boolean, object, function, or undefined, enabling them to write more robust and error-free code. The typeof operator is particularly useful when working with dynamic data, unknown variables, or user input, as it helps to prevent errors and unexpected behavior. Additionally, typeof can be used to validate function parameters, check the type of a returned value, or simply to debug and understand the data flow in an application. Overall, the typeof operator is an essential part of JavaScript development, providing a simple yet powerful way to inspect and validate data types.
+
+
+Here is a simple JavaScript program that uses the typeof operator to display the data types of various variables:
+
+```
+// Declare variables of different data types
+var name = "John Doe";
+var age = 30;
+var isAdmin = true;
+var height = null;
+var scores = [90, 85, 95];
+var person = { name: "Jane Doe", age: 25 };
+
+// Use typeof operator to display data types
+console.log("Type of name: " + typeof name);
+console.log("Type of age: " + typeof age);
+console.log("Type of isAdmin: " + typeof isAdmin);
+console.log("Type of height: " + typeof height);
+console.log("Type of scores: " + typeof scores);
+console.log("Type of person: " + typeof person);
+
+// Use typeof operator with functions
+function greet() {
+  console.log("Hello!");
+}
+console.log("Type of greet: " + typeof greet);
+
+// Use typeof operator with undefined variable
+var unknown;
+console.log("Type of unknown: " + typeof unknown);
+```
+
+Note that the typeof operator returns the following values:
+- "string" for strings
+- "number" for numbers
+- "boolean" for booleans
+- "object" for objects, arrays, and null
+- "function" for functions
+- "undefined" for undefined variables
+
