@@ -63,6 +63,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-150 Advance Programming Essentials](AdvProgramming/Readme.md)
 
+[MVC-151 Network Protocols, Architectures, and Security](NPAS/Readme.md)
+
 
 ## M500 APIs Development
 
