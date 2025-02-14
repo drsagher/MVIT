@@ -40,7 +40,7 @@ An event is an occurrence or action that happens within a program, such as a use
 
 ### How do Events Work?
 When an event occurs, the program generates an event object, which contains information about the event, such as:
-1. Event type (e.g., click, keypress, mousemove)
+1. Event type (e.g., ```click```, ```keypress```, ```mousemove```)
 2. Event target (e.g., the element that was clicked)
 3. Event data (e.g., the key that was pressed)
 
@@ -51,11 +51,11 @@ The event object is then passed to an event listener, which is a function that h
 
 ### Types of Events
 There are several types of events, including:
-1. Mouse events: click, dblclick, mouseover, mouseout, mousemove
-2. Keyboard events: keydown, keyup, keypress
-3. Touch events: touchstart, touchmove, touchend
-4. Form events: submit, reset, change
-5. Network events: load, error, abort
+1. Mouse events: ```click```, ```dblclick```, ```mouseover```, ```mouseout```, ```mousemove```
+2. Keyboard events: ```keydown```, ```keyup```, ```keypress```
+3. Touch events: ```touchstart```, ```touchmove```, ```touchend```
+4. Form events: ```submit```, ```reset```, ```change```
+5. Network events: ```load```, ```error```, ```abort```
 
 
 ## Why are Events Important?
