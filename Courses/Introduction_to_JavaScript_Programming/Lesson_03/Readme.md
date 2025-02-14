@@ -61,3 +61,64 @@ const add = new Function("a", "b", "return a + b");
 - Special methods: ```apply()```, ```bind()```, ```call()```.
 - ES6 arrow functions ```(() => {})``` lack their own this.
 
+## 4. Dates (Date)
+Represent dates and times.
+
+Creation:
+```
+const now = new Date();
+const birthday = new Date("2000-01-01");
+```
+
+### Key Features:
+- Methods: ```getFullYear()```, ```setMonth()```, ```toISOString()```.
+- Timestamps: ```Date.now()``` returns milliseconds since epoch.
+
+## 5. Regular Expressions (RegExp)
+Pattern matching for strings.
+
+Creation:
+```
+const regex1 = /ab+c/i; // Literal syntax
+const regex2 = new RegExp("ab+c", "i");
+```
+
+### Key Features:
+- Methods: ```test("string")```, ```exec("string")```.
+- Flags: ```g``` (global), ```i``` (case-insensitive).
+
+
+## 6. Error Objects (Error, TypeError, etc.)
+Represent runtime errors.
+Creation:
+
+```
+throw new Error("Something went wrong!");
+throw new TypeError("Invalid type!");
+```
+
+### Key Features:
+- Built-in subtypes: SyntaxError, ReferenceError, RangeError.
+- Custom errors: Extend Error class.
+
+## 7. Keyed Collections
+
+### Map
+Stores key-value pairs with any key type.
+
+```
+const map = new Map();
+map.set("name", "Alice");
+map.get("name"); // "Alice"
+```
+
+### Set
+Stores unique values.
+```
+const set = new Set([1, 2, 2, 3]); // {1, 2, 3}
+```
+
+### WeakMap/WeakSet
+Hold "weak" references (keys are objects only).
+
+
