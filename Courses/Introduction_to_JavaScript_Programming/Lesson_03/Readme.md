@@ -121,4 +121,55 @@ const set = new Set([1, 2, 2, 3]); // {1, 2, 3}
 ### WeakMap/WeakSet
 Hold "weak" references (keys are objects only).
 
+## 9. Other Built-in Objects
+
+### Math
+Static methods for math operations.
+
+```
+Math.PI; // 3.14159...
+Math.random(); // Random number between 0-1
+```
+
+### JSON
+Serialize/deserialize JSON data.
+
+```
+JSON.stringify({ name: "Alice" }); // '{"name":"Alice"}'
+JSON.parse('{"name":"Alice"}');
+```
+
+### Promise
+Manage asynchronous operations.
+
+```
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+```
+
+### Proxy/Reflect
+Customize object behavior.
+
+```
+const target = {};
+const proxy = new Proxy(target, {
+  get: (obj, prop) => Reflect.get(obj, prop) || "default"
+});
+```
+
+### Internationalization (Intl)
+Format dates, numbers, and strings.
+
+```
+new Intl.DateTimeFormat("en-US").format(new Date());
+```
+
+## 10. Wrapper Objects
+Primitives can be wrapped in objects (rarely used directly):
+
+```
+const strObj = new String("hello"); // Avoid; use primitives instead.
+```
+JavaScript provides a rich set of built-in object types to handle diverse programming needs. From storing data ```(Object, Array)``` to handling ```errors (Error)```, asynchronous operations (```Promise```), and binary data (```TypedArray```), understanding these objects is crucial for effective development. Always prefer literal syntax ```({}, [], /\d+/)``` over constructors for simplicity.
 
