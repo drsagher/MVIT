@@ -61,6 +61,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-11 AI Software Engineering](AISE/Readme.md)
 
+[MVC-150 Advance Programming Essentials](AdvProgramming/Readme.md)
+
 
 ## M500 APIs Development
 
