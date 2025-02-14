@@ -3,3 +3,7 @@ Computer communication refers to the process of exchanging data, information, an
 
 ## Process of Communication
 The process of communication involves a sender, receiver, and communication media, with analog and digital conversion playing a crucial role. The sender creates the information to be transmitted, which is then converted into digital form through analog-to-digital conversion (ADC) if necessary. The digital information is encoded, modulated onto a carrier signal, and transmitted through the communication media, such as a cable or wireless link. The signal propagates through the media, potentially being affected by noise or interference, before being received by the receiver. The receiver demodulates the signal, decodes the information, and converts it back into analog form through digital-to-analog conversion (DAC) if necessary, before presenting the information to the user.
+
+<img src="datacom.jpg" alt="Data Communication process"  >
+
+
