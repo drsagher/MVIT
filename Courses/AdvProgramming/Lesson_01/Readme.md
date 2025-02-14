@@ -3,7 +3,7 @@
 ## Agenda:
 - Visual Programming Basics
 - Introduction to Events
--Fundamentals of Event-driven Programming
+- Fundamentals of Event-driven Programming
 
 
 ## Visual Programming Basics
