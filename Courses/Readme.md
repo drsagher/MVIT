@@ -113,6 +113,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M800 Autonomous AI and Agentic Web
 
+[MVC-800 Introduction to Agentic AI Application Development](AgenticAI/Readme.md)
+
 [MVC-801 AI Agents Development with Next.js](NextAI/Readme.md)
 
 [MVC-802 Building Intelligent Cloud Native Microservices](Microservices/Readme.md)
