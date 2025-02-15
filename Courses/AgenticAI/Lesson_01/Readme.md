@@ -1,1 +1,1 @@
-# Lesson 01 Generative AI
+# Lesson 01 Introduction to Generative AI and Large Language Models
