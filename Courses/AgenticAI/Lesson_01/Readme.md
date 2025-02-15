@@ -56,3 +56,22 @@ Challenges:
 
 ### Summary
 LLMs leverage transformer-based architectures with self-attention to model language probabilistically. Trained on massive datasets, they excel at text generation and understanding by capturing intricate linguistic patterns. However, their effectiveness is tempered by computational costs, ethical concerns, and inherent limitations in true comprehension. Advances in efficiency and safety remain active research areas.
+
+
+## Large Language Models (LLMs): Expertise and Use Cases
+
+| Model       | Expertise Area                  | Key Use Cases                                                                 |
+|-------------|----------------------------------|-------------------------------------------------------------------------------|
+| **GPT-3/4** | General-purpose text generation | Chatbots, content creation, code generation, Q&A systems, creative writing   |
+| **BERT**    | Bidirectional language understanding | Search engines, sentiment analysis, text classification, named entity recognition |
+| **T5**      | Text-to-text transformations    | Translation, summarization, paraphrasing, text correction, question answering |
+| **PaLM**    | Multimodal reasoning & code     | Code generation, mathematical problem-solving, image captioning, multilingual tasks |
+| **LLaMA**   | Efficient language modeling     | Research, lightweight applications, text generation, knowledge distillation  |
+| **Claude**  | Safety-aligned dialogue         | Ethical AI assistants, content moderation, long-form document analysis        |
+| **Mistral** | High-speed inference            | Real-time applications (e.g., translation, chatbots), edge device deployment  |
+
+
+### Notes:
+- **Expertise Area**: Refers to the model's primary strength or design focus. Many LLMs overlap in capabilities.  
+- **Use Cases**: Examples are illustrative; models often support broader applications through fine-tuning or prompting.  
+- **Models**: GPT-3/4 (OpenAI), BERT (Google), T5 (Google), PaLM (Google), LLaMA (Meta), Claude (Anthropic), Mistral (Mistral AI).  
