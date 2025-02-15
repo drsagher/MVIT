@@ -22,6 +22,7 @@ Large Language Models (LLMs) like GPT-3 and BERT operate through a sophisticated
 - Layer Normalization & Residual Connections: Stabilize training by mitigating gradient issues.
 
 ### 2. Training Process
+
 Pre-training:
 - Objective: Predict the next token (autoregressive models like GPT) or masked tokens (bidirectional models like BERT) using unsupervised learning on vast text corpora.
 - Data: Trained on diverse text sources (books, websites) to learn grammar, facts, and reasoning patterns.
@@ -41,9 +42,8 @@ Sampling Strategies:
 - Context Window: Models process fixed-length sequences (e.g., 2048 tokens in GPT-3), using sliding windows or memory mechanisms for longer texts.
 
 ### 5. Adaptation & Limitations
-Fine-Tuning: Task-specific training on labeled data post-pre-training (e.g., for translation).
-
-Zero/Few-Shot Learning: Prompt engineering enables task execution without fine-tuning (e.g., GPT-3).
+- Fine-Tuning: Task-specific training on labeled data post-pre-training (e.g., for translation).
+- Zero/Few-Shot Learning: Prompt engineering enables task execution without fine-tuning (e.g., GPT-3).
 
 Challenges:
 - Compute Costs: High energy and hardware demands for training/inference.
@@ -51,9 +51,8 @@ Challenges:
 - Hallucinations: May produce plausible but incorrect or nonsensical outputs.
 
 ### 6. Efficiency Optimizations
-Sparse Attention: Reduces O(n²) complexity for long sequences (e.g., in Longformer).
-
-Quantization & Pruning: Compresses models for faster inference.
+- Sparse Attention: Reduces O(n²) complexity for long sequences (e.g., in Longformer).
+- Quantization & Pruning: Compresses models for faster inference.
 
 ### Summary
 LLMs leverage transformer-based architectures with self-attention to model language probabilistically. Trained on massive datasets, they excel at text generation and understanding by capturing intricate linguistic patterns. However, their effectiveness is tempered by computational costs, ethical concerns, and inherent limitations in true comprehension. Advances in efficiency and safety remain active research areas.
