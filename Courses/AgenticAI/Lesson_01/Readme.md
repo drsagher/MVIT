@@ -75,3 +75,24 @@ LLMs leverage transformer-based architectures with self-attention to model langu
 - **Expertise Area**: Refers to the model's primary strength or design focus. Many LLMs overlap in capabilities.  
 - **Use Cases**: Examples are illustrative; models often support broader applications through fine-tuning or prompting.  
 - **Models**: GPT-3/4 (OpenAI), BERT (Google), T5 (Google), PaLM (Google), LLaMA (Meta), Claude (Anthropic), Mistral (Mistral AI).  
+
+
+## AI Model Categories: Embedding vs. Image vs. Text/Code Generation
+
+| Feature                  | Embedding Models                          | Image Generation Models                   | Text/Code Generation Models               |
+|--------------------------|-------------------------------------------|--------------------------------------------|--------------------------------------------|
+| **Input/Output**         | Input: Text, images, or data → Output: High-dimensional vectors | Input: Text prompts → Output: Images | Input: Text prompts → Output: Text/code    |
+| **Key Techniques**       | Transform data into semantic vectors (e.g., Word2Vec, CLIP) | Diffusion models (Stable Diffusion), GANs, Autoregressive transformers (DALL·E) | Autoregressive transformers (GPT, Codex), Instruction tuning |
+| **Example Models**       | BERT, Word2Vec, CLIP, Sentence-BERT       | DALL·E 3, Stable Diffusion, MidJourney, Imagen | GPT-4, Claude, CodeLlama, StarCoder        |
+| **Primary Use Cases**    | Semantic search, clustering, recommendation systems, retrieval-augmented generation (RAG) | Digital art, photo editing, concept design, advertising | Chatbots, code autocompletion, content writing, documentation |
+| **Strengths**            | Efficient for similarity matching, lightweight inference | High creativity, photorealism, style adaptation | Context-aware generation, multi-task flexibility |
+| **Limitations**          | No generative capability; requires downstream tasks | High compute for training, ethical concerns (deepfakes) | Hallucinations, code inaccuracies, verbosity |
+| **Hardware Requirements**| CPU/GPU-friendly (low latency)            | GPU/TPU-intensive (large model sizes)      | GPU/TPU-dependent (scales with context length) |
+
+---
+
+### Summary Notes:
+1. **Embedding Models**: Focus on *representing data* (text, images) as vectors for analysis, not generation.  
+2. **Image Generation**: Specialized in *visual creativity* but resource-heavy and ethically sensitive.  
+3. **Text/Code Generation**: Optimized for *language tasks* with broad applications but prone to factual errors.  
+4. **Overlap**: Hybrid models (e.g., CLIP for text-image embeddings) bridge these categories.  
