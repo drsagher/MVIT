@@ -7,3 +7,53 @@ After decades of research in the AI field, a new model architecture – called T
 Most of the recent generative AI models – also known as Large Language Models (LLMs), since they work with textual inputs and outputs – are indeed based on this architecture. What’s interesting about these models – trained on a huge amount of unlabeled data from diverse sources like books, articles and websites – is that they can be adapted to a wide variety of tasks and generate grammatically correct text with a semblance of creativity. So, not only did they incredibly enhance the capacity of a machine to ‘understand’ an input text, but they enabled their capacity to generate an original response in human language.
 
 <img src="AI-diagram.png" alt="Alt Text"  >
+
+
+## How do large language models work?
+Large Language Models (LLMs) like GPT-3 and BERT operate through a sophisticated architecture and training process. Here's a structured breakdown of their workings:
+
+### 1. Transformer Architecture
+- Core Innovation: Based on the transformer model introduced in "Attention Is All You Need," which relies on self-attention mechanisms to process sequences in parallel, unlike sequential RNNs.
+
+### Key Components:
+- Self-Attention: Dynamically weighs relationships between tokens (words/subwords) in a sequence. Each token generates a query, key, and value vector. Attention scores determine how much focus each token receives from others.
+- Multi-Head Attention: Multiple attention heads capture diverse contextual relationships (e.g., syntax, semantics).
+- Feed-Forward Networks: Apply non-linear transformations to each token's representation.
+- Layer Normalization & Residual Connections: Stabilize training by mitigating gradient issues.
+
+### 2. Training Process
+Pre-training:
+- Objective: Predict the next token (autoregressive models like GPT) or masked tokens (bidirectional models like BERT) using unsupervised learning on vast text corpora.
+- Data: Trained on diverse text sources (books, websites) to learn grammar, facts, and reasoning patterns.
+- Loss Function: Cross-entropy loss between predicted and actual tokens, minimized via backpropagation and optimizers (e.g., Adam).
+- Scale: Billions of parameters enable capturing complex patterns. Distributed training across GPUs/TPUs with techniques like model parallelism is essential.
+
+### 3. Tokenization
+- Subword Tokenization: Methods like Byte-Pair Encoding (BPE) or WordPiece split text into subword units, balancing vocabulary size and rare word handling.
+- Embeddings: Tokens are converted to dense vectors (embeddings), enriched with positional encodings to convey token order.
+
+### 4. Text Generation
+Autoregressive Process: Generates text iteratively, predicting the next token based on prior context.
+
+Sampling Strategies:
+- Greedy: Selects highest-probability token.
+- Stochastic: Uses top-k or nucleus sampling for diversity.
+- Context Window: Models process fixed-length sequences (e.g., 2048 tokens in GPT-3), using sliding windows or memory mechanisms for longer texts.
+
+### 5. Adaptation & Limitations
+Fine-Tuning: Task-specific training on labeled data post-pre-training (e.g., for translation).
+
+Zero/Few-Shot Learning: Prompt engineering enables task execution without fine-tuning (e.g., GPT-3).
+
+Challenges:
+- Compute Costs: High energy and hardware demands for training/inference.
+- Bias & Safety: Risk of generating harmful or biased content due to training data flaws.
+- Hallucinations: May produce plausible but incorrect or nonsensical outputs.
+
+### 6. Efficiency Optimizations
+Sparse Attention: Reduces O(n²) complexity for long sequences (e.g., in Longformer).
+
+Quantization & Pruning: Compresses models for faster inference.
+
+### Summary
+LLMs leverage transformer-based architectures with self-attention to model language probabilistically. Trained on massive datasets, they excel at text generation and understanding by capturing intricate linguistic patterns. However, their effectiveness is tempered by computational costs, ethical concerns, and inherent limitations in true comprehension. Advances in efficiency and safety remain active research areas.
