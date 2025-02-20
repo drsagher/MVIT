@@ -122,3 +122,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-803 Intelligent Humanoid Robotics and Physical AI Systems](IHR/Readme.md)
 
 [MVC-804 Multi-Agent Systems with CrewAI](CrewAI/Readme.md)
+
+
+## M900 AI Technical Knowledge and Skill Development Technologies
+
+
