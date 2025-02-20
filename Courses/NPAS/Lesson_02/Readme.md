@@ -27,6 +27,7 @@ Error detection and correction techniques (such as parity checks and forward err
 5. Using diversity techniques, such as spatial diversity or frequency diversity, to reduce the impact of noise.
 
 ## 2. Transmission Media
+Transmission media refers to the physical pathways or channels through which data, voice, or video signals are transmitted from one device to another. Transmission media can be broadly classified into two categories: guided media and unguided media. Guided media, also known as wired media, use physical cables or wires to transmit data, examples include twisted pair cables, coaxial cables, and fiber optic cables. Unguided media, also known as wireless media, use electromagnetic waves to transmit data through the air, examples include radio waves, microwaves, infrared waves, and satellite communications. For instance, a computer connected to a router using a twisted pair cable is an example of guided media, while a smartphone connected to a Wi-Fi network is an example of unguided media.
 
 Transmission media refers to the physical pathways or channels through which data, voice, or video signals are transmitted from one device to another.
 
@@ -67,3 +68,33 @@ Transmission media refers to the physical pathways or channels through which dat
 2. Wide Area Networks (WANs): Wired media (fiber optic, coaxial) and wireless media (microwaves, satellites).
 3. Internet: Wired media (fiber optic, coaxial) and wireless media (Wi-Fi, cellular networks).
 
+## 3. Encoding
+Encoding is the process of converting data into a format that can be transmitted efficiently and accurately over a communication channel. It involves transforming the original data into a coded form using a specific algorithm or technique, such as line coding, block coding, or modulation. The primary purpose of encoding is to ensure reliable data transmission by detecting and correcting errors, reducing the impact of noise, and preventing data corruption. Additionally, encoding helps to optimize data transmission by reducing the amount of data that needs to be transmitted, thereby increasing the overall efficiency of the communication system. By converting data into a coded form, encoding enables secure and efficient data transmission over various communication channels, including wired and wireless networks.
+
+### Types of Encoding Methods
+#### Line Coding
+- Unipolar Encoding: Uses a single voltage level to represent binary 1s and 0s.
+- Polar Encoding: Uses two voltage levels to represent binary 1s and 0s.
+- Bipolar Encoding: Uses two voltage levels to represent binary 1s and 0s, with a zero voltage level representing a binary 0.
+
+#### Block Coding
+- Block Coding: Divides data into fixed-length blocks and adds redundancy to each block for error detection and correction.
+- Cyclic Redundancy Check (CRC): A type of block coding that uses a polynomial equation to generate a checksum for error detection.
+
+#### Scrambling
+- Scrambling: Randomizes the data sequence to avoid long sequences of 1s or 0s, reducing the risk of data corruption.
+
+#### Modulation
+- Amplitude Shift Keying (ASK): Modulates the amplitude of a carrier wave to represent binary 1s and 0s.
+- Frequency Shift Keying (FSK): Modulates the frequency of a carrier wave to represent binary 1s and 0s.
+- Phase Shift Keying (PSK): Modulates the phase of a carrier wave to represent binary 1s and 0s.
+
+#### Spread Spectrum
+- Frequency Hopping Spread Spectrum (FHSS): Rapidly switches the carrier frequency among many different frequency channels to minimize interference.
+- Direct Sequence Spread Spectrum (DSSS): Multiplies the data signal with a pseudorandom noise (PN) code to spread the signal across a wide frequency band.
+
+### Purpose of Encoding
+1. Encoding methods like block coding and cyclic redundancy check (CRC) help detect and correct errors that occur during data transmission.
+2. Encoding methods like modulation and spread spectrum help reduce the impact of noise on data transmission.
+3. Encoding methods like scrambling and spread spectrum help secure data transmission by making it more difficult for unauthorized parties to intercept and decode the data.
+4. Encoding methods like line coding and block coding help optimize data transmission by reducing the amount of data that needs to be transmitted.
