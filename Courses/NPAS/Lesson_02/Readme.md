@@ -26,10 +26,38 @@ Error detection and correction techniques (such as parity checks and forward err
 4. Using modulation techniques, such as QAM or PSK, to reduce the impact of noise.
 5. Using diversity techniques, such as spatial diversity or frequency diversity, to reduce the impact of noise.
 
+### Noise Reduction Techniques in Analog and Digital Transmission
+| Type | Description | Techniques | Use Cases |
+| --- | --- | --- | --- |
+| Analog Noise Reduction | Techniques to reduce noise in analog transmission | Filtering, Amplification, Modulation | Analog Telephone Systems, Radio Communication, Audio Systems |
+| ‣ Filtering | Removes unwanted frequencies from the signal | Low-Pass Filters, High-Pass Filters, Band-Pass Filters | Audio Systems, Radio Communication |
+| ‣ Amplification | Increases the strength of the signal to overcome noise | Amplifiers, Repeaters | Analog Telephone Systems, Cable TV |
+| ‣ Modulation | Changes the characteristics of the signal to reduce noise | Amplitude Modulation (AM), Frequency Modulation (FM) | Radio Communication, Analog Telephone Systems |
+| Digital Noise Reduction | Techniques to reduce noise in digital transmission | Error-Correcting Codes, Data Compression, Signal Processing | Computer Networks, Digital Telephone Systems, Data Storage |
+| ‣ Error-Correcting Codes | Detects and corrects errors caused by noise | Cyclic Redundancy Check (CRC), Hamming Codes | Data Storage, Digital Communication Systems |
+| ‣ Data Compression | Reduces the amount of data to be transmitted, reducing the impact of noise | Lossless Compression, Lossy Compression | Data Storage, Digital Communication Systems |
+| ‣ Signal Processing | Techniques to improve the quality of the digital signal | Filtering, Equalization, Echo Cancellation | Digital Telephone Systems, Audio Systems |
+
+
 ## 2. Transmission Media
 Transmission media refers to the physical pathways or channels through which data, voice, or video signals are transmitted from one device to another. Transmission media can be broadly classified into two categories: guided media and unguided media. Guided media, also known as wired media, use physical cables or wires to transmit data, examples include twisted pair cables, coaxial cables, and fiber optic cables. Unguided media, also known as wireless media, use electromagnetic waves to transmit data through the air, examples include radio waves, microwaves, infrared waves, and satellite communications. For instance, a computer connected to a router using a twisted pair cable is an example of guided media, while a smartphone connected to a Wi-Fi network is an example of unguided media.
 
 Transmission media refers to the physical pathways or channels through which data, voice, or video signals are transmitted from one device to another.
+
+
+Transmission Media
+| Type | Description | Examples | Use Cases |
+| --- | --- | --- | --- |
+| Guided Media | Uses physical cables or wires to transmit data | Twisted Pair Cable, Coaxial Cable, Fiber Optic Cable | LANs, WANs, Internet connectivity |
+| ‣ Twisted Pair Cable | Uses two insulated copper wires twisted together | Ethernet cables | Office networks, home networks |
+| ‣ Coaxial Cable | Uses a central copper wire surrounded by insulation and a braided shield | Cable TV, broadband internet | Cable TV, internet service providers |
+| ‣ Fiber Optic Cable | Uses thin glass or plastic fibers to transmit data as light signals | High-speed internet, data centers | High-speed internet, data centers, cloud computing |
+| Unguided Media | Uses electromagnetic waves to transmit data through the air | Radio Waves, Microwaves, Infrared Waves, Satellite Communications | Wireless networks, mobile devices, satellite TV |
+| ‣ Radio Waves | Uses low-frequency electromagnetic waves to transmit data | Wi-Fi, Bluetooth, cellular networks | Wireless networks, mobile devices |
+| ‣ Microwaves | Uses high-frequency electromagnetic waves to transmit data | Satellite communications, microwave ovens | Satellite TV, microwave ovens |
+| ‣ Infrared Waves | Uses high-frequency electromagnetic waves to transmit data | IR remotes, IR sensors | IR remotes, IR sensors |
+| ‣ Satellite Communications | Uses satellites to transmit data over long distances | Satellite TV, satellite internet | Satellite TV, satellite internet, global communication networks |
+
 
 ### Types of Transmission Media
 
@@ -98,3 +126,15 @@ Encoding is the process of converting data into a format that can be transmitted
 2. Encoding methods like modulation and spread spectrum help reduce the impact of noise on data transmission.
 3. Encoding methods like scrambling and spread spectrum help secure data transmission by making it more difficult for unauthorized parties to intercept and decode the data.
 4. Encoding methods like line coding and block coding help optimize data transmission by reducing the amount of data that needs to be transmitted.
+
+### Encoding Schemes in Data Transmission
+| Type | Description | Examples | Use Cases |
+| --- | --- | --- | --- |
+| Analog Encoding Schemes | Convert analog signals into a format suitable for transmission | Amplitude Shift Keying (ASK), Frequency Shift Keying (FSK), Phase Shift Keying (PSK) | Modems, Radio Communication, Analog Telephone Systems |
+| ‣ Amplitude Shift Keying (ASK) | Modulates the amplitude of a carrier wave to represent binary 1s and 0s | Modems, Fax Machines | Dial-up Internet, Fax Transmission |
+| ‣ Frequency Shift Keying (FSK) | Modulates the frequency of a carrier wave to represent binary 1s and 0s | Radio Communication, Telemetry Systems | Wireless Keyboards, Mouse, Radio Communication |
+| ‣ Phase Shift Keying (PSK) | Modulates the phase of a carrier wave to represent binary 1s and 0s | High-Speed Modems, Satellite Communication | High-Speed Internet, Satellite TV |
+| Digital Encoding Schemes | Convert digital data into a format suitable for transmission | Line Coding, Block Coding, Scrambling | Computer Networks, Digital Telephone Systems, Data Storage |
+| ‣ Line Coding | Converts digital data into a format suitable for transmission over a communication channel | Unipolar, Polar, Bipolar | Computer Networks, Digital Telephone Systems |
+| ‣ Block Coding | Adds redundancy to digital data to detect and correct errors | Cyclic Redundancy Check (CRC), Hamming Codes | Data Storage, Digital Communication Systems |
+| ‣ Scrambling | Randomizes digital data to reduce the risk of data corruption | Pseudo-Random Noise (PN) Codes | Digital Communication Systems, Data Storage |
