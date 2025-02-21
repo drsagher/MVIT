@@ -133,9 +133,15 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-003 Scikit-learn](MRE003/Readme.md)
 
-[MRE-004 Docker](MRE004/Readme.md)
+[MRE-004 NumPy](MRE004/Readme.md)
 
-[MRE-005 Streamlit](MRE005/Readme.md)
+[MRE-005 Docker](MRE005/Readme.md)
+
+[MRE-006 Streamlit](MRE006/Readme.md)
+
+[MRE-007 Linux](MRE007/Readme.md)
+
+[MRE-008 Kubernetes](MRE008/Readme.md)
 
 
 
