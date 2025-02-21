@@ -128,3 +128,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 ## M900 Technical Development for Fullstack AI Engineer
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
+
+[MRE-102 Building RAG Agents with LLMs](RAG/Readme.md)
+
