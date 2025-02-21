@@ -147,6 +147,11 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-010 Django](MRE010/Readme.md)
 
+[MRE-011 FastAPI](MRE011/Readme.md)
+
+[MRE-012 UV](MRE012/Readme.md)
+
+
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
 
