@@ -129,5 +129,5 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
 
-[MRE-102 Building RAG Agents with LLMs](RAG/Readme.md)
+[MRE-301 Building RAG Agents with LLMs](MRE301/Readme.md)
 
