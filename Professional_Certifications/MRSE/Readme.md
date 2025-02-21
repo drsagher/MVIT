@@ -1,1 +1,1 @@
-# Mansha Robotics and Software Engineer Certification
+# Mansha Robotics and Software Engineer (MRSE) Certification
