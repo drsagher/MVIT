@@ -127,8 +127,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M900 Technical Stack for Fullstack AI Development
 
-### Prerequisite Libraries and Frameworks
-
 [MRE-001 TensorFlow](MRE001/Readme.md)
 
 [MRE-002 PyTorch](MRE002/Readme.md)
@@ -162,7 +160,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MRE-016 SQL Stored Procedures](MRE016/Readme.md)
 
 
-### Fullstack AI Development Courses
+## M1000 Fullstack AI Development Courses
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
 
