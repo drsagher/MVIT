@@ -125,6 +125,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MVC-804 Multi-Agent Systems with CrewAI](CrewAI/Readme.md)
 
 
-## M900 Technical Foundation for Artificial Intelligence
+## M900 Technical Development for Fullstack AI Engineer
 
 [MRE-101](MRE101/Readme.md)
