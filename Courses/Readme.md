@@ -153,6 +153,13 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-013 React](MRE013/Readme.md)
 
+[MRE-014 TypeScript](MRE014/Readme.md)
+
+[MRE-015 Express](MRE015/Readme.md)
+
+[MRE-016 SQL Stored Procedures](MRE016/Readme.md)
+
+
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
 
