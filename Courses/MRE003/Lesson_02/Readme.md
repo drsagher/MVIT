@@ -1,1 +1,4 @@
-# Lesson 02 
+# Lesson 02 Linear Models
+
+Linear models in scikit-learn (SKL) are a class of supervised learning algorithms that predict a continuous output variable based on one or more input features. SKL provides implementation of several linear models, including Linear Regression, Ridge Regression, Lasso Regression, and Elastic Net Regression. These models assume a linear relationship between the input features and the output variable, and use ordinary least squares (OLS) or regularization techniques to estimate the model parameters. Linear models in SKL are widely used for tasks such as predicting house prices, stock prices, and energy consumption, and are particularly useful when the relationship between the input features and output variable is linear and well-defined. SKL's linear models are highly customizable, allowing users to tune hyperparameters, handle missing values, and select the most relevant features for the model.
+
