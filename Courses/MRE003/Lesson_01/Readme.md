@@ -22,3 +22,6 @@
 - Activate the virtual environment by ``` venv\Scripts\activate```
 
 ## Install Scikit-Learn
+- Once your virtual environment is activated, install Scikit-Learn using pip: ``` pip install scikit-learn```
+- To verify the installation, run: ``` python -c "import sklearn; print(sklearn.__version__)" ```
+- It should print the installed Scikit-Learn version.
