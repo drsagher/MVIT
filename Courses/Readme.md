@@ -167,6 +167,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 [MRE-301 Building RAG Agents with LLMs](MRE301/Readme.md)
 
 
-## M2000 Fullstack AI Engineer Courses
+## M2000 Fullstack AI Engineering Courses
 
 [MRE-701 ]()
