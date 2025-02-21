@@ -25,3 +25,40 @@
 - Once your virtual environment is activated, install Scikit-Learn using pip: ``` pip install scikit-learn```
 - To verify the installation, run: ``` python -c "import sklearn; print(sklearn.__version__)" ```
 - It should print the installed Scikit-Learn version.
+
+## Configure VS Code Interpreter
+- Open VS Code.
+- Press ```Ctrl + Shift + P``` and search for "Python: Select Interpreter".
+- Select your virtual environment (```venv```).
+- Restart VS Code if necessary.
+
+## Write and Run a Simple Scikit-Learn Program
+- Create a new Python file (```example.py```).
+- Write a simple script:
+
+```
+from sklearn.linear_model import LinearRegression
+
+# Sample data
+X = [[1], [2], [3], [4], [5]]
+y = [2, 4, 6, 8, 10]
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+
+print("Prediction for 6:", model.predict([[6]])[0])
+```
+
+- Run the script in the terminal:
+```
+python example.py
+```
+
+## You're All Set! 🚀
+You have successfully set up Scikit-Learn in VS Code and tested a simple machine-learning model. You can now explore data science and AI projects efficiently! 🔥
+
+
+
