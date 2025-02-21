@@ -1,1 +1,1 @@
-# MRE101
+# MRE-101 Prompt Engineering for Developers
