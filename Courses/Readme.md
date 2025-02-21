@@ -143,6 +143,9 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-008 Kubernetes](MRE008/Readme.md)
 
+[MRE-009 Flask](MRE009/Readme.md)
+
+[MRE-010 Django](MRE010/Readme.md)
 
 
 [MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
