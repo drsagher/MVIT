@@ -8,9 +8,8 @@ We Ignite Curiosity and Illuminate Possibilities. We empower people by offering 
 ## Professional Certifications
 Elevate your career prospects with our Professional Certifications in AI Engineering and Fullstack Development. Designed to validate your expertise and skills, these certifications demonstrate your proficiency in cutting-edge technologies and methodologies. As an AI Engineer, you'll showcase your ability to design, develop, and deploy intelligent systems, while as a Fullstack Developer, you'll highlight your expertise in building comprehensive web applications from front-end to back-end. By earning these certifications, you'll unlock new opportunities, enhance your credibility, and stay ahead in the competitive tech industry.
 
-[M800 Fullstack Developer](Professional_Certifications/Fullstack_Developer/Readme.md)
+[Click to view all Certifications ](Professional_Certifications/Readme.md)
 
-[M900 AI Engineer](Professional_Certifications/AI_Engineer/Readme.md)
 
 ## Micro Learning Modules
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
