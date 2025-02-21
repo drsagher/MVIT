@@ -135,29 +135,35 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-004 NumPy](MRE004/Readme.md)
 
-[MRE-005 Docker](MRE005/Readme.md)
+[MRE-005 SciPy](MRE005/Readme.md)
 
-[MRE-006 Streamlit](MRE006/Readme.md)
+[MRE-006 pandas](MRE006/Readme.md)
 
-[MRE-007 Linux](MRE007/Readme.md)
+[MRE-007 Docker](MRE007/Readme.md)
 
-[MRE-008 Kubernetes](MRE008/Readme.md)
+[MRE-008 Streamlit](MRE008/Readme.md)
 
-[MRE-009 Flask](MRE009/Readme.md)
+[MRE-009 Linux](MRE009/Readme.md)
 
-[MRE-010 Django](MRE010/Readme.md)
+[MRE-010 Kubernetes](MRE010/Readme.md)
 
-[MRE-011 FastAPI](MRE011/Readme.md)
+[MRE-011 Flask](MRE011/Readme.md)
 
-[MRE-012 UV](MRE012/Readme.md)
+[MRE-012 Django](MRE012/Readme.md)
 
-[MRE-013 React](MRE013/Readme.md)
+[MRE-013 FastAPI](MRE013/Readme.md)
 
-[MRE-014 TypeScript](MRE014/Readme.md)
+[MRE-014 UV](MRE014/Readme.md)
 
-[MRE-015 Express](MRE015/Readme.md)
+[MRE-015 React](MRE015/Readme.md)
 
-[MRE-016 SQL Stored Procedures](MRE016/Readme.md)
+[MRE-016 TypeScript](MRE016/Readme.md)
+
+[MRE-017 Express](MRE017/Readme.md)
+
+[MRE-018 SQL Stored Procedures](MRE018/Readme.md)
+
+[MRE-019 SQL Stored Procedures](MRE019/Readme.md)
 
 
 ## M1 Fullstack AI Developer
