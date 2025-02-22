@@ -167,6 +167,12 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-020 GitHub](MRE020/Readme.md)
 
+[MRE-021 Chart.js](MRE021/Readme.md)
+
+[MRE-022 D3.js](MRE022/Readme.md)
+
+[MRE-023 Matplotlib](MRE023/Readme.md)
+
 
 
 ## M1 Fullstack AI Developer
