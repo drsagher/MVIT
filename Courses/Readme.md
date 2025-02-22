@@ -165,6 +165,9 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-019 SQL Stored Procedures](MRE019/Readme.md)
 
+[MRE-020 GitHub](MRE020/Readme.md)
+
+
 
 ## M1 Fullstack AI Developer
 
