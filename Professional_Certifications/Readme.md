@@ -3,6 +3,12 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 
 [Full Stack Development with Next.js (FSDN)](FSDN/Readme.md)
 
+[Next-Generation Web Development with Python (NXGDP)](NXGDP/Readme.md)
+
+[Full Stack PHP Development (FSP)](FSP/Readme.md)
+
+[Office Management and Work Ethics (OM&WE)](OMWE/Readme.md)
+
 [MRSE Certification](MRSE/Readme.md)
 
 
