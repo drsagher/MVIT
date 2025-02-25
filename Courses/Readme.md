@@ -188,4 +188,4 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M2 Fullstack AI Engineer
 
-[MRE-701 ]()
+[MRE-701 Building AI Agents and Applications](AutoGen/Readme.md)
