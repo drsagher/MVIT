@@ -33,6 +33,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-148 Advanced Techniques for Improved Search Engine Rankings](SEO/Readme.md)
 
+[MVC-146 Mastering CSS Animation](CSSAnimation/Readme.md)
+
 
 ## M300 Fullstack Fundamentals
 
