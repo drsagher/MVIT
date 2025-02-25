@@ -116,3 +116,70 @@ The ```@supports``` rule allows you to apply styles only if the browser supports
 | iOS Safari          | 9+                | Fully supported                                                                               | Older versions (≤8) require `-webkit-` prefix.                            |
 | Android Browser     | 4.4+              | Fully supported                                                                               | Older versions may require `-webkit-` prefix.                             |
 | Samsung Internet    | 4+                | Fully supported                                                                               | Older versions may require `-webkit-` prefix.                             |
+
+
+## Project 1 Graceful Degradation
+### HTML
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graceful Degradation Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box">
+    Hover over me!
+  </div>
+</body>
+</html>
+```
+
+### ```styles.css```
+
+```
+/* Base styles for the box */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db; /* Fallback color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Hover effect with animation */
+.box:hover {
+  background-color: #e74c3c; /* Fallback for browsers without animation support */
+  transform: scale(1.2); /* Fallback for scaling */
+}
+
+/* Keyframe animation for enhanced browsers */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #e74c3c;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+}
+
+/* Apply animation on hover for supported browsers */
+.box:hover {
+  animation: pulse 1s ease-in-out;
+}
+```
