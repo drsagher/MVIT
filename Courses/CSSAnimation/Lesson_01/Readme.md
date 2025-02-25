@@ -15,3 +15,104 @@ One of the key benefits of using CSS animations over JavaScript animations is th
 | **Maintainability**             | Easier to modify and update since animations are defined in stylesheets.          | Harder to maintain due to scattered logic across scripts and styles.                      |
 | **Cross-Browser Compatibility** | Supported widely with predictable behavior across modern browsers.                | May require additional libraries or polyfills for consistent behavior across browsers.    |
 | **Learning Curve**              | Beginner-friendly and requires only knowledge of CSS properties.                  | Requires familiarity with JavaScript and animation libraries, increasing complexity.       |
+
+
+## Browser Support and Fallbacks for CSS Animations
+CSS animations are widely supported across modern browsers, but it's important to account for older browsers or those with limited support. Below is an overview of browser compatibility and strategies for implementing fallbacks to ensure a consistent user experience.
+
+## Fallback Strategies
+To ensure your animations work across all browsers, including those with limited or no support, consider the following fallback strategies:
+
+### Graceful Degradation
+Design your animations so that they degrade gracefully when unsupported. For example, if an animation fails, ensure the element still appears in its final state or default position.
+
+```
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* Fallback: Static styles */
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.box {
+  animation: fadeIn 1s ease-in-out;
+}
+```
+
+### Vendor Prefixes
+Some older browsers require vendor-specific prefixes like -webkit-, -moz-, or -o-. Use tools like Autoprefixer to automatically add these prefixes during development.
+
+```
+.box {
+  -webkit-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+```
+
+### Feature Detection with JavaScript
+Use JavaScript libraries like Modernizr to detect whether a browser supports CSS animations. If not, provide alternative styles or behaviors.
+
+```
+if (!Modernizr.cssanimations) {
+  // Fallback for browsers without CSS animation support
+  document.querySelector('.box').style.backgroundColor = 'red';
+}
+```
+
+### Provide Static Alternatives
+For browsers that do not support animations, ensure the element’s final state is styled appropriately. This ensures users still see the intended design, even without the animation.
+
+```
+.button {
+  background-color: #007bff;
+  color: white;
+  /* Final state as fallback */
+  transform: scale(1);
+}
+
+.button:hover {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+```
+
+### Use ```@supports``` for Conditional Styling
+The ```@supports``` rule allows you to apply styles only if the browser supports specific CSS features.
+
+```
+@supports (animation: fadeIn 1s) {
+  .box {
+    animation: fadeIn 1s ease-in-out;
+  }
+}
+
+/* Fallback for unsupported browsers */
+.box {
+  opacity: 1;
+}
+```
+
+## Browser Support
+| **Browser**         | **Version**       | **Support**                                                                                   | **Notes**                                                                 |
+|---------------------|-------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Google Chrome       | 43+               | Fully supported                                                                               | No prefixes required.                                                     |
+| Mozilla Firefox     | 16+               | Fully supported                                                                               | No prefixes required.                                                     |
+| Safari              | 9+                | Fully supported                                                                               | Older versions (≤8) require `-webkit-` prefix.                            |
+| Microsoft Edge      | 12+               | Fully supported                                                                               | Legacy Edge (pre-Chromium) has partial support.                           |
+| Internet Explorer   | 10+               | Partial support                                                                               | No support for `@keyframes` or advanced features in IE 9 or earlier.      |
+| Opera               | 30+               | Fully supported                                                                               | Older versions (≤15) require `-webkit-` prefix.                           |
+| iOS Safari          | 9+                | Fully supported                                                                               | Older versions (≤8) require `-webkit-` prefix.                            |
+| Android Browser     | 4.4+              | Fully supported                                                                               | Older versions may require `-webkit-` prefix.                             |
+| Samsung Internet    | 4+                | Fully supported                                                                               | Older versions may require `-webkit-` prefix.                             |
