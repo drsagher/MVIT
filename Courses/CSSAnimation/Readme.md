@@ -1,2 +1,5 @@
 # MVC-146 Mastering CSS Animation
 Mastering CSS Animation involves gaining a deep understanding of how to bring web interfaces to life through dynamic and visually engaging motion. It begins with grasping the fundamentals of CSS transitions and keyframe animations, allowing developers to create smooth, seamless effects such as fades, rotations, and scaling. As proficiency grows, mastering advanced techniques like animating SVGs, leveraging custom easing functions, and optimizing performance becomes essential to ensure animations are both visually appealing and efficient. Beyond technical skills, it also requires an eye for design and user experience, ensuring that animations enhance usability rather than distract from it. By combining creativity with technical expertise, mastering CSS animation empowers developers to craft immersive, interactive websites that captivate users and elevate digital experiences to new heights.
+
+
+[Lesson 1 Understanding CSS Animation Basics](Lesson_01/Readme.md)
