@@ -307,3 +307,116 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 This approach ensures that your animations are applied only when supported, while providing a functional and visually acceptable fallback for unsupported environments.
+
+
+## Project 3 HTML, CSS, and JavaScript Code for Using @supports for Conditional Styling
+The ```@supports``` rule in CSS allows you to apply styles only if the browser supports specific CSS features. Below is an example of how to use ```@supports``` for conditional styling, along with a fallback mechanism using JavaScript for additional flexibility.
+
+### ```index.html```
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@supports Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box" id="animatedBox">
+    Hover over me!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+### ```styles.css```
+
+```
+/* Base styles for the box */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db; /* Fallback color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Keyframe animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #e74c3c;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+}
+
+/* Apply animation only if the browser supports CSS animations */
+@supports (animation: pulse 1s) {
+  .box:hover {
+    animation: pulse 1s ease-in-out;
+  }
+}
+
+/* Fallback for browsers without animation support */
+@supports not (animation: pulse 1s) {
+  .box {
+    background-color: #e74c3c; /* Static fallback color */
+    transform: scale(1.2); /* Slightly scaled-up appearance */
+  }
+}
+```
+
+### ```script.js```
+
+```
+// Optional: Add additional fallback logic for unsupported browsers
+document.addEventListener("DOMContentLoaded", function () {
+  const box = document.getElementById("animatedBox");
+
+  // Check if the browser supports CSS animations
+  const supportsAnimations = (() => {
+    const style = document.createElement("div").style;
+    return (
+      "animation" in style ||
+      "WebkitAnimation" in style ||
+      "MozAnimation" in style ||
+      "OAnimation" in style
+    );
+  })();
+
+  // Provide a fallback if animations are not supported
+  if (!supportsAnimations) {
+    box.style.backgroundColor = "#e74c3c"; // Change to a static color
+    box.style.transform = "scale(1.2)"; // Scale up slightly
+  }
+});
+
+```
+
+### Explanation of ```@supports``` and Conditional Styling
+
+- Base Styles : The ```.box``` element has base styles like ```background-color```, ```width```, ```height```, and ```border-radius```. These styles ensure the element looks good even if animations are not supported.
+A simple ```transition``` property is added to provide a basic hover effect for browsers that support transitions but not keyframe animations.
+- Keyframe Animation : The ```@keyframes``` rule defines a "pulse" animation that alternates between scaling and changing the background color.
+- Using ```@supports``` : The ```@supports (animation: pulse 1s)``` rule applies the animation only if the browser supports CSS animations.
+The ```@supports not (animation: pulse 1s)``` rule provides a fallback for browsers that do not support animations, applying a static style (red background and slightly scaled-up appearance).
+- JavaScript Fallback : The JavaScript code checks whether the browser supports CSS animations by testing for the presence of the animation property (or its vendor-prefixed equivalents).
+If ```animations``` are not supported, the script applies a fallback style directly to the element.
