@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 #### JavaScript Feature Detection :
 - The JavaScript code checks whether the browser supports CSS animations by testing for the presence of the ```animation``` property (or its vendor-prefixed equivalents like ```-webkit-animation```).
-- If animations are supported, the script adds the ```animation-supported```` class to the ```.box``` element, enabling the keyframe animation.
+- If animations are supported, the script adds the ```animation-supported``` class to the ```.box``` element, enabling the keyframe animation.
 - If animations are not supported, the script applies a fallback style directly to the element (e.g., changing the background color and scaling it slightly).
 
 ### How It Works in Different Scenarios:
