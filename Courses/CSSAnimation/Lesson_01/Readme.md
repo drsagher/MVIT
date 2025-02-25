@@ -301,3 +301,9 @@ document.addEventListener("DOMContentLoaded", function () {
 - Older Browsers (No Animation Support) : The box will display a static fallback style: a red background (#e74c3c) and a slightly scaled-up appearance (scale(1.2)).
 - Dynamic Behavior : The JavaScript dynamically detects the browser's capabilities and applies the appropriate styles, ensuring a seamless experience across devices.
 
+### Testing Feature Detection:
+- Use browser developer tools to disable CSS animations or simulate older browsers.
+- Test on actual devices or browsers with limited support (e.g., Internet Explorer) to verify the fallback behavior.
+
+
+This approach ensures that your animations are applied only when supported, while providing a functional and visually acceptable fallback for unsupported environments.
