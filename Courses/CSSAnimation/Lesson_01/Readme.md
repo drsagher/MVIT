@@ -295,3 +295,9 @@ document.addEventListener("DOMContentLoaded", function () {
 - The JavaScript code checks whether the browser supports CSS animations by testing for the presence of the ```animation``` property (or its vendor-prefixed equivalents like ```-webkit-animation```).
 - If animations are supported, the script adds the ```animation-supported```` class to the ```.box``` element, enabling the keyframe animation.
 - If animations are not supported, the script applies a fallback style directly to the element (e.g., changing the background color and scaling it slightly).
+
+### How It Works in Different Scenarios:
+- Modern Browsers : The box will "pulse" when hovered, smoothly scaling up and down while changing colors.
+- Older Browsers (No Animation Support) : The box will display a static fallback style: a red background (#e74c3c) and a slightly scaled-up appearance (scale(1.2)).
+- Dynamic Behavior : The JavaScript dynamically detects the browser's capabilities and applies the appropriate styles, ensuring a seamless experience across devices.
+
