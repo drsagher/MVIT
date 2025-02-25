@@ -119,7 +119,9 @@ The ```@supports``` rule allows you to apply styles only if the browser supports
 
 
 ## Project 1 Graceful Degradation
-### HTML
+
+### HTML ```index.html```
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -183,3 +185,113 @@ The ```@supports``` rule allows you to apply styles only if the browser supports
   animation: pulse 1s ease-in-out;
 }
 ```
+
+## Project 2 Feature Detection with JavaScript
+
+### HTML Code ```index.html```
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Detection Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box" id="animatedBox">
+    Hover over me!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+
+### ```styles.css```
+
+```
+/* Base styles for the box */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db; /* Fallback color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Hover effect with animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #e74c3c;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+}
+
+/* Apply animation on hover for supported browsers */
+.box.animation-supported:hover {
+  animation: pulse 1s ease-in-out;
+}
+```
+
+### ```script.js```
+
+```
+// Feature detection for CSS animations
+document.addEventListener("DOMContentLoaded", function () {
+  const box = document.getElementById("animatedBox");
+
+  // Check if the browser supports CSS animations
+  const supportsAnimations = (() => {
+    const style = document.createElement("div").style;
+    return (
+      "animation" in style ||
+      "WebkitAnimation" in style ||
+      "MozAnimation" in style ||
+      "OAnimation" in style
+    );
+  })();
+
+  // Add a class to the box if animations are supported
+  if (supportsAnimations) {
+    box.classList.add("animation-supported");
+  } else {
+    // Provide a fallback for browsers without animation support
+    box.style.backgroundColor = "#e74c3c"; // Change to a static color
+    box.style.transform = "scale(1.2)"; // Scale up slightly
+  }
+});
+
+```
+
+### Explanation of Feature Detection
+
+#### Base Styles :
+- The ```.box``` element has base styles like ```background-color```, ```width```, ```height```, and ```border-radius```. These styles ensure the element looks good even if animations are not supported.
+- A simple ```transition``` property is added to provide a basic hover effect for browsers that support transitions but not keyframe animations.
+
+#### Keyframe Animation :
+- The ```@keyframes``` rule defines a "pulse" animation that alternates between scaling and changing the background color.
+- The animation is applied only if the browser supports CSS animations, using the ```.animation-supported``` class.
+
+#### JavaScript Feature Detection :
+- The JavaScript code checks whether the browser supports CSS animations by testing for the presence of the ```animation``` property (or its vendor-prefixed equivalents like ```-webkit-animation```).
+- If animations are supported, the script adds the ```animation-supported```` class to the ```.box``` element, enabling the keyframe animation.
+- If animations are not supported, the script applies a fallback style directly to the element (e.g., changing the background color and scaling it slightly).
