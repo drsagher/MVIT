@@ -420,3 +420,14 @@ A simple ```transition``` property is added to provide a basic hover effect for 
 The ```@supports not (animation: pulse 1s)``` rule provides a fallback for browsers that do not support animations, applying a static style (red background and slightly scaled-up appearance).
 - JavaScript Fallback : The JavaScript code checks whether the browser supports CSS animations by testing for the presence of the animation property (or its vendor-prefixed equivalents).
 If ```animations``` are not supported, the script applies a fallback style directly to the element.
+
+### How It Works in Different Scenarios
+- Modern Browsers : The box will "pulse" when hovered, smoothly scaling up and down while changing colors.
+- Older Browsers (No Animation Support) : The box will display a static fallback style: a red background ```#e74c3c``` and a slightly scaled-up appearance ```scale(1.2)```.
+- Dynamic Behavior : The ```@supports``` rule ensures that styles are applied conditionally based on browser capabilities.
+- The JavaScript provides an additional layer of fallback for unsupported environments.
+
+### Testing @supports and Fallbacks:
+- Use browser developer tools to disable CSS animations or simulate older browsers.
+- Test on actual devices or browsers with limited support (e.g., Internet Explorer) to verify the fallback behavior.
+- This approach combines the power of ```@supports``` for declarative conditional styling with JavaScript for additional flexibility, ensuring a seamless experience across all browsers.
