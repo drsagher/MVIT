@@ -23,6 +23,8 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-94 Cascading Style Sheets - CSS](CSS/Readme.md)
 
+[MVC-146 Mastering CSS Animation](CSSAnimation/Readme.md)
+
 [MVC-111 Version Control and Collaboration](VCS/Readme.md)
 
 [MVC-28 Typescript Programming](TS/Readme.md)
@@ -33,7 +35,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-148 Advanced Techniques for Improved Search Engine Rankings](SEO/Readme.md)
 
-[MVC-146 Mastering CSS Animation](CSSAnimation/Readme.md)
+
 
 
 ## M300 Fullstack Fundamentals
