@@ -3,3 +3,5 @@ Prompt engineering is a rapidly emerging discipline that focuses on crafting eff
 
 By mastering advanced methods like chain-of-thought prompting, few-shot learning, and iterative refinement, practitioners can optimize LLM performance while mitigating biases and ambiguities. As LLMs continue to evolve, prompt engineering serves as a bridge between human intent and machine capability, enabling users to harness the power of AI for innovative and impactful solutions.
 
+
+[Lesson 1 Large Language Models](Lesson_01/Readme.md)
