@@ -14,4 +14,4 @@ By mastering advanced methods like chain-of-thought prompting, few-shot learning
 
 [Lesson 5 Fine-Tuning Large Language Models](Lesson_05/Readme.md)
 
-[Lesson 06 Prompt Engineering](Lesson_06/Readme.md)
+[Lesson 6 Prompt Engineering](Lesson_06/Readme.md)
