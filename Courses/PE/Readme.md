@@ -9,3 +9,7 @@ By mastering advanced methods like chain-of-thought prompting, few-shot learning
 [Lesson 2 How Large Language Models Work](Lesson_02/Readme.md)
 
 [Lesson 3 Transformer Architecture](Lesson_03/Readme.md)
+
+[Lesson 4 Pre-Training of Large Language Models](Lesson_04/Readme.md)
+
+[Lesson 5 Fine-Tuning Large Language Models](Lesson_05/Readme.md)
