@@ -5,3 +5,5 @@ By mastering advanced methods like chain-of-thought prompting, few-shot learning
 
 
 [Lesson 1 Large Language Models](Lesson_01/Readme.md)
+
+[Lesson 2 How Large Language Models Work](Lesson_02/Readme.md)
