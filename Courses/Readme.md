@@ -7,7 +7,6 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-144 Secrets of Programming with Math and Logic](SPML/Readme.md)
 
-[MVC-107 Prompt Engineering and LLMs](PE/Readme.md)
 
 [MVC-15 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
 
@@ -187,5 +186,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 
 ## M2 Fullstack AI Engineer
+
+[MRE-700 Prompt Engineering and LLMs](PE/Readme.md)
 
 [MRE-701 Building AI Agents and Applications](AutoGen/Readme.md)
