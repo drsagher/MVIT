@@ -1,1 +1,1 @@
-# Lesson 02 How LLMs work
+# Lesson 02 How Large Language Models Work
