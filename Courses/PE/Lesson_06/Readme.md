@@ -56,3 +56,12 @@ As artificial intelligence continues to revolutionize industries and transform t
 
 ## Key components of a prompt
 A well-crafted prompt is the foundation of effective communication with artificial intelligence systems. The key components of a prompt include clear and concise language, specific task definition, relevant context, and targeted formatting. A good prompt should also consider the tone, style, and domain-specific terminology to ensure accurate and relevant responses. Additionally, a well-designed prompt should include any necessary constraints, assumptions, or requirements to guide the AI's response. By incorporating these essential components, developers can create high-quality prompts that elicit precise, informative, and relevant responses from AI systems, ultimately driving better outcomes and more efficient interactions.
+
+| Component | Description | Example |
+| --- | --- | --- |
+| Task Definition | Clearly define the task or question | "Summarize the main points of the article" |
+| Context | Provide relevant background information | "The article discusses the impact of climate change on global economies" |
+| Specific Requirements | Specify any constraints or requirements | "Use simple language and limit the summary to 100 words" |
+| Tone and Style | Define the desired tone and style | "Formal and objective" |
+| Domain-Specific Terminology | Include relevant technical terms or jargon | "Use terms related to economics and environmental science" |
+| Assumptions | State any assumptions or presuppositions | "Assume the reader has basic knowledge of climate change" |
