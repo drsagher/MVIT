@@ -47,7 +47,9 @@ Include one or more input-output pairs as examples in the prompt.
 
 #### Prompt
 "Here are two examples of rewriting sentences in a formal tone:
+
 **Informal**: 'Hey, can you send me the report?' → Formal: 'Could you please send me the report?'
+
 **Informal**: 'Let’s meet at 3 PM.' → Formal: 'Please let us meet at 3 PM.'
 
 Now rewrite this sentence in a formal tone: 'Can you finish the project by tomorrow?'"
@@ -87,7 +89,7 @@ Ask the model to explain its reasoning process step-by-step.
 "Solve this math problem step-by-step: If a train travels 60 miles per hour for 3 hours, how far does it travel? First, calculate the speed multiplied by time. Then, provide the final answer."
 
 #### Output
-"Step 1: Speed = 60 miles per hour, Time = 3 hours. Distance = Speed × Time = 60 × 3 = 180 miles. Final Answer: The train travels 180 miles."
+"Step 1: Speed = 60 miles per hour, Time = 3 hours. Distance = Speed × Time = 60 × 3 = 180 miles. **Final Answer**: The train travels 180 miles."
 
 #### Impact
 Chain-of-thought prompting enhances the model’s ability to handle complex tasks with precision.
@@ -176,9 +178,13 @@ Request multiple outputs and compare them for consistency.
 ### Example
 
 #### Prompt
+
 "What are the main causes of climate change? Provide three answers."
+
 **Output 1** : "Greenhouse gas emissions, deforestation, and industrial activities."
+
 **Output 2** : "Burning fossil fuels, agricultural practices, and urbanization."
+
 **Selected Answer** : "Greenhouse gas emissions, deforestation, and burning fossil fuels."
 
 #### Impact
