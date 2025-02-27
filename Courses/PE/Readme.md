@@ -19,3 +19,5 @@ By mastering advanced methods like chain-of-thought prompting, few-shot learning
 [Lesson 7 The Art of Giving Well-Defined Prompts](Lesson_07/Readme.md)
 
 [Lesson 8 Writing and Testing Prommpts](Lesson_08/Readme.md)
+
+[Lesson 9 Advanced Prompt Techniques](Lesson_09/Readme.md)
