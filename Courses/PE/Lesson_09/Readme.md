@@ -15,7 +15,9 @@ The prompt explicitly asks the model to explain its reasoning process step-by-st
 "Solve this math problem step-by-step: If a train travels 60 miles per hour for 3 hours, how far does it travel? First, calculate the speed multiplied by time. Then, provide the final answer."
 
 #### Output 
-"Step 1: Speed = 60 miles per hour, Time = 3 hours. Distance = Speed × Time = 60 × 3 = 180 miles. Final Answer: The train travels 180 miles."
+Step 1: Speed = 60 miles per hour, Time = 3 hours. Distance = Speed × Time = 60 × 3 = 180 miles. 
+
+**Final Answer**: The train travels 180 miles.
 
 ### Applications 
 - Logical reasoning
@@ -130,9 +132,9 @@ Test multiple versions of the prompt, adjusting based on feedback or intermediat
 "Write three creative taglines for a premium coffee brand targeting young professionals. Use energetic and sophisticated language."
 
 #### Final Output 
-"1. 'Fuel Your Ambition with Every Sip.'
-'Brewed for the Bold, Crafted for Success.'
-'Elevate Your Day, One Cup at a Time.'"
+Fuel Your Ambition with Every Sip.
+Brewed for the Bold, Crafted for Success.
+Elevate Your Day, One Cup at a Time.
 
 ### Applications 
 - Content optimization
@@ -184,7 +186,7 @@ Request multiple outputs and compare them for consistency.
 #### Selected Answer 
 "Greenhouse gas emissions, deforestation, and burning fossil fuels."
 
-### Applications :
+### Applications
 - Reducing ambiguity
 - Improving accuracy for open-ended questions
 
