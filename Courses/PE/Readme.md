@@ -21,3 +21,5 @@ By mastering advanced methods like chain-of-thought prompting, few-shot learning
 [Lesson 8 Writing and Testing Prommpts](Lesson_08/Readme.md)
 
 [Lesson 9 Advanced Prompt Techniques](Lesson_09/Readme.md)
+
+[Lesson 10 Controlling Output Quality in Large Language Models (LLMs)](Lesson_10/Readme.md)
