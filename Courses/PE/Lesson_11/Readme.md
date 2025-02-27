@@ -1,0 +1,2 @@
+# Lesson 11 APIs and LLMs Integration
+Integrating large language models (LLMs) into applications or workflows often involves working with APIs (Application Programming Interfaces). APIs act as a bridge between your application and the LLM, enabling seamless communication and interaction. This section provides a comprehensive guide to working with APIs, integrating LLMs, and leveraging their capabilities effectively.
