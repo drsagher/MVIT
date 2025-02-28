@@ -6,3 +6,5 @@ The course "Network Protocols, Architectures, and Security" provides a comprehen
 [Lesson 2 Noise, Media, Encoding in Transmission](Lesson_02/Readme.md)
 
 [Lesson 3 Transmission Modes and Protocol Design Issues in Computer Networks](Lesson_03/Readme.md)
+
+[Lesson 04 Network System Architectures](Lesson_04/Readme.md)
