@@ -62,7 +62,7 @@ The TCP/IP model is a practical, real-world implementation of network communicat
 - Protocols: HTTP, HTTPS, FTP, SMTP, DNS.
 - The TCP/IP model is the foundation of modern internet communication and is widely used in practice.
 
-# Key Differences Between OSI and TCP/IP Models
+## Key Differences Between OSI and TCP/IP Models
 
 The **OSI (Open Systems Interconnection)** model and the **TCP/IP (Transmission Control Protocol/Internet Protocol)** model are two fundamental frameworks for understanding network communication. While both models aim to standardize how data is transmitted across networks, they differ significantly in structure, purpose, and implementation. Below is a detailed comparison of the two models:
 
@@ -82,7 +82,7 @@ The **OSI (Open Systems Interconnection)** model and the **TCP/IP (Transmission 
 
 
 
-## **Explanation of Key Differences**
+## Explanation of Key Differences
 
 1. **Number of Layers**:
    - The OSI model has **7 layers**, which provide a detailed breakdown of network communication.
