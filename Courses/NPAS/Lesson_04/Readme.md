@@ -4,71 +4,68 @@ Network system architectures define the structure and protocols used for communi
 ## OSI Model
 The OSI model is a conceptual framework developed by the International Organization for Standardization (ISO) to standardize network communication. It divides the networking process into seven layers , each with specific functions and responsibilities:
 
-### 1. Physical Layer :
-Deals with the physical transmission of data over hardware (e.g., cables, switches, and network cards).
-Focuses on bit-level transmission, voltage levels, and physical connectors.
+### 1. Physical Layer 
+- Deals with the physical transmission of data over hardware (e.g., cables, switches, and network cards).
+- Focuses on bit-level transmission, voltage levels, and physical connectors.
 
-### 2. Data Link Layer :
-Ensures reliable data transfer between two directly connected nodes.
-Handles error detection and correction, as well as framing data into packets.
-Examples: Ethernet, MAC addresses.
+### 2. Data Link Layer 
+- Ensures reliable data transfer between two directly connected nodes.
+- Handles error detection and correction, as well as framing data into packets.
+- Examples: Ethernet, MAC addresses.
 
-### 3. Network Layer :
-Responsible for routing data packets across multiple networks.
-Determines the best path for data to travel using IP addresses.
-Protocols: IPv4, IPv6, ICMP.
+### 3. Network Layer 
+- Responsible for routing data packets across multiple networks.
+- Determines the best path for data to travel using IP addresses.
+- Protocols: IPv4, IPv6, ICMP.
 
-### 4. Transport Layer :
-Ensures end-to-end communication and data integrity.
-Breaks data into segments and reassembles them at the destination.
-Protocols: TCP (reliable, connection-oriented), UDP (lightweight, connectionless).
+### 4. Transport Layer 
+- Ensures end-to-end communication and data integrity.
+- Breaks data into segments and reassembles them at the destination.
+- Protocols: TCP (reliable, connection-oriented), UDP (lightweight, connectionless).
 
-### 5. Session Layer :
-Manages sessions or connections between applications.
-Establishes, maintains, and terminates sessions.
-Example: Remote Procedure Calls (RPC).
+### 5. Session Layer 
+- Manages sessions or connections between applications.
+- Establishes, maintains, and terminates sessions.
+- Example: Remote Procedure Calls (RPC).
 
-### 6. Presentation Layer :
-Translates data into a format suitable for the application layer.
-Handles encryption, compression, and data formatting.
-Example: SSL/TLS for secure communication.
+### 6. Presentation Layer 
+- Translates data into a format suitable for the application layer.
+- Handles encryption, compression, and data formatting.
+- Example: SSL/TLS for secure communication.
 
-### 7. Application Layer :
-Provides network services directly to end-users or applications.
-Includes protocols like HTTP, FTP, SMTP, and DNS.
-The OSI model is primarily a theoretical framework used to understand and troubleshoot network communication.
+### 7. Application Layer 
+- Provides network services directly to end-users or applications.
+- Includes protocols like HTTP, FTP, SMTP, and DNS.
+- The OSI model is primarily a theoretical framework used to understand and troubleshoot network communication.
 
 ## TCP/IP Model
 The TCP/IP model is a practical, real-world implementation of network communication protocols. It consists of four layers , which align closely with the OSI model but are more streamlined:
 
-### 1. Network Interface Layer :
-Combines the Physical and Data Link layers of the OSI model.
-Manages hardware addressing (MAC addresses) and physical transmission.
-Example: Ethernet, Wi-Fi.
+### 1. Network Interface Layer 
+- Combines the Physical and Data Link layers of the OSI model.
+- Manages hardware addressing (MAC addresses) and physical transmission.
+- Example: Ethernet, Wi-Fi.
 
-### 2. Internet Layer :
-Corresponds to the Network layer in the OSI model.
-Handles logical addressing (IP addresses) and packet routing.
-Protocols: IP, ARP, ICMP.
+### 2. Internet Layer 
+- Corresponds to the Network layer in the OSI model.
+- Handles logical addressing (IP addresses) and packet routing.
+- Protocols: IP, ARP, ICMP.
 
-### 3. Transport Layer :
-Similar to the Transport layer in the OSI model.
-Ensures reliable data delivery and manages flow control.
-Protocols: TCP, UDP.
+### 3. Transport Layer 
+- Similar to the Transport layer in the OSI model.
+- Ensures reliable data delivery and manages flow control.
+- Protocols: TCP, UDP.
 
-### 4. Application Layer :
-Combines the Session, Presentation, and Application layers of the OSI model.
-Provides high-level protocols for user interaction and application services.
-Protocols: HTTP, HTTPS, FTP, SMTP, DNS.
-The TCP/IP model is the foundation of modern internet communication and is widely used in practice.
+### 4. Application Layer 
+- Combines the Session, Presentation, and Application layers of the OSI model.
+- Provides high-level protocols for user interaction and application services.
+- Protocols: HTTP, HTTPS, FTP, SMTP, DNS.
+- The TCP/IP model is the foundation of modern internet communication and is widely used in practice.
 
 # Key Differences Between OSI and TCP/IP Models
 
 The **OSI (Open Systems Interconnection)** model and the **TCP/IP (Transmission Control Protocol/Internet Protocol)** model are two fundamental frameworks for understanding network communication. While both models aim to standardize how data is transmitted across networks, they differ significantly in structure, purpose, and implementation. Below is a detailed comparison of the two models:
 
----
-
-## **Key Differences**
 
 | **Aspect**              | **OSI Model**                              | **TCP/IP Model**                          |
 |--------------------------|--------------------------------------------|-------------------------------------------|
