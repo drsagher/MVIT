@@ -1,4 +1,4 @@
-# Painting and Drawing, Windows Management, Input devices, Resources
+# Lesson 03 Painting and Drawing, Windows Management, Input devices, Resources
 
 ## 1. Painting and Drawing in Visual C#.NET
 Painting and drawing are fundamental aspects of graphical application development in Visual C#.NET. These operations allow developers to create visually appealing interfaces and custom graphics within Windows Forms or WPF (Windows Presentation Foundation) applications.
