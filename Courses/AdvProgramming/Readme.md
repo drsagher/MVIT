@@ -4,3 +4,5 @@ Advanced Programming Essentials encompasses a comprehensive range of concepts, t
 [Lesson 1 Introduction to Visual Programming](Lesson_01/Readme.md)
 
 [Lesson 2 Message Handling, User Interface, and GUI Design](Lesson_02/Readme.md)
+
+[Lesson 3 Painting and Drawing, Windows Management, Input devices, Resources](Lesson_03/Readme.md)
