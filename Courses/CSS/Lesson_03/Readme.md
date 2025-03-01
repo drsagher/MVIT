@@ -164,3 +164,40 @@ This implementation demonstrates:
 - Font sizes and family
 - Button styling and transitions
 
+
+## Assignment: Understanding CSS Selector Specificity
+
+### Objective
+Demonstrate understanding of CSS selector specificity by creating a webpage that shows how different selectors override each other based on their specificity weight.
+
+### Tasks:
+HTML Structure ```specificity.html```
+
+#### Create a basic HTML document with
+- 1 heading ```<h1>```
+- 3 paragraphs ```<p>```
+- 1 div containing 1 paragraph
+- 1 button
+
+### CSS Rules ```specificity.css```
+
+#### Create conflicting style declarations that demonstrate
+- Element selector vs Class selector
+- Class selector vs ID selector
+- Multiple classes vs single class
+- Inline styles vs external styles
+- !important declaration
+- Specificity Challenges
+
+#### Implement these specific style conflicts
+- Make one paragraph red using element selector, blue using class
+- Make heading green with ID selector, orange with inline style
+- Style button with multiple conflicting selector combinations
+
+### Documentation
+- Add CSS comments explaining why particular styles won in each conflict
+
+
+
+
+
