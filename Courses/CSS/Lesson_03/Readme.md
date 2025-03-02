@@ -171,7 +171,7 @@ This implementation demonstrates:
 Demonstrate understanding of CSS selector specificity by creating a webpage that shows how different selectors override each other based on their specificity weight.
 
 ### Tasks:
-HTML Structure ```specificity.html```
+### HTML Structure ```specificity.html```
 
 #### Create a basic HTML document with
 - 1 heading ```<h1>```
@@ -197,7 +197,105 @@ HTML Structure ```specificity.html```
 ### Documentation
 - Add CSS comments explaining why particular styles won in each conflict
 
+### Starter Code
 
+#### ```specificity.html```
 
+```
+<!-- specificity.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector Specificity</title>
+    <link rel="stylesheet" href="specificity.css">
+</head>
+<body>
+    <h1 id="main-heading" class="heading">Specificity Challenge</h1>
+    
+    <p class="text">First paragraph</p>
+    <p class="text special">Second paragraph</p>
+    <p class="text" id="unique-paragraph">Third paragraph</p>
+    
+    <div class="container">
+        <p>Nested paragraph</p>
+    </div>
+    
+    <button class="btn primary-btn" id="action-btn" style="background-color: blue">
+        Click Me
+    </button>
+</body>
+</html>
+```
 
+#### ```specificity.css```
 
+```
+/* specificity.css */
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+/* Add your conflicting selectors below */
+```
+
+### Expected Outcome:
+Create visual demonstrations of these specificity principles:
+ID selectors (#) beat class selectors (.)
+Class selectors beat element selectors
+Inline styles beat external styles
+!important overrides everything
+More specific selectors beat less specific ones
+
+### Challenge Questions:
+What will be the color of the third paragraph if both ID and !important are used?
+How does the order of stylesheets affect specificity?
+Why should !important be used sparingly?
+
+### Solution Guidelines:
+Use the specificity weight formula: (inline, IDs, classes, elements)
+Demonstrate at least 5 specificity conflicts
+Use color changes as the primary visual indicator
+Include commented explanations in CSS
+
+### Sample Solution Excerpt:
+
+```
+/* specificity.css */
+/* Task 1: Element vs Class */
+p { color: red; }
+.text { color: blue; } /* Wins - class > element */
+
+/* Task 2: Class vs ID */
+.heading { color: green; }
+#main-heading { color: orange; } /* Wins - ID > class */
+
+/* Task 3: Multiple Classes vs Single Class */
+.special { font-weight: normal; }
+.text.special { font-weight: bold; } /* Wins - more specific */
+
+/* Task 4: Inline vs External */
+#action-btn { background-color: green; }
+/* Inline style (blue) wins unless !important is used */
+
+/* Task 5: !important Override */
+#action-btn { color: white !important; }
+button { color: black; } /* !important wins despite lower specificity */
+```
+
+### Learning Outcomes:
+- Understand specificity hierarchy
+- Calculate specificity weights
+- Resolve style conflicts effectively
+- Apply best practices for selector usage
+- Recognize anti-patterns in CSS authoring
+
+### Submission Requirements:
+- Working HTML/CSS files
+- Clear visual demonstrations of specificity
+- Comments explaining each conflict resolution
+- Answers to challenge questions in CSS comments
+
+This assignment helps students practically understand one of CSS's most fundamental concepts through hands-on implementation and controlled style conflicts. The complexity can be adjusted based on student level by adding more complex selector combinations or including pseudo-classes.
