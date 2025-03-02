@@ -174,6 +174,7 @@ Debugging: Use browser dev tools to visualize box models
 This comprehensive package provides both theoretical understanding and practical implementation opportunities for mastering display properties. Start with the activity to gain visual understanding, proceed through assignments to reinforce concepts, and use the quiz questions to test knowledge gaps.
 
 ## Solutions
+
 ### Assignment 1 Solution: Layout Conversion
 
 **```index.html```**
@@ -214,5 +215,64 @@ This comprehensive package provides both theoretical understanding and practical
     }
 ```
 
+**Key Techniques**
+- Used ```inline-block``` for horizontal layout
+- ```calc()``` for equal width with spacing
+- Font-size zero hack to remove whitespace
+- Box-sizing for proper width calculations
+
+### Assignment 2 Solution: Form Layout
+
+**```index.html```**
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Layout</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Name:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email">
+        </div>
+    </form>
+</body>
+</html>
+```
+
+**```styles.css```**
+
+```
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    padding: 5px;
+}
+
+```
+**Key Features**
+
+- Vertical alignment using vertical-align: middle
+- Fixed label width for consistency
+- Wrapper divs for vertical spacing
+- Proper input width control
 
 
