@@ -275,4 +275,108 @@ input {
 - Wrapper divs for vertical spacing
 - Proper input width control
 
+### Assignment 3 Solution: Newspaper Layout
 
+**```index.html```**
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+</head>
+<body>
+    <div class="columns">
+        <div class="column">
+            <h3>News Article 1</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div><!--
+        --><div class="column">
+            <h3>News Article 2</h3>
+            <p>Consectetur adipiscing elit...</p>
+        </div><!--
+        --><div class="column">
+            <h3>News Article 3</h3>
+            <p>Sed do eiusmod tempor incididunt...</p>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+**```styles.css```**
+
+```
+.columns {
+    font-size: 0;
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+.column {
+    display: inline-block;
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    font-size: 16px;
+    vertical-align: top;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    min-height: 300px; /* Equal height */
+}
+
+```
+
+**Key Solutions**
+- Removed whitespace using HTML comments
+- Equal height with min-height
+- Consistent gutters with ```calc()```
+- Vertical alignment for top positioning
+- Box-shadow for visual separation
+
+### Bonus Quiz Answers
+**1. Vertical Margins**: Inline elements don't respect vertical margins because they flow with text content
+**2. Whitespace Fix**: Use font-size:0 on parent or remove HTML whitespace
+**3. Floats**: Block elements become block-level floats, inline-blocks remain inline-level
+**4. vs Flexbox**: Use inline-block for simple grids without flex features
+**5. vertical-align**: Controls alignment within line box context
+
+### Common Issues & Fixes
+
+**Uneven Alignment**
+
+```
+.element {
+    vertical-align: top;
+}
+```
+
+**Spacing Issues**
+
+```
+.parent {
+    letter-spacing: -0.31em; /* Alternative whitespace fix */
+}
+```
+
+**Height Mismatch**
+
+```
+.columns {
+    display: flex; /* Modern alternative */
+}
+```
+
+**Mobile Responsiveness**
+
+```
+@media (max-width: 768px) {
+    .column {
+        display: block;
+        width: 100%;
+    }
+}
+```
+
+These solutions demonstrate practical implementation of display properties while addressing common layout challenges. Each solution prioritizes cross-browser compatibility and responsive design considerations.
