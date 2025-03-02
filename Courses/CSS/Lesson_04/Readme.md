@@ -335,11 +335,16 @@ input {
 - Vertical alignment for top positioning
 - Box-shadow for visual separation
 
-### Bonus Quiz Answers
+## Bonus Quiz Answers
+
 **1. Vertical Margins**: Inline elements don't respect vertical margins because they flow with text content
+
 **2. Whitespace Fix**: Use font-size:0 on parent or remove HTML whitespace
+
 **3. Floats**: Block elements become block-level floats, inline-blocks remain inline-level
+
 **4. vs Flexbox**: Use inline-block for simple grids without flex features
+
 **5. vertical-align**: Controls alignment within line box context
 
 ### Common Issues & Fixes
