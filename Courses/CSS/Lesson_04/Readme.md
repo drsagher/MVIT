@@ -172,3 +172,47 @@ Debugging: Use browser dev tools to visualize box models
 - CSS Box Model Deep Dive
 
 This comprehensive package provides both theoretical understanding and practical implementation opportunities for mastering display properties. Start with the activity to gain visual understanding, proceed through assignments to reinforce concepts, and use the quiz questions to test knowledge gaps.
+
+## Solutions
+### Assignment 1 Solution: Layout Conversion
+
+**```index.html```**
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Conversion</title>
+</head>
+<body>
+    <div class="container">
+        <span>Item 1</span>
+        <span>Item 2</span>
+        <span>Item 3</span>
+    </div>
+</body>
+</html>
+```
+
+**```styles.css```**
+
+```
+    .container {
+        font-size: 0; /* Remove whitespace between inline-blocks */
+        margin: -5px; /* Counteract last element's margin */
+    }
+    
+    .container span {
+        display: inline-block;
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 15px;
+        background: #f0f0f0;
+        font-size: 16px; /* Reset font-size */
+        text-align: center;
+        box-sizing: border-box;
+    }
+```
+
+
+
