@@ -80,4 +80,95 @@ Mastering the CSS display property is essential for building visually appealing 
 - Experiment with vertical-align on inline-block items
 - Create a navigation menu using inline-block
 
+## Practical Assignments
 
+### Assignment 1: Layout Conversion
+
+```
+<!-- Start with this structure -->
+<div class="container">
+    <span>Item 1</span>
+    <span>Item 2</span>
+    <span>Item 3</span>
+</div>
+```
+
+### Requirements:
+- Convert spans to behave like block elements
+- Arrange them horizontally using inline-block
+- Add 20px spacing between items
+- Make them equal width
+
+### Assignment 2: Form Layout
+
+```
+<form>
+    <label>Name:</label>
+    <input type="text">
+    <label>Email:</label>
+    <input type="email">
+</form>
+```
+
+**Requirements**
+- Make labels behave like inline-block
+- Set fixed width for labels
+- Create vertical alignment between labels/inputs
+- Add proper spacing
+
+
+### Assignment 3: Newspaper Layout
+
+**Requirements**
+- Create 3 columns using inline-block
+- Add proper gutter spacing
+- Handle whitespace between inline-block elements
+- Make columns equal height
+
+**Quiz Questions**
+1. Why can't you set vertical margins on inline elements?
+2. How do you fix the whitespace issue between inline-block elements?
+3. What happens if you float a block element vs inline-block?
+4. When would you use inline-block instead of flexbox?
+5 How does vertical-align work with inline-block?
+
+**Common Use Cases**
+
+- Block Elements
+- Page sections/containers
+- Full-width headers/footers
+- Form controls (when styled properly)
+- Inline Elements
+- Text formatting
+- Links within paragraphs
+- Icon implementations
+- Inline-Block
+- Horizontal navigation menus
+- Grid systems (before flex/grid)
+- Form elements alignment
+- Icon lists
+
+**Pro Tips**
+Whitespace Hack: Set parent font-size: 0 to remove inline-block spacing
+Vertical Alignment: Use vertical-align: middle for inline-block elements
+Fallback Strategy: Use inline-block for older browser support
+Responsive Trick: Change display types at different breakpoints
+Debugging: Use browser dev tools to visualize box models
+
+**Advanced Exercise**
+- Challenge: Create a responsive image gallery where:
+- Desktop: 4 columns (inline-block)
+- Tablet: 2 columns
+- Mobile: 1 column
+- Images maintain aspect ratio
+- Equal spacing between items
+- Bonus: Add hover effects that require inline-block positioning
+
+**Further Learning Resources**
+- Mozilla MDN Display Property Docs
+- CSS-Tricks "Inline-Block" Guide
+- "Centering in CSS" Challenges
+- Flexbox vs Inline-Block Comparison
+- CSS Box Model Deep Dive
+
+This comprehensive package provides both theoretical understanding and practical implementation opportunities for mastering display properties. Start with the activity to gain visual understanding, proceed through assignments to reinforce concepts, and use the quiz questions to test knowledge gaps.
