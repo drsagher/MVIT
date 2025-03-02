@@ -18,3 +18,5 @@ By the end of this course, learners will be able to:
 [Lesson 3 Box Model](Lesson_03/Readme.md)
 
 [Lesson 4 Display property: block, inline, inline-block](Lesson_04/Readme.md)
+
+[Lesson 5 Positioning: static, relative, absolute, fixed, sticky](Lesson_05/Readme.md)
