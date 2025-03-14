@@ -1,6 +1,6 @@
 <img src="mvut_flame.png" alt="Alt Text" width="75" >
 
-# [Mansha Virtual Institute of Technologies (MVIT)](https://www.mvut.us/, "Empowering People with AI")
+# [Mansha Virtual Institute of Technologies (MVIT)](https://www.mvut.us/)
 
 
 
