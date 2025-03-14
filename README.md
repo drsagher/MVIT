@@ -33,7 +33,7 @@ The **United School of Artificial Intelligence (USAI)** is presented as an **inn
 
 ## Micro Learning Modules
 
-<img src="research8.png" alt="Alt Text" >
+<img src="Courses/mvit-add10.png" alt="Alt Text" >
 
 
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
