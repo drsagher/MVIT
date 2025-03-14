@@ -20,4 +20,4 @@ This table outlines the fee structure for various programs offered by Mansha Vir
 | **Advance Professional Certificate in Web Development (APCWD)** | Online | 4 Semesters | **$75**         | **$50**      |
 | **Certificate of Philosophy in Web Development (CPWD)** | Online | 6 Semesters | **$100**        | **$60**      |
 
-**Note:** For programs where the name or specific fee details were not fully available in the provided sources, those columns remain empty or contain the information that could be extracted. The general admission fee of **$50** applies to all programs mentioned with explicit fees [1-3]. The monthly program fee is **$20** for several programs [2].
+
