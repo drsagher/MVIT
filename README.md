@@ -32,16 +32,24 @@ The **United School of Artificial Intelligence (USAI)** is presented as an **inn
 
 
 ## Micro Learning Modules
+
+<img src="research8.png" alt="Alt Text" >
+
+
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
 
 [List of Micro Modules](Courses/Readme.md)
 
-Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy. 
 
 ## Fee Structure
 The [fee structure](fee/Readme.md) at Mansha Virtual Institute of Technologies (MVIT) includes a **monthly program and certification fee of $20** for most programs, along with a **one-time admission fee of $50** that applies to all programs. However, it's important to note that the duration of each program varies. For instance, Next-Generation Web Development with Python (NXGDP), Full Stack Development with Next.js (FSDN), and Full Stack PHP Development (FSP) are two-year programs, while Office Management and Work Ethics (OM&WE) is a one-year program, and Kindergarten (K.G.) STEM Entrepreneurs is a 15-month program. Additionally, some programs may have different fee arrangements; for example, the Computer Science Professional Studies certificates listed have varying monthly fees and sometimes different registration costs than the standard $50. For detailed information on the fees for specific programs, it is advisable to consult the relevant program details.
 
 
+## Be an AI Star
+
+**Transform your career with the magic of the AI Revolution**
+
+Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy.
 
 [**APPLY NOW!**](https://www.mvut.us/pages/apply) 
 
