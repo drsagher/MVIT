@@ -23,7 +23,7 @@ The **United School of Artificial Intelligence (USAI)** is presented as an **inn
 
 ### USAI Certification Programs
 
-[1. Kindergarten (K.G.) STEM Entrepreneurs](../USAI/README.md)
+[1. Kindergarten (K.G.) STEM Entrepreneurs](https://github.com/drsagher/USAI/blob/main/README.md)
 
 
 
