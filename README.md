@@ -10,6 +10,9 @@ Elevate your career prospects with our Professional Certifications in AI Enginee
 
 [Click to view all Certifications ](Professional_Certifications/Readme.md)
 
+## United School of Artificial Intelligence (USAI) 
+The **United School of Artificial Intelligence (USAI)** is presented as an **innovative early childhood education program** by Mansha Virtual Institute of Technologies (MVIT). Its core mission is to **introduce artificial intelligence and computer science technologies to kindergarten children**. This unique initiative aims to **foster creativity, critical thinking, and problem-solving skills** in these young learners. Experienced educators provide **onsite training and education** within a **nurturing environment** designed to spark curiosity and excitement. Programs like **Term-0 TinyStars**, **Term-I Little Coders**, **Term-II STEM Explorers**, **Term-III Entrepreneurs** and **Term-IV Phonics Wizards** fall under the USAI umbrella, with TinyStars serving as a foundational program and Little Coders utilizing Scratch Jr. to introduce coding concepts.
+
 
 ## Micro Learning Modules
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
