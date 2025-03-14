@@ -18,7 +18,11 @@ Elevate your career prospects with our Professional Certifications in AI Enginee
 
 [1. MRSE Certification ](Professional_Certifications/MRSE/Readme.md)
 
-## United School of Artificial Intelligence (USAI) 
+## United School of Artificial Intelligence (USAI)
+
+<img src="https://github.com/drsagher/USAI/blob/main/mvit-add8.png" alt="Alt Text"  >
+
+
 The **United School of Artificial Intelligence (USAI)** is presented as an **innovative early childhood education program** by Mansha Virtual Institute of Technologies (MVIT). Its core mission is to **introduce artificial intelligence and computer science technologies to kindergarten children**. This unique initiative aims to **foster creativity, critical thinking, and problem-solving skills** in these young learners. Experienced educators provide **onsite training and education** within a **nurturing environment** designed to spark curiosity and excitement. 
 
 ### USAI Certification Programs
