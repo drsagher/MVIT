@@ -128,13 +128,13 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M900 Technical Stack for Fullstack AI Development
 
-[MRE-1401 TensorFlow](MRE001/Readme.md)
+[MRE-1401 Deep Learning with TensorFlow](MRE001/Readme.md)
 
-[MRE-1402 PyTorch](MRE002/Readme.md)
+[MRE-1402 PyTorch for AI and Machine Learning Engineers](MRE002/Readme.md)
 
-[MRE-1403 Scikit-learn](MRE003/Readme.md)
+[MRE-1403 Python Machine Learning with Scikit-learn](MRE003/Readme.md)
 
-[MRE-1404 NumPy](MRE004/Readme.md)
+[MRE-1404 Python Numerical Computing with NumPy](MRE004/Readme.md)
 
 [MRE-1405 SciPy](MRE005/Readme.md)
 
