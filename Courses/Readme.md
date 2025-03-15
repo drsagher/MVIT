@@ -114,15 +114,15 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M800 Autonomous AI and Agentic Web
 
-[MVC-800 Introduction to Agentic AI Application Development](AgenticAI/Readme.md)
+[MVC-801 Introduction to Agentic AI Application Development](AgenticAI/Readme.md)
 
-[MVC-801 AI Agents Development with Next.js](NextAI/Readme.md)
+[MVC-802 AI Agents Development with Next.js](NextAI/Readme.md)
 
-[MVC-802 Building Intelligent Cloud Native Microservices](Microservices/Readme.md)
+[MVC-803 Building Intelligent Cloud Native Microservices](Microservices/Readme.md)
 
-[MVC-803 Intelligent Humanoid Robotics and Physical AI Systems](IHR/Readme.md)
+[MVC-804 Intelligent Humanoid Robotics and Physical AI Systems](IHR/Readme.md)
 
-[MVC-804 Multi-Agent Systems with CrewAI](CrewAI/Readme.md)
+[MVC-805 Multi-Agent Systems with CrewAI](CrewAI/Readme.md)
 
 
 ## M900 Technical Stack for Fullstack AI Development
