@@ -199,13 +199,8 @@ Next.js provides developers with a powerful toolbox for implementing various ren
 - Future-proof with regular updates introducing cutting-edge features like React Server Components .
 - Backed by Vercel , ensuring reliability, innovation, and enterprise-grade support.
 
-
-
-
-## Main Features
-
+## Key Features of Next.js
 Next.js is a versatile React framework that provides a comprehensive set of features for building modern web applications. Its **routing structure** is file-based, with the `pages` directory defining routes automatically, while the newer **App Router** introduces advanced conventions like nested layouts and route groups using the `app` directory. **Layouts** are a key feature, allowing developers to create reusable UI structures; the App Router simplifies this with built-in support for nested layouts via `layout.js` files, whereas the Pages Router requires manual implementation. For **data fetching**, Next.js offers multiple methods: the Pages Router uses `getStaticProps`, `getServerSideProps`, and `getStaticPaths`, while the App Router leverages React Server Components and the `fetch` API with caching for streamlined data handling. **Nested routes** are natively supported in the App Router, enabling complex, hierarchical structures, whereas the Pages Router achieves nesting through subdirectories. **Error handling** is another area where the App Router shines, providing automatic fallback UIs with `error.js` files, compared to the manual error boundaries required in the Pages Router. In terms of **performance and scalability**, the App Router introduces modern optimizations like streaming, partial hydration, and edge deployment, making it ideal for large-scale applications, while the Pages Router remains suitable for simpler projects. Finally, the **migration path** from the Pages Router to the App Router is flexible, allowing both systems to coexist during the transition by introducing the `app` directory alongside the `pages` directory. This ensures backward compatibility and a smooth adoption of Next.js's latest advancements. Together, these features make Next.js a robust framework capable of handling projects of any size and complexity.
-
 
 
 | Feature                     | Description                                                                                   | Use Case                                                                 |
