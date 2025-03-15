@@ -5,68 +5,67 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M100 Connecting the Dots
 
-[MVC-143 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
+[MVC-101 Microsoft Office Essentials for Web Developers](OMCDEV/Readme.md)
 
-[MVC-144 Secrets of Programming with Math and Logic](SPML/Readme.md)
+[MVC-102 Secrets of Programming with Math and Logic](SPML/Readme.md)
 
+[MVC-103 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
 
-[MVC-15 Introduction to JavaScript Programming](Introduction_to_JavaScript_Programming/Readme.md)
+[MVC-104 Digital Literacy and Online Professional Skills](DLOPS/Readme.md)
 
-[MVC-10 Digital Literacy and Online Professional Skills](DLOPS/Readme.md)
-
-[MVC-149 Adobe Illustrator for Web Design](AdobeAi/Readme.md)
+[MVC-105 Adobe Illustrator for Web Design](AdobeAi/Readme.md)
 
 
 
 ## M200 Core Web Technologies
 
-[MVC-93 HTML Fundamentlals](HTML_Fundamentals/Readme.md)
+[MVC-201 HTML Fundamentlals](HTML_Fundamentals/Readme.md)
 
-[MVC-94 Cascading Style Sheets - CSS](CSS/Readme.md)
+[MVC-202 Cascading Style Sheets - CSS](CSS/Readme.md)
 
-[MVC-146 Mastering CSS Animation](CSSAnimation/Readme.md)
+[MVC-203 Mastering CSS Animation](CSSAnimation/Readme.md)
 
-[MVC-111 Version Control and Collaboration](VCS/Readme.md)
+[MVC-204 Version Control and Collaboration](VCS/Readme.md)
 
-[MVC-28 Typescript Programming](TS/Readme.md)
+[MVC-205 Typescript Programming](TS/Readme.md)
 
-[MVC-100 Tailwind CSS](TW/Readme.md)
+[MVC-206 Tailwind CSS](TW/Readme.md)
 
-[MVC-26 Next.js and Vercel Deployment](NextVercel/Readme.md)
+[MVC-207 Next.js and Vercel Deployment](NextVercel/Readme.md)
 
-[MVC-148 Advanced Techniques for Improved Search Engine Rankings](SEO/Readme.md)
+[MVC-208 Advanced Techniques for Improved Search Engine Rankings](SEO/Readme.md)
 
 
 
 
 ## M300 Fullstack Fundamentals
 
-[MVC-138 JavaScript DOM and Performance Optimization](DOM/Readme.md)
+[MVC-301 JavaScript DOM and Performance Optimization](DOM/Readme.md)
 
-[MVC-13 Database Management Systems -DBMS](DBMS/Readme.md)
+[MVC-302 Database Management Systems -DBMS](DBMS/Readme.md)
 
-[MVC-114 Responsive Design with Figma](RDS/Readme.md)
+[MVC-303 Responsive Design with Figma](RDS/Readme.md)
 
-[MVC-21 Data Structures and Algorithms](DSA/Readme.md)
+[MVC-304 Data Structures and Algorithms](DSA/Readme.md)
 
-[MVC-105 PostgreSQL and Next.js Full Stack Applications](PsqlNext/Readme.md)
+[MVC-305 PostgreSQL and Next.js Full Stack Applications](PsqlNext/Readme.md)
 
-[MVC-120 Bootstrap](Bootstrap/Readme.md)
+[MVC-306 Bootstrap](Bootstrap/Readme.md)
 
 
 ## M400 Programming Trinity
 
-[MVC-06 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
+[MVC-401 Introduction to Python Programming](Introduction_to_Python_Programming/Readme.md)
 
-[MVC-96 PHP Programming](PHP/Readme.md)
+[MVC-402 PHP Programming](PHP/Readme.md)
 
-[MVC-141 C#.Net Programming](Csharp/Readme.md)
+[MVC-403 C#.Net Programming](Csharp/Readme.md)
 
-[MVC-119 API Development with Next](APINext/Readme.md)
+[MVC-404 API Development with Next](APINext/Readme.md)
 
-[MVC-11 AI Software Engineering](AISE/Readme.md)
+[MVC-405 AI Software Engineering](AISE/Readme.md)
 
-[MVC-145 C Programming for Problem-Solving and Algorithmic Thinking](CLang/Readme.md)
+[MVC-406 C Programming for Problem-Solving and Algorithmic Thinking](CLang/Readme.md)
 
 
 ## M500 Cyber Shield APIs Design and Development
