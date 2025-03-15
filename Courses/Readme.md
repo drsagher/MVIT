@@ -128,52 +128,51 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M900 Technical Stack for Fullstack AI Development
 
-[MRE-001 TensorFlow](MRE001/Readme.md)
+[MRE-1401 TensorFlow](MRE001/Readme.md)
 
-[MRE-002 PyTorch](MRE002/Readme.md)
+[MRE-1402 PyTorch](MRE002/Readme.md)
 
-[MRE-003 Scikit-learn](MRE003/Readme.md)
+[MRE-1403 Scikit-learn](MRE003/Readme.md)
 
-[MRE-004 NumPy](MRE004/Readme.md)
+[MRE-1404 NumPy](MRE004/Readme.md)
 
-[MRE-005 SciPy](MRE005/Readme.md)
+[MRE-1405 SciPy](MRE005/Readme.md)
 
-[MRE-006 pandas](MRE006/Readme.md)
+[MRE-1406 pandas](MRE006/Readme.md)
 
-[MRE-007 Docker](MRE007/Readme.md)
+[MRE-1407 Docker](MRE007/Readme.md)
 
-[MRE-008 Streamlit](MRE008/Readme.md)
+[MRE-1408 Streamlit](MRE008/Readme.md)
 
-[MRE-009 Linux](MRE009/Readme.md)
+[MRE-1409 Linux](MRE009/Readme.md)
 
-[MRE-010 Kubernetes](MRE010/Readme.md)
+[MRE-1410 Kubernetes](MRE010/Readme.md)
 
 [MRE-011 Flask](MRE011/Readme.md)
 
-[MRE-012 Django](MRE012/Readme.md)
+[MRE-1412 Django](MRE012/Readme.md)
 
-[MRE-013 FastAPI](MRE013/Readme.md)
+[MRE-1413 FastAPI](MRE013/Readme.md)
 
-[MRE-014 UV](MRE014/Readme.md)
+[MRE-1414 UV](MRE014/Readme.md)
 
-[MRE-015 React](MRE015/Readme.md)
+[MRE-1415 React](MRE015/Readme.md)
 
-[MRE-016 TypeScript](MRE016/Readme.md)
+[MRE-1416 TypeScript](MRE016/Readme.md)
 
-[MRE-017 Express](MRE017/Readme.md)
+[MRE-1417 Express](MRE017/Readme.md)
 
-[MRE-018 SQL Stored Procedures](MRE018/Readme.md)
+[MRE-1418 SQL Stored Procedures](MRE018/Readme.md)
 
-[MRE-019 SQL Stored Procedures](MRE019/Readme.md)
+[MRE-1419 SQL Stored Procedures](MRE019/Readme.md)
 
-[MRE-020 GitHub](MRE020/Readme.md)
+[MRE-1420 GitHub](MRE020/Readme.md)
 
-[MRE-021 Chart.js](MRE021/Readme.md)
+[MRE-1421 Chart.js](MRE021/Readme.md)
 
-[MRE-022 D3.js](MRE022/Readme.md)
+[MRE-1422 D3.js](MRE022/Readme.md)
 
-[MRE-023 Matplotlib](MRE023/Readme.md)
-
+[MRE-1423 Matplotlib](MRE023/Readme.md)
 
 
 ## M1 Fullstack AI Developer
