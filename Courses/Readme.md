@@ -68,19 +68,18 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-145 C Programming for Problem-Solving and Algorithmic Thinking](CLang/Readme.md)
 
-## M500 APIs Development
 
-[MVC-118 Fast API Framework]()
+## M500 Cyber Shield APIs Design and Development
 
-[MVC-87 MEAN Stack Development]()
+[MVC-501 Building Real-Time APIs with FastAPI]()
 
-[MVC-32 MERN Stack Development]()
+[MVC-502 Building RESTful APIs with MEAN Stack]()
 
-[MVC-142 ASP.NET MVC]()
+[MVC-503 MERN Stack APIs From Scratch to Deployment]()
 
-[MVC-102 Full Stack Development with Laravel]()
+[MVC-504 Full Stack Development with Laravel]()
 
-[MVC- 146 Cyber Security Fundamentals](CSF/Readme.md)
+[MVC-505 Designing, Implementing, and Testing Secure APIs](CSF/Readme.md)
 
 
 ## M600 Containerization and Cloud Computing
