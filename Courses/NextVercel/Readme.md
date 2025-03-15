@@ -3,3 +3,5 @@ Next.js and Vercel Deployment represent a powerful combination for building and 
 
 
 [Lesson 1 Introduction to Next.js Framework](Lesson_01/Readme.md)
+
+[Lesson 2 Next.js Architecture](Lesson_02/Readme.md)
