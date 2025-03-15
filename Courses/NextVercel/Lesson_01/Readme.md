@@ -148,6 +148,13 @@ export async function getStaticProps() {
 - Reduces the need for frequent full builds.
 
 
+Next.js provides developers with a powerful toolbox for implementing various rendering strategies:
+- **SSR** is ideal for dynamic, real-time content with excellent SEO.
+- **SSG** excels in performance and scalability for static or semi-static content.
+- **CSR** is perfect for highly interactive applications where SEO is less critical.
+- **ISR** bridges the gap between SSG and SSR, offering a balance of performance and freshness.
+
+
 
 **How Does It Work in Next.js?**
 - CSR is typically used for parts of the application that do not require SEO or immediate rendering.
