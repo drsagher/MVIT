@@ -84,32 +84,32 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M600 Containerization and Cloud Computing
 
-[MVC-122 Serverless Deployment (AWS Lambda)]()
+[MVC-601 Serverless Deployment (AWS Lambda)]()
 
-[MVC-123 Containerization (Docker)]()
+[MVC-602 Containerization (Docker)]()
 
-[MVC-124 Orchestration (Kubernetes)]()
+[MVC-603 Orchestration (Kubernetes)]()
 
-[MVC-125 Authentication (OAuth, JWT, Next AUTH)]()
+[MVC-604 Authentication (OAuth, JWT, Next AUTH)]()
 
-[MVC-145 Cloud Computing Fundamentals](CCF/Readme.md)
+[MVC-605 Cloud Computing Fundamentals](CCF/Readme.md)
 
-[MVC-20 Operating Systems]()
+[MVC-606 Operating Systems]()
 
 
 ## M700 Mathematical Concepts for Programming
 
-[MVC-39 Discrete Mathematics for Programming](DMP/Readme.md)
+[MVC-701 Discrete Mathematics for Programming](DMP/Readme.md)
 
-[MVC-139 Linear Algebra for Machine Learning](LAML/Readme.md)
+[MVC-702 Linear Algebra for Machine Learning](LAML/Readme.md)
 
-[MVC-140 Calculus for Optimization](CFO/Readme.md)
+[MVC-703 Calculus for Optimization](CFO/Readme.md)
 
-[MVC-40 Probability and Statistics for Data Science](SDS/Readme.md)
+[MVC-704 Probability and Statistics for Data Science](SDS/Readme.md)
 
-[MVC-72 Artificial Intelligence and Machine Learning]()
+[MVC-705 Artificial Intelligence and Machine Learning]()
 
-[MVC-147 Introduction to Blockchain Technology](BC/Readme.md)
+[MVC-706 Introduction to Blockchain Technology](BC/Readme.md)
 
 
 ## M800 Autonomous AI and Agentic Web
