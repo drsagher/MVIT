@@ -72,7 +72,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MVC-501 Building Real-Time APIs with FastAPI](MVC501/Readme.md)
 
-[MVC-502 Building RESTful APIs with MEAN Stack]()
+[MVC-502 Building RESTful APIs with MEAN Stack](MVC502/Readme.md)
 
 [MVC-503 MERN Stack APIs From Scratch to Deployment]()
 
