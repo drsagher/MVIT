@@ -128,49 +128,49 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 ## M900 Technical Stack for Fullstack AI Development
 
-[MRE-1401 Deep Learning with TensorFlow](MRE001/Readme.md)
+[MRE-901 Deep Learning with TensorFlow](MRE001/Readme.md)
 
-[MRE-1402 PyTorch for AI and Machine Learning Engineers](MRE002/Readme.md)
+[MRE-902 PyTorch for AI and Machine Learning Engineers](MRE002/Readme.md)
 
-[MRE-1403 Python Machine Learning with Scikit-learn](MRE003/Readme.md)
+[MRE-903 Python Machine Learning with Scikit-learn](MRE003/Readme.md)
 
-[MRE-1404 Python Numerical Computing with NumPy](MRE004/Readme.md)
+[MRE-904 Python Numerical Computing with NumPy](MRE004/Readme.md)
 
-[MRE-1405 SciPy for Engineers and Scientists](MRE005/Readme.md)
+[MRE-905 SciPy for Engineers and Scientists](MRE005/Readme.md)
 
-[MRE-1406 Python Data Analysis with Pandas](MRE006/Readme.md)
+[MRE-906 Python Data Analysis with Pandas](MRE006/Readme.md)
 
-[MRE-1407 Containerization with Docker](MRE007/Readme.md)
+[MRE-907 Containerization with Docker](MRE007/Readme.md)
 
-[MRE-1408 Building Data Visualization Apps with Streamlit:](MRE008/Readme.md)
+[MRE-908 Building Data Visualization Apps with Streamlit:](MRE008/Readme.md)
 
-[MRE-1409 Linux Fundamentals for Developers](MRE009/Readme.md)
+[MRE-909 Linux Fundamentals for Developers](MRE009/Readme.md)
 
-[MRE-1410 Building, Deploying, and Managing Modern Applications with Kubernetes](MRE010/Readme.md)
+[MRE-910 Building, Deploying, and Managing Modern Applications with Kubernetes](MRE010/Readme.md)
 
-[MRE-011 Building RESTful APIs with Flask](MRE011/Readme.md)
+[MRE-911 Building RESTful APIs with Flask](MRE011/Readme.md)
 
-[MRE-1412 Building Scalable Web Applications with Django](MRE012/Readme.md)
+[MRE-912 Building Scalable Web Applications with Django](MRE012/Readme.md)
 
-[MRE-1413 Building Real-Time APIs with FastAPI](MRE013/Readme.md)
+[MRE-913 Building Real-Time APIs with FastAPI](MRE013/Readme.md)
 
-[MRE-1414 Building Scalable Applications with UV](MRE014/Readme.md)
+[MRE-914 Building Scalable Applications with UV](MRE014/Readme.md)
 
-[MRE-1415 React Components, Props, and State](MRE015/Readme.md)
+[MRE-915 React Components, Props, and State](MRE015/Readme.md)
 
-[MRE-1416 Building Enterprise-Level Applications with TypeScript](MRE016/Readme.md)
+[MRE-916 Building Enterprise-Level Applications with TypeScript](MRE016/Readme.md)
 
-[MRE-1417 Building RESTful APIs with Express.js](MRE017/Readme.md)
+[MRE-917 Building RESTful APIs with Express.js](MRE017/Readme.md)
 
-[MRE-1418 Creating, Optimizing, and Troubleshooting SQL Stored Procedures](MRE018/Readme.md)
+[MRE-918 Creating, Optimizing, and Troubleshooting SQL Stored Procedures](MRE018/Readme.md)
 
-[MRE-1420 Creating, Managing, and Contributing to GitHub Repositories](MRE020/Readme.md)
+[MRE-919 Creating, Managing, and Contributing to GitHub Repositories](MRE020/Readme.md)
 
-[MRE-1421 Chart.js for Data Visualization and Integration into Web Applications](MRE021/Readme.md)
+[MRE-920 Chart.js for Data Visualization and Integration into Web Applications](MRE021/Readme.md)
 
-[MRE-1422 Creating, Customizing, and Animating Data Visualizations with D3.js](MRE022/Readme.md)
+[MRE-921 Creating, Customizing, and Animating Data Visualizations with D3.js](MRE022/Readme.md)
 
-[MRE-1423 Building Customizable Data Visualizations with Matplotlib](MRE023/Readme.md)
+[MRE-922 Building Customizable Data Visualizations with Matplotlib](MRE023/Readme.md)
 
 
 ## M1 Fullstack AI Developer
