@@ -3,7 +3,7 @@ Next.js is a popular React-based framework for building server-rendered, statica
 
 Here's an overview of the key architectural components and concepts in Next.js:
 
-## File-based routing
+## File-based Routing
 File-based routing is a core feature of Next.js that simplifies the process of creating and managing routes in a web application. Instead of manually configuring routes, Next.js automatically generates routes based on the file structure within the `pages` directory. Each file or folder in this directory corresponds to a route in the application. For example, a file named `about.js` in the `pages` directory creates a route at `/about`, while a file named `index.js` represents the root route (`/`). Nested routes can be created by organizing files into subdirectories, such as `pages/blog/post.js`, which would map to `/blog/post`. Dynamic routes are also supported using square brackets (e.g., `[id].js`), allowing for parameterized URLs like `/posts/123`. Additionally, catch-all routes can be defined using `[...slug].js` to handle multiple path segments. This file-based routing system eliminates the need for complex routing configurations, making it intuitive and efficient for developers to build scalable applications. Combined with features like automatic code splitting and optimized performance, file-based routing in Next.js enhances productivity and ensures a seamless development experience.
 
 ## Rendering Methods
