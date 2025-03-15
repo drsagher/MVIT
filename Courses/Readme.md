@@ -160,19 +160,17 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-1416 Building Enterprise-Level Applications with TypeScript](MRE016/Readme.md)
 
-[MRE-1417 Express](MRE017/Readme.md)
+[MRE-1417 Building RESTful APIs with Express.js](MRE017/Readme.md)
 
-[MRE-1418 SQL Stored Procedures](MRE018/Readme.md)
+[MRE-1418 Creating, Optimizing, and Troubleshooting SQL Stored Procedures](MRE018/Readme.md)
 
-[MRE-1419 SQL Stored Procedures](MRE019/Readme.md)
+[MRE-1420 Creating, Managing, and Contributing to GitHub Repositories](MRE020/Readme.md)
 
-[MRE-1420 GitHub](MRE020/Readme.md)
+[MRE-1421 Chart.js for Data Visualization and Integration into Web Applications](MRE021/Readme.md)
 
-[MRE-1421 Chart.js](MRE021/Readme.md)
+[MRE-1422 Creating, Customizing, and Animating Data Visualizations with D3.js](MRE022/Readme.md)
 
-[MRE-1422 D3.js](MRE022/Readme.md)
-
-[MRE-1423 Matplotlib](MRE023/Readme.md)
+[MRE-1423 Building Customizable Data Visualizations with Matplotlib](MRE023/Readme.md)
 
 
 ## M1 Fullstack AI Developer
