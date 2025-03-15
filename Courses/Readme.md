@@ -170,16 +170,10 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-922 Building Customizable Data Visualizations with Matplotlib](MRE023/Readme.md)
 
+[MRE-923 Prompt Engineering for Developers](MRE101/Readme.md)
 
-## M1 Fullstack AI Developer
+[MRE-924 Building RAG Agents with LLMs](MRE301/Readme.md)
 
-[MRE-101 Prompt Engineering for Developers](MRE101/Readme.md)
+[MRE-925 Designing Effective Prompts for Intelligent Language Models](PE/Readme.md)
 
-[MRE-301 Building RAG Agents with LLMs](MRE301/Readme.md)
-
-
-## M2 Fullstack AI Engineer
-
-[MRE-700 Prompt Engineering and LLMs](PE/Readme.md)
-
-[MRE-701 Building AI Agents and Applications](AutoGen/Readme.md)
+[MRE-926 Building AI Agents and Applications](AutoGen/Readme.md)
