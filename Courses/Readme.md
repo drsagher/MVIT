@@ -136,29 +136,29 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-1404 Python Numerical Computing with NumPy](MRE004/Readme.md)
 
-[MRE-1405 SciPy](MRE005/Readme.md)
+[MRE-1405 SciPy for Engineers and Scientists](MRE005/Readme.md)
 
-[MRE-1406 pandas](MRE006/Readme.md)
+[MRE-1406 Python Data Analysis with Pandas](MRE006/Readme.md)
 
-[MRE-1407 Docker](MRE007/Readme.md)
+[MRE-1407 Containerization with Docker](MRE007/Readme.md)
 
-[MRE-1408 Streamlit](MRE008/Readme.md)
+[MRE-1408 Building Data Visualization Apps with Streamlit:](MRE008/Readme.md)
 
-[MRE-1409 Linux](MRE009/Readme.md)
+[MRE-1409 Linux Fundamentals for Developers](MRE009/Readme.md)
 
-[MRE-1410 Kubernetes](MRE010/Readme.md)
+[MRE-1410 Building, Deploying, and Managing Modern Applications with Kubernetes](MRE010/Readme.md)
 
-[MRE-011 Flask](MRE011/Readme.md)
+[MRE-011 Building RESTful APIs with Flask](MRE011/Readme.md)
 
-[MRE-1412 Django](MRE012/Readme.md)
+[MRE-1412 Building Scalable Web Applications with Django](MRE012/Readme.md)
 
-[MRE-1413 FastAPI](MRE013/Readme.md)
+[MRE-1413 Building Real-Time APIs with FastAPI](MRE013/Readme.md)
 
-[MRE-1414 UV](MRE014/Readme.md)
+[MRE-1414 Building Scalable Applications with UV](MRE014/Readme.md)
 
-[MRE-1415 React](MRE015/Readme.md)
+[MRE-1415 React Components, Props, and State](MRE015/Readme.md)
 
-[MRE-1416 TypeScript](MRE016/Readme.md)
+[MRE-1416 Building Enterprise-Level Applications with TypeScript](MRE016/Readme.md)
 
 [MRE-1417 Express](MRE017/Readme.md)
 
