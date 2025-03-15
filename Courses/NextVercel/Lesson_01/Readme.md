@@ -162,17 +162,6 @@ Next.js provides developers with a powerful toolbox for implementing various ren
 - Data fetching happens on the client side using hooks like useEffect or libraries like SWR or React Query.
 - While Next.js supports CSR, it is often combined with SSR or SSG for better performance and SEO.
 
-
-## Key Advantages of Next.js
-- **Server-Side Rendering (SSR)**: Pre-renders pages on the server, improving performance and SEO.
-- **Static Site Generation (SSG)**: Generates static HTML files at build time, ideal for content-heavy websites.
-- **Incremental Static Regeneration (ISR)**: Updates static pages without rebuilding the entire site.
-- **File-Based Routing**: Simplifies routing with a file-based system, eliminating the need for complex configuration.
-- **API Routes**: Allows developers to create backend APIs directly within the Next.js project.
-- **Built-In CSS Support**: Supports CSS modules, styled-jsx, and modern styling solutions.
-- **Image Optimization**: Automatically optimizes images using the <Image> component.
-
-
 ## Why Choose Next.js
 - Built on React , leveraging its component-based architecture and ecosystem.
   - Supports multiple rendering strategies:
