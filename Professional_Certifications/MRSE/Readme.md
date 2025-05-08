@@ -10,4 +10,12 @@ This program stands as a living tribute to a man who believed deeply in the pote
 
 ## MRSE Learning Roadmap
 
+### A. Pre-Development Essentials
+
+### B. FullStack Development Core
+
+### C. Pre-AI & Architecture
+
+### D. Final Code Development
+
 [MVC-201 HTML Fundamentlals](/Courses/HTML_Fundamentals/Readme.md)
