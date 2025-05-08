@@ -12,7 +12,7 @@ This program stands as a living tribute to a man who believed deeply in the pote
 
 ### A. Development Prerequisites
 
-[MVC-201 HTML Fundamentlals](/Courses/HTML_Fundamentals/Readme.md)
+- [MVC-201 HTML Fundamentlals](/Courses/HTML_Fundamentals/Readme.md)
 
 ### B. Full-Stack Core Skills
 
