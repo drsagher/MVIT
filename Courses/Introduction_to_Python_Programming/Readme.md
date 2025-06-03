@@ -1,5 +1,39 @@
 # MVC-06 Introduction to Python Programming
-Learning Python for Artificial Intelligence is a highly rewarding investment in your career, offering a wide range of benefits. With its simplicity, flexibility, and extensive libraries, including NumPy, Pandas, Scikit-learn, and TensorFlow, Python provides the perfect platform for building AI models. Additionally, Python's rapid prototyping and development capabilities, cross-platform compatibility, and large community support make it an ideal choice for AI development. As a result, Python developers with AI expertise are in high demand, commanding competitive salaries and opening doors to exciting career opportunities in machine learning, deep learning, natural language processing, and computer vision.
+This module, Introduction to Python Programming, serves as a thorough starting point for beginners entering the world of Python programming. It is designed as the first step in the MVIT Certifications, setting the stage for more advanced topics covered throughout the curriculum.
+The course begins with an orientation to the course, including a clear outline of the learning path, key milestones, and what learners can expect to achieve by the end of each section. This helps set realistic goals and prepares learners for the journey ahead.
+Next, it introduces the core principles of computer programming. Learners will explore how computers process instructions, the difference between high-level and low-level programming languages, and why programming languages like Python act as an intermediary between humans and machines.
+A major focus of MVC-06 Introduction to Python Programming course is explaining why Python is an ideal language for beginners. The module highlights Python’s clean, easy-to-read syntax and its adaptability across various domains. Real-world use cases are presented to illustrate Python's wide-ranging applications such as building websites using frameworks like Django, analyzing large datasets in data science, and training models in machine learning using libraries like TensorFlow and scikit-learn.
+To reinforce learning, students engage in practical exercises. They start by writing and executing a simple Python script, then experiment with modifying the code to understand basic programming constructs like print statements, comments, and line structure.
+This course also walks learners through the setup of essential development tools. Step-by-step guidance is provided for installing Python and Jupyter Notebook , which functions as both an interactive coding environment and a beginner-friendly Integrated Development Environment (IDE). These tools are crucial for writing, testing, and debugging Python code efficiently.
+
+Finally, learners dive into actual coding by writing their first program — the classic "Hello, World!" script. From there, they begin exploring fundamental programming elements such as:
+- Declaring and using variables
+- Understanding different data types (like strings, integers, floats, and booleans)
+- Performing basic operations (including arithmetic, string concatenation, and type conversion)
+
+By the conclusion of Module 1, learners will have:
+- A clear understanding of what Python is and why it matters
+- A working development environment ready for future lessons
+- Hands-on experience with basic Python syntax
+- The foundational knowledge needed to progress to more complex programming concepts
+
+In short, MVC-06 Introduction to Python Programming course equips learners with both the theoretical background and practical skills necessary to confidently continue their journey toward becoming proficient Python developers.
+
+## Learning Objectives
+Here are the key points as:
+
+- Understand Python syntax basics: indentation, variables, data types, comments.
+- Write and execute simple programs using Jupyter Notebook or an IDE.
+- Perform arithmetic and basic logical operations in Python.
+- Install Python and set up a development environment on any OS.
+- Recognize common coding errors and debug simple programs.
+- Explore real-world applications: web development, data science, automation, machine learning.
+- Use variables: create, assign, and reassign values.
+- Build problem-solving skills through structured coding tasks.
+- Generate output and understand the benefits of automation.
+- Create a basic Python program using variables and operations.
+
+## Let`s start python journey
 
 [Lesson 01 Introduction to Programming](Lesson_01/Readme.md)
 
