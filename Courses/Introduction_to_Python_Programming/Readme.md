@@ -34,8 +34,6 @@ Here are the key points as:
 
 ## Let`s start our python journey
 
-[Lesson 01 Introduction to Programming](Lesson_01/Readme.md)
+[Lesson 1 Welcome to the World of Programming](Lesson_01/Readme.md)
 
-[Lesson 02 Introduction to AI with Python](Lesson_01/Readme.md)
 
-[Lesson 03 Python Programming Fundamentals](Lesson_01/Readme.md)
