@@ -47,12 +47,6 @@ else:
 **Note:** Python uses indentation (typically 4 spaces) to define code block scope.
 
 #### 2. Comparison Operators
-Comparison operators compare values and return a boolean result. They are commonly used in conditional statements.
-
-Below is a markdown table for **Comparison Operators in Python**, formatted for a GitHub `README.md` file. The table includes the operator, description, and an example for each comparison operator.
-
-## Comparison Operators in Python
-
 Comparison operators are used to compare values in Python, returning a boolean result (`True` or `False`). They are commonly used in conditional statements to control program flow.
 
 | Operator | Description                  | Example          |
