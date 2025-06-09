@@ -255,7 +255,7 @@ print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 **Exercise:**
 - Create a dictionary with 3 key-value pairs (e.g., book titles and authors).
 - Add a new key-value pair and update an existing value.
-- Print all keys using .keys() and all values using .values().
+- Print all keys using ```.keys()``` and all values using ```.values()```.
 
 #### Step 8: Explore Sets
 
@@ -285,7 +285,7 @@ print(numbers & set2)  # Output: {3, 4} (intersection)
 #### Step 9: Type Conversion
 
 **Concept:**
-- Python allows converting between types using functions like int(), float(), str(), list(), tuple(), set().
+- Python allows converting between types using functions like ```int()```, ```float()```, ```str()```, ```list()```, ```tuple()```, ```set()```.
 - Not all conversions are valid (e.g., int("abc") raises an error).
 
 **Action:**
@@ -338,7 +338,7 @@ print(f"{student['name']} has an average grade of {average} and passed: {student
 - **Debug Errors**: If you encounter errors (e.g., TypeError), read the error message and check the types involved.
 
 **Resources:**
-- Official Python documentation: https://docs.python.org/3/.
+- Official Python documentation: ```https://docs.python.org/3/```.
 - Run conda install -c anaconda ipython in Anaconda Prompt for enhanced interactive features in Jupyter.
 
 Save Your Work: Save notebooks frequently (File > Save and Checkpoint) and organize them in a dedicated folder.
