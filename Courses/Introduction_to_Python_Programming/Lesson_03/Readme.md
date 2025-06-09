@@ -51,8 +51,6 @@ Comparison operators compare values and return a boolean result. They are common
 
 Below is a markdown table for **Comparison Operators in Python**, formatted for a GitHub `README.md` file. The table includes the operator, description, and an example for each comparison operator.
 
-
-
 ## Comparison Operators in Python
 
 Comparison operators are used to compare values in Python, returning a boolean result (`True` or `False`). They are commonly used in conditional statements to control program flow.
@@ -67,16 +65,7 @@ Comparison operators are used to compare values in Python, returning a boolean r
 | `<=`     | Less than or equal to        | `x <= y`         |
 
 
-
 #### 3. Logical Operators
-Logical operators combine multiple conditions to produce a single boolean result.
-
-Below is a markdown table for **Logical Operators in Python**, formatted for a GitHub `README.md` file. The table includes the operator, description, and an example for each logical operator.
-
-
-
-## Logical Operators in Python
-
 Logical operators are used to combine multiple conditions in Python, producing a boolean result (`True` or `False`). They are essential for building complex conditional statements.
 
 | Operator | Description                          | Example                 |
@@ -86,32 +75,40 @@ Logical operators are used to combine multiple conditions in Python, producing a
 | `not`    | Inverts the boolean value            | `not (x > 0)`          |
 
 
-
 #### 4. The if Statement
 The if statement evaluates a condition and executes its code block if the condition is True.
-Example: Checking Voting Eligibility
+
+**Example: Checking Voting Eligibility**
+
+```
 age = 20
 if age >= 18:
     print("You are eligible to vote.")
+```
 
-Output:
+**Output:**
 You are eligible to vote.
 
 #### 5. The else Statement
 The else statement provides a fallback block that runs when the if condition is False.
-Example: Pass or Fail
+
+**Example: Pass or Fail**
+```
 score = 65
 if score >= 60:
     print("You passed the exam!")
 else:
     print("You failed the exam.")
-
-Output:
+```
+**Output:**
 You passed the exam!
 
 #### 6. The elif Statement
 The elif (else if) statement allows checking multiple conditions sequentially.
-Example: Grading System
+
+**Example: Grading System**
+
+```
 score = 85
 if score >= 90:
     print("Grade: A")
@@ -123,13 +120,17 @@ elif score >= 60:
     print("Grade: D")
 else:
     print("Grade: F")
+```
 
-Output:
+**Output:**
 Grade: B
 
 #### 7. Nested Conditional Statements
 You can nest if statements within other if statements for complex decision-making.
-Example: Movie Theater Discounts
+
+**Example: Movie Theater Discounts**
+
+```
 age = 65
 is_student = False
 
@@ -143,45 +144,40 @@ else:
         print("You get a student discount!")
     else:
         print("No discount available.")
+```
 
-Output:
+**Output:**
 You get a senior discount!
 
 #### 8. Ternary Operator
 The ternary operator provides a concise way to write simple if-else statements.
-Syntax
+
+**Syntax**
 value_if_true if condition else value_if_false
 
-Example: Assigning a Status
+**Example: Assigning a Status**
+
+```
 age = 16
 status = "Minor" if age < 18 else "Adult"
 print(status)
+```
 
-Output:
+**Output:**
 Minor
 
 #### 9. Membership Operators
-Membership operators (in, not in) check if a value exists in a sequence (e.g., list, string, tuple).
+Membership operators are used to check if a value exists within a sequence (e.g., list, string, tuple) in Python, returning a boolean result (`True` or `False`). They are commonly used in conditional statements.
+
+| Operator   | Description                          | Example                 |
+|------------|--------------------------------------|-------------------------|
+| `in`       | True if value is in sequence         | `x in list`             |
+| `not in`   | True if value is not in sequence     | `x not in list`         |
 
 
+**Example: Checking Allowed Items**
 
-Operator
-Description
-Example
-
-
-
-in
-True if value is in sequence
-x in list
-
-
-not in
-True if value is not in sequence
-x not in list
-
-
-Example: Checking Allowed Items
+```
 allowed_items = ["pen", "pencil", "notebook"]
 item = "pen"
 
@@ -189,12 +185,15 @@ if item in allowed_items:
     print(f"{item} is allowed in the exam.")
 else:
     print(f"{item} is not allowed.")
+```
 
-Output:
+**Output:**
 pen is allowed in the exam.
 
 #### 10. Practical Example: ATM Simulator
 This example simulates an ATM system, demonstrating conditions and branching with user input.
+
+```
 balance = 1000
 pin = 1234
 user_pin = int(input("Enter your PIN: "))
@@ -217,8 +216,10 @@ if user_pin == pin:
         print("Invalid option.")
 else:
     print("Incorrect PIN.")
+```
 
-Sample Run (Input: PIN = 1234, choice = 1):
+**Sample Run (Input: PIN = 1234, choice = 1):**
+
 Enter your PIN: 1234
 1. Check Balance
 2. Withdraw Money
@@ -226,13 +227,14 @@ Select an option (1 or 2): 1
 Your balance is $1000
 
 #### 11. Common Pitfalls and Best Practices
+- **Indentation Errors:** Use consistent indentation (4 spaces recommended) to avoid IndentationError.
+- **Overusing elif:** For many mutually exclusive conditions, consider dictionaries or the match statement for cleaner code.
+- **Redundant Conditions:** Simplify conditions, e.g., use if x instead of if x == True.
+- **Readable Conditions:** Write clear and logical conditions to improve maintainability.
 
-Indentation Errors: Use consistent indentation (4 spaces recommended) to avoid IndentationError.
-Overusing elif: For many mutually exclusive conditions, consider dictionaries or the match statement for cleaner code.
-Redundant Conditions: Simplify conditions, e.g., use if x instead of if x == True.
-Readable Conditions: Write clear and logical conditions to improve maintainability.
+**Example: Simplified Conditions**
 
-Example: Simplified Conditions
+```
 # Less readable
 is_active = True
 if is_active == True:
@@ -241,9 +243,12 @@ if is_active == True:
 # More readable
 if is_active:
     print("System is active.")
+```
 
 #### 12. Advanced Example: Traffic Light Controller
 This example simulates a traffic light system using conditions to determine actions.
+
+```
 light = input("Enter traffic light color (red, yellow, green): ").lower()
 
 if light == "green":
@@ -254,14 +259,18 @@ elif light == "red":
     print("Stop!")
 else:
     print("Invalid color. Please enter red, yellow, or green.")
+```
 
-Sample Run (Input: green):
+**Sample Run (Input: green):**
 Enter traffic light color (red, yellow, green): green
 Go!
 
 #### 13. The match Statement (Python 3.10+)
 The match statement, introduced in Python 3.10, provides a cleaner alternative to multiple elif statements for pattern matching.
-Example: HTTP Status Code Handler
+
+**Example: HTTP Status Code Handler**
+
+```
 status_code = 404
 
 match status_code:
@@ -273,8 +282,9 @@ match status_code:
         print("Server Error")
     case _:
         print("Unknown Status")
+```
 
-Output:
+**Output:**
 Not Found
 
 
