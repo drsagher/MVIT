@@ -29,11 +29,13 @@ Conditions and branching are essential for decision-making in Python programs. T
 #### 1. Introduction to Conditional Statements
 Conditional statements evaluate expressions that result in a boolean value (True or False) and control the program’s flow by executing different code blocks based on those evaluations. The primary components are:
 
-if: Executes a block of code if a condition is True.
-elif: Checks additional conditions if previous ones are False.
-else: Executes a block of code if all preceding conditions are False.
+- ```if```: Executes a block of code if a condition is True.
+- ```elif```: Checks additional conditions if previous ones are False.
+- ```else```: Executes a block of code if all preceding conditions are False.
 
-Syntax
+**Syntax**
+
+```
 if condition:
     # Code block executed if condition is True
 elif another_condition:
@@ -41,97 +43,49 @@ elif another_condition:
 else:
     # Code block executed if all conditions are False
 
-
-Note: Python uses indentation (typically 4 spaces) to define code block scope.
+````
+**Note:** Python uses indentation (typically 4 spaces) to define code block scope.
 
 #### 2. Comparison Operators
 Comparison operators compare values and return a boolean result. They are commonly used in conditional statements.
 
-
-
-Operator
-Description
-Example
+Below is a markdown table for **Comparison Operators in Python**, formatted for a GitHub `README.md` file. The table includes the operator, description, and an example for each comparison operator.
 
 
 
-==
-Equal to
-x == y
+## Comparison Operators in Python
+
+Comparison operators are used to compare values in Python, returning a boolean result (`True` or `False`). They are commonly used in conditional statements to control program flow.
+
+| Operator | Description                  | Example          |
+|----------|------------------------------|------------------|
+| `==`     | Equal to                     | `x == y`         |
+| `!=`     | Not equal to                 | `x != y`         |
+| `>`      | Greater than                 | `x > y`          |
+| `<`      | Less than                    | `x < y`          |
+| `>=`     | Greater than or equal to     | `x >= y`         |
+| `<=`     | Less than or equal to        | `x <= y`         |
 
 
-!=
-Not equal to
-x != y
-
-
->
-Greater than
-x > y
-
-
-<
-Less than
-x < y
-
-
->=
-Greater than or equal to
-x >= y
-
-
-<=
-Less than or equal to
-x <= y
-
-
-Example: Using Comparison Operators
-age = 18
-if age >= 18:
-    print("You are an adult.")
-else:
-    print("You are a minor.")
-
-Output:
-You are an adult.
 
 #### 3. Logical Operators
 Logical operators combine multiple conditions to produce a single boolean result.
 
-
-
-Operator
-Description
-Example
+Below is a markdown table for **Logical Operators in Python**, formatted for a GitHub `README.md` file. The table includes the operator, description, and an example for each logical operator.
 
 
 
-and
-True if both conditions are True
-x > 0 and y > 0
+## Logical Operators in Python
+
+Logical operators are used to combine multiple conditions in Python, producing a boolean result (`True` or `False`). They are essential for building complex conditional statements.
+
+| Operator | Description                          | Example                 |
+|----------|--------------------------------------|-------------------------|
+| `and`    | True if both conditions are True     | `x > 0 and y > 0`      |
+| `or`     | True if at least one condition is True | `x > 0 or y > 0`      |
+| `not`    | Inverts the boolean value            | `not (x > 0)`          |
 
 
-or
-True if at least one condition is True
-x > 0 or y > 0
-
-
-not
-Inverts the boolean value
-not (x > 0)
-
-
-Example: Using Logical Operators
-temperature = 25
-is_sunny = True
-
-if temperature > 20 and is_sunny:
-    print("It's a nice day for a walk!")
-else:
-    print("Maybe stay indoors.")
-
-Output:
-It's a nice day for a walk!
 
 #### 4. The if Statement
 The if statement evaluates a condition and executes its code block if the condition is True.
