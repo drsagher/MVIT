@@ -36,4 +36,5 @@ Here are the key points as:
 
 [Lesson 1 Welcome to the World of Programming](Lesson_01/Readme.md)
 
+[Lesson 2 Start Thinking in Python](Lesson_02/Readme.md)
 
