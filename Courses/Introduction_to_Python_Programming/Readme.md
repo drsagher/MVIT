@@ -40,3 +40,4 @@ Here are the key points as:
 
 [Lesson 3 Building Blocks of Code](Lesson_03/Readme.md)
 
+[Lesson 4 Reading and Writing Files with Python](Lesson_04/Readme.md)
