@@ -92,117 +92,102 @@ There are multiple ways to launch Jupyter Notebook. Below are the two most commo
 - To stop the Jupyter server, return to the Anaconda Prompt and press Ctrl+C, then type y and press Enter to confirm.
 
 ### 2. Python Data Types
-
-Step-by-Step Guide to Learn Python Data Types
 This guide provides a structured approach to understanding Python's core data types. Follow each step, practice the examples in a Jupyter Notebook, and complete the exercises to build a solid foundation.
-Prerequisites
 
-Python installed (e.g., via Anaconda, as set up in the previous guide).
-Jupyter Notebook set up and running on Windows 10.
-Basic familiarity with running code in Jupyter Notebook cells.
+#### Step 1: Understand What Data Types Are
 
-Step 1: Understand What Data Types Are
-
-Concept: Data types define the kind of data a variable can hold (e.g., numbers, text, collections). Python is dynamically typed, meaning you don’t explicitly declare types, but they determine what operations are allowed.
-Action:
-Open Jupyter Notebook (via Anaconda Navigator or Anaconda Prompt with jupyter notebook).
-Create a new Python 3 notebook.
-Learn to check a variable’s type using the type() function.
-
-
+**Concept:** Data types define the kind of data a variable can hold (e.g., numbers, text, collections). Python is dynamically typed, meaning you don’t explicitly declare types, but they determine what operations are allowed.
+**Action:**
+- Open Jupyter Notebook (via Anaconda Navigator or Anaconda Prompt with jupyter notebook).
+- Create a new Python 3 notebook.
+- Learn to check a variable’s type using the ```type()``` function.
+- 
+```
 Example:x = 42
 print(type(x))  # Output: <class 'int'>
+```
 
+**Exercise:**
+- Create variables with different values (e.g., a number, text, True).
+- Use print(type(variable)) to check their types.
+- Expected types: <class 'int'>, <class 'str'>, <class 'bool'>.
 
-Exercise:
-Create variables with different values (e.g., a number, text, True).
-Use print(type(variable)) to check their types.
-Expected types: <class 'int'>, <class 'str'>, <class 'bool'>.
+#### Step 2: Explore Numeric Types (Integers and Floats)
 
+**Concept:**
+- Integers (```int```): Whole numbers (e.g., 5, -10).
+- Floats (```float```): Numbers with decimal points (e.g., 3.14, -0.001).
+- Python supports arithmetic operations (+, -, *, /, //, %, **) on these types.
 
+**Action:**
+- In a Jupyter cell, create variables for integers and floats.
+- Perform basic operations and check their types.
 
-Step 2: Explore Numeric Types (Integers and Floats)
-
-Concept:
-Integers (int): Whole numbers (e.g., 5, -10).
-Floats (float): Numbers with decimal points (e.g., 3.14, -0.001).
-Python supports arithmetic operations (+, -, *, /, //, %, **) on these types.
-
-
-Action:
-In a Jupyter cell, create variables for integers and floats.
-Perform basic operations and check their types.
-
-
+```
 Example:a = 10       # Integer
 b = 3.14     # Float
 print(type(a), type(b))  # Output: <class 'int'> <class 'float'>
 print(a + b)  # Output: 13.14 (result is float)
 print(a // 3)  # Output: 3 (integer division)
 print(a ** 2)  # Output: 100 (exponentiation)
+```
+
+**Exercise:**
+- Create two integers and perform addition, subtraction, multiplication, and division.
+- Create a float and an integer, then multiply them. Check the type of the result.
+- Try ```10 / 3``` and ```10 // 3```. Explain the difference in a comment.
+
+#### Step 3: Work with Strings
+
+**Concept:**
+- Strings (```str```): Sequences of characters (e.g., "hello", 'Python').
+- Strings are enclosed in single (') or double (") quotes and support operations like concatenation (+), repetition (*), and slicing).
 
 
-Exercise:
-Create two integers and perform addition, subtraction, multiplication, and division.
-Create a float and an integer, then multiply them. Check the type of the result.
-Try 10 / 3 and 10 // 3. Explain the difference in a comment.
+**Action:**
+- Create strings and experiment with common methods (e.g., .upper(), .lower(), .strip()).
+- Use indexing and slicing to extract parts of a string.
 
+**Example:** ```text = "Hello, Python!"```
 
-
-Step 3: Work with Strings
-
-Concept:
-Strings (str): Sequences of characters (e.g., "hello", 'Python').
-Strings are enclosed in single (') or double (") quotes and support operations like concatenation (+), repetition (*), and slicing ([start:end]).
-
-
-Action:
-Create strings and experiment with common methods (e.g., .upper(), .lower(), .strip()).
-Use indexing and slicing to extract parts of a string.
-
-
-Example:text = "Hello, Python!"
+```
 print(type(text))  # Output: <class 'str'>
 print(text.upper())  # Output: HELLO, PYTHON!
 print(text[0:5])  # Output: Hello
 print(text + " Welcome")  # Output: Hello, Python! Welcome
+```
+
+**Exercise:**
+- Create a string with your name and convert it to uppercase and lowercase.
+- Extract the first 3 characters of a string using slicing.
+- Concatenate two strings (e.g., "Data" and "Science") and print the result.
+
+#### Step 4: Learn Booleans
+
+**Concept:**
+- Booleans (```bool```): Represent ```True``` or ```False```.
+- Used in logical operations (```and```, ```or```, ```not```) and comparisons (```==```, ```!=```, ```<```, ```>```).
 
 
-Exercise:
-Create a string with your name and convert it to uppercase and lowercase.
-Extract the first 3 characters of a string using slicing.
-Concatenate two strings (e.g., "Data" and "Science") and print the result.
+**Action:**
+- Create boolean variables and test logical operations.
+- Use comparisons to generate booleans.
 
-
-
-Step 4: Learn Booleans
-
-Concept:
-Booleans (bool): Represent True or False.
-Used in logical operations (and, or, not) and comparisons (==, !=, <, >).
-
-
-Action:
-Create boolean variables and test logical operations.
-Use comparisons to generate booleans.
-
-
-Example:is_active = True
+**Example:** ```is_active = True```
+```
 is_zero = False
 print(type(is_active))  # Output: <class 'bool'>
 print(5 > 3)  # Output: True
 print(is_active and is_zero)  # Output: False
 print(not is_zero)  # Output: True
+```
 
+**Exercise:**
+- Create two boolean variables and test and, or, and not operations.
+- Write comparisons (e.g., 10 < 5, "apple" == "Apple") and print their boolean results.
+- Combine comparisons with logical operators (e.g., (5 > 3) and (2 < 4)).
 
-Exercise:
-Create two boolean variables and test and, or, and not operations.
-Write comparisons (e.g., 10 < 5, "apple" == "Apple") and print their boolean results.
-Combine comparisons with logical operators (e.g., (5 > 3) and (2 < 4)).
-
-
-
-Step 5: Explore Lists
+#### Step 5: Explore Lists
 
 Concept:
 Lists (list): Ordered, mutable collections (e.g., [1, 2, 3], ["apple", "banana"]).
