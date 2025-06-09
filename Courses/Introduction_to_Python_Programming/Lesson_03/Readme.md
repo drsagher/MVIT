@@ -2,7 +2,6 @@
 The building blocks of code refer to the fundamental elements that form the foundation of programming. These essential components include conditions and branching, which enable decision-making in code; loops, which facilitate repetitive tasks; functions, which promote code reusability and modularity; exception handling, which ensures robust error management; and objects and classes, which introduce object-oriented programming principles. Mastering these building blocks allows developers to craft efficient, scalable, and maintainable software solutions. By understanding how to effectively utilize these elements, programmers can tackle complex problems, create innovative applications, and bring their ideas to life. Whether you're a beginner or an experienced developer, grasping the building blocks of code is crucial for success in the world of programming.
 
 ## Learning Objectives
-
 - Classify conditions and branching by identifying structured scenarios with outputs.
 - Work with objects and classes.
 - Explain objects and classes by identifying data types and creating a class.
@@ -15,7 +14,7 @@ The building blocks of code refer to the fundamental elements that form the foun
 
 
 ## Agenda
-In this lesson, we will learn:
+This lesson discusses Python fundamentals and begins with the concepts of conditions and branching. Continue through the lesson and learn how to implement loops to iterate over sequences, create functions to perform a specific task, perform exception handling to catch errors, and how classes are needed to create objects:
 
 1. Conditions and Branching
 2. Loops
