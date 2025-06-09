@@ -622,30 +622,23 @@ print(f"Total: ${total:.2f}")
 
 ### 4. String Operations
 
-Step-by-Step Guide to Learn String Operations in Python
 This guide provides a structured approach to mastering string operations in Python. Follow each step, practice the examples in a Jupyter Notebook, and complete the exercises to build proficiency.
-Prerequisites
 
-Python installed (e.g., via Anaconda, as set up in a previous guide).
-Jupyter Notebook set up and running on Windows 10.
-Basic familiarity with Python variables and running code in Jupyter Notebook cells.
-Understanding of Python strings as a data type (str).
+#### Step 1: Understand Strings and Creation
 
-Step 1: Understand Strings and Creation
+**Concept:**
+- A string is a sequence of characters (e.g., "Hello", 'Python 3').
+- Strings are enclosed in single quotes (') or double quotes (").
+- Multi-line strings can be created using triple quotes (''' or """).
 
-Concept:
-A string is a sequence of characters (e.g., "Hello", 'Python 3').
-Strings are enclosed in single quotes (') or double quotes (").
-Multi-line strings can be created using triple quotes (''' or """).
+**Action:**
+- Open Jupyter Notebook (via Anaconda Navigator or Anaconda Prompt with jupyter notebook).
+- Create a new Python 3 notebook.
+- Create strings and verify their type using ```type()```.
 
-
-Action:
-Open Jupyter Notebook (via Anaconda Navigator or Anaconda Prompt with jupyter notebook).
-Create a new Python 3 notebook.
-Create strings and verify their type using type().
-
-
-Example:single_quote = 'Hello, World!'
+**Example:**
+```
+single_quote = 'Hello, World!'
 double_quote = "Python Programming"
 multi_line = """Line 1
 Line 2
@@ -657,120 +650,111 @@ print(multi_line)    # Output: Line 1
                      #         Line 2
                      #         Line 3
 
+```
 
-Exercise:
-Create three strings: one with single quotes, one with double quotes, and one multi-line string.
-Print each string and its type using type().
-Include a string with a quote inside (e.g., "It's Python") and test escaping with \ (e.g., 'It\'s Python').
+**Exercise:**
+- Create three strings: one with single quotes, one with double quotes, and one multi-line string.
+- Print each string and its type using ```type()```.
+- Include a string with a quote inside (e.g., "It's Python") and test escaping with \ (e.g., 'It\'s Python').
 
+#### Step 2: Basic String Operations (Concatenation and Repetition)
 
-
-Step 2: Basic String Operations (Concatenation and Repetition)
-
-Concept:
-Concatenation: Combine strings using +.
-Repetition: Repeat a string using *.
-These operations create new strings without modifying the originals.
-
-
-Action:
-Experiment with concatenation and repetition in a Jupyter cell.
+**Concept:**
+- **Concatenation:** Combine strings using +.
+- **Repetition:** Repeat a string using *.
+- These operations create new strings without modifying the originals.
 
 
-Example:first = "Hello"
+**Action:** Experiment with concatenation and repetition in a Jupyter cell.
+
+**Example:**
+```
+first = "Hello"
 second = "World"
 combined = first + " " + second
 print(combined)  # Output: Hello World
 
 repeated = first * 3
 print(repeated)  # Output: HelloHelloHello
+```
 
+**Exercise:**
+- Concatenate three strings (e.g., your first name, a space, and your last name).
+- Repeat a string (e.g., "*" or "ha") five times and print the result.
+- Combine concatenation and repetition (e.g., ("Hi" + " ") * 4).
 
-Exercise:
-Concatenate three strings (e.g., your first name, a space, and your last name).
-Repeat a string (e.g., "*" or "ha") five times and print the result.
-Combine concatenation and repetition (e.g., ("Hi" + " ") * 4).
+#### Step 3: String Indexing and Slicing
 
+**Concept:**
+- **Strings** are sequences, so each character has an index (starting at 0).
+- **Indexing:** Access a single character with string[index].
+- **Slicing:** Extract a substring with string[start:end] (end is exclusive).
+- Negative indices count from the end (e.g., -1 is the last character).
 
-
-Step 3: String Indexing and Slicing
-
-Concept:
-Strings are sequences, so each character has an index (starting at 0).
-Indexing: Access a single character with string[index].
-Slicing: Extract a substring with string[start:end] (end is exclusive).
-Negative indices count from the end (e.g., -1 is the last character).
-
-
-Action:
+**Action:**
 Use indexing and slicing to extract parts of a string.
 
-
-Example:text = "Python"
+**Example:**
+```
+text = "Python"
 print(text[0])    # Output: P
 print(text[-1])   # Output: n
 print(text[1:4])  # Output: yth
 print(text[:3])   # Output: Pyt (from start to index 2)
 print(text[3:])   # Output: hon (from index 3 to end)
+```
 
+**Exercise:**
+- Create a string (e.g., "Programming") and print its first, last, and third characters.
+- Extract a substring of 3 characters using slicing.
+- Use negative indices to print the last two characters.
 
-Exercise:
-Create a string (e.g., "Programming") and print its first, last, and third characters.
-Extract a substring of 3 characters using slicing.
-Use negative indices to print the last two characters.
+#### Step 4: Common String Methods
 
+**Concept:**
+- Python strings have built-in methods for manipulation (e.g., .upper(), .lower(), .strip()).
+- Methods return new strings or values without modifying the original string (strings are immutable).
 
+**Action:** Explore common string methods in a Jupyter cell.
 
-Step 4: Common String Methods
+**Example:**
 
-Concept:
-Python strings have built-in methods for manipulation (e.g., .upper(), .lower(), .strip()).
-Methods return new strings or values without modifying the original string (strings are immutable).
-
-
-Action:
-Explore common string methods in a Jupyter cell.
-
-
-Example:text = "  Hello, Python!  "
+```
+text = "  Hello, Python!  "
 print(text.upper())      # Output:   HELLO, PYTHON!  
 print(text.lower())      # Output:   hello, python!  
 print(text.strip())      # Output: Hello, Python!
 print(text.replace("Python", "World"))  # Output:   Hello, World!  
 print(text.split(","))   # Output: ['  Hello', ' Python!  ']
 print(text.count("l"))   # Output: 3
+```
 
+**Common Methods:**
+- ```.upper()```: Convert to uppercase.
+- ```.lower()```: Convert to lowercase.
+- ```.strip()```: Remove leading/trailing whitespace.
+- ```.replace(old, new)```: Replace substring.
+- ```.split(delimiter)```: Split into a list based on delimiter.
+- ```.count(substring)```: Count occurrences of substring.
+- ```.find(substring)```: Return index of first occurrence (or -1 if not found).
 
-Common Methods:
-.upper(): Convert to uppercase.
-.lower(): Convert to lowercase.
-.strip(): Remove leading/trailing whitespace.
-.replace(old, new): Replace substring.
-.split(delimiter): Split into a list based on delimiter.
-.count(substring): Count occurrences of substring.
-.find(substring): Return index of first occurrence (or -1 if not found).
+**Exercise:**
+- Create a string with extra spaces (e.g., "  Data Science  ") and use ```.strip()``` to clean it.
+- Convert a string to uppercase and replace a word in it.
+- Split a sentence into words using ```.split()``` and count occurrences of a letter.
 
+#### Step 5: String Formatting
 
-Exercise:
-Create a string with extra spaces (e.g., "  Data Science  ") and use .strip() to clean it.
-Convert a string to uppercase and replace a word in it.
-Split a sentence into words using .split() and count occurrences of a letter.
+**Concept:**
+- String formatting creates strings by embedding variables or expressions.
+- Common methods: f-strings (Python 3.6+), .format(), and % operator (older).
+- F-strings are the most modern and readable: f"Text {variable}".
 
+**Action:** Use different formatting methods to create dynamic strings.
 
-
-Step 5: String Formatting
-
-Concept:
-String formatting creates strings by embedding variables or expressions.
-Common methods: f-strings (Python 3.6+), .format(), and % operator (older).
-F-strings are the most modern and readable: f"Text {variable}".
-
-
-Action:
-Use different formatting methods to create dynamic strings.
-
-
-Example:name = "Alice"
+**Example:**
+```
+name = "Alice"
 age = 25
 f_string = f"My name is {name} and I am {age} years old."
 print(f_string)  # Output: My name is Alice and I am 25 years old.
@@ -780,28 +764,28 @@ print(format_string)  # Same output
 
 old_style = "My name is %s and I am %d years old." % (name, age)
 print(old_style)  # Same output
+```
+
+**Exercise:**
+- Create variables for a product name and price, then use an f-string to print a sentence (e.g., "The price of {product} is ${price}").
+- Use .format() to create a similar sentence.
+- Format a number to 2 decimal places in an f-string (e.g., {price:.2f}).
+
+#### Step 6: String Immutability and Workarounds
+
+**Concept:**
+- Strings are immutable, meaning you cannot change individual characters (e.g., text[0] = 'X' raises an error).
+- To modify a string, create a new one using slicing, concatenation, or methods.
 
 
-Exercise:
-Create variables for a product name and price, then use an f-string to print a sentence (e.g., "The price of {product} is ${price}").
-Use .format() to create a similar sentence.
-Format a number to 2 decimal places in an f-string (e.g., {price:.2f}).
+**Action:**
+- Attempt to modify a string and observe the error.
+- Use workarounds to create modified strings.
 
+**Example:**
 
-
-Step 6: String Immutability and Workarounds
-
-Concept:
-Strings are immutable, meaning you cannot change individual characters (e.g., text[0] = 'X' raises an error).
-To modify a string, create a new one using slicing, concatenation, or methods.
-
-
-Action:
-Attempt to modify a string and observe the error.
-Use workarounds to create modified strings.
-
-
-Example:text = "Kython"
+```
+text = "Kython"
 # text[0] = "P"  # TypeError: 'str' object does not support item assignment
 new_text = "P" + text[1:]  # Workaround
 print(new_text)  # Output: Python
@@ -810,27 +794,24 @@ chars = list(text)  # Convert to list (mutable)
 chars[0] = "P"
 new_text = "".join(chars)  # Join back to string
 print(new_text)  # Output: Python
+```
 
+**Exercise:**
+- Create a string and try to change its first character (observe the error).
+- Fix a typo in a string (e.g., "Pyhton") by creating a new string with slicing.
+- Convert a string to a list, modify it, and join it back to a string.
 
-Exercise:
-Create a string and try to change its first character (observe the error).
-Fix a typo in a string (e.g., "Pyhton") by creating a new string with slicing.
-Convert a string to a list, modify it, and join it back to a string.
+#### Step 7: Advanced String Operations
 
+**Concept:**
+- Advanced operations include checking string properties (e.g., .isalpha(), .isdigit()) and joining lists into strings.
+- Use in to check for substrings and len() to get string length.
 
+**Action:** Experiment with advanced methods and operators.
 
-Step 7: Advanced String Operations
-
-Concept:
-Advanced operations include checking string properties (e.g., .isalpha(), .isdigit()) and joining lists into strings.
-Use in to check for substrings and len() to get string length.
-
-
-Action:
-Experiment with advanced methods and operators.
-
-
-Example:text = "Python123"
+**Example:**
+```
+text = "Python123"
 print(len(text))  # Output: 9
 print("Python" in text)  # Output: True
 print(text.isalpha())  # Output: False (contains numbers)
@@ -839,27 +820,25 @@ print(text.isdigit())  # Output: False (contains letters)
 words = ["Hello", "World"]
 joined = " ".join(words)
 print(joined)  # Output: Hello World
+```
 
+**Exercise:**
+- Check if a substring (e.g., "ing") exists in a string using in.
+- Use ```.isalpha()``` and ```.isdigit()``` to test a string (e.g., "123", "abc").
+- Create a list of words and join them with a comma and space (, ).
 
-Exercise:
-Check if a substring (e.g., "ing") exists in a string using in.
-Use .isalpha() and .isdigit() to test a string (e.g., "123", "abc").
-Create a list of words and join them with a comma and space (, ).
+#### Step 8: Handle Errors in String Operations
 
+**Concept:**
+- String operations can raise errors (e.g., invalid index, incompatible types).
+- Use try-except to handle errors gracefully.
 
+**Action:** Write code that may fail and handle errors.
 
-Step 8: Handle Errors in String Operations
+**Example:**
 
-Concept:
-String operations can raise errors (e.g., invalid index, incompatible types).
-Use try-except to handle errors gracefully.
-
-
-Action:
-Write code that may fail and handle errors.
-
-
-Example:text = "Hello"
+```
+text = "Hello"
 try:
     char = text[10]  # IndexError: string index out of range
 except IndexError:
@@ -871,23 +850,21 @@ try:
 except TypeError:
     result = text + str(123)
 print(result)  # Output: Hello123
+```
 
+**Exercise:**
+- Try accessing an invalid index in a string and handle the IndexError.
+- Attempt to concatenate a string with a number and fix it with ```str()```.
+- Use ```.find()``` to search for a substring and handle cases where it’s not found.
 
-Exercise:
-Try accessing an invalid index in a string and handle the IndexError.
-Attempt to concatenate a string with a number and fix it with str().
-Use .find() to search for a substring and handle cases where it’s not found.
+#### Step 9: Practice with a Mini-Project
 
+**Concept:** Combine string operations in a small project to apply your knowledge.
+**Action:** Create a Jupyter Notebook project that processes user-like input (e.g., format a name or analyze a sentence).
 
-
-Step 9: Practice with a Mini-Project
-
-Concept: Combine string operations in a small project to apply your knowledge.
-Action:
-Create a Jupyter Notebook project that processes user-like input (e.g., format a name or analyze a sentence).
-
-
-Example:full_name = "  alice smith  "
+**Example:**
+```
+full_name = "  alice smith  "
 cleaned_name = full_name.strip().title()
 words = cleaned_name.split()
 initials = words[0][0] + "." + words[1][0] + "."
@@ -897,34 +874,28 @@ print(f"Initials: {initials}")  # Output: Initials: A.S.
 sentence = "I love Python programming!"
 word_count = len(sentence.split())
 print(f"Word count: {word_count}")  # Output: Word count: 4
+```
 
+**Exercise:**
+- Create a string with a person’s full name (with extra spaces) and clean it using ```.strip()``` and ```.title()```.
+- Extract the first letter of each word to create initials.
+- Count the words in a sentence using ```.split()``` and ```len()```.
 
-Exercise:
-Create a string with a person’s full name (with extra spaces) and clean it using .strip() and .title().
-Extract the first letter of each word to create initials.
-Count the words in a sentence using .split() and len().
+**Additional Tips**
 
+- Immutability: Always remember strings cannot be modified in place; create new strings instead.
+- Method Chaining: Combine methods (e.g., ```text.strip().upper()```) for concise code.
+- Debugging: Use ```print()``` to inspect intermediate results when working with complex string operations.
 
+**Resources:**
+- Python string documentation: ```https://docs.python.org/3/library/stdtypes.html#string-methods```.
+- Use ```dir(str)``` in Jupyter to list all string methods.
 
-Additional Tips
+**Save Work:** Save your notebook regularly (File > Save and Checkpoint) and organize files in a dedicated folder.
 
-Immutability: Always remember strings cannot be modified in place; create new strings instead.
-Method Chaining: Combine methods (e.g., text.strip().upper()) for concise code.
-Debugging: Use print() to inspect intermediate results when working with complex string operations.
-Resources:
-Python string documentation: https://docs.python.org/3/library/stdtypes.html#string-methods.
-Use dir(str) in Jupyter to list all string methods.
+**Troubleshooting**
 
-
-Save Work: Save your notebook regularly (File > Save and Checkpoint) and organize files in a dedicated folder.
-
-Troubleshooting
-
-IndexError: Ensure indices are within the string’s length (use len() to check).
-TypeError: Convert non-string types (e.g., numbers) to strings with str() before concatenation.
-AttributeError: Verify method names (e.g., .upper(), not .toUpperCase()).
-Jupyter Issues: Restart the kernel (Kernel > Restart) if the notebook becomes unresponsive.
-
-By completing these steps, you’ll gain confidence in performing string operations in Python. Practice regularly, and combine these skills with variables and expressions in larger projects to deepen your understanding!
-
-
+- **IndexError:** Ensure indices are within the string’s length (use ```len()``` to check).
+- **TypeError:** Convert non-string types (e.g., numbers) to strings with ```str()``` before concatenation.
+- **AttributeError:** Verify method names (e.g., ```.upper()```, not ```.toUpperCase()```).
+- **Jupyter Issues:** Restart the kernel (Kernel > Restart) if the notebook becomes unresponsive.
