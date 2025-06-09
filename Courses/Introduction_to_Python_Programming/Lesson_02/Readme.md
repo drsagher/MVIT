@@ -184,152 +184,138 @@ print(not is_zero)  # Output: True
 
 **Exercise:**
 - Create two boolean variables and test and, or, and not operations.
-- Write comparisons (e.g., 10 < 5, "apple" == "Apple") and print their boolean results.
-- Combine comparisons with logical operators (e.g., (5 > 3) and (2 < 4)).
+- Write comparisons (e.g., ```10 < 5```, ```"apple" == "Apple"```) and print their boolean results.
+- Combine comparisons with logical operators e.g., ```5 > 3``` and ```2 < 4```.
 
 #### Step 5: Explore Lists
 
-Concept:
-Lists (list): Ordered, mutable collections (e.g., [1, 2, 3], ["apple", "banana"]).
-Support indexing, slicing, and methods like .append(), .remove(), .pop().
+**Concept:**
+- Lists (```list```): Ordered, mutable collections (e.g., ```[1, 2, 3]```, ```["apple", "banana"]```).
+- Support indexing, slicing, and methods like ```.append()```, ```.remove()```, ```.pop()```.
 
+**Action:**
+- Create a list and modify it using common methods.
+- Access elements using indices and slices.
 
-Action:
-Create a list and modify it using common methods.
-Access elements using indices and slices.
-
-
-Example:fruits = ["apple", "banana", "orange"]
+**Example:** ```fruits = ["apple", "banana", "orange"]```
+```
 print(type(fruits))  # Output: <class 'list'>
 fruits.append("grape")  # Add item
 print(fruits)  # Output: ['apple', 'banana', 'orange', 'grape']
 print(fruits[1])  # Output: banana
 print(fruits[0:2])  # Output: ['apple', 'banana']
+```
 
+**Exercise:**
+- Create a list of 5 numbers and append a new number.
+- Remove an item from the list using .remove() or .pop().
+- Extract a slice of the list (e.g., items 2 to 4).
 
-Exercise:
-Create a list of 5 numbers and append a new number.
-Remove an item from the list using .remove() or .pop().
-Extract a slice of the list (e.g., items 2 to 4).
+#### Step 6: Understand Tuples
 
+**Concept:**
+- Tuples (tuple): Ordered, immutable collections (e.g., (1, 2, 3)).
+- Similar to lists but cannot be modified after creation.
 
+**Action:**
+- Create a tuple and access its elements.
+- Attempt to modify it to understand immutability.
 
-Step 6: Understand Tuples
-
-Concept:
-Tuples (tuple): Ordered, immutable collections (e.g., (1, 2, 3)).
-Similar to lists but cannot be modified after creation.
-
-
-Action:
-Create a tuple and access its elements.
-Attempt to modify it to understand immutability.
-
-
-Example:coordinates = (10, 20)
+**Example:** ```coordinates = (10, 20)```
+```
 print(type(coordinates))  # Output: <class 'tuple'>
 print(coordinates[0])  # Output: 10
 # coordinates[0] = 5  # This will raise a TypeError
+```
 
+**Exercise:**
+- Create a tuple with 3 items (e.g., colors or numbers).
+- Access the second item using indexing.
+- Try modifying the tuple and observe the error.
 
-Exercise:
-Create a tuple with 3 items (e.g., colors or numbers).
-Access the second item using indexing.
-Try modifying the tuple and observe the error.
+#### Step 7: Learn Dictionaries
 
+**Concept:**
+- Dictionaries (dict): Key-value pairs (e.g., {"name": "Alice", "age": 25}).
+- Keys are unique and immutable; values can be of any type.
+- Use methods like .keys(), .values(), .items().
 
+**Action:**
+- Create a dictionary and access/modify its values.
+- Iterate over keys and values.
 
-Step 7: Learn Dictionaries
-
-Concept:
-Dictionaries (dict): Key-value pairs (e.g., {"name": "Alice", "age": 25}).
-Keys are unique and immutable; values can be of any type.
-Use methods like .keys(), .values(), .items().
-
-
-Action:
-Create a dictionary and access/modify its values.
-Iterate over keys and values.
-
-
-Example:person = {"name": "Alice", "age": 25}
+**Example:** ```person = {"name": "Alice", "age": 25}```
+```
 print(type(person))  # Output: <class 'dict'>
 print(person["name"])  # Output: Alice
 person["city"] = "New York"  # Add key-value pair
 print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+```
 
+**Exercise:**
+- Create a dictionary with 3 key-value pairs (e.g., book titles and authors).
+- Add a new key-value pair and update an existing value.
+- Print all keys using .keys() and all values using .values().
 
-Exercise:
-Create a dictionary with 3 key-value pairs (e.g., book titles and authors).
-Add a new key-value pair and update an existing value.
-Print all keys using .keys() and all values using .values().
+#### Step 8: Explore Sets
 
+**Concept:**
+- Sets (set): Unordered collections of unique items (e.g., {1, 2, 3}).
+- Support operations like union (|), intersection (&), and difference (-).
 
+**Action:**
+- Create a set and perform set operations.
+- Add and remove items using .add() and .remove().
 
-Step 8: Explore Sets
-
-Concept:
-Sets (set): Unordered collections of unique items (e.g., {1, 2, 3}).
-Support operations like union (|), intersection (&), and difference (-).
-
-
-Action:
-Create a set and perform set operations.
-Add and remove items using .add() and .remove().
-
-
-Example:numbers = {1, 2, 3, 3}  # Duplicate 3 is ignored
+**Example:** ```numbers = {1, 2, 3, 3}  # Duplicate 3 is ignored```
+```
 print(type(numbers))  # Output: <class 'set'>
 print(numbers)  # Output: {1, 2, 3}
 numbers.add(4)
 print(numbers)  # Output: {1, 2, 3, 4}
 set2 = {3, 4, 5}
 print(numbers & set2)  # Output: {3, 4} (intersection)
+```
 
+**Exercise:**
+- Create two sets with some overlapping items.
+- Perform union, intersection, and difference operations.
+- Add and remove an item from one set.
 
-Exercise:
-Create two sets with some overlapping items.
-Perform union, intersection, and difference operations.
-Add and remove an item from one set.
+#### Step 9: Type Conversion
 
+**Concept:**
+- Python allows converting between types using functions like int(), float(), str(), list(), tuple(), set().
+- Not all conversions are valid (e.g., int("abc") raises an error).
 
+**Action:**
+- Experiment with type conversion in a Jupyter cell.
+- Handle potential errors using try-except.
 
-Step 9: Type Conversion
-
-Concept:
-Python allows converting between types using functions like int(), float(), str(), list(), tuple(), set().
-Not all conversions are valid (e.g., int("abc") raises an error).
-
-
-Action:
-Experiment with type conversion in a Jupyter cell.
-Handle potential errors using try-except.
-
-
-Example:num_str = "123"
+**Example:** ```num_str = "123"```
+```
 num_int = int(num_str)
 print(type(num_int))  # Output: <class 'int'>
 float_num = float("3.14")
 print(type(float_num))  # Output: <class 'float'>
 my_list = list("hello")
 print(my_list)  # Output: ['h', 'e', 'l', 'l', 'o']
+```
 
+**Exercise:**
+- Convert a string "42" to an integer and add 10 to it.
+- Convert a float 5.7 to an integer and observe the result.
+- Convert a string "Python" to a list of characters.
 
-Exercise:
-Convert a string "42" to an integer and add 10 to it.
-Convert a float 5.7 to an integer and observe the result.
-Convert a string "Python" to a list of characters.
+#### Step 10: Practice and Apply
 
+**Concept:** Combine data types in a small project to reinforce learning.
 
+**Action:**
+- Create a Jupyter Notebook project that uses multiple data types.
+- Example project: Store student information (name as string, grades as list, pass/fail as boolean) and perform operations (e.g., calculate average grade, display info).
 
-Step 10: Practice and Apply
-
-Concept: Combine data types in a small project to reinforce learning.
-Action:
-Create a Jupyter Notebook project that uses multiple data types.
-Example project: Store student information (name as string, grades as list, pass/fail as boolean) and perform operations (e.g., calculate average grade, display info).
-
-
+```
 Example:student = {
     "name": "Alice",
     "grades": [85, 90, 88],
@@ -338,32 +324,30 @@ Example:student = {
 average = sum(student["grades"]) / len(student["grades"])
 print(f"{student['name']} has an average grade of {average} and passed: {student['passed']}")
 # Output: Alice has an average grade of 87.66666666666667 and passed: True
+```
 
+**Exercise:**
+- Create a dictionary for a product (e.g., name, price, categories as a set).
+- Calculate a discounted price (e.g., 10% off) and store it in the dictionary.
+- Print a summary using string formatting.
 
-Exercise:
-Create a dictionary for a product (e.g., name, price, categories as a set).
-Calculate a discounted price (e.g., 10% off) and store it in the dictionary.
-Print a summary using string formatting.
+**Additional Tips**
 
+- **Practice Regularly**: Create new Jupyter notebooks for each data type and experiment with different operations.
+- **Use Help**: In Jupyter, use help(type_name) (e.g., help(str)) or dir(variable) to explore methods.
+- **Debug Errors**: If you encounter errors (e.g., TypeError), read the error message and check the types involved.
 
-
-Additional Tips
-
-Practice Regularly: Create new Jupyter notebooks for each data type and experiment with different operations.
-Use Help: In Jupyter, use help(type_name) (e.g., help(str)) or dir(variable) to explore methods.
-Debug Errors: If you encounter errors (e.g., TypeError), read the error message and check the types involved.
-Resources:
-Official Python documentation: https://docs.python.org/3/.
-Run conda install -c anaconda ipython in Anaconda Prompt for enhanced interactive features in Jupyter.
-
+**Resources:**
+- Official Python documentation: https://docs.python.org/3/.
+- Run conda install -c anaconda ipython in Anaconda Prompt for enhanced interactive features in Jupyter.
 
 Save Your Work: Save notebooks frequently (File > Save and Checkpoint) and organize them in a dedicated folder.
 
-Troubleshooting
+**Troubleshooting**
 
-Type Errors: Ensure operations match the data type (e.g., don’t add a string to an integer without conversion).
-Jupyter Issues: If Jupyter doesn’t launch, verify installation (conda install jupyter) or restart the kernel.
-Unexpected Output: Use print(type(variable)) to debug incorrect types.
-Need Help: Ask specific questions about errors or concepts for tailored guidance.
+- **Type Errors**: Ensure operations match the data type (e.g., don’t add a string to an integer without conversion).
+- **Jupyter Issues**: If Jupyter doesn’t launch, verify installation (conda install jupyter) or restart the kernel.
+- **Unexpected Output**: Use print(type(variable)) to debug incorrect types.
+- **Need Help**: Ask specific questions about errors or concepts for tailored guidance.
 
 By completing these steps, you’ll have a solid understanding of Python’s core data types and how to use them. Continue practicing by building small projects, and explore advanced types (e.g., NoneType, custom classes) as you progress!
