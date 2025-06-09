@@ -38,3 +38,5 @@ Here are the key points as:
 
 [Lesson 2 Start Thinking in Python](Lesson_02/Readme.md)
 
+[Lesson 3 Building Blocks of Code](Lesson_03/Readme.md)
+
