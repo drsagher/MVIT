@@ -15,6 +15,7 @@ Finally, learners dive into actual coding by writing their first program — the
 - Declaring and using variables
 - Understanding different data types (like strings, integers, floats, and booleans)
 - Performing basic operations (including arithmetic, string concatenation, and type conversion)
+<img src="pythonisgreat.PNG" />
 
 In short, MVC-401 Introduction to Python Programming course equips learners with both the theoretical background and practical skills necessary to confidently continue their journey toward becoming proficient Python developers.
 
