@@ -1,6 +1,10 @@
 # Lesson 1 NumPy Arrays
 NumPy arrays, the backbone of numerical computing in Python, are powerful, multidimensional data structures provided by the NumPy library, designed for efficient storage and manipulation of large datasets. Unlike Python lists, NumPy arrays (`ndarray`) support element-wise operations, broadcasting, and advanced mathematical functions, making them ideal for tasks in data analysis, scientific computing, and machine learning. They offer attributes like `shape`, `dtype`, and `ndim` for easy metadata access and can be created from lists, built-in functions like `np.zeros` or `np.arange`, or random generators. With their ability to handle complex operations on entire arrays without loops, NumPy arrays provide a fast, flexible, and intuitive way to process numerical data.
 
+**How to Import NumPy**
+```
+import numpy as np
+```
 ## Introduction
 NumPy is the cornerstone of numerical computing in Python, providing a powerful array object that enables efficient storage and manipulation of large datasets. In this lesson, we'll explore how to create NumPy arrays, perform operations on them, and leverage broadcasting to simplify computations. Through detailed explanations and practical examples, you'll gain a solid understanding of these core concepts.
 
