@@ -2,9 +2,11 @@
 
 NumPy arrays, the cornerstone of numerical computing in Python, offer powerful mechanisms for accessing and slicing elements, enabling efficient data manipulation in data science, machine learning, and scientific applications. Unlike Python lists, NumPy arrays support advanced indexing techniques, including integer indexing, slicing, boolean indexing, and fancy indexing, which allow for precise and optimized access to array elements. This lesson provides a comprehensive overview of accessing and slicing NumPy arrays, covering basic and advanced techniques with clear explanations and practical examples. By mastering these methods, you can efficiently extract, modify, or manipulate subsets of data in multi-dimensional arrays, a critical skill for data analysis and computational tasks.
 
-**1. Basic Accessing with Integer Indexing**
+**Basic Accessing with Integer Indexing**
+
 Integer indexing allows you to access specific elements in a NumPy array by specifying their indices. NumPy arrays are zero-indexed, meaning the first element has an index of 0. For multi-dimensional arrays, you provide indices for each dimension.
-Example: Accessing Elements
+
+**Accessing Elements**
 
 ```
 import numpy as np
@@ -24,9 +26,11 @@ print(arr_2d[1, 2])  # Output: 6  # Access element at row 1, column 2
 - Negative indices count from the end (e.g., -1 for the last element).
 
 **Slicing NumPy Arrays**
+
 Slicing extracts a subset of an array using the syntax arr[start:stop:step], where start is the starting index, stop is the ending index (exclusive), and step is the increment. Slicing works across all dimensions of an array.
 
 **Slicing 1D Arrays**
+
 ```
 arr_1d = np.array([10, 20, 30, 40, 50])
 print(arr_1d[1:4])  # Output: [20 30 40]  # Elements from index 1 to 3
@@ -69,9 +73,9 @@ print(arr_2d[arr_2d % 2 == 0])  # Output: [2 4 6 8]  # Even elements
 - Combine conditions using & (and), | (or), and ~ (not) for complex filters.
 
 **Fancy Indexing**
+
 Fancy indexing allows you to access elements using lists or arrays of indices, enabling non-contiguous or repeated selections. This is more flexible than slicing but may return a copy instead of a view.
 
-**Fancy Indexing**
 ```
 arr_1d = np.array([10, 20, 30, 40, 50])
 print(arr_1d[[0, 2, 4]])  # Output: [10 30 50]  # Elements at indices 0, 2, 4
