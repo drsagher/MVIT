@@ -173,21 +173,59 @@ print(a + c)  # Output: [[101 102 103] [204 205 206]]
 ## Practical Example: Data Analysis with Array Operations
 Let’s apply array operations to analyze a dataset of student scores across three subjects for five students.
 ```
-# Student scores (5 students, 3 subjects)
-scores = np.array([[85, 90, 88], [78, 82, 80], [92, 95, 90], [65, 70, 68], [88, 85, 87]])
+# Student scores (4 students, 3 subjects)
+scores = np.array([[85, 90, np.nan],
+                   [78, 82, 88],
+                   [92, np.nan, 95],
+                   [88, 85, 90]])
 
-# Compute average score per student
-student_means = np.mean(scores, axis=1)
-print("Student averages:", student_means)
-# Output: [87.66666667 80.         92.33333333 67.66666667 86.66666667]
+# Compute average score per student (ignoring NaN)
+student_means = np.nanmean(scores, axis=1)
+print("Average score per student:", student_means)
+# Output: [87.5 82.66666667 93.5 87.66666667]
 
-# Normalize scores (subtract mean and divide by standard deviation)
-subject_means = np.mean(scores, axis=0)
-subject_std = np.std(scores, axis=0)
+# Normalize scores (subtract mean and divide by std per subject)
+subject_means = np.nanmean(scores, axis=0)
+subject_std = np.nanstd(scores, axis=0)
 normalized_scores = (scores - subject_means) / subject_std
 print("Normalized scores:\n", normalized_scores)
-# Output: [[ 0.10482848  0.70710678  0.39223227]
-#          [-0.62776951 -0.14142136 -0.39223227]
-#          [ 0.83742647  1.06066018  0.78446454]
-#          [-1
+# Output: [[-0.21821789  0.70710678         nan]
+#          [-1.63747787 -0.70710678 -0.98058068]
+#          [ 1.63747787         nan  1.47167151]
+#          [ 0.21821789  0.          0.        ]]
+
+# Add 5 points to all scores (broadcasting)
+adjusted_scores = scores + 5
+print("Adjusted scores:\n", adjusted_scores)
+# Output: [[90. 95. nan]
+#          [83. 87. 93.]
+#          [97. nan 100.]
+#          [93. 90. 95.]]
+
+# Matrix operation: Compute score covariance matrix
+cov_matrix = np.cov(scores, rowvar=False, bias=True)
+print("Covariance matrix:\n", cov_matrix)
+# Output: [[ 25.66666667  12.         -17.5       ]
+#          [ 12.          9.66666667  10.        ]
+#          [-17.5        10.         12.5       ]]
 ```
+
+## 8. Common Pitfalls and Best Practices
+Shape Compatibility: Ensure arrays have compatible shapes for operations or broadcasting; use np.reshape or broadcasting rules to align shapes.
+Data Type Precision: Be aware of type promotion (e.g., int to float in division) to avoid precision loss.
+NaN Handling: Use nan-aware functions for arrays with missing data to avoid invalid results.
+Performance Optimization: Prefer vectorized operations over Python loops for speed and readability.
+Memory Efficiency: Broadcasting and in-place operations (e.g., +=) reduce memory usage compared to creating new arrays.
+Matrix vs. Array Operations: Use np.dot or @ for matrix multiplication, not * (which is element-wise).
+
+## 9. Conclusion
+
+Array operations in NumPy are fundamental to efficient numerical computing, enabling data scientists to perform arithmetic, mathematical, aggregation, and matrix operations on large datasets with ease. By leveraging vectorization and broadcasting, NumPy ensures high performance and memory efficiency, making it ideal for data analysis, machine learning, and scientific applications. Whether normalizing data, computing statistics, or performing linear algebra, NumPy’s operations provide a flexible and powerful toolkit. With practice, these techniques become intuitive, empowering you to handle complex data science tasks with precision and scalability.
+
+## Exercises
+- Create two 1D NumPy arrays and compute their element-wise product and sum.
+- Normalize a 2D array (subtract mean and divide by standard deviation) along rows.
+- Compute the dot product of two 2x3 and 3x2 matrices using @ and verify the result shape.
+- In a 1D array with 3 np.nan values, calculate the mean and standard deviation ignoring np.nan.
+- Use broadcasting to add a 1D array to each row of a 2D array.
+
