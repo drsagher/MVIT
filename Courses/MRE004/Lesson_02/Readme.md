@@ -41,3 +41,62 @@ print("4D Array:\n", array4)
 # The number of opening brackets `[` at the beginning of the innermost list determines the dimension.
 ```
 
+**NumPy Arrays vs Python Lists**
+```
+# prompt: write example for NumPy Arrays vs Python Lists
+
+import time
+
+# Example illustrating the difference in speed for operations
+size = 1000000
+list_a = list(range(size))
+list_b = list(range(size))
+array_a = np.arange(size)
+array_b = np.arange(size)
+
+# List addition
+start_time = time.time()
+result_list = [list_a[i] + list_b[i] for i in range(size)]
+end_time = time.time()
+print(f"\nTime for list addition: {end_time - start_time:.6f} seconds")
+
+# NumPy array addition
+start_time = time.time()
+result_array = array_a + array_b
+end_time = time.time()
+print(f"Time for NumPy array addition: {end_time - start_time:.6f} seconds")
+
+
+# Example illustrating memory usage difference
+import sys
+
+list_memory = sys.getsizeof(list_a)
+array_memory = array_a.nbytes
+
+print(f"\nMemory used by list: {list_memory} bytes")
+print(f"Memory used by NumPy array: {array_memory} bytes")
+
+
+# Example illustrating convenience of operations
+
+list_mult = [1, 2, 3]
+# list_mult * 2 would repeat the list: [1, 2, 3, 1, 2, 3]
+
+array_mult = np.array([1, 2, 3])
+array_mult_result = array_mult * 2 # Multiplies each element: [2, 4, 6]
+
+print(f"\nList multiplication (repeats): {list_mult * 2}")
+print(f"NumPy array multiplication (element-wise): {array_mult * 2}")
+
+# Example of element-wise operations not easily done with lists
+list_sqrt = [1, 4, 9]
+# To get square roots with lists, you need a loop or list comprehension
+list_sqrt_result = [x**0.5 for x in list_sqrt]
+
+array_sqrt = np.array([1, 4, 9])
+array_sqrt_result = np.sqrt(array_sqrt) # Applies square root to each element
+
+print(f"\nList square root: {list_sqrt_result}")
+print(f"NumPy array square root: {array_sqrt_result}")
+```
+
