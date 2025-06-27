@@ -1,10 +1,10 @@
 # Lesson 3 Working with Arrays in NumPy
 
-is foundational to data manipulation and numerical computing in Python. NumPy, short for Numerical Python, provides a powerful `ndarray` object that allows efficient storage and operations on large datasets. Arrays in NumPy are homogeneous, meaning all elements must be of the same data type, which enables faster computations compared to standard Python lists. Understanding array attributes such as `.shape`, `.dtype`, `.ndim`, and `.size` helps in inspecting and managing array structure effectively. Accessing and slicing arrays—whether one-dimensional or multi-dimensional—is done using intuitive indexing syntax similar to Python lists but extended for multiple dimensions, allowing users to extract specific rows, columns, or sub-arrays with ease. Handling missing data is another crucial aspect when working with real-world datasets, and NumPy supports this through special values like `np.nan` (Not a Number). Functions such as `np.isnan()` help detect missing values, while others like `np.nanmean()` or `np.nansum()` allow for safe computations by ignoring NaNs. Together, these features make NumPy an essential tool for scientific computing, data analysis, and machine learning workflows.
+NumPy is foundational to data manipulation and numerical computing in Python. NumPy, short for Numerical Python, provides a powerful `ndarray` object that allows efficient storage and operations on large datasets. Arrays in NumPy are homogeneous, meaning all elements must be of the same data type, which enables faster computations compared to standard Python lists. Understanding array attributes such as `.shape`, `.dtype`, `.ndim`, and `.size` helps in inspecting and managing array structure effectively. Accessing and slicing arrays—whether one-dimensional or multi-dimensional—is done using intuitive indexing syntax similar to Python lists but extended for multiple dimensions, allowing users to extract specific rows, columns, or sub-arrays with ease. Handling missing data is another crucial aspect when working with real-world datasets, and NumPy supports this through special values like `np.nan` (Not a Number). Functions such as `np.isnan()` help detect missing values, while others like `np.nanmean()` or `np.nansum()` allow for safe computations by ignoring NaNs. Together, these features make NumPy an essential tool for scientific computing, data analysis, and machine learning workflows.
 
 
 **Array Attributes**
-**1. shape:** This attribute returns a tuple representing the dimensions of the array.
+**1. ```shape:```** This attribute returns a tuple representing the dimensions of the array.
 ```
 # The shape indicates the number of elements along each dimension.
 print("\n--- Array Attributes ---")
@@ -18,7 +18,7 @@ print("Shape of array4 (4D):", array4.shape)
 # For higher dimensions, the tuple contains the size of each dimension.
 ```
 
-**2. ndim:** This attribute returns an integer representing the number of dimensions of the array.
+**2. ```ndim```:** This attribute returns an integer representing the number of dimensions of the array.
 ```
 print("\nNumber of dimensions of array1 (1D):", array1.ndim)
 print("Number of dimensions of array2 (2D):", array2.ndim)
@@ -28,7 +28,7 @@ print("Number of dimensions of array4 (4D):", array4.ndim)
 # This is equivalent to the length of the `shape` tuple.
 ```
 
-**3. size:** This attribute returns the total number of elements in the array.
+**3. ```size```:** This attribute returns the total number of elements in the array.
 ```
 # This is the product of the elements in the `shape` tuple.
 
@@ -38,7 +38,7 @@ print("Total number of elements in array3 (3D):", array3.size)
 print("Total number of elements in array4 (4D):", array4.size)
 ```
 
-**4. dtype:** This attribute returns the data type of the elements in the array.
+**4. ```dtype```:** This attribute returns the data type of the elements in the array.
 ```
 # NumPy tries to infer the data type when creating an array, or you can specify it.
 
@@ -52,7 +52,7 @@ print("Data type of elements in array2:", array2.dtype)
 # object: Python objects (less efficient)
 ```
 
-**5. nbytes:** This attribute returns the total number of bytes consumed by the elements of the array.
+**5. ```nbytes```:** This attribute returns the total number of bytes consumed by the elements of the array.
 ```
 # This does not include the overhead for the array object itself, only the data.
 
@@ -62,7 +62,7 @@ print("Number of bytes for data in array2:", array2.nbytes)
 # This is calculated as `size * itemsize`.
 ```
 
-**6. itemsize:** This attribute returns the size in bytes of each element in the array.
+**6. ```itemsize```:** This attribute returns the size in bytes of each element in the array.
 ```
 print("\nSize in bytes of each element in array1:", array1.itemsize)
 print("Size in bytes of each element in array2:", array2.itemsize)
