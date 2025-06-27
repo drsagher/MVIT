@@ -8,3 +8,5 @@ Welcome to the Python Numerical Computing with [NumPy](https://numpy.org/) cours
 [Lesson 3 Working with Arrays in NumPy](Lesson_03/Readme.md)
 
 [Lesson 4 Accessing and Slicing Array](Lesson_04/Readme.md)
+
+[Lesson 5 Handling Missing Data](Lesson_05/Readme.md)
