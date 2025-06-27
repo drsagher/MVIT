@@ -10,3 +10,5 @@ Welcome to the Python Numerical Computing with [NumPy](https://numpy.org/) cours
 [Lesson 4 Accessing and Slicing Array](Lesson_04/Readme.md)
 
 [Lesson 5 Handling Missing Data](Lesson_05/Readme.md)
+
+[Lesson 6 Array Operations and NumPy Functions](Lesson_06/Readme.md)
