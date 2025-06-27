@@ -1,30 +1,34 @@
 # Lesson 1 NumPy Arrays
-Lesson: NumPy Arrays - Creation, Operations, and Broadcasting
-Introduction
+
+## Introduction
 NumPy is the cornerstone of numerical computing in Python, providing a powerful array object that enables efficient storage and manipulation of large datasets. In this lesson, we'll explore how to create NumPy arrays, perform operations on them, and leverage broadcasting to simplify computations. Through detailed explanations and practical examples, you'll gain a solid understanding of these core concepts.
-1. Creating NumPy Arrays
+
+### 1. Creating NumPy Arrays
 NumPy arrays, or ndarray, are multidimensional containers for elements of the same data type. They are more efficient than Python lists for numerical operations due to their fixed size and optimized memory usage.
-1.1. From Python Lists
+
+#### 1.1. From Python Lists
 You can create a NumPy array from a Python list or tuple using np.array().
 import numpy as np
 
-# Create a 1D array
+**Create a 1D array**
+```
 list1 = [1, 2, 3, 4]
 array1 = np.array(list1)
 print("1D Array:", array1)
-
-# Create a 2D array
+```
+**Create a 2D array**
+```
 list2 = [[1, 2, 3], [4, 5, 6]]
 array2 = np.array(list2)
 print("2D Array:\n", array2)
-
-Output:
+```
+**Output:**
 1D Array: [1 2 3 4]
 2D Array:
  [[1 2 3]
   [4 5 6]]
 
-1.2. Using Built-in Functions
+#### 1.2. Using Built-in Functions
 NumPy provides functions to create arrays with specific values or patterns:
 
 np.zeros(shape): Creates an array filled with zeros.
@@ -33,24 +37,26 @@ np.arange(start, stop, step): Creates an array with a range of values.
 np.linspace(start, stop, num): Creates an array with evenly spaced values.
 np.random.rand(shape): Creates an array with random values between 0 and 1.
 
-# Zeros and ones
+**Zeros and ones**
+```
 zeros_array = np.zeros((2, 3))
 ones_array = np.ones((3, 2))
-
-# Range and linspace
+```
+**Range and linspace**
+```
 range_array = np.arange(0, 10, 2)
 linspace_array = np.linspace(0, 1, 5)
-
-# Random array
+```
+**Random array**
+```
 random_array = np.random.rand(2, 2)
-
 print("Zeros:\n", zeros_array)
 print("Ones:\n", ones_array)
 print("Range:", range_array)
 print("Linspace:", linspace_array)
 print("Random:\n", random_array)
-
-Output:
+```
+**Output:**
 Zeros:
  [[0. 0. 0.]
   [0. 0. 0.]]
@@ -84,7 +90,7 @@ Data type: int64
 Dimensions: 2
 Size: 6
 
-2. Array Operations
+### 2. Array Operations
 NumPy supports element-wise operations, mathematical functions, and matrix operations, making it ideal for numerical tasks.
 2.1. Element-wise Operations
 You can perform arithmetic operations directly on arrays, which are applied element-wise.
@@ -138,7 +144,7 @@ Matrix Product:
  [[19 22]
   [43 50]]
 
-3. Broadcasting
+### 3. Broadcasting
 Broadcasting allows NumPy to perform operations on arrays of different shapes by automatically expanding their dimensions to be compatible.
 3.1. Broadcasting Rules
 
