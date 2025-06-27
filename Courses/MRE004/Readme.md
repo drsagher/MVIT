@@ -4,3 +4,5 @@ Welcome to the Python Numerical Computing with [NumPy](https://numpy.org/) cours
 [Lesson 1 Introduction to the NumPy](Lesson_01/Readme.md)
 
 [Lesson 2 Meet the NumPy Array](Lesson_02/Readme.md)
+
+[Lesson 3 Working with Arrays in NumPy](Lesson_03/Readme.md)
