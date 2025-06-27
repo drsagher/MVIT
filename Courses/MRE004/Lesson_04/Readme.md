@@ -201,6 +201,7 @@ Boolean Indexing Memory: Boolean indexing creates copies, which can be memory-in
 Advanced Indexing Order: In fancy indexing, the order of indices matters (e.g., arr[[0, 1], [0, 1]] picks specific elements, not a subarray).
 
 **Conclusion**
+
 Accessing and slicing NumPy arrays are fundamental skills for efficient data manipulation in data science and numerical computing. By leveraging integer indexing, slicing, boolean indexing, and fancy indexing, you can extract and modify specific elements or subsets of arrays with precision. Understanding the distinction between views and copies ensures memory-efficient operations, while mastering these techniques enables seamless integration with data science workflows, such as data preprocessing, filtering, or analysis. With practice, these methods become intuitive, empowering you to handle complex datasets and build robust applications.
 
 **Exercises**
