@@ -27,4 +27,4 @@ In this comprehensive course, students will learn the essential concepts and tec
 
 [Lesson 13 Hands-on Practices](Lesson_13/Readme.md)
 
-[Take Final Test (Unlimted Attempts)](https://www.mvut.us/mvit-exam/take-test)
+[Take Final Test (Unlimted Attempts)](https://www.mvitech.org/mvit-exam/take-test)
