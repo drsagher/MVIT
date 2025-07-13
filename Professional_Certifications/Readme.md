@@ -19,4 +19,4 @@ MVIT's Professional Certifications are designed to bridge the gap between academ
 
 
 
-You can apply online for these certifications on the MVIT Official Website([Click to Open](https://www.mvut.us/pages/apply)).
+You can apply online for these certifications on the MVIT Official Website([Click to Open](https://www.mvitech.org/pages/apply)).
