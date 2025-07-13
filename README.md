@@ -18,6 +18,7 @@ Elevate your career prospects with our Professional Certifications in AI Enginee
 
 [1. MRSE Certification ](Professional_Certifications/MRSE/Readme.md)
 
+
 ## United School of Artificial Intelligence (USAI)
 
 <img src="https://github.com/drsagher/USAI/blob/main/mvit-add8.png" alt="Alt Text"  >
@@ -38,8 +39,9 @@ The **United School of Artificial Intelligence (USAI)** is presented as an **inn
 
 Micro Learning Modules are concise, bite-sized learning units that focus on a specific skill or topic, designed to be completed in a short amount of time. They are flexible, interactive, and provide just-in-time learning, allowing learners to retain more information, stay engaged, and manage their time effectively. Micro Learning Modules also offer a cost-effective solution for learning and development, making them an attractive option for individuals and organizations alike.
 
-[List of Micro Modules](Courses/Readme.md)
+[1. List of Micro Modules](Courses/Readme.md)
 
+[2. AI Empowerment in Data Science](AI_and_DataScience/Readme.md)
 
 ## Fee Structure
 The [fee structure](fee/Readme.md) at Mansha Virtual Institute of Technologies (MVIT) includes a **monthly program and certification fee of $20** for most programs, along with a **one-time admission fee of $50** that applies to all programs. However, it's important to note that the duration of each program varies. For instance, Next-Generation Web Development with Python (NXGDP), Full Stack Development with Next.js (FSDN), and Full Stack PHP Development (FSP) are two-year programs, while Office Management and Work Ethics (OM&WE) is a one-year program, and Kindergarten (K.G.) STEM Entrepreneurs is a 15-month program. Additionally, some programs may have different fee arrangements; for example, the Computer Science Professional Studies certificates listed have varying monthly fees and sometimes different registration costs than the standard $50. For detailed information on the fees for specific programs, it is advisable to consult the relevant program details.
