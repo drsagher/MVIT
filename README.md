@@ -1,6 +1,6 @@
 <img src="mvut_flame.png" alt="Alt Text" width="75" >
 
-# [Mansha Virtual Institute of Technologies (MVIT)](https://www.mvut.us/)
+# [Mansha Virtual Institute of Technologies (MVIT)](https://mvitech.org/)
 
 
 
@@ -44,6 +44,7 @@ Micro Learning Modules are concise, bite-sized learning units that focus on a sp
 [2. AI Empowerment in Data Science](AI_and_DataScience/Readme.md)
 
 ## Fee Structure
+
 The [fee structure](fee/Readme.md) at Mansha Virtual Institute of Technologies (MVIT) includes a **monthly program and certification fee of $20** for most programs, along with a **one-time admission fee of $50** that applies to all programs. However, it's important to note that the duration of each program varies. For instance, Next-Generation Web Development with Python (NXGDP), Full Stack Development with Next.js (FSDN), and Full Stack PHP Development (FSP) are two-year programs, while Office Management and Work Ethics (OM&WE) is a one-year program, and Kindergarten (K.G.) STEM Entrepreneurs is a 15-month program. Additionally, some programs may have different fee arrangements; for example, the Computer Science Professional Studies certificates listed have varying monthly fees and sometimes different registration costs than the standard $50. For detailed information on the fees for specific programs, it is advisable to consult the relevant program details.
 
 
@@ -53,5 +54,5 @@ The [fee structure](fee/Readme.md) at Mansha Virtual Institute of Technologies (
 
 Recently, Learning AI is the crucial part of all modern professions. MVIT is offering courses along with the latest state of the art. Join MVUT and start building your career as Software Engineer, Data Scientist, Graphic Designer and Entrepreneur and become partner of digital literacy.
 
-[**APPLY NOW!**](https://www.mvut.us/pages/apply) 
+[**APPLY NOW!**](https://www.mvitech.org/pages/apply) 
 
