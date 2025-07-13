@@ -1,0 +1,2 @@
+AI Empowerment in Data Science
+Create a comprehensive series of lesson plans for the Full Stack AI Development Certification Program offered by mvitech.org, spanning Core Tech to Professional levels. The series should cover a 12-week curriculum, with each week including 5 daily lessons (2-3 hours each), designed to build practical, industry-relevant skills in front-end, back-end, and AI/ML development.
