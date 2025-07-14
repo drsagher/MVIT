@@ -252,3 +252,7 @@ Gradient-based optimization is the **engine** that:
 - Understanding gradients is essential for **debugging** and **designing new architectures**.  
 
 Gradient-based optimization is not just a tool—it’s the **foundation of modern neural networks**.
+
+## Hands-On [Colab](https://colab.research.google.com/)
+
+[Lab001 Introduction to TensorFlow in Google Colab](https://colab.research.google.com/drive/1RYQ8XnKuGS7boNMNSX6-HUUO_XXaXtJO?usp=drive_link)
