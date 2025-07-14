@@ -4,10 +4,18 @@
 Concisely, AI can be described as ***the effort to automate intellectual tasks normally performed
 by humans.***
 
+<img src="ai.png" />
+
 **Machine Learning**, a subset of AI, focuses on algorithms that allow computers to learn from and make predictions or decisions based on data, without explicit programming. ML includes methods like supervised learning (e.g., regression, classification), unsupervised learning (e.g., clustering), and reinforcement learning, leveraging statistical models to identify patterns. 
 
+
+
 **Deep Learning**, a specialized subset of ML, utilizes artificial neural networks with multiple layers to process complex data, excelling in tasks like image and speech recognition. DL's strength lies in its ability to automatically extract features from raw data, enabling breakthroughs in applications like autonomous vehicles and natural language processing. Together, AI, ML, and DL form a hierarchy of increasingly sophisticated approaches, revolutionizing industries by enabling intelligent, data-driven solutions.
+
+<img src="dl.PNG" />
 
 **Deep Learning Building Blocks**
 
 **Deep Learning (DL)** relies on several fundamental building blocks that enable neural networks to model complex patterns and solve intricate tasks. The core component is the **artificial neuron**, which processes inputs by applying weights, biases, and an activation function to produce an output, mimicking biological neurons. **Neural networks** are structured in layers, including an input layer, hidden layers, and an output layer, with each layer comprising multiple neurons that transform data hierarchically. **Weights and biases** are learnable parameters adjusted during training to minimize prediction errors, typically optimized using gradient-based methods like backpropagation and stochastic gradient descent. **Activation functions**, such as ReLU, sigmoid, or tanh, introduce non-linearity, enabling networks to model complex relationships. **Loss functions**, like mean squared error or cross-entropy, quantify the difference between predicted and actual outputs, guiding optimization. **Convolutional layers** (in CNNs) and **recurrent layers** (in RNNs) are specialized for spatial and sequential data, respectively, while **attention mechanisms** and **transformers** enhance modeling of long-range dependencies in tasks like natural language processing. **Regularization techniques**, such as dropout and batch normalization, prevent overfitting and stabilize training. Together, these components form the foundation of deep learning, enabling robust solutions across domains like computer vision and speech recognition.
+
+<img src="chart.png" />
