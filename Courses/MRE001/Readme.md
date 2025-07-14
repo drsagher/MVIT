@@ -61,3 +61,8 @@ Welcome to **MRE-901 Deep Learning with TensorFlow**, a comprehensive course des
 
 [Transformers, the tech behind LLMs | Deep Learning](https://www.youtube.com/watch?v=wjZofJX0v4M&t=27s)
 
+[How to train an LLM using InstructLab](https://www.youtube.com/watch?v=snMUJGXozec)
+
+
+
+
