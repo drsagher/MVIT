@@ -256,3 +256,5 @@ Gradient-based optimization is not just a tool—it’s the **foundation of mode
 ## Hands-On [Colab](https://colab.research.google.com/)
 
 [Lab001 Introduction to TensorFlow in Google Colab](https://colab.research.google.com/drive/1RYQ8XnKuGS7boNMNSX6-HUUO_XXaXtJO?usp=drive_link)
+
+[Lab002 Structured Data (Tabular) Classification](https://colab.research.google.com/drive/1ZXFUROCi2HjGqOSFYBnExheSU2zVD6sL?usp=drive_link)
