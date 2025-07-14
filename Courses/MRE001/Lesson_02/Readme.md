@@ -94,4 +94,84 @@ Neural networks process data in structured numerical formats, requiring careful 
 - **Libraries**: `TensorFlow` (tf.data), `PyTorch` (Dataset), `scikit-learn` (preprocessing).
 - **Embeddings**: Pretrained (BERT, ResNet) or learned end-to-end.
 
-By tailoring data representations to the problem domain, neural networks can effectively learn hierarchical patterns, enabling state-of-the-art performance across diverse tasks.
+## Tensor Operations
+Neural networks are fundamentally powered by **tensor operations**—efficient mathematical computations performed on multi-dimensional arrays of numerical data. These operations form the backbone of forward propagation, backpropagation, and optimization, enabling models to learn from data. Below is a breakdown of the critical tensor operations that drive neural networks:
+
+**1. Tensor Basics**  
+- **Definition**: Tensors are generalized arrays with *rank* (number of dimensions):  
+  - **Scalar**: Rank-0 (single value, e.g., loss).  
+  - **Vector**: Rank-1 (e.g., biases in a layer).  
+  - **Matrix**: Rank-2 (e.g., weight matrix).  
+  - **Higher-rank**: Rank-3+ (e.g., batches of images, time-series data).  
+- **Memory Layout**: Contiguous blocks optimized for GPU/TPU parallelism.  
+
+**2. Core Operations**  
+**(a) Element-wise Operations**  
+- **Description**: Apply a function independently to each element.  
+- **Examples**:  
+  - Addition/Subtraction: `A + B` (broadcasting allowed).  
+  - Activation functions: `ReLU(x) = max(0, x)`, `Sigmoid(x)`.  
+  - Scaling: `α * W` (learning rate updates).  
+**(b) Matrix Multiplication (Dot Product)**  
+- **Key Role**: Connects layers via weight matrices.  
+- **Operation**: `Y = X · W + b`, where:  
+  - `X`: Input (batch_size × input_dim).  
+  - `W`: Weight matrix (input_dim × output_dim).  
+  - `b`: Bias vector (broadcasted).  
+- **Efficiency**: Optimized via BLAS libraries (cuBLAS for GPUs).  
+
+**(c) Convolution (for CNNs)**  
+- **Operation**: Sliding kernels (filters) over input tensors to extract features.  
+  - **2D Conv**: `output[i,j] = ∑ (input[i+h, j+w] * kernel[h,w])`.  
+  - **Strides/Dilation**: Control spatial downsampling/receptive fields.  
+- **Hardware**: Accelerated via cuDNN (NVIDIA) for GPUs.  
+
+**(d) Reduction Operations**  
+- **Purpose**: Aggregate values across dimensions.  
+- **Examples**:  
+  - **Sum/Mean**: `tf.reduce_sum(x, axis=1)` (e.g., pooling layers).  
+  - **Max/Argmax**: Used in attention mechanisms.  
+
+**(e) Reshaping & Permutation**  
+- **Operations**:  
+  - **Reshape**: `(batch_size, 28, 28) → (batch_size, 784)` (flattening for FNNs).  
+  - **Transpose**: Swaps axes (e.g., `(H, W, C) → (C, H, W)`).  
+  - **Concatenation/Splitting**: Merges/splits tensors along axes.  
+
+**3. Gradient Computation (Autodiff)**  
+- **Backpropagation**: Chains tensor operations to compute gradients via:  
+  - **Chain Rule**: `∂Loss/∂W = ∂Loss/∂Y * ∂Y/∂W`.  
+  - **Automatic Differentiation (AD)**: Frameworks (TensorFlow/PyTorch) track operations in computational graphs.  
+- **Key Ops**:  
+  - **Gradient Tape (TF)**: Records forward-pass ops for gradient computation.  
+  - **Optimizers**: Apply gradients (e.g., `W -= η * ∇W` for SGD).  
+
+**4. Specialized Operations**  
+- **Attention Mechanisms (Transformers)**:  
+  - **Scaled Dot-Product Attention**: `Q·K^T / √d_k` + softmax.  
+- **Recurrent Ops (RNNs)**:  
+  - **Gates (LSTM/GRU)**: Sigmoid/tanh for memory control.  
+- **Einsum**: Generalized tensor contractions (e.g., `np.einsum('bij,bjk->bik', A, B)`).  
+
+**5. Hardware Acceleration**  
+- **GPU/TPU**: Parallelize tensor ops via:  
+  - **SIMD (Single Instruction Multiple Data)**: Process batches simultaneously.  
+  - **Tensor Cores (NVIDIA)**: Mixed-precision (FP16/FP32) matrix math.  
+- **Quantization**: Convert FP32 → INT8 for edge devices (TF Lite).  
+
+**6. Debugging & Optimization**  
+- **Common Issues**:  
+  - **Shape Mismatches**: `(32, 32, 3)` vs `(64, 64, 3)`.  
+  - **NaNs/Infs**: Unstable gradients (clip gradients, normalize inputs).  
+- **Tools**:  
+  - **TensorBoard**: Visualize computation graphs.  
+  - **Profiling**: Identify bottlenecks (e.g., `tf.profiler`).  
+
+**Why It Matters**  
+Tensor operations are the "gears" transforming raw data into learned representations. Mastery of these ops is essential for:  
+- **Custom Layer Design** (e.g., novel attention mechanisms).  
+- **Performance Tuning** (memory/FLOP optimization).  
+- **Debugging** (gradient flow analysis).  
+
+Frameworks abstract these details, but understanding the underlying math unlocks the ability to innovate and optimize models at scale.  
+**Example**: A ResNet-50’s forward pass executes ~3.8 billion tensor ops per image—efficient implementation is non-negotiable for real-world deployment.
