@@ -1,1 +1,7 @@
 # Lesson 1 Introduction to Deep Learning
+
+**Artificial Intelligence (AI)**, Machine Learning (ML), and Deep Learning (DL) are interconnected fields driving transformative advancements in technology. AI is the broadest concept, encompassing systems or machines that mimic human intelligence to perform tasks such as reasoning, problem-solving, and decision-making. It includes a wide range of techniques, from rule-based systems to advanced algorithms, enabling machines to perceive, learn, and interact with their environment. 
+
+**Machine Learning**, a subset of AI, focuses on algorithms that allow computers to learn from and make predictions or decisions based on data, without explicit programming. ML includes methods like supervised learning (e.g., regression, classification), unsupervised learning (e.g., clustering), and reinforcement learning, leveraging statistical models to identify patterns. 
+
+**Deep Learning**, a specialized subset of ML, utilizes artificial neural networks with multiple layers to process complex data, excelling in tasks like image and speech recognition. DL's strength lies in its ability to automatically extract features from raw data, enabling breakthroughs in applications like autonomous vehicles and natural language processing. Together, AI, ML, and DL form a hierarchy of increasingly sophisticated approaches, revolutionizing industries by enabling intelligent, data-driven solutions.
