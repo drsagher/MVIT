@@ -260,3 +260,5 @@ Gradient-based optimization is not just a tool—it’s the **foundation of mode
 [Lab002 Structured Data (Tabular) Classification](https://colab.research.google.com/drive/1ZXFUROCi2HjGqOSFYBnExheSU2zVD6sL?usp=drive_link)
 
 [Lab003 Image Classification with CNNs](https://colab.research.google.com/drive/1pAe4bT9rjn7dwjia5D_ePXo45kMO2qvo?usp=drive_link)
+
+[Lab004 Text Classification with NLP](https://colab.research.google.com/drive/1hcebtZ6BKg1TlH78c2-rnZHVprtyh6jg?usp=drive_link)
