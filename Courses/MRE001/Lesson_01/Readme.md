@@ -20,34 +20,34 @@ by humans.***
 
 <img src="chart.png" />
 
-### Artificial Neuron
+### 1. Artificial Neuron
 An artificial neuron, the fundamental unit of a neural network, emulates the behavior of biological neurons by processing input data to produce an output. It receives multiple inputs, each multiplied by a corresponding weight, which adjusts the input’s influence. These weighted inputs are summed, and a bias term is added to shift the result, allowing the neuron to model a wider range of functions. The summed value is then passed through an activation function (e.g., ReLU, sigmoid) to introduce non-linearity, enabling the neuron to capture complex patterns. During training, weights and biases are optimized to minimize errors. Artificial neurons are interconnected in layers, forming the backbone of deep learning models, and their collective behavior enables tasks like classification and regression.
 
-### Neural Network Layers
+### 2. Neural Network Layers
 Neural network layers are structured collections of artificial neurons organized into input, hidden, and output layers. The input layer receives raw data (e.g., pixel values for images), passing it to one or more hidden layers where complex transformations occur through weighted connections and activation functions. Hidden layers extract features, such as edges in images or patterns in sequences, with deeper layers capturing increasingly abstract representations. The output layer produces the final prediction or classification, such as a class label or numerical value. The number and size of layers determine the network’s capacity, with deeper networks handling more complex tasks but requiring more data and computation. Layers are interconnected, and their parameters are tuned during training via backpropagation.
 
-### Weights and Biases
+### 3. Weights and Biases
 Weights and biases are the learnable parameters of a neural network, critical for modeling relationships in data. Weights are multipliers applied to input values, determining their contribution to the neuron’s output; higher weights amplify an input’s influence, while lower weights diminish it. Biases are additive terms that shift the weighted sum, allowing the model to better fit data by adjusting the activation threshold. During training, backpropagation and optimization algorithms (e.g., stochastic gradient descent) iteratively adjust weights and biases to minimize the loss function. Proper initialization (e.g., Xavier or He initialization) and regularization prevent issues like vanishing gradients or overfitting, ensuring robust learning.
 
-### Activation Functions
+### 4. Activation Functions
 Activation functions introduce non-linearity into neural networks, enabling them to model complex, non-linear relationships in data. Common functions include ReLU (Rectified Linear Unit, outputting max(0, x)), which is computationally efficient and mitigates vanishing gradient issues; sigmoid (mapping inputs to [0,1]), suitable for binary classification; and tanh (mapping to [-1,1]), useful for centered data. Others, like softmax, are used in output layers for multi-class classification. Activation functions are applied to the weighted sum of inputs plus bias in each neuron, determining whether and how strongly a neuron fires. Choosing the right function depends on the task and network architecture.
 
-### Loss Functions
+### 5. Loss Functions
 Loss functions quantify the difference between a neural network’s predictions and the actual target values, guiding the optimization process. Common loss functions include mean squared error (MSE) for regression tasks, measuring the squared difference between predicted and true values; cross-entropy loss for classification, penalizing incorrect class probabilities; and hinge loss for support vector machines. The choice of loss function depends on the task (e.g., regression vs. classification) and data distribution. During training, the network minimizes the loss using gradient-based optimization, ensuring predictions align closely with ground truth.
 
-### Convolutional Layers
+### 6. Convolutional Layers
 Convolutional layers, used in Convolutional Neural Networks (CNNs), are designed for spatial data like images. They apply learnable filters (kernels) to input data, performing convolution operations to detect features such as edges, textures, or objects. Each filter slides over the input, producing feature maps that highlight specific patterns. Parameters like filter size, stride, and padding control the output dimensions. Pooling layers (e.g., max pooling) often follow, reducing spatial dimensions while preserving important features, improving computational efficiency and reducing overfitting. Convolutional layers excel in tasks like image classification and object detection due to their ability to learn hierarchical feature representations.
 
-### Recurrent Layers
+### 7. Recurrent Layers
 Recurrent layers, used in Recurrent Neural Networks (RNNs), are designed for sequential data like time series or text. They maintain a hidden state that captures information from previous time steps, allowing the network to model temporal dependencies. Variants like LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units) address vanishing gradient issues by using gates to selectively remember or forget information over long sequences. Recurrent layers process inputs sequentially, updating the hidden state at each step, and are ideal for tasks like speech recognition and language modeling, though they can be computationally intensive.
 
-### Attention Mechanisms
+### 8. Attention Mechanisms
 Attention mechanisms enhance neural networks by focusing on relevant parts of the input data, particularly in tasks like natural language processing. They assign weights to different input elements based on their importance to the current context, allowing the model to prioritize critical information. The self-attention mechanism, used in transformers, computes similarity scores between all input tokens, enabling the model to capture long-range dependencies efficiently. Components include query, key, and value vectors, with attention scores derived from their dot products. Attention mechanisms are computationally intensive but highly effective in tasks like machine translation and text generation.
 
-### Transformers
+### 9. Transformers
 Transformers are a powerful deep learning architecture, primarily used in natural language processing and computer vision, that leverage attention mechanisms to model relationships between input elements efficiently. Introduced in the 2017 paper "Attention is All You Need," transformers rely on self-attention to weigh the importance of each input token relative to others, capturing long-range dependencies without the sequential processing limitations of recurrent neural networks. They consist of an encoder-decoder structure: the encoder processes input data into contextual representations, while the decoder generates outputs, such as translated text or predictions. Key components include multi-head attention, which allows the model to focus on different aspects of the input simultaneously, and feedforward neural networks applied to each token. Positional encodings are added to account for the order of inputs, as transformers lack inherent sequential awareness. Layer normalization and residual connections stabilize training, enabling deep architectures. Transformers power models like BERT and GPT, achieving state-of-the-art performance in tasks like translation, text generation, and image classification, due to their scalability and parallelization capabilities.
 
-### Regularization Techniques
+### 10. Regularization Techniques
 Regularization techniques prevent overfitting in neural networks by constraining model complexity. Dropout randomly deactivates a fraction of neurons during training, forcing the network to learn robust, distributed representations. Batch normalization normalizes layer inputs to stabilize and accelerate training, reducing sensitivity to initialization. L2 regularization (weight decay) adds a penalty to large weights, encouraging simpler models. Data augmentation artificially expands the training dataset by applying transformations (e.g., rotations for images). These techniques ensure models generalize well to unseen data, balancing bias and variance.
 
 ## What Makes Deep Learning Different
