@@ -51,3 +51,13 @@ Welcome to **MRE-901 Deep Learning with TensorFlow**, a comprehensive course des
 4. **Data**: Dataset API, TFRecord  
 5. **Deployment**: SavedModel, TFLite  
 6. **Advanced**: TPU, XLA, Distribution Strategies
+
+
+## Specialized Learning for Industry Professionals
+
+[Deep Learning (MIT)](https://www.youtube.com/watch?v=alfdI7S6wCY&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+
+[Introduction to Deep Learning](https://www.youtube.com/watch?v=AhE8RhPGH1A)
+
+[Transformers, the tech behind LLMs | Deep Learning](https://www.youtube.com/watch?v=wjZofJX0v4M&t=27s)
+
