@@ -8,6 +8,8 @@ A neural network (NN) is a biologically inspired computational model designed to
 2. **Hidden Layers** – Intermediate layers where computation occurs, each comprising **neurons** (or nodes) that apply a weighted sum of inputs followed by a **nonlinear activation function** (e.g., ReLU, Sigmoid) to introduce complexity and enable learning.  
 3. **Output Layer** – Produces the final prediction (e.g., class probabilities in classification, a continuous value in regression).  
 
+<img src="nn2.PNG"/>
+
 The network **learns** by adjusting weights via **backpropagation**, where errors from predictions are propagated backward, and optimization algorithms (e.g., **SGD, Adam**) minimize a **loss function** (e.g., cross-entropy, MSE). A simple **feedforward neural network (FNN)** processes data in one direction, while more advanced architectures like **CNNs** (for spatial data) and **RNNs** (for sequential data) introduce specialized layers (e.g., convolutions, recurrent cells).  
 
 Key concepts in a first encounter include:  
@@ -16,3 +18,4 @@ Key concepts in a first encounter include:
 - **Overfitting Prevention**: Techniques like **dropout** and **L2 regularization**.  
 
 Neural networks form the backbone of deep learning, enabling tasks like image recognition, machine translation, and game-playing AI. Their power lies in **hierarchical feature learning**—transforming raw input into abstract representations through successive layers.
+
