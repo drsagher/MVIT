@@ -12,6 +12,9 @@ Welcome to **MRE-901 Deep Learning with TensorFlow**, a comprehensive course des
 
 [TensorFlow Basics](https://colab.research.google.com/drive/151ICeR2mz3IUdu9oqGAtpQcVML0HoFg7?usp=drive_link)
 
+## Additional Material
+
+[TensorFlow Learning Basics](BasicTerms/Readme.md)
 
 ### TensorFlow Glossary
 
