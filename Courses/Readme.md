@@ -136,7 +136,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-905 SciPy for Engineers and Scientists](MRE005/Readme.md)
 
-[MRE-906 Python Data Analysis with Pandas](MRE006/Readme.md)
+[MRE-906 Python Data Analysis with Pandas](MRE907/Readme.md)
 
 [MRE-907 Containerization with Docker](MRE007/Readme.md)
 
