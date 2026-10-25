@@ -45,7 +45,7 @@ By the end, you will have a pipeline that can absorb new formats with minimal ef
 - The collected data is later split, embedded, and searched to find relevant answers.
 - Loading from many sources lets your application use a wide range of information.
 
-### The `Document` object
+**The `Document` object**
 
 Every loader returns a **list of `Document` objects**. Each one has two parts:
 
@@ -114,7 +114,7 @@ from langchain_community.document_loaders import (
 
 ## Loading Files
 
-### 6.1 Text (TXT)
+**6.1 Text (TXT)**
 
 `TextLoader` is the simplest loader. It reads a file as text and places all the content into **a single document**.
 
@@ -127,11 +127,11 @@ pprint(data[0].page_content[:1000])
 **Tip:** if the file contains special characters, pass the encoding: `TextLoader("file.txt", encoding="utf-8")`.
 
 
-### 6.2 PDF
+**6.2 PDF**
 
 LangChain provides several PDF loaders. Here are two.
 
-#### `PyPDFLoader`
+**`PyPDFLoader`**
 
 Loads the PDF into a list of documents. Each document holds the page content and metadata containing the **page number**.
 
@@ -148,7 +148,7 @@ for p, page in enumerate(pages[0:3]):
     print(page)
 ```
 
-#### `PyMuPDFLoader`
+**`PyMuPDFLoader`**
 
 The **fastest** PDF parsing option. It returns one document per page and provides **more detailed metadata** than `PyPDFLoader`.
 
@@ -167,7 +167,7 @@ print(data[0])
 > **Scanned PDFs:** if a PDF contains only images, neither loader can extract text. Use an OCR-capable loader (for example `UnstructuredPDFLoader` with `strategy="ocr_only"`).
 
 
-### 6.3 Markdown
+**6.3 Markdown**
 
 Use `UnstructuredMarkdownLoader` for `.md` files.
 
@@ -187,7 +187,7 @@ loader = UnstructuredMarkdownLoader(markdown_path, mode="elements")
 ```
 
 
-### 6.4 JSON
+**6.4 JSON**
 
 `JSONLoader` uses a [`jq` schema](https://en.wikipedia.org/wiki/Jq_(programming_language)) to decide which part of the JSON to load. It relies on the `jq` Python package.
 
@@ -214,7 +214,7 @@ data = loader.load()
 pprint(data)
 ```
 
-#### Common `jq` patterns
+**Common `jq` patterns**
 
 | Goal | `jq_schema` |
 |---|---|
@@ -226,11 +226,11 @@ pprint(data)
 > Use `text_content=False` when the extracted values are not plain strings (for example objects or numbers).
 
 
-### 6.5 CSV
+**6.5 CSV**
 
 CSV is a common format for tabular data.
 
-#### `CSVLoader`
+**`CSVLoader`**
 
 Creates **one `Document` per row**. Headers are used as labels for each value.
 
@@ -242,7 +242,7 @@ data = loader.load()
 data
 ```
 
-#### `UnstructuredCSVLoader`
+**`UnstructuredCSVLoader`**
 
 Treats the **entire CSV as one table element**. This is useful when you want to analyse the data as a complete table rather than as separate entries.
 
@@ -263,7 +263,7 @@ print(data[0].metadata["text_as_html"])
 | HTML table in metadata | No | Yes (`text_as_html`) |
 
 
-### 6.6 Websites (URL)
+**6.6 Websites (URL)**
 
 `BeautifulSoup` can parse HTML, but it has a limitation: the output contains **many HTML tags and links** you usually do not need.
 
@@ -280,7 +280,7 @@ print(soup.prettify())
 
 `WebBaseLoader` solves this by extracting the **text** of an HTML page and converting it into documents.
 
-#### Single web page
+**Single web page**
 
 ```python
 loader = WebBaseLoader("https://www.ibm.com/topics/langchain")
@@ -288,7 +288,7 @@ data = loader.load()
 data
 ```
 
-#### Multiple web pages
+**Multiple web pages**
 
 Pass a list of URLs. The documents come back **in the same order** as the URLs.
 
@@ -304,7 +304,7 @@ data
 > **Good practice:** respect each site's terms of use and `robots.txt`, and avoid sending large numbers of rapid requests.
 
 
-### 6.7 Word (DOCX)
+**6.7 Word (DOCX)**
 
 `Docx2txtLoader` converts Word documents into the document format.
 
@@ -319,11 +319,11 @@ data
 > `Docx2txtLoader` extracts text only. Tables and images are not preserved as structure. For richer output, use `UnstructuredWordDocumentLoader`.
 
 
-### 6.8 Excel (XLSX / XLS)
+**6.8 Excel (XLSX / XLS)**
 
 Excel workbooks often hold multiple sheets of tables. There are two good approaches.
 
-#### Method 1: `UnstructuredExcelLoader`
+**Method 1: `UnstructuredExcelLoader`**
 
 ```python
 loader = UnstructuredExcelLoader("sales-report.xlsx", mode="elements")
@@ -339,7 +339,7 @@ print(data[0].metadata["page_name"])      # sheet name
 | `mode="single"` (default) | One document for the whole workbook |
 | `mode="elements"` | One document per sheet, with an HTML version of the table in metadata |
 
-#### Method 2: `pandas` + `DataFrameLoader` (more control)
+**Method 2: `pandas` + `DataFrameLoader` (more control)**
 
 Use this when you need to pick a specific sheet, skip header rows, clean data, or choose which column becomes the text.
 
@@ -361,7 +361,7 @@ data = loader.load()
 print(data[0])
 ```
 
-#### Reading all sheets
+**Reading all sheets**
 
 ```python
 sheets = pd.read_excel("sales-report.xlsx", sheet_name=None, engine="openpyxl")
@@ -370,7 +370,7 @@ for sheet_name, df in sheets.items():
     print(f"Sheet: {sheet_name}, rows: {len(df)}")
 ```
 
-#### Which method should I use?
+**Which method should I use?**
 
 | Need | Use |
 |---|---|
@@ -379,9 +379,9 @@ for sheet_name, df in sheets.items():
 | Legacy `.xls` files | `pandas` with `engine="xlrd"` (`pip install xlrd`) |
 
 
-### 6.9 PowerPoint (PPTX)
+**6.9 PowerPoint (PPTX)**
 
-#### Method 1: `UnstructuredPowerPointLoader`
+**Method 1: `UnstructuredPowerPointLoader`**
 
 ```python
 loader = UnstructuredPowerPointLoader("marketing-deck.pptx")
@@ -401,7 +401,7 @@ for doc in data[:5]:
     print("---")
 ```
 
-#### Method 2: `python-pptx` (full control, including speaker notes)
+**Method 2: `python-pptx` (full control, including speaker notes)**
 
 Use this when you need **speaker notes**, tables, or slide-by-slide output.
 
@@ -455,11 +455,11 @@ print(documents[0])
 
 > `python-pptx` reads `.pptx` only, not the older `.ppt` format. Text inside images is not extracted.
 
-### 6.10 Unstructured Files (Any Format)
+**6.10 Unstructured Files (Any Format)**
 
 Sometimes you receive many formats and do not want to write a loader for each. `UnstructuredFileLoader` handles **multiple file types** with one class, including text, PowerPoint, HTML, PDF, images, and more. It also saves time when a new format appears.
 
-#### Load a `.txt` file
+**Load a `.txt` file**
 
 ```python
 loader = UnstructuredFileLoader("new-Policies.txt")
@@ -467,7 +467,7 @@ data = loader.load()
 data
 ```
 
-#### Load a `.md` file
+**Load a `.md` file**
 
 ```python
 loader = UnstructuredFileLoader("markdown-sample.md")
@@ -475,7 +475,7 @@ data = loader.load()
 data
 ```
 
-#### Load multiple files with different formats
+**Load multiple files with different formats**
 
 ```python
 files = ["markdown-sample.md", "new-Policies.txt"]
@@ -484,7 +484,7 @@ data = loader.load()
 data
 ```
 
-## Inspecting a Loaded Document
+**Inspecting a Loaded Document**
 
 Always check what the loader returned before moving on.
 
@@ -495,7 +495,7 @@ print(data[0].page_content[:300])
 print(data[0].metadata)
 ```
 
-### Build a simple multi-format loader
+**Build a simple multi-format loader**
 
 A small helper that routes files to the right loader by extension:
 
@@ -524,7 +524,7 @@ for file in Path("client_files").iterdir():
 print(f"Loaded {len(docs)} documents")
 ```
 
-## Choosing the Right Loader
+**Choosing the Right Loader**
 
 ```
 Is the file plain text?            -> TextLoader
@@ -541,7 +541,7 @@ Is it a web page?                  -> WebBaseLoader
 Unknown or mixed formats?          -> UnstructuredFileLoader
 ```
 
-## Common Errors and Fixes
+**Common Errors and Fixes**
 
 | Error | Likely cause | Fix |
 |---|---|---|
@@ -555,7 +555,7 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 | Old import path warnings | Loaders moved to `langchain_community` | Import from `langchain_community.document_loaders` |
 
 
-## Practice Exercises
+**Practice Exercises**
 
 1. **Compare PDF loaders.** Load the same PDF with `PyPDFLoader` and `PyMuPDFLoader`. Which metadata keys does each return?
 2. **JSON extraction.** Change the `jq_schema` to extract a different field from `facebook-chat.json`.
