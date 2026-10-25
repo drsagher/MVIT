@@ -38,10 +38,27 @@ After completing this lab you will be able to:
 - It is the simplest loader, reading a file as text and placing all the content into a single document.
 
 ```
-loader = TextLoader("new-Policies.txt")
+loader = TextLoader("MyPolicies.txt")
 loader
 data = loader.load()
 data
 pprint(data[0].page_content[:1000])
 
 ```
+
+### Load from PDF files
+
+Sometimes, we may have files in PDF format that we want to load for processing.
+LangChain provides several classes for loading PDFs. Here, we introduce two classes: `PyPDFLoader` and `PyMuPDFLoader`.
+
+#### PyPDFLoader
+Load the PDF using `PyPDFLoader` into an array of documents, where each document contains the page content and metadata with the page number.
+
+```
+pdf_url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/Q81D33CdRLK6LswuQrANQQ/instructlab.pdf"
+
+loader = PyPDFLoader(pdf_url)
+
+pages = loader.load_and_split()
+```
+
