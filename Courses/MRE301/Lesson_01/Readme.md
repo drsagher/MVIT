@@ -1,6 +1,6 @@
 # Lesson 1: How to Load Your Documents from Different Sources
 
-## Learning Outcomes
+**Learning Outcomes**
 
 After completing this lesson you will be able to:
 
@@ -22,9 +22,7 @@ After completing this lesson you will be able to:
 | PowerPoint | `UnstructuredPowerPointLoader`, `python-pptx` |
 | Anything else | `UnstructuredFileLoader` |
 
----
-
-## Scenario
+**Scenario**
 
 Imagine you are a data scientist at a consulting firm. Each client sends data in a different format: PDFs, Word documents, CSV files, Excel workbooks, PowerPoint decks, or HTML webpages. Loading and parsing each type by hand is slow and error-prone.
 
@@ -39,9 +37,8 @@ Your goal is a **single, reliable pipeline** that converts every format into the
 
 By the end, you will have a pipeline that can absorb new formats with minimal effort.
 
----
 
-## Background: What Is a Document Loader?
+**Background: What Is a Document Loader?**
 
 - Document loaders are **connectors**: they pull in data and convert it into a LangChain-friendly format.
 - Collecting data is **step one** of any RAG (Retrieval-Augmented Generation) application.
@@ -61,9 +58,7 @@ Every loader returns a **list of `Document` objects**. Each one has two parts:
 Source file  ──►  Loader  ──►  [Document, Document, ...]  ──►  Splitter  ──►  Embeddings  ──►  Vector store
 ```
 
----
-
-## Loader Cheat Sheet
+**Loader Cheat Sheet**
 
 | File type | Loader | Documents returned |
 |---|---|---|
@@ -79,9 +74,7 @@ Source file  ──►  Loader  ──►  [Document, Document, ...]  ──► 
 | `.pptx` | `UnstructuredPowerPointLoader` | One per deck (or per element in `elements` mode) |
 | Mixed | `UnstructuredFileLoader` | Depends on the file type |
 
----
-
-## Setup Environment
+**Setup Environment**
 
 Install the required packages:
 
@@ -118,7 +111,6 @@ from langchain_community.document_loaders import (
 )
 ```
 
----
 
 ## Loading Files
 
@@ -134,7 +126,6 @@ pprint(data[0].page_content[:1000])
 
 **Tip:** if the file contains special characters, pass the encoding: `TextLoader("file.txt", encoding="utf-8")`.
 
----
 
 ### 6.2 PDF
 
@@ -175,7 +166,6 @@ print(data[0])
 
 > **Scanned PDFs:** if a PDF contains only images, neither loader can extract text. Use an OCR-capable loader (for example `UnstructuredPDFLoader` with `strategy="ocr_only"`).
 
----
 
 ### 6.3 Markdown
 
@@ -196,7 +186,6 @@ To keep each heading or list as its own element, use `mode="elements"`:
 loader = UnstructuredMarkdownLoader(markdown_path, mode="elements")
 ```
 
----
 
 ### 6.4 JSON
 
@@ -236,7 +225,6 @@ pprint(data)
 
 > Use `text_content=False` when the extracted values are not plain strings (for example objects or numbers).
 
----
 
 ### 6.5 CSV
 
@@ -274,7 +262,6 @@ print(data[0].metadata["text_as_html"])
 | Best for | Row-level question answering | Table-level analysis |
 | HTML table in metadata | No | Yes (`text_as_html`) |
 
----
 
 ### 6.6 Websites (URL)
 
@@ -316,7 +303,6 @@ data
 
 > **Good practice:** respect each site's terms of use and `robots.txt`, and avoid sending large numbers of rapid requests.
 
----
 
 ### 6.7 Word (DOCX)
 
@@ -332,7 +318,6 @@ data
 
 > `Docx2txtLoader` extracts text only. Tables and images are not preserved as structure. For richer output, use `UnstructuredWordDocumentLoader`.
 
----
 
 ### 6.8 Excel (XLSX / XLS)
 
@@ -393,7 +378,6 @@ for sheet_name, df in sheets.items():
 | Specific sheets, cleaning, custom text | `pandas` + `DataFrameLoader` |
 | Legacy `.xls` files | `pandas` with `engine="xlrd"` (`pip install xlrd`) |
 
----
 
 ### 6.9 PowerPoint (PPTX)
 
@@ -471,8 +455,6 @@ print(documents[0])
 
 > `python-pptx` reads `.pptx` only, not the older `.ppt` format. Text inside images is not extracted.
 
----
-
 ### 6.10 Unstructured Files (Any Format)
 
 Sometimes you receive many formats and do not want to write a loader for each. `UnstructuredFileLoader` handles **multiple file types** with one class, including text, PowerPoint, HTML, PDF, images, and more. It also saves time when a new format appears.
@@ -501,8 +483,6 @@ loader = UnstructuredFileLoader(files)
 data = loader.load()
 data
 ```
-
----
 
 ## Inspecting a Loaded Document
 
@@ -544,8 +524,6 @@ for file in Path("client_files").iterdir():
 print(f"Loaded {len(docs)} documents")
 ```
 
----
-
 ## Choosing the Right Loader
 
 ```
@@ -563,8 +541,6 @@ Is it a web page?                  -> WebBaseLoader
 Unknown or mixed formats?          -> UnstructuredFileLoader
 ```
 
----
-
 ## Common Errors and Fixes
 
 | Error | Likely cause | Fix |
@@ -578,7 +554,6 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 | `JSONLoader` returns nothing | Wrong `jq_schema` | Print the raw JSON first and check the path |
 | Old import path warnings | Loaders moved to `langchain_community` | Import from `langchain_community.document_loaders` |
 
----
 
 ## Practice Exercises
 
@@ -590,7 +565,6 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 6. **PowerPoint challenge.** Build a 3-slide deck with speaker notes. Use `python-pptx` to produce one `Document` per slide with the notes in metadata.
 7. **Mini pipeline.** Put a `.txt`, `.pdf`, `.docx`, `.xlsx`, and `.pptx` file in one folder and load them all with the `load_any` helper.
 
----
 
 ## Summary
 
@@ -602,7 +576,6 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 - Use `UnstructuredFileLoader` when formats are mixed or unknown.
 - Loading is **step one** of RAG. Next you split, embed, and retrieve.
 
----
 
 ## Further Reading
 
