@@ -209,3 +209,14 @@ data = loader.load()
 data
 ```
 
+#### Multiple files with different formats
+We can even load a list of files with different formats.
+
+```
+files = ["markdown-sample.md", "new-Policies.txt"]
+loader = UnstructuredFileLoader(files)
+data = loader.load()
+data
+```
+
+
