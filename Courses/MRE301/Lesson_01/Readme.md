@@ -112,7 +112,7 @@ from langchain_community.document_loaders import (
 ```
 
 
-## Loading Files
+**Loading Files**
 
 **6.1 Text (TXT)**
 
@@ -566,7 +566,7 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 7. **Mini pipeline.** Put a `.txt`, `.pdf`, `.docx`, `.xlsx`, and `.pptx` file in one folder and load them all with the `load_any` helper.
 
 
-## Summary
+**Summary**
 
 - **Document loaders** connect your data to LangChain and return a list of `Document` objects.
 - Each `Document` has `page_content` (text) and `metadata` (source details).
@@ -577,7 +577,7 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 - Loading is **step one** of RAG. Next you split, embed, and retrieve.
 
 
-## Further Reading
+**Further Reading**
 
 - [LangChain document loaders documentation](https://python.langchain.com/docs/integrations/document_loaders/)
 - [Unstructured library documentation](https://docs.unstructured.io/)
