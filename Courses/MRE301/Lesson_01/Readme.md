@@ -33,4 +33,15 @@ After completing this lab you will be able to:
  - Load Word documents using `Docx2txtLoader`.
  - Utilize `UnstructuredFileLoader` for various file types.
 
+### Load from TXT files
+- The `TextLoader` is a tool designed to load textual data from various sources.
+- It is the simplest loader, reading a file as text and placing all the content into a single document.
 
+```
+loader = TextLoader("new-Policies.txt")
+loader
+data = loader.load()
+data
+pprint(data[0].page_content[:1000])
+
+```
