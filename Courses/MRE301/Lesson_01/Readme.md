@@ -1,4 +1,4 @@
-# Lesson 1: How to Load Your Documents from Different Sources
+# Lesson 1 How to Load Your Documents from Different Sources
 
 **Learning Outcomes**
 
