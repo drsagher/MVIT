@@ -56,9 +56,39 @@ Load the PDF using `PyPDFLoader` into an array of documents, where each document
 
 ```
 pdf_url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/Q81D33CdRLK6LswuQrANQQ/instructlab.pdf"
-
 loader = PyPDFLoader(pdf_url)
-
 pages = loader.load_and_split()
+print(pages[0])
+# Display the first three pages of the PDF.
+for p,page in enumerate(pages[0:3]):
+    print(f"page number {p+1}")
+    print(page)
+
 ```
+
+#### PyMuPDFLoader
+`PyMuPDFLoader` is the fastest of the PDF parsing options. It provides detailed metadata about the PDF and its pages, and returns one document per page.
+
+```
+loader = PyMuPDFLoader(pdf_url)
+loader
+data = loader.load()
+print(data[0])
+```
+
+The `metadata` attribute reveals that `PyMuPDFLoader` provides more detailed metadata information than `PyPDFLoader`.
+
+### Load from Markdown files
+
+Sometimes, our file source might be in Markdown format. LangChain provides the `UnstructuredMarkdownLoader` to load content from Markdown files.
+
+```
+!wget 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/eMSP5vJjj9yOfAacLZRWsg/markdown-sample.md'
+markdown_path = "markdown-sample.md"
+loader = UnstructuredMarkdownLoader(markdown_path)
+loader
+data = loader.load()
+data
+```
+
 
