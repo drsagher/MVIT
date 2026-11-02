@@ -584,3 +584,4 @@ Unknown or mixed formats?          -> UnstructuredFileLoader
 - [pandas `read_excel` reference](https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html)
 - [python-pptx documentation](https://python-pptx.readthedocs.io/)
 - [jq manual](https://jqlang.github.io/jq/manual/)
+- [Colab Notebook Link](https://colab.research.google.com/drive/1jAmufuWph_6OPhc7ovN58DAUGkyzlkS-?usp=sharing)
