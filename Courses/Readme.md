@@ -172,7 +172,7 @@ Micro Learning Modules are bite-sized, self-contained learning units that focus 
 
 [MRE-923 Prompt Engineering for Developers](MRE101/Readme.md)
 
-[MRE-924 Building RAG Agents with LLMs](MRE301/Readme.md)
+[MRE-301 Generative AI Applications with RAG and LangChain](MRE301/Readme.md)
 
 [MRE-925 Designing Effective Prompts for Intelligent Language Models](PE/Readme.md)
 
