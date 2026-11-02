@@ -79,11 +79,11 @@ Source file  ──►  Loader  ──►  [Document, Document, ...]  ──► 
 Install the required packages:
 
 ```bash
-pip install langchain langchain-community
-pip install pypdf pymupdf
-pip install "unstructured[md,docx,pptx,xlsx]"
-pip install jq docx2txt beautifulsoup4
-pip install pandas openpyxl python-pptx
+!pip install langchain langchain-community
+!pip install pypdf pymupdf
+!pip install "unstructured[md,docx,pptx,xlsx]"
+!pip install jq docx2txt beautifulsoup4
+!pip install pandas openpyxl python-pptx
 ```
 
 > **Note:** `jq` can be difficult to install on Windows. Use WSL, or use a pre-configured notebook environment.
