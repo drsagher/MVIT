@@ -99,3 +99,38 @@ You will use `split_text` function to operate the split.
 You can also use the following code to add metadata to the text, forming it into a `document` object using LangChain.
 
 ### Recursively Split by Character
+
+This text splitter is the recommended one for generic text. It is parameterized by a list of characters, and it tries to split on them in order until the chunks are small enough. The default list is `["\n\n", "\n", " ", ""]`.
+
+It processes the large text by attempting to split it by the first character, `\n\n`. If the first split by \n\n results in chunks that are still too large, it moves to the next character, `\n`, and attempts to split by it. This process continues through the list of characters until the chunks are less than the specified chunk size.
+
+This method aims to keep all paragraphs (then sentences, then words) together as much as possible, as these are generally the most semantically related pieces of text.
+
+- **How the text is split**: by list of characters.
+- **How the chunk size is measured**: by number of characters.
+
+The following code is showing how to implement it.
+
+The `RecursiveCharacterTextSplitter` class from LangChain is used to implement it.
+- You use the default separator list, which is `["\n\n", "\n", " ", ""]`.
+- Chunk size is set to `100`.
+- Chunk overlap is set to `20`.
+- And the length function is `len`.
+
+Here, you are using the same document "companypolicies.txt" from earlier as an example to show the performance of `RecursiveCharacterTextSplitter`.
+
+```
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=100,
+    chunk_overlap=20,
+    length_function=len,
+)
+texts = text_splitter.create_documents([companypolicies])
+texts
+len(texts)
+```
+
+### Split Code
+
+
