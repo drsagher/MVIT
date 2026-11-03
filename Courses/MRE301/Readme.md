@@ -7,3 +7,5 @@ After completing this course, you will be able to:
   -	Set up a simple Gradio interface for model interaction and construct a QA bot using LangChain and LLM to answer questions from loaded documents.
 
 [Lesson 1 How to Load Your Documents from Different Sources](Lesson_01/Readme.md)
+
+[Lesson 2 Apply Text Splitting Techniques to Enhance Model Responsiveness](Lesson_02/Readme.md)
