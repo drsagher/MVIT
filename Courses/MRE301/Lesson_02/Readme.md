@@ -18,3 +18,45 @@ For this lab, you will use the following libraries:
 
 *   [`langchain`, `langchain-text-splitters`](https://www.langchain.com/) for using relevant features and text splitters from Langchain.
 *   [`lxml`](https://pypi.org/project/lxml/) for libxml2 and libxslt libraries, which is used for splitting html text.
+
+**Installing required libraries**
+```
+%%capture
+!pip install "langchain==0.2.7"
+!pip install "langchain-core==0.2.20"
+!pip install "langchain-text-splitters==0.2.2"
+!pip install "lxml==5.2.2"
+```
+
+## Text splitters
+
+**Key parameters**
+
+When using the splitter, you can customize several key parameters to fit your needs:
+- **separator**: Define the characters that will be used for splitting the text.
+- **chunk_size**: Specify the maximum size of your chunks to ensure they are as granular or broad as needed.
+- **chunk_overlap**: Maintain context between chunks by setting the `chunk_overlap` parameter, which determines the number of characters that overlap between consecutive chunks. This helps ensure that information isn't lost at the chunk boundaries.
+- **length_function**: Define how the length of chunks is calculated.
+
+
+### Document object
+
+Before introducing the splitters, let's take a look at the document object in LangChain, which is a data structure used to represent and manage text data in RAG process.
+
+A Document object in LangChain contains information about some data. It has two attributes:
+
+- `page_content: str`: The content of this document. Currently is only a string.
+- `metadata: dict`: Arbitrary metadata associated with this document. Can track the document id, file name, etc.
+
+```
+from langchain_core.documents import Document
+Document(page_content="""Python is an interpreted high-level general-purpose programming language. 
+                        Python's design philosophy emphasizes code readability with its notable use of significant indentation.""",
+         metadata={
+             'my_document_id' : 234234,
+             'my_document_source' : "About Python",
+             'my_document_create_time' : 1680013019
+         })
+```
+
+
