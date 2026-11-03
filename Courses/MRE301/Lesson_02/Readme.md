@@ -59,4 +59,43 @@ Document(page_content="""Python is an interpreted high-level general-purpose pro
          })
 ```
 
+### Split by Character
 
+This is the simplest method, which splits the text based on characters (by default `"\n\n"`) and measures chunk length by the number of characters.
+- **How the text is split**: By single character.
+- **How the chunk size is measured**: By number of characters.
+
+
+Let's see how to implement this method using code.
+
+In the following code, you will use `CharacterTextSplitter` to split the document by character. 
+- Separator: Set to `''`, meaning that any character can act as a separator once the chunk size reaches the set limit.
+- Chunk size: Set to `200`, meaning that once a chunk reaches 200 characters, it will be split.
+- Chunk overlap: Set to `20`, meaning there will be `20` characters overlapping between chunks.
+- Length function: Set to `len`.
+
+
+```
+from langchain.text_splitter import CharacterTextSplitter
+
+text_splitter = CharacterTextSplitter(
+    separator="",
+    chunk_size=200,
+    chunk_overlap=20,
+    length_function=len,
+)
+
+texts = text_splitter.split_text(companypolicies)
+texts
+len(texts)
+
+texts = text_splitter.create_documents([companypolicies], metadatas=[{"document":"Company Policies"}])  # pass the metadata as well
+
+texts[0]
+```
+
+You will use `split_text` function to operate the split.
+
+You can also use the following code to add metadata to the text, forming it into a `document` object using LangChain.
+
+### Recursively Split by Character
