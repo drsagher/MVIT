@@ -1,80 +1,15 @@
 # Lesson 2: Apply Text Splitting Techniques to Enhance Model Responsiveness
 
-Here is an introduction paragraph for Lesson 2, written to open the chapter before the first section:
+> **Level:** Beginner to Intermediate  |  **Time:** about 90 minutes  |  **Language:** Python
+> **Libraries:** `langchain`, `langchain-text-splitters`, `lxml`
+>
+> **How every section works:** 📖 a short **story** → 💡 a plain **explanation** → 💻 **one single code block** that you can copy and run from top to bottom.
 
-**Introduction**
+## Introduction
 
 Imagine handing someone a 500-page book and asking them a question about one small rule on page 312. They would not read every page again. They would flip to the right chapter and read only the part that matters. AI models work in a very similar way. They can only read a limited amount of text at one time, so large documents such as policy handbooks, websites, or code files must first be cut into smaller, meaningful pieces called **chunks**. This cutting step is called **text splitting**, and it is one of the most important steps in building a Retrieval-Augmented Generation (RAG) system. If the pieces are cut well, the system finds the right information quickly and gives accurate answers. If they are cut badly, with sentences broken in half or many topics mixed together, even a powerful model will give weak or wrong responses. In this lesson, you will learn how text splitting works, why settings like `chunk_size` and `chunk_overlap` matter, and how to use LangChain's splitters for plain text, code, Markdown, HTML, and JSON. By the end, you will be able to choose the right splitter for any document and prepare your data so that your AI responds with speed and precision.
 
-## 1. Why Do We Split Text? 
-
-Imagine you have a **giant pizza**. 🍕
-
-You cannot put the whole pizza in your mouth at once. So you cut it into **slices**. Each slice is small enough to hold and eat, and each slice still tastes like pizza.
-
-Text is the same:
-
-| Pizza world | Text world |
-|---|---|
-| Whole pizza | A long document (a 200-page policy file, a book, a website) |
-| A slice | A **chunk** of text |
-| Size of a slice | `chunk_size` |
-| A bit of cheese shared between two slices | `chunk_overlap` |
-| The knife | The **text splitter** |
-
-AI models (like ChatGPT or Claude) have a **limited "mouth"**. This is called the **context window**. They can only read a certain amount of text at one time. If your document is bigger than that, we must slice it up first.
-
-### A bad cut vs. a good cut
-
-Look at this sentence:
-
-> "The cat sat on the mat. It was a sunny day."
-
-- **Bad cut** (in the middle of a word): `"The cat sat on the m"` | `"at. It was a sunny day."`
-- **Good cut** (between sentences): `"The cat sat on the mat."` | `"It was a sunny day."`
-
-A good splitter tries to **cut at natural places**: paragraphs first, then sentences, then words. That way every slice still **makes sense on its own**.
-
-
-
-## 2. Where Splitting Fits in RAG
-
-**RAG** stands for **Retrieval-Augmented Generation**. In baby words:
-
-> The AI does not know your private documents. So before it answers, we **look up** the best pieces from your documents and **hand them to the AI** like a cheat sheet. Then the AI writes the answer using that cheat sheet.
-
-Here is the whole journey:
-
-```
- ┌──────────────┐   ┌───────────────┐   ┌──────────────┐   ┌──────────────┐
- │ 1. LOAD      │──▶│ 2. SPLIT      │──▶│ 3. EMBED     │──▶│ 4. STORE     │
- │ your files   │   │ into chunks   │   │ chunks into  │   │ in a vector  │
- │ (PDF, HTML)  │   │ (THIS LESSON) │   │ numbers      │   │ database     │
- └──────────────┘   └───────────────┘   └──────────────┘   └──────┬───────┘
-                                                                  │
- ┌──────────────┐   ┌───────────────┐   ┌──────────────┐          │
- │ 7. ANSWER    │◀──│ 6. GENERATE   │◀──│ 5. RETRIEVE  │◀─────────┘
- │ to the user  │   │ LLM reads the │   │ best chunks  │   user asks a
- │              │   │ chunks        │   │ for question │   question
- └──────────────┘   └───────────────┘   └──────────────┘
-```
-
-### Why splitting matters so much
-
-| If chunks are... | What goes wrong |
-|---|---|
-| **Too big** | Each chunk mixes many topics, so the search gets "blurry". The model also wastes space on irrelevant text. |
-| **Too small** | Each chunk loses its meaning ("It was approved by them." Who? What?). |
-| **Cut in the wrong place** | An answer is split in half, and retrieval finds only half of it. |
-| **Just right** | Each chunk is one clear idea. Search is sharp and answers are accurate. |
-
-**Golden rule:** *Good chunks = good retrieval = good answers.*
-
-
-
-## 3. Objectives
-
-After completing this lesson you will be able to:
+## What You Will Learn
 
 - Explain **why** text splitting is needed and how it affects RAG quality.
 - Use the key parameters: `separator`, `chunk_size`, `chunk_overlap`, `length_function`.
@@ -83,15 +18,138 @@ After completing this lesson you will be able to:
 - Combine a structure-aware splitter with a size-based splitter.
 - Choose sensible chunk sizes and pick the right splitter for each file type.
 
+## Map of This Lesson
 
+- 🍕 **Foundations:** Why Do We Split Text, Where Splitting Fits in RAG
+- 🧰 **Preparation:** Setup and Installation, Key Parameters, The Document Object, Three Ways to Call a Splitter
+- ✂️ **The Splitters:** Split by Character, Recursive Split, Split Code, Markdown Headers, HTML, JSON, Tokens
+- 🧩 **Putting It Together:** Two-Stage Pipeline, Choosing Sizes, Which Splitter to Use, Troubleshooting, Summary
+- 🏋️ **Practice:** Exercises and Solutions
 
-## 4. Setup and Installation
+## Why Do We Split Text?
 
-For this lesson you will use:
+### 📖 The Story
+
+Pip the baker made a **giant pizza** for a party. A hungry guest tried to eat the whole thing in one bite and got stuck. 😅 Pip grabbed a knife and cut the pizza into **slices**. Now every guest could hold a slice, and every slice still tasted like pizza.
+
+But Pip learned something important. If he cut the pizza **right through the middle of a mushroom**, the slice looked messy. If he cut **between the toppings**, each slice looked neat. A good cut follows the natural lines of the pizza.
+
+### 💡 The Explanation
+
+AI models like ChatGPT or Claude have a limited "mouth", called the **context window**. They can only read a certain amount of text at one time. A long document is the giant pizza, and we must slice it first.
+
+| Pizza world | Text world |
+|---|---|
+| Whole pizza | A long document (a 200-page policy file, a book, a website) |
+| A slice | A **chunk** of text |
+| Size of a slice | `chunk_size` |
+| A little cheese shared between two slices | `chunk_overlap` |
+| The knife | The **text splitter** |
+
+A **good splitter** cuts at natural places: paragraphs first, then sentences, then words. That way every chunk **makes sense on its own**.
+
+### 💻 The Code
+
+The code below shows a bad cut (blind, in the middle of a word) next to a good cut (at the end of a sentence).
+
+```python
+import re
+
+sentence = "The cat sat on the mat. It was a sunny day."
+
+# Bad cut: blindly cut after 20 characters
+bad_cut = [sentence[:20], sentence[20:]]
+print("BAD :", bad_cut)
+
+# Good cut: cut right after each full stop
+good_cut = re.split(r"(?<=\.)\s", sentence)
+print("GOOD:", good_cut)
+
+# Output:
+# BAD : ['The cat sat on the m', 'at. It was a sunny day.']
+# GOOD: ['The cat sat on the mat.', 'It was a sunny day.']
+```
+
+## Where Splitting Fits in RAG
+
+### 📖 The Story
+
+Maya is a student with an exam tomorrow. She does not remember the whole textbook, but she has a clever habit. When a question appears, she **looks up the best pages** in her notes, reads them quickly, and then **writes her answer** using those pages.
+
+Now imagine her notes are one giant, uncut scroll. Finding the right part would take forever. But if her notes are cut into **neat, labelled cards**, she finds the answer in seconds. The quality of her cards decides the quality of her answer.
+
+### 💡 The Explanation
+
+**RAG** stands for **Retrieval-Augmented Generation**. The AI does not know your private documents, so before it answers we **look up** the best pieces and **hand them to the AI** like a cheat sheet.
+
+The full journey is: **Load** the files → **Split** into chunks (**this lesson**) → **Embed** chunks into numbers → **Store** them in a vector database → **Retrieve** the best chunks for a question → **Generate** an answer with the LLM → **Answer** the user.
+
+| If chunks are... | What goes wrong |
+|---|---|
+| **Too big** | Each chunk mixes many topics, so search gets "blurry". The model also wastes space on irrelevant text. |
+| **Too small** | Each chunk loses its meaning ("It was approved by them." Who? What?). |
+| **Cut in the wrong place** | An answer is split in half, and retrieval finds only half of it. |
+| **Just right** | Each chunk is one clear idea. Search is sharp and answers are accurate. |
+
+**Golden rule:** *Good chunks = good retrieval = good answers.*
+
+### 💻 The Code
+
+This is a tiny, runnable skeleton of the whole journey. The embedding and storing steps are replaced by a simple word-matching search, so you can run it without any API key. (Full RAG systems use embeddings instead.)
+
+```python
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+# 1) LOAD: here we simply use a string instead of a real file
+document = (
+    "Employees receive 20 days of paid annual leave per year.\n\n"
+    "Sick leave is granted for up to 10 days per year.\n\n"
+    "Passwords must be changed every 90 days."
+)
+
+# 2) SPLIT: the step this whole lesson is about
+splitter = RecursiveCharacterTextSplitter(chunk_size=60, chunk_overlap=0)
+chunks = splitter.split_text(document)
+
+# 3) EMBED + 4) STORE: skipped, we keep chunks in a plain Python list
+
+# 5) RETRIEVE: pick the chunk that shares the most words with the question
+def retrieve(question, chunks):
+    q_words = set(question.lower().split())
+    return max(chunks, key=lambda c: len(q_words & set(c.lower().split())))
+
+best_chunk = retrieve("How many days of sick leave?", chunks)
+
+# 6) GENERATE: a real system would send best_chunk to an LLM here
+print("Chunks:", chunks)
+print("Best chunk for the question:", best_chunk)
+
+# Output:
+# Chunks: ['Employees receive 20 days of paid annual leave per year.',
+#          'Sick leave is granted for up to 10 days per year.',
+#          'Passwords must be changed every 90 days.']
+# Best chunk for the question: Sick leave is granted for up to 10 days per year.
+```
+
+## Setup and Installation
+
+### 📖 The Story
+
+Before Pip the baker can cook, he gathers his tools: a knife, a tray, and an oven. Programmers do the same. We install our libraries first, and we also prepare a small sample document, so that every experiment in this lesson has something to cut.
+
+### 💡 The Explanation
+
+You will use:
 
 - [`langchain`, `langchain-text-splitters`](https://www.langchain.com/): the splitters themselves.
 - [`lxml`](https://pypi.org/project/lxml/): needed for splitting HTML.
-- `tiktoken` (optional): needed only for token-based splitting in Section 14.
+- `tiktoken` (optional): needed only for token-based splitting.
+
+`%%capture` and `!pip` work in Jupyter or Colab notebooks. In a normal terminal, run `pip install ...` without the `!`.
+
+The original lab used a file called `companypolicies.txt` but never showed how to create it. Below, we define a small sample called `companypolicies` so every example in this lesson is **runnable on its own**. Many later code blocks use this variable, so **run this block first**.
+
+### 💻 The Code
 
 ```python
 %%capture
@@ -99,16 +157,9 @@ For this lesson you will use:
 !pip install "langchain-core==0.2.20"
 !pip install "langchain-text-splitters==0.2.2"
 !pip install "lxml==5.2.2"
-!pip install tiktoken        # optional, only for Section 14
-```
+!pip install tiktoken        # optional, only for the token section
 
-> **Note:** `%%capture` and `!pip` work in Jupyter or Colab notebooks. In a normal terminal, run `pip install ...` without the `!`.
-
-### Our sample document: `companypolicies`
-
-The original lab loads a file called `companypolicies.txt`, but never shows how it was created. To make every example below **runnable on its own**, we define a small sample text. You can replace it with your own file later.
-
-```python
+# ---- Sample document used throughout the lesson ----
 companypolicies = """Company Policies Handbook
 
 1. Code of Conduct
@@ -131,62 +182,85 @@ Confidential data must never be shared through personal email accounts.
 Lost or stolen devices must be reported to the IT team within 24 hours.
 """
 
-print(len(companypolicies), "characters")
+print(len(companypolicies), "characters")   # Output: 927 characters
+
+# ---- Optional: load your own real file instead ----
+# with open("companypolicies.txt", "r", encoding="utf-8") as f:
+#     companypolicies = f.read()
 ```
 
-**Loading from a real file instead** (use this when you have `companypolicies.txt`):
+## Key Parameters Explained
 
-```python
-with open("companypolicies.txt", "r", encoding="utf-8") as f:
-    companypolicies = f.read()
-```
+### 📖 The Story
 
+Pip's cutting machine has four dials. The first dial, **Dotted Line**, tells the machine where it likes to cut. The second, **Slice Size**, sets the biggest slice allowed. The third, **Shared Cheese**, makes neighbouring slices share a bit of topping so no flavour is lost at the edge. The fourth, **Ruler Type**, decides whether slices are measured in centimetres or weighed in grams.
 
+One day Pip set the Shared Cheese dial *bigger than* the Slice Size dial. The machine beeped angrily and refused to start. A slice cannot share more cheese than it holds!
 
-## 5. Key Parameters Explained
+### 💡 The Explanation
 
-When you create a splitter, you control it with these knobs:
-
-| Parameter | What it does | Baby explanation |
+| Dial | Parameter | What it does |
 |---|---|---|
-| `separator` / `separators` | The character(s) where the splitter prefers to cut | *"Where is the dotted line on the paper?"* |
-| `chunk_size` | The **maximum** size of one chunk | *"How big can one slice be?"* |
-| `chunk_overlap` | How much of the end of chunk A is repeated at the start of chunk B | *"A little shared cheese between slices so nothing is lost at the edge."* |
-| `length_function` | How size is measured (`len` = characters; a token counter = tokens) | *"Do we measure the slice with a ruler (characters) or by weighing it (tokens)?"* |
+| Dotted Line | `separator` / `separators` | The character(s) where the splitter prefers to cut |
+| Slice Size | `chunk_size` | The **maximum** size of one chunk |
+| Shared Cheese | `chunk_overlap` | How much of the end of chunk A is repeated at the start of chunk B |
+| Ruler Type | `length_function` | How size is measured (`len` = characters; a token counter = tokens) |
 
-### Why overlap helps: a picture
+**Why overlap helps.** Without overlap, an important sentence can be cut in half: `"... at least 12 char"` | `"acters long and changed ..."`. With overlap, both chunks share the middle part, so whichever chunk is retrieved, the idea survives.
 
-Without overlap, an important sentence can be cut in half:
-
-```
-Chunk 1: "... Passwords must be at least 12 char"
-Chunk 2: "acters long and changed every 90 days ..."
-```
-
-With overlap, both chunks share the middle part:
-
-```
-Chunk 1: "... Passwords must be at least 12 characters long"
-Chunk 2: "at least 12 characters long and changed every 90 days ..."
-```
-
-Now whichever chunk is retrieved, the idea survives.
-
-### Important facts beginners often miss
+**Facts beginners often miss:**
 
 1. `chunk_size` is a **maximum**, not an exact size. Real chunks are often shorter.
-2. Overlap must be **smaller** than chunk size. If `chunk_overlap >= chunk_size`, LangChain raises an error.
-3. Splitters work by **splitting first on the separator, then merging small pieces back together** until the chunk size limit is reached.
-4. A single piece that is already bigger than `chunk_size` (and cannot be split further by that separator) is **kept whole**, and you get a warning. Section 8 shows this.
+2. `chunk_overlap` must be **smaller** than `chunk_size`, otherwise LangChain raises an error.
+3. Splitters first **split on the separator**, then **merge small pieces back together** until the size limit is reached.
+4. A single piece that is already bigger than `chunk_size`, and cannot be split further by that separator, is **kept whole** and you get a warning.
 
+### 💻 The Code
 
+```python
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-## 6. The Document Object
+# All four dials in one splitter
+splitter = RecursiveCharacterTextSplitter(
+    separators=["\n\n", "\n", " ", ""],  # Dotted Line: try these cuts, in order
+    chunk_size=100,                      # Slice Size: max 100 units per chunk
+    chunk_overlap=20,                    # Shared Cheese: 20 units shared
+    length_function=len,                 # Ruler Type: count characters
+)
+chunks = splitter.split_text(companypolicies)
+print("Chunks created:", len(chunks))
+print("Longest chunk :", max(len(c) for c in chunks), "characters")
 
-Before we meet the splitters, we need to meet what they produce. In LangChain, a text chunk is wrapped in a **`Document`** object. Think of it as a **labelled box**:
+# Output:
+# Chunks created: 13
+# Longest chunk : 98 characters   (never above chunk_size)
+
+# What happens when Shared Cheese is bigger than Slice Size?
+try:
+    RecursiveCharacterTextSplitter(chunk_size=20, chunk_overlap=50)
+except ValueError as error:
+    print("Error:", error)
+
+# Output:
+# Error: Got a larger chunk overlap (50) than chunk size (20), should be smaller.
+```
+
+## The Document Object
+
+### 📖 The Story
+
+At the post office, Rosa never throws a letter into the sack bare. She puts every letter in a **box** and sticks a **label** on it: where it came from, what day it arrived, and who sent it. Later, when someone asks "where did this letter come from?", the label gives the answer instantly.
+
+### 💡 The Explanation
+
+In LangChain, every text chunk lives inside a **`Document`** object, the labelled box:
 
 - `page_content` (a `str`): the actual text inside the box.
-- `metadata` (a `dict`): the sticky label on the box. It can hold a file name, page number, source, section title, date, and so on.
+- `metadata` (a `dict`): the sticky label. It can hold a file name, page number, source, section title, date, and so on.
+
+**Why metadata matters in RAG:** if the AI answers *"Employees get 20 days of leave"*, a good system can also say *"Source: Company Policies, section 3"*. That is possible only because the chunk carried its label with it.
+
+### 💻 The Code
 
 ```python
 from langchain_core.documents import Document
@@ -201,294 +275,278 @@ doc = Document(
     },
 )
 
-print(doc.page_content)
-print(doc.metadata)
-print(doc.metadata["my_document_source"])
+print(doc.page_content)                    # the text inside the box
+print(doc.metadata)                        # the whole label
+print(doc.metadata["my_document_source"])  # one item from the label
+
+# Output (last line): About Python
 ```
 
-### Why metadata matters in RAG
+## Three Ways to Call a Splitter
 
-Imagine the AI answers: *"Employees get 20 days of leave."* A good RAG system can also say: *"Source: Company Policies, section 3."* That is possible only because the chunk carried its **metadata** with it.
+### 📖 The Story
 
+Pip's cutting machine has three buttons. Button one takes a **plain pizza** and returns **plain slices**. Button two takes a plain pizza but also lets you **stick a label** on every slice. Button three takes a pizza that **already has a label** and makes sure every slice **inherits that label**.
 
-
-## 7. Three Ways to Call a Splitter
-
-Every LangChain splitter has similar methods. Knowing which to use saves confusion:
+### 💡 The Explanation
 
 | Method | Input | Output | Use it when |
 |---|---|---|---|
 | `split_text(text)` | one string | list of **strings** | You just want raw text pieces |
-| `create_documents([text1, text2], metadatas=[...])` | list of strings | list of **Document** objects | You have raw strings and want metadata attached |
-| `split_documents(docs)` | list of **Document** objects | list of **Document** objects | You already loaded `Document`s (for example from a loader) and want to split them while **keeping** their metadata |
+| `create_documents([text], metadatas=[...])` | list of strings | list of **Document** objects | You have raw strings and want to attach metadata |
+| `split_documents(docs)` | list of **Document** objects | list of **Document** objects | You already have `Document`s (for example from a loader) and want to keep their metadata |
 
-Quick demo:
+### 💻 The Code
+
+This block uses `companypolicies` from the Setup section.
 
 ```python
+from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=60, chunk_overlap=10)
 
-# 1) Strings in, strings out
+# Button 1: strings in, strings out
 strings = splitter.split_text(companypolicies)
-print(type(strings[0]))        # <class 'str'>
+print(type(strings[0]))             # <class 'str'>
 
-# 2) Strings in, Documents out (add metadata yourself)
+# Button 2: strings in, Documents out (you add the label)
 docs = splitter.create_documents(
     [companypolicies],
     metadatas=[{"source": "Company Policies"}],
 )
-print(type(docs[0]))           # Document
-print(docs[0].metadata)        # {'source': 'Company Policies'}
+print(type(docs[0]))                # Document
+print(docs[0].metadata)             # {'source': 'Company Policies'}
 
-# 3) Documents in, Documents out (metadata is copied to every chunk)
+# Button 3: Documents in, Documents out (labels are copied to every chunk)
 original = [Document(page_content=companypolicies, metadata={"source": "Company Policies"})]
 chunked = splitter.split_documents(original)
 print(len(chunked), chunked[0].metadata)
 ```
 
+## Split by Character
 
+### 📖 The Story
 
-## 8. Split by Character
+Tom the tailor owns a pair of scissors that can cut **only along one kind of line**. If you tell him "cut at the blank lines", he cuts neatly between paragraphs. If you tell him "cut anywhere", he cuts every 40 centimetres without looking, even through the middle of a button. When a piece of cloth is too big and has no blank line to cut at, he just shrugs and hands it over whole, because he knows only one trick.
 
-This is the **simplest** splitter.
+### 💡 The Explanation
 
-- **How the text is split:** on one separator you choose (default `"\n\n"`, a blank line).
+`CharacterTextSplitter` is the **simplest** splitter.
+
+- **How the text is split:** on **one** separator you choose (the default is `"\n\n"`, a blank line).
 - **How chunk size is measured:** by number of characters.
 
-### Step 1: Meet the splitter with `separator=""`
+The code below explores four ideas, one after another:
 
-When `separator=""`, **any character** may be a cutting point. The splitter simply cuts every `chunk_size` characters. It is the "blind knife".
+1. `separator=""`: the **blind knife**. It cuts every `chunk_size` characters, even inside words.
+2. **Overlap**: a little repeated text at the start of the next chunk, so words are not lost.
+3. **A real separator** (`"\n\n"` or `"\n"`): cuts at natural places.
+4. **The oversize problem**: if a piece is too big and there is only one separator, the splitter keeps the piece whole and warns you.
+
+### 💻 The Code
+
+The first part uses `companypolicies` from the Setup section.
 
 ```python
 from langchain.text_splitter import CharacterTextSplitter
 
+# ---------- Part 1: the blind knife on our policies ----------
 text_splitter = CharacterTextSplitter(
-    separator="",        # cut anywhere
-    chunk_size=200,      # max 200 characters per chunk
-    chunk_overlap=20,    # share 20 characters between neighbours
-    length_function=len, # measure length in characters
+    separator="",         # cut anywhere
+    chunk_size=200,       # max 200 characters per chunk
+    chunk_overlap=20,     # share 20 characters between neighbours
+    length_function=len,  # measure length in characters
 )
-
 texts = text_splitter.split_text(companypolicies)
-print("Number of chunks:", len(texts))
-print(texts[0])
-```
+print("Number of chunks:", len(texts))            # Output: 6
 
-You can also create `Document` objects with metadata:
-
-```python
+# Same split, but as Document objects that carry metadata
 docs = text_splitter.create_documents(
     [companypolicies],
     metadatas=[{"document": "Company Policies"}],
 )
-print(docs[0])
-```
+print(docs[0].metadata)                           # {'document': 'Company Policies'}
 
-### Step 2: A tiny example you can verify by eye
+# ---------- Part 2: a tiny text you can check by eye ----------
+story = ("The cat sat on the mat. It was a sunny day. The cat was very happy. "
+         "Then a dog came. The dog barked loudly. The cat ran away.")
 
-```python
-story = "The cat sat on the mat. It was a sunny day. The cat was very happy. Then a dog came. The dog barked loudly. The cat ran away."
-
-splitter = CharacterTextSplitter(separator="", chunk_size=40, chunk_overlap=0)
-for chunk in splitter.split_text(story):
+no_overlap = CharacterTextSplitter(separator="", chunk_size=40, chunk_overlap=0)
+for chunk in no_overlap.split_text(story):
     print(repr(chunk))
-```
+# Output:
+# 'The cat sat on the mat. It was a sunny d'
+# 'ay. The cat was very happy. Then a dog c'
+# 'ame. The dog barked loudly. The cat ran'
+# 'away.'
+# Notice: "day" was cut into 'd' + 'ay', and "came" into 'c' + 'ame'.
 
-**Output:**
-
-```
-'The cat sat on the mat. It was a sunny d'
-'ay. The cat was very happy. Then a dog c'
-'ame. The dog barked loudly. The cat ran'
-'away.'
-```
-
-Notice how the splitter cut the word *"day"* into `d` and `ay`, and *"came"* into `c` and `ame`. That is the downside of a blind knife.
-
-### Step 3: Now add overlap
-
-```python
-splitter = CharacterTextSplitter(separator="", chunk_size=40, chunk_overlap=10)
-for chunk in splitter.split_text(story):
+# ---------- Part 3: add overlap ----------
+with_overlap = CharacterTextSplitter(separator="", chunk_size=40, chunk_overlap=10)
+for chunk in with_overlap.split_text(story):
     print(repr(chunk))
-```
+# Output:
+# 'The cat sat on the mat. It was a sunny d'
+# 'a sunny day. The cat was very happy. Th'
+# 'happy. Then a dog came. The dog barked'
+# 'og barked loudly. The cat ran away.'
+# Each chunk now starts with a bit of the previous one, so "day" appears whole.
 
-**Output:**
-
-```
-'The cat sat on the mat. It was a sunny d'
-'a sunny day. The cat was very happy. Th'
-'happy. Then a dog came. The dog barked'
-'og barked loudly. The cat ran away.'
-```
-
-Each chunk now **starts with a little bit of the previous chunk** (for example `a sunny d` appears at the end of chunk 1 and the start of chunk 2). The word "day" now appears whole in chunk 2.
-
-### Step 4: Using a real separator (`"\n\n"` and `"\n"`)
-
-Usually you want the knife to cut at **natural places**, such as paragraph breaks. Let's use a tiny text with three paragraphs:
-
-```python
+# ---------- Part 4: real separators on three paragraphs ----------
 para = (
     "Paragraph one is about cats.\nCats are small.\n\n"
     "Paragraph two is about dogs.\nDogs are loud.\n\n"
     "Paragraph three is about birds.\nBirds can fly."
 )
-```
 
-**Cut on blank lines (`"\n\n"`) with a big enough chunk size:**
+# Cut on blank lines: one paragraph per chunk
+by_paragraph = CharacterTextSplitter(separator="\n\n", chunk_size=50, chunk_overlap=0)
+print(by_paragraph.split_text(para))
+# Output:
+# ['Paragraph one is about cats.\nCats are small.',
+#  'Paragraph two is about dogs.\nDogs are loud.',
+#  'Paragraph three is about birds.\nBirds can fly.']
 
-```python
-splitter = CharacterTextSplitter(separator="\n\n", chunk_size=50, chunk_overlap=0)
-for chunk in splitter.split_text(para):
-    print(repr(chunk))
-```
+# Cut on single new lines with a small chunk size: one line per chunk
+by_line = CharacterTextSplitter(separator="\n", chunk_size=35, chunk_overlap=0)
+print(len(by_line.split_text(para)), "chunks")    # Output: 6 chunks
 
-```
-'Paragraph one is about cats.\nCats are small.'
-'Paragraph two is about dogs.\nDogs are loud.'
-'Paragraph three is about birds.\nBirds can fly.'
-```
-
-One paragraph per chunk. 🎉
-
-**Cut on single new lines (`"\n"`) with a small chunk size:**
-
-```python
-splitter = CharacterTextSplitter(separator="\n", chunk_size=30, chunk_overlap=0)
-for chunk in splitter.split_text(para):
-    print(repr(chunk))
-```
-
-Every line becomes its own chunk (6 chunks), because two lines together would be longer than 30 characters.
-
-**What happens when a paragraph is too big for the chunk size?**
-
-```python
-splitter = CharacterTextSplitter(separator="\n\n", chunk_size=30, chunk_overlap=0)
-chunks = splitter.split_text(para)
+# The oversize problem: paragraphs are 43 to 46 characters, but the limit is 30
+too_small = CharacterTextSplitter(separator="\n\n", chunk_size=30, chunk_overlap=0)
+chunks = too_small.split_text(para)
 print([len(c) for c in chunks])
+# Output: [44, 43, 46]
+# LangChain also prints warnings like:
+# "Created a chunk of size 44, which is longer than the specified 30"
+# The splitter has only ONE separator, so it cannot cut the paragraphs any smaller.
+# This exact problem is solved by the recursive splitter in the next section.
 ```
 
-You will see a warning like `Created a chunk of size 44, which is longer than the specified 30`, and the chunks stay as big paragraphs. **`CharacterTextSplitter` only uses ONE separator.** If a piece is too large, it does not know what else to try. This is the exact problem the *recursive* splitter solves.
+## Recursively Split by Character
 
-> **Takeaway:** `CharacterTextSplitter` is simple and predictable, but it is not smart. Use it when your text has a reliable single separator.
+### 📖 The Story
 
+Chef Lina must cut a huge cake so that **no piece is bigger than her palm**. She is clever and tries cuts in a smart order. First she cuts **between the big layers**. A layer still too big? She cuts **between the sections of the layer**. Still too big? She cuts **between the bites**. Only if one single bite is still enormous does she cut it crumb by crumb.
 
+Lina follows one rule: *use the biggest, most natural cut first, and only get smaller when you must.* That is why her pieces always look tidy, and why she never leaves a giant piece on the plate.
 
-## 9. Recursively Split by Character
+### 💡 The Explanation
 
-This is the splitter **recommended for generic text**.
+`RecursiveCharacterTextSplitter` is the splitter **recommended for generic text**. It takes a **list** of separators and tries them in order. The default list is `["\n\n", "\n", " ", ""]`:
 
-### The idea (baby version)
+1. Paragraphs (`"\n\n"`), then
+2. Lines (`"\n"`), then
+3. Words (`" "`), then
+4. Letters (`""`), the last resort.
 
-Imagine you must cut a long cake into pieces no bigger than your palm. You try the **biggest natural cut first**:
-
-1. First try cutting between **paragraphs** (`"\n\n"`).
-2. A piece still too big? Cut between **lines** (`"\n"`).
-3. Still too big? Cut between **words** (`" "`).
-4. Still too big? Cut between **letters** (`""`), the last resort.
-
-That is **recursion**: "try the next separator on any piece that is still too big". The default separator list is `["\n\n", "\n", " ", ""]`.
-
-- **How the text is split:** by a list of separators, in order.
-- **How chunk size is measured:** by number of characters (or whatever `length_function` says).
-
-### Basic usage
-
-```python
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=100,
-    chunk_overlap=20,
-    length_function=len,
-)
-
-texts = text_splitter.create_documents([companypolicies])
-print("Number of chunks:", len(texts))
-for t in texts[:3]:
-    print(repr(t.page_content))
-```
-
-### See the "stay together" behaviour
-
-Using the sentence-level story with `chunk_size=60` and `chunk_overlap=10`:
-
-```python
-splitter = RecursiveCharacterTextSplitter(chunk_size=60, chunk_overlap=10)
-for chunk in splitter.split_text(story):
-    print(repr(chunk))
-```
-
-**Output:**
-
-```
-'The cat sat on the mat. It was a sunny day. The cat was very'
-'was very happy. Then a dog came. The dog barked loudly. The'
-'The cat ran away.'
-```
-
-Compare with `CharacterTextSplitter(separator="")`: this time **no word is cut in half**. The recursive splitter fell back to cutting on spaces (words) rather than letters.
-
-### Same paragraphs, small chunk size: no more warnings
-
-```python
-splitter = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=0)
-for chunk in splitter.split_text(para):
-    print(repr(chunk))
-```
-
-Because the recursive splitter can fall back from `"\n\n"` to `"\n"` to `" "`, it **always respects chunk size** (except in extreme cases such as one giant word).
-
-### Customising the separators
-
-You can supply your own list. For example, to prefer splitting at sentence ends:
-
-```python
-sentence_splitter = RecursiveCharacterTextSplitter(
-    separators=["\n\n", "\n", ". ", " ", ""],  # added ". " for sentences
-    chunk_size=80,
-    chunk_overlap=10,
-)
-for chunk in sentence_splitter.split_text(story):
-    print(repr(chunk))
-```
-
-### Character vs. Recursive: side by side
+"Recursive" simply means: *any piece that is still too big is split again with the next separator.* This keeps paragraphs, then sentences, then words together as much as possible, because those are the most meaningfully related pieces of text.
 
 | Feature | `CharacterTextSplitter` | `RecursiveCharacterTextSplitter` |
 |---|---|---|
 | Number of separators | One | A list, tried in order |
 | Handles oversize pieces | No (warns, keeps them big) | Yes (tries the next separator) |
-| Keeps paragraphs/sentences together | Only if the separator matches | Yes, as much as possible |
+| Keeps paragraphs and sentences together | Only if the separator matches | Yes, as much as possible |
 | Recommended for general text | Sometimes | **Yes, the default choice** |
 
+### 💻 The Code
 
-## 10. Split Code
-
-Code is not like normal text. A function should stay in one piece. The `RecursiveCharacterTextSplitter` can use **language-aware separators**, so it cuts at `class`, `def`, `function`, and similar keywords **before** falling back to blank lines and spaces.
-
-> **Correction to the original lesson:** the original showed the *normal* recursive splitter here by mistake, and used `Language` without importing it. The correct imports are below.
-
-### Which languages are supported?
+The first part uses `companypolicies` from the Setup section.
 
 ```python
-from langchain_text_splitters import Language
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-print([lang.value for lang in Language])
+# ---------- Part 1: basic usage on our policies ----------
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=100,
+    chunk_overlap=20,
+    length_function=len,
+)
+texts = text_splitter.create_documents([companypolicies])
+print("Number of chunks:", len(texts))                 # Output: 13
+for t in texts[:3]:
+    print(repr(t.page_content))
+# Output:
+# 'Company Policies Handbook'
+# '1. Code of Conduct'
+# 'All employees must act with honesty and respect. Harassment of any kind is not tolerated.'
+
+# ---------- Part 2: no word is cut in half ----------
+story = ("The cat sat on the mat. It was a sunny day. The cat was very happy. "
+         "Then a dog came. The dog barked loudly. The cat ran away.")
+
+splitter = RecursiveCharacterTextSplitter(chunk_size=60, chunk_overlap=10)
+for chunk in splitter.split_text(story):
+    print(repr(chunk))
+# Output:
+# 'The cat sat on the mat. It was a sunny day. The cat was very'
+# 'was very happy. Then a dog came. The dog barked loudly. The'
+# 'The cat ran away.'
+# Every chunk ends on a whole word, because the splitter fell back to spaces.
+
+# ---------- Part 3: the problem from the previous section is gone ----------
+para = (
+    "Paragraph one is about cats.\nCats are small.\n\n"
+    "Paragraph two is about dogs.\nDogs are loud.\n\n"
+    "Paragraph three is about birds.\nBirds can fly."
+)
+small = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=0)
+print(small.split_text(para))
+# Output:
+# ['Paragraph one is about cats.', 'Cats are small.',
+#  'Paragraph two is about dogs.', 'Dogs are loud.',
+#  'Paragraph three is about', 'birds.', 'Birds can fly.']
+# No warnings: the 31-character line was cut on a space, not in the middle of a word.
+
+# ---------- Part 4: your own list of separators ----------
+sentence_splitter = RecursiveCharacterTextSplitter(
+    separators=["\n\n", "\n", ". ", " ", ""],   # added ". " so sentences are preferred
+    chunk_size=80,
+    chunk_overlap=10,
+)
+for chunk in sentence_splitter.split_text(story):
+    print(repr(chunk))
+# Output:
+# 'The cat sat on the mat. It was a sunny day. The cat was very happy'
+# '. Then a dog came. The dog barked loudly. The cat ran away.'
+# Note: by default the separator (". ") is kept at the START of the next chunk,
+# which is why the second chunk begins with a full stop. The keep_separator
+# parameter controls this behaviour.
 ```
 
-Typical output includes: `cpp, go, java, kotlin, js, ts, php, proto, python, r, rst, ruby, rust, scala, swift, markdown, latex, html, sol, csharp, cobol, c, lua, perl, haskell, elixir, powershell` (the exact list depends on your version).
+## Split Code
 
-### Python
+### 📖 The Story
 
-The main difference from the plain recursive splitter is that you call **`.from_language(...)`** and choose a `language`. Everything else stays the same.
+Ben is a librarian for **recipe books**. He learned that you must never tear a recipe in the middle of a step, or the dish is ruined. So he marks the start of each recipe with a coloured tag, and cuts **only just before the tags**.
+
+Programming code is like recipes. A function is one complete recipe. If a splitter cuts a function in half, neither half makes sense. The code splitters work like Ben's tags: they know the **keywords that start a new recipe** (`def`, `class`, `function`, and so on) and cut right before them.
+
+### 💡 The Explanation
+
+`RecursiveCharacterTextSplitter.from_language(...)` is the same recursive splitter, but its separator list is **language-aware**. For Python, it first tries to cut before a `class`, then before a `def`, then falls back to blank lines, lines, words, and letters.
+
+> **Corrections to the original lesson:** it showed the *plain* recursive splitter here by mistake, it used `Language` without importing it, and it called the JavaScript example "JSON".
+
+Key points:
+
+- Import `Language` and pass `language=Language.PYTHON` (or `Language.JS`, `Language.JAVA`, and so on).
+- Everything else (`chunk_size`, `chunk_overlap`) works as before.
+- The same recipe works for many languages, including Java, Go, Rust, C++, PHP, Ruby, Markdown, LaTeX, and HTML.
+- More details: [LangChain code splitter docs](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/code_splitter/).
+
+### 💻 The Code
 
 ```python
 from langchain_text_splitters import RecursiveCharacterTextSplitter, Language
 
+# ---------- Which languages are supported? ----------
+print([lang.value for lang in Language])
+# Output (depends on your version): ['cpp', 'go', 'java', 'kotlin', 'js', 'ts', 'php',
+# 'proto', 'python', 'r', 'rst', 'ruby', 'rust', 'scala', 'swift', 'markdown', 'latex',
+# 'html', 'sol', 'csharp', 'cobol', 'c', 'lua', 'perl', 'haskell', 'elixir', ...]
+
+# ---------- Python ----------
 PYTHON_CODE = """
 def hello_world():
     print("Hello, World!")
@@ -500,38 +558,21 @@ hello_world()
 python_splitter = RecursiveCharacterTextSplitter.from_language(
     language=Language.PYTHON, chunk_size=50, chunk_overlap=0
 )
-python_docs = python_splitter.create_documents([PYTHON_CODE])
-for d in python_docs:
+for d in python_splitter.create_documents([PYTHON_CODE]):
     print(repr(d.page_content))
-```
+# Output:
+# 'def hello_world():\n    print("Hello, World!")'
+# '# Call the function\nhello_world()'
 
-**Output:**
+# Peek at the separators used for Python
+print(RecursiveCharacterTextSplitter.get_separators_for_language(Language.PYTHON))
+# Output: ['\nclass ', '\ndef ', '\n\tdef ', '\n\n', '\n', ' ', '']
+# Read it as: cut before a class, else before a def, else before an indented def,
+# else on blank lines, lines, words, letters.
 
-```
-'def hello_world():\n    print("Hello, World!")'
-'# Call the function\nhello_world()'
-```
-
-The function definition stays in **one** chunk, and the call stays in another.
-
-### Peek at the separators used for Python
-
-```python
-RecursiveCharacterTextSplitter.get_separators_for_language(Language.PYTHON)
-```
-
-```
-['\nclass ', '\ndef ', '\n\tdef ', '\n\n', '\n', ' ', '']
-```
-
-Read it like this: *"First try to cut before a `class`. If pieces are still too big, cut before a `def`. Then before an indented `def` (a method). Then blank lines, lines, words, letters."*
-
-### JavaScript
-
-> **Correction:** the original text said "separators for JSON language", but the code is for **JavaScript** (`Language.JS`).
-
-```python
+# ---------- JavaScript ----------
 print(RecursiveCharacterTextSplitter.get_separators_for_language(Language.JS))
+# Output starts with: ['\nfunction ', '\nconst ', '\nlet ', '\nvar ', '\nclass ', ...]
 
 JS_CODE = """
 function helloWorld() {
@@ -545,35 +586,35 @@ helloWorld();
 js_splitter = RecursiveCharacterTextSplitter.from_language(
     language=Language.JS, chunk_size=60, chunk_overlap=0
 )
-js_docs = js_splitter.create_documents([JS_CODE])
-for d in js_docs:
+for d in js_splitter.create_documents([JS_CODE]):
     print(repr(d.page_content))
-```
+# Output:
+# 'function helloWorld() {\n  console.log("Hello, World!");\n}'
+# '// Call the function\nhelloWorld();'
 
-The JS separator list begins with `['\nfunction ', '\nconst ', '\nlet ', '\nvar ', '\nclass ', ...]`, so functions and declarations are cut at their starts.
-
-### Other languages
-
-The same recipe works for Java, Go, Rust, C++, PHP, Ruby, Markdown, LaTeX, HTML, and more. Change only `Language.XXX`:
-
-```python
+# ---------- Any other language: change only Language.XXX ----------
 java_splitter = RecursiveCharacterTextSplitter.from_language(
     language=Language.JAVA, chunk_size=200, chunk_overlap=20
 )
 ```
 
-More details: [LangChain code splitter docs](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/code_splitter/).
+## Markdown Header Text Splitter
 
+### 📖 The Story
 
-## 11. Markdown Header Text Splitter
+Nora wrote a **storybook** with chapters called *Pets*, *Cats*, *Kittens*, and *Dogs*. Her little brother tore it into pieces with a pair of scissors and a big grin. 😬 Pages about kittens got glued to pages about dogs, and nobody could read it.
 
-### The idea (baby version)
+Nora fixed it. She cut the book **only at the chapter titles**, and on the back of every piece she wrote its full address: *Pets → Cats → Kittens*. Now every piece was about **one topic**, and anyone could tell exactly where it belonged.
 
-A book has **chapters**. If you tear pages randomly, a page about "Cats" could be glued to a page about "Dogs". It is much better to tear the book **at chapter boundaries**.
+### 💡 The Explanation
 
-Markdown files have chapters too: they are the **headers** (`#`, `##`, `###`). `MarkdownHeaderTextSplitter` cuts the file at those headers and stores the header names in **metadata**.
+A Markdown file is organised by **headers** (`#`, `##`, `###`), which are its chapters. `MarkdownHeaderTextSplitter` cuts at those headers and stores the header names in **metadata**, so each chunk remembers its full path (for example `Pets > Cats > Kittens`).
 
-> **Correction:** the original lesson used `headers_to_split_on` and `md` without ever defining them. Here is the complete, runnable version.
+By default the header lines are **removed** from `page_content` (they live in the metadata). If you set **`strip_headers=False`**, the headers stay inside the text too. This often improves search, because when a chunk is later **embedded** (turned into numbers), the embedding sees only the text, not the metadata. A chunk that says "Cats purr." means more when it also says "## Cats".
+
+> **Correction:** the original lesson used `md` and `headers_to_split_on` without ever defining them. The complete, runnable version is below.
+
+### 💻 The Code
 
 ```python
 from langchain_text_splitters import MarkdownHeaderTextSplitter
@@ -593,161 +634,110 @@ headers_to_split_on = [
     ("###", "Header 3"),
 ]
 
+# ---------- Default: headers go to metadata only ----------
 markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
-md_header_splits = markdown_splitter.split_text(md)
-for d in md_header_splits:
+for d in markdown_splitter.split_text(md):
     print(d)
-```
+# Output:
+# page_content='Intro to pets.' metadata={'Header 1': 'Pets'}
+# page_content='Cats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
+# page_content='Kittens are tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
+# page_content='Dogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
+# Look at "Kittens are tiny.": its metadata holds the whole address Pets > Cats > Kittens.
 
-**Output:**
-
-```
-page_content='Intro to pets.' metadata={'Header 1': 'Pets'}
-page_content='Cats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
-page_content='Kittens are tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
-page_content='Dogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
-```
-
-Look closely at the metadata of "Kittens are tiny.": it remembers the **whole path** `Pets > Cats > Kittens`. This is like a mailing address for the chunk. 📮
-
-### Keeping the headers inside the text with `strip_headers=False`
-
-By default the header lines are **removed** from `page_content` (they live in the metadata). If you want them to stay in the text too, set `strip_headers=False`:
-
-```python
-markdown_splitter = MarkdownHeaderTextSplitter(
+# ---------- strip_headers=False: headers stay inside the text too ----------
+keep_headers = MarkdownHeaderTextSplitter(
     headers_to_split_on=headers_to_split_on,
     strip_headers=False,
 )
-for d in markdown_splitter.split_text(md):
+for d in keep_headers.split_text(md):
     print(d)
+# Output:
+# page_content='# Pets\nIntro to pets.' metadata={'Header 1': 'Pets'}
+# page_content='## Cats\nCats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
+# page_content='### Kittens\nKittens are tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
+# page_content='## Dogs\nDogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
 ```
 
-**Output:**
+## Split by HTML
 
-```
-page_content='# Pets\nIntro to pets.' metadata={'Header 1': 'Pets'}
-page_content='## Cats\nCats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
-page_content='### Kittens\nKittens are tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
-page_content='## Dogs\nDogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
-```
+### 📖 The Story
 
-### Why keep the header in the text?
+Sam builds a **website about animals**. The page is full of invisible labels called tags: a big title `<h1>`, section titles `<h2>`, small titles `<h3>`, and paragraphs `<p>`. A robot helper must cut the page into study cards.
 
-When you later **embed** the chunk (turn it into numbers), the embedding only sees `page_content`, not `metadata`. If the header text is missing, the chunk "Cats purr." has less meaning. Keeping the header often improves search quality.
+Sam gives the robot two different instructions. **Robot A** makes a card for *every single element* and writes the full chapter path on the back. **Robot B** makes one card per *section*, with the section title written on the front, together with its text. Both robots follow the page's own structure, so no card mixes two topics.
 
+### 💡 The Explanation
 
-## 12. Split by HTML
+HTML splitters are **structure-aware**: they use the page's heading tags as natural cutting lines, just like Markdown headers. They need the **`lxml`** library (installed in the Setup section).
 
-Web pages are built from tags such as `<h1>`, `<h2>`, and `<p>`. HTML splitters are **structure-aware**: they use these tags as natural cutting lines, just like Markdown headers.
+| | `HTMLHeaderTextSplitter` (Robot A) | `HTMLSectionSplitter` (Robot B) |
+|---|---|---|
+| Header text appears in `page_content` | No (only in metadata) | **Yes** |
+| Metadata | Full path (H1 > H2 > H3) | Only the section's own header |
+| Chunk granularity | Element by element | Section by section |
+| Good for | Rich metadata and filtering | Self-contained section chunks |
 
-> **Requires:** `lxml` (installed in Section 4).
+Both can also be combined with a recursive splitter in a pipeline (see the two-stage section).
 
-Here is the sample HTML used by both splitters below:
+### 💻 The Code
 
 ```python
-html_string = """
-<!DOCTYPE html>
-<html>
-<body>
-    <div>
-        <h1>Foo</h1>
-        <p>Some intro text about Foo.</p>
-        <div>
-            <h2>Bar main section</h2>
-            <p>Some intro text about Bar.</p>
-            <h3>Bar subsection 1</h3>
-            <p>Some text about the first subtopic of Bar.</p>
-            <h3>Bar subsection 2</h3>
-            <p>Some text about the second subtopic of Bar.</p>
-        </div>
-        <div>
-            <h2>Baz</h2>
-            <p>Some text about Baz</p>
-        </div>
-        <br>
-        <p>Some concluding text about Foo</p>
-    </div>
-</body>
-</html>
-"""
+from langchain_text_splitters import HTMLHeaderTextSplitter, HTMLSectionSplitter
+
+html_string = """<html><body><div><h1>Foo</h1><p>Intro Foo.</p><div><h2>Bar</h2><p>Intro Bar.</p><h3>Sub 1</h3><p>Text 1.</p></div><div><h2>Baz</h2><p>Text Baz</p></div></div></body></html>"""
 
 headers_to_split_on = [
     ("h1", "Header 1"),
     ("h2", "Header 2"),
     ("h3", "Header 3"),
 ]
-```
 
-### 12.1 Split by HTML header: `HTMLHeaderTextSplitter`
-
-It works like `MarkdownHeaderTextSplitter`, but for HTML. It splits at the element level and adds metadata for each relevant header. The goals are to (a) keep related text together and (b) keep the context that the document structure carries.
-
-```python
-from langchain_text_splitters import HTMLHeaderTextSplitter
-
-html_splitter = HTMLHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
-html_header_splits = html_splitter.split_text(html_string)
-for d in html_header_splits:
+# ---------- Robot A: split by HTML header ----------
+header_splitter = HTMLHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
+for d in header_splitter.split_text(html_string):
     print(d)
-```
+# Output:
+# page_content='Foo' metadata={'Header 1': 'Foo'}
+# page_content='Intro Foo.' metadata={'Header 1': 'Foo'}
+# page_content='Bar' metadata={'Header 1': 'Foo', 'Header 2': 'Bar'}
+# page_content='Intro Bar.' metadata={'Header 1': 'Foo', 'Header 2': 'Bar'}
+# page_content='Sub 1' metadata={'Header 1': 'Foo', 'Header 2': 'Bar', 'Header 3': 'Sub 1'}
+# page_content='Text 1.' metadata={'Header 1': 'Foo', 'Header 2': 'Bar', 'Header 3': 'Sub 1'}
+# page_content='Baz' metadata={'Header 1': 'Foo', 'Header 2': 'Baz'}
+# page_content='Text Baz' metadata={'Header 1': 'Foo', 'Header 2': 'Baz'}
 
-On a smaller page (`<h1>Foo</h1><p>Intro Foo.</p><div><h2>Bar</h2><p>Intro Bar.</p><h3>Sub 1</h3><p>Text 1.</p></div>...`) the output looks like this:
-
-```
-page_content='Foo' metadata={'Header 1': 'Foo'}
-page_content='Intro Foo.' metadata={'Header 1': 'Foo'}
-page_content='Bar' metadata={'Header 1': 'Foo', 'Header 2': 'Bar'}
-page_content='Intro Bar.' metadata={'Header 1': 'Foo', 'Header 2': 'Bar'}
-page_content='Sub 1' metadata={'Header 1': 'Foo', 'Header 2': 'Bar', 'Header 3': 'Sub 1'}
-page_content='Text 1.' metadata={'Header 1': 'Foo', 'Header 2': 'Bar', 'Header 3': 'Sub 1'}
-```
-
-Notice that each paragraph carries the **full header path** in its metadata.
-
-### 12.2 Split by HTML section: `HTMLSectionSplitter`
-
-This one is also structure-aware, but it groups **the header text and its content together** in one chunk, one section at a time.
-
-```python
-from langchain_text_splitters import HTMLSectionSplitter
-
-html_splitter = HTMLSectionSplitter(headers_to_split_on=headers_to_split_on)
-html_section_splits = html_splitter.split_text(html_string)
-for d in html_section_splits:
+# ---------- Robot B: split by HTML section ----------
+section_splitter = HTMLSectionSplitter(headers_to_split_on=headers_to_split_on)
+for d in section_splitter.split_text(html_string):
     print(d)
+# Output:
+# page_content='Foo \n Intro Foo.' metadata={'Header 1': 'Foo'}
+# page_content='Bar \n Intro Bar.' metadata={'Header 2': 'Bar'}
+# page_content='Sub 1 \n Text 1.' metadata={'Header 3': 'Sub 1'}
+# page_content='Baz \n Text Baz' metadata={'Header 2': 'Baz'}
+
+# ---------- Optional: split a live web page (needs internet) ----------
+# docs = header_splitter.split_text_from_url("https://example.com")
 ```
 
-On the same small page, the output looks like this:
+## Split JSON
 
-```
-page_content='Foo \n Intro Foo.' metadata={'Header 1': 'Foo'}
-page_content='Bar \n Intro Bar.' metadata={'Header 2': 'Bar'}
-page_content='Sub 1 \n Text 1.' metadata={'Header 3': 'Sub 1'}
-page_content='Baz \n Text Baz' metadata={'Header 2': 'Baz'}
-```
+### 📖 The Story
 
-### Header splitter vs. Section splitter
+Kofi runs a **toy shop** and keeps his stock list in a neat box of labelled drawers: `{"toys": {...}, "games": [...]}`. When the box got too heavy to carry, he needed to split it into smaller boxes. But he made one strict rule: *never cut through a drawer, and every small box must still be a proper, complete box.* If a drawer were cut in half, the list would be nonsense.
 
-| | `HTMLHeaderTextSplitter` | `HTMLSectionSplitter` |
-|---|---|---|
-| Header text appears in `page_content` | No (only in metadata) | **Yes** |
-| Metadata path | Full path (H1 > H2 > H3) | Only the section's own header |
-| Chunk granularity | Element by element | Section by section |
-| Good for | Rich metadata and filtering | Self-contained section chunks |
+### 💡 The Explanation
 
-### Splitting a live web page
+JSON is the format of API results and config files. `RecursiveJsonSplitter` splits JSON data into smaller pieces while keeping **every chunk valid JSON**. It never cuts in the middle of a key or a value.
 
-You can also pass a URL (needs internet):
+Things to remember:
 
-```python
-html_splitter = HTMLHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
-docs = html_splitter.split_text_from_url("https://example.com")
-```
+- It takes `max_chunk_size` (a soft limit) and has **no overlap option**.
+- A single value that is larger than the limit is not broken apart.
+- Its input is a Python dictionary (or parsed JSON), not free text.
 
-## 13. Split JSON
-
-Sometimes your data is **JSON** (API results, config files). `RecursiveJsonSplitter` splits it while keeping the JSON **valid**: it never cuts in the middle of a key or value.
+### 💻 The Code
 
 ```python
 from langchain_text_splitters import RecursiveJsonSplitter
@@ -760,85 +750,88 @@ data = {
 json_splitter = RecursiveJsonSplitter(max_chunk_size=60)
 for chunk in json_splitter.split_text(data):
     print(chunk)
+
+# Output:
+# {"a": {"b": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "c": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"}}
+# {"d": [1, 2, 3]}
+# Each line is a complete, valid JSON object.
 ```
 
-**Output:**
+## Split by Tokens
 
-```
-{"a": {"b": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "c": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"}}
-{"d": [1, 2, 3]}
-```
+### 📖 The Story
 
-Each chunk is a **complete, valid JSON object**. Note that `RecursiveJsonSplitter` takes `max_chunk_size` (no overlap option) and the size limit is soft: a single value that is too large will not be broken apart.
+Zara posts parcels at a very strict post office. The clerk does not care how many **letters** are in your message. She cares only about **stamps**: each parcel may carry at most 50 stamps. A long word like *"unbelievable"* costs three stamps (`un`, `believ`, `able`), while a tiny word like *"cat"* costs one.
 
+Zara first counted letters, packed her parcels, and was sent home, because her parcels had too many stamps. Then she learned to **count stamps instead of letters**, and every parcel was accepted.
 
-## 14. Split by Tokens
+### 💡 The Explanation
 
-### Characters vs. tokens (baby version)
+AI models do not read letters. They read **tokens**, which are small word-pieces. A rough rule for English: **1 token is about 4 characters, or about 0.75 of a word.** Models limit the number of **tokens** they accept, not characters, so when you must stay under a model's limit, **measure chunks in tokens**.
 
-AI models do not read letters. They read **tokens**, which are small word-pieces. For example, `"unbelievable"` might be 3 tokens: `un`, `believ`, `able`. A rough rule of thumb for English is **1 token is about 4 characters, or about 0.75 of a word**.
+There are three ways to do it:
 
-Models limit how many **tokens** they accept, not how many characters. So if you care about staying under a model's limit, **measure in tokens**.
+- **Option A: `TokenTextSplitter`** splits purely by token count.
+- **Option B: `from_tiktoken_encoder(...)`** (often nicer) keeps the smart recursive separators (paragraph, line, word) and only changes the **ruler** to tokens.
+- **Option C: your own `length_function`**: any function that takes a string and returns a number. Here we count **words**.
 
-### Option A: `TokenTextSplitter`
+`tiktoken` may need internet access the first time it runs, to download its vocabulary files. The block uses `companypolicies` from the Setup section.
+
+### 💻 The Code
 
 ```python
-from langchain_text_splitters import TokenTextSplitter
+from langchain_text_splitters import TokenTextSplitter, RecursiveCharacterTextSplitter
 
+# ---------- Option A: pure token splitting ----------
 token_splitter = TokenTextSplitter(
     encoding_name="cl100k_base",  # tokenizer used by many OpenAI models
-    chunk_size=50,                # 50 TOKENS (not characters)
+    chunk_size=50,                # 50 TOKENS, not characters
     chunk_overlap=5,
 )
 token_chunks = token_splitter.split_text(companypolicies)
-print(len(token_chunks))
-```
+print("Option A chunks:", len(token_chunks))
 
-### Option B (often nicer): recursive splitting measured in tokens
-
-This keeps the **smart separators** (paragraph, line, word) and only changes the **ruler** to tokens:
-
-```python
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-
+# ---------- Option B: recursive separators, measured in tokens ----------
 token_recursive = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     encoding_name="cl100k_base",
     chunk_size=50,
     chunk_overlap=5,
 )
-chunks = token_recursive.split_text(companypolicies)
-print(len(chunks))
-```
+chunks_b = token_recursive.split_text(companypolicies)
+print("Option B chunks:", len(chunks_b))
 
-### Option C: your own `length_function`
-
-This is where `length_function` shines. Any function that takes a string and returns a number works:
-
-```python
+# ---------- Option C: your own ruler (count words) ----------
 def word_count(text: str) -> int:
     return len(text.split())
 
 word_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=20,          # 20 WORDS
+    chunk_size=20,              # 20 WORDS
     chunk_overlap=3,
     length_function=word_count,
 )
-chunks = word_splitter.split_text(companypolicies)
-print(len(chunks))
-print(chunks[0])
+chunks_c = word_splitter.split_text(companypolicies)
+print("Option C chunks:", len(chunks_c))     # Output: 12
+print(repr(chunks_c[0]))                     # Output: 'Company Policies Handbook'
 ```
 
-> **Note:** `tiktoken` may need internet access the first time it runs, to download its vocabulary files.
+## Combining Splitters: A Two-Stage Pipeline
 
+### 📖 The Story
 
-## 15. Combining Splitters: A Two-Stage Pipeline
+Lila organises the school library. She works in **two steps**. In step one, she sorts books **by subject shelf**: animals here, space there. In step two, she checks each shelf and, if a shelf is overloaded, she splits it into **smaller boxes**, but she sticks the **subject label on every box** so nothing gets lost.
+
+Step one keeps topics together. Step two keeps sizes under control. Together they make a perfect library.
+
+### 💡 The Explanation
 
 Real-world RAG almost always uses **two stages**:
 
-1. **Stage 1: structure-aware** (Markdown/HTML header splitter): cut at chapters so each chunk is about one topic and gets header metadata.
-2. **Stage 2: size-aware** (recursive splitter): if a chapter is still too big, cut it down.
+1. **Stage 1, structure-aware** (Markdown or HTML header splitter): cut at chapters so each chunk is about one topic and carries header metadata.
+2. **Stage 2, size-aware** (`RecursiveCharacterTextSplitter`): if a chapter is still too big, cut it down.
 
-Why? Header splitters do **not** limit chunk size. A chapter could be 5,000 characters long. Stage 2 fixes that **and keeps the header metadata** on every smaller piece.
+Why both? Header splitters do **not** limit chunk size. A single chapter could be 5,000 characters long. Stage 2 fixes that, and `split_documents` **copies the header metadata** onto every smaller piece. The same idea works for HTML: `HTMLHeaderTextSplitter` first, then the recursive splitter.
+
+### 💻 The Code
 
 ```python
 from langchain_text_splitters import (
@@ -857,135 +850,275 @@ Dogs bark."""
 
 headers_to_split_on = [("#", "Header 1"), ("##", "Header 2"), ("###", "Header 3")]
 
-# Stage 1: cut by chapters
-stage1 = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on).split_text(md)
+# Stage 1: cut by chapters (structure)
+stage1_docs = MarkdownHeaderTextSplitter(
+    headers_to_split_on=headers_to_split_on
+).split_text(md)
 
-# Stage 2: make sure no chunk is bigger than chunk_size
+# Stage 2: make sure no chunk is bigger than chunk_size (size)
 stage2 = RecursiveCharacterTextSplitter(chunk_size=12, chunk_overlap=0)
-final_docs = stage2.split_documents(stage1)
+final_docs = stage2.split_documents(stage1_docs)
 
 for d in final_docs:
     print(d)
+
+# Output (chunk_size=12 is deliberately tiny, just to show the effect):
+# page_content='Intro to' metadata={'Header 1': 'Pets'}
+# page_content='pets.' metadata={'Header 1': 'Pets'}
+# page_content='Cats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
+# page_content='Kittens are' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
+# page_content='tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
+# page_content='Dogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
+# "Intro to pets." was too long, so it became two pieces, and BOTH kept the label.
 ```
 
-**Output** (`chunk_size=12` is deliberately tiny, just to show the effect):
+## Choosing chunk_size and chunk_overlap
 
-```
-page_content='Intro to' metadata={'Header 1': 'Pets'}
-page_content='pets.' metadata={'Header 1': 'Pets'}
-page_content='Cats purr.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats'}
-page_content='Kittens are' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
-page_content='tiny.' metadata={'Header 1': 'Pets', 'Header 2': 'Cats', 'Header 3': 'Kittens'}
-page_content='Dogs bark.' metadata={'Header 1': 'Pets', 'Header 2': 'Dogs'}
-```
+### 📖 The Story
 
-Two things to notice:
+Goldilocks again! 🐻 She tried a **tiny** chunk: "every 90 days." Nobody knew what happened every 90 days. She tried a **huge** chunk: an entire handbook. It contained the answer, but also thousands of words nobody needed, and the search could not tell which part mattered. Then she tried a **medium** chunk: two or three sentences about one rule. *"Just right!"* she said.
 
-- `"Intro to pets."` was too long for 12 characters, so it was split into two pieces.
-- **Both pieces still carry** `{'Header 1': 'Pets'}`. The label was not lost.
+### 💡 The Explanation
 
-The same two-stage idea works for HTML: `HTMLHeaderTextSplitter` first, then `RecursiveCharacterTextSplitter.split_documents(...)`.
-
-
-## 16. How to Choose `chunk_size` and `chunk_overlap`
-
-There is no single perfect number. Use these starting points and then **test with real questions**.
+There is no single perfect number. Use these starting points, then **test with real questions**.
 
 | Content type | Suggested `chunk_size` (characters) | Suggested overlap |
 |---|---|---|
 | Short FAQs, chat messages | 200 to 400 | 0 to 40 |
-| Policies, articles, documentation | 500 to 1000 | 50 to 150 (about 10 to 20%) |
+| Policies, articles, documentation | 500 to 1000 | 50 to 150 (about 10 to 20 percent) |
 | Long technical or legal text where context matters | 1000 to 2000 | 100 to 300 |
-| Source code | 500 to 1500 (cut at functions/classes) | 0 to 100 |
+| Source code | 500 to 1500 (cut at functions and classes) | 0 to 100 |
 
-### The balancing act
+**The balancing act:**
 
-```
-Small chunks  ◀─────────────────────────▶  Large chunks
-+ precise search                           + more context per chunk
-+ cheaper to embed                         + fewer chunks to manage
-- may lose context                         - search gets "blurry"
-- many more chunks                         - uses more of the model's window
-```
+| Small chunks | Large chunks |
+|---|---|
+| ✅ Precise search | ✅ More context per chunk |
+| ✅ Cheaper to embed | ✅ Fewer chunks to manage |
+| ❌ May lose context | ❌ Search gets "blurry" |
+| ❌ Many more chunks | ❌ Uses more of the model's window |
 
-### A simple testing recipe
+**A simple testing recipe:** write 10 realistic questions, split with a few different sizes, and check whether the retrieved chunk actually contains the answer. Keep the size that wins most often. The block below prints useful statistics for several sizes and uses `companypolicies` from the Setup section.
 
-1. Write 10 realistic questions your users might ask.
-2. Split with `chunk_size=300`, then `600`, then `1000`.
-3. For each setting, check: *does the retrieved chunk actually contain the answer?*
-4. Keep the setting that finds the answer most often.
-
-### Handy chunk statistics
+### 💻 The Code
 
 ```python
-chunks = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=20).split_text(companypolicies)
-sizes = [len(c) for c in chunks]
-print("chunks:", len(sizes))
-print("smallest:", min(sizes), "| largest:", max(sizes), "| average:", sum(sizes) // len(sizes))
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+# Compare several chunk sizes (overlap = 10 percent of the size)
+for size in (100, 200, 400, 800):
+    splitter = RecursiveCharacterTextSplitter(chunk_size=size, chunk_overlap=size // 10)
+    chunks = splitter.split_text(companypolicies)
+    sizes = [len(c) for c in chunks]
+    print(f"chunk_size={size:4} -> chunks={len(chunks):2} | smallest={min(sizes):3} | largest={max(sizes):3}")
+
+# Output:
+# chunk_size= 100 -> chunks=13 | smallest= 18 | largest= 98
+# chunk_size= 200 -> chunks= 8 | smallest= 25 | largest=193
+# chunk_size= 400 -> chunks= 4 | smallest=220 | largest=240
+# chunk_size= 800 -> chunks= 2 | smallest=240 | largest=684
+# Reading the table: bigger chunk_size means fewer, bigger chunks.
 ```
 
+## Which Splitter Should I Use?
 
-## 17. Which Splitter Should I Use?
+### 📖 The Story
+
+A new helper, Eli, stood in front of a wall of tools and panicked. "Which one do I use?" Grandpa smiled and gave him a simple chart: *"Look at what you are holding, and the chart tells you the tool. If you are ever unsure, grab the all-purpose one."*
+
+### 💡 The Explanation
 
 | Your data | Best splitter |
 |---|---|
 | Plain text, articles, general documents | `RecursiveCharacterTextSplitter` |
-| Text with one reliable separator (for example, one record per paragraph) | `CharacterTextSplitter` |
+| Text with one reliable separator | `CharacterTextSplitter` |
 | Python, JS, Java, and other code | `RecursiveCharacterTextSplitter.from_language(...)` |
-| Markdown notes, READMEs, docs | `MarkdownHeaderTextSplitter` (then Recursive) |
-| Web pages / HTML | `HTMLHeaderTextSplitter` or `HTMLSectionSplitter` (then Recursive) |
+| Markdown notes, READMEs, docs | `MarkdownHeaderTextSplitter`, then Recursive |
+| Web pages (HTML) | `HTMLHeaderTextSplitter` or `HTMLSectionSplitter`, then Recursive |
 | LaTeX papers | `RecursiveCharacterTextSplitter.from_language(Language.LATEX)` |
-| JSON / API data | `RecursiveJsonSplitter` |
+| JSON and API data | `RecursiveJsonSplitter` |
 | You must obey a model's token limit | `from_tiktoken_encoder(...)` or `TokenTextSplitter` |
 
 **When unsure:** start with `RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)`. It is a safe default.
 
+### 💻 The Code
 
-## 18. Common Mistakes and Troubleshooting
+The function below turns the chart into code: give it a file type and it returns a ready-made splitter.
+
+```python
+from langchain_text_splitters import (
+    RecursiveCharacterTextSplitter,
+    MarkdownHeaderTextSplitter,
+    HTMLHeaderTextSplitter,
+    RecursiveJsonSplitter,
+    Language,
+)
+
+def choose_splitter(file_type: str):
+    """Return a sensible default splitter for a given file type."""
+    file_type = file_type.lower()
+
+    if file_type in ("md", "markdown"):
+        return MarkdownHeaderTextSplitter(
+            headers_to_split_on=[("#", "Header 1"), ("##", "Header 2"), ("###", "Header 3")],
+            strip_headers=False,
+        )
+    if file_type in ("html", "htm"):
+        return HTMLHeaderTextSplitter(
+            headers_to_split_on=[("h1", "Header 1"), ("h2", "Header 2"), ("h3", "Header 3")]
+        )
+    if file_type == "json":
+        return RecursiveJsonSplitter(max_chunk_size=500)
+    if file_type in ("py", "python"):
+        return RecursiveCharacterTextSplitter.from_language(
+            language=Language.PYTHON, chunk_size=800, chunk_overlap=0)
+    if file_type in ("js", "javascript"):
+        return RecursiveCharacterTextSplitter.from_language(
+            language=Language.JS, chunk_size=800, chunk_overlap=0)
+    if file_type in ("tex", "latex"):
+        return RecursiveCharacterTextSplitter.from_language(
+            language=Language.LATEX, chunk_size=800, chunk_overlap=0)
+
+    # Safe default for everything else (plain text, articles, ...)
+    return RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
+
+for kind in ["txt", "md", "html", "json", "py"]:
+    print(kind, "->", type(choose_splitter(kind)).__name__)
+
+# Output:
+# txt -> RecursiveCharacterTextSplitter
+# md -> MarkdownHeaderTextSplitter
+# html -> HTMLHeaderTextSplitter
+# json -> RecursiveJsonSplitter
+# py -> RecursiveCharacterTextSplitter
+```
+
+## Common Mistakes and Troubleshooting
+
+### 📖 The Story
+
+Pip the baker kept a **"Oops Notebook"**. Every time something went wrong in the kitchen, he wrote down what happened, why, and how to fix it. His next pizzas were perfect. Every programmer should keep a notebook like that, so here is a ready-made one for text splitting.
+
+### 💡 The Explanation
 
 | Problem | Cause | Fix |
 |---|---|---|
-| `ValueError: Got a larger chunk overlap than chunk size` | `chunk_overlap >= chunk_size` | Make overlap smaller (about 10 to 20% of chunk size) |
-| Warning: `Created a chunk of size X, which is longer than the specified Y` | `CharacterTextSplitter` found a piece bigger than `chunk_size` with no other separator to try | Use `RecursiveCharacterTextSplitter` |
+| `ValueError: Got a larger chunk overlap than chunk size` | `chunk_overlap >= chunk_size` | Make overlap smaller (about 10 to 20 percent of chunk size) |
+| Warning: `Created a chunk of size X, which is longer than the specified Y` | `CharacterTextSplitter` found a piece bigger than `chunk_size` and has no other separator | Use `RecursiveCharacterTextSplitter` |
 | `NameError: name 'Language' is not defined` | Forgot the import | `from langchain_text_splitters import Language` |
-| `NameError: name 'headers_to_split_on' is not defined` | The list was never created | Define it before creating the splitter (see Section 11) |
-| Words are cut in half | Used `separator=""` | Use the recursive splitter with the default separators |
-| LaTeX text looks broken (strange characters where `\begin` should be) | In a normal Python string, `\b` means *backspace* | Use a **raw string**: `r"""\begin{document} ..."""` |
-| Header chunks are huge | Header splitters do not limit size | Add Stage 2 with `RecursiveCharacterTextSplitter` (Section 15) |
-| Metadata disappears after splitting | Used `split_text` on strings | Use `create_documents(..., metadatas=...)` or `split_documents(...)` |
+| `NameError: name 'headers_to_split_on' is not defined` | The list was never created | Define it before creating the splitter |
+| Words are cut in half | Used `separator=""` | Use the recursive splitter with its default separators |
+| LaTeX shows strange characters where `\begin` should be | In a normal Python string, `\b` means *backspace* | Use a **raw string**: `r"""\begin{document} ..."""` |
+| Header chunks are huge | Header splitters do not limit size | Add the second stage with `RecursiveCharacterTextSplitter` |
+| Metadata disappears after splitting | Used `split_text` on plain strings | Use `create_documents(..., metadatas=...)` or `split_documents(...)` |
 | `HTMLSectionSplitter` import or parse error | `lxml` is not installed | `pip install lxml` |
-| Chunk count looks different from a friend's | Different library versions or text encoding | Pin versions (Section 4) and read files with `encoding="utf-8"` |
+| Chunk counts differ from a friend's | Different library versions or text encoding | Pin versions and read files with `encoding="utf-8"` |
 
+### 💻 The Code
 
-## 19. Summary
+The block below reproduces three classic mistakes on purpose, together with their fixes.
+
+```python
+from langchain_text_splitters import (
+    CharacterTextSplitter,
+    RecursiveCharacterTextSplitter,
+    Language,
+)
+
+# ---------- Mistake 1: overlap bigger than chunk size ----------
+try:
+    CharacterTextSplitter(chunk_size=20, chunk_overlap=50)
+except ValueError as error:
+    print("Mistake 1:", error)
+# Output: Mistake 1: Got a larger chunk overlap (50) than chunk size (20), should be smaller.
+# Fix: use chunk_overlap=2 (about 10 percent).
+
+# ---------- Mistake 2: forgetting the raw string for LaTeX ----------
+broken = "\begin{document}"        # "\b" becomes a backspace character
+fixed = r"\begin{document}"        # raw string keeps the backslash
+print("Broken length:", len(broken), "| Fixed length:", len(fixed))
+# Output: Broken length: 15 | Fixed length: 16
+# The broken string is one character shorter because \b was swallowed.
+
+# ---------- Mistake 3: metadata lost with split_text ----------
+splitter = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=0)
+lost = splitter.split_text("Alpha beta gamma delta epsilon zeta eta theta")
+print(type(lost[0]).__name__)      # Output: str   (no metadata possible!)
+
+kept = splitter.create_documents(
+    ["Alpha beta gamma delta epsilon zeta eta theta"],
+    metadatas=[{"source": "greek"}],
+)
+print(kept[0].metadata)            # Output: {'source': 'greek'}
+```
+
+## Summary
+
+### 📖 The Story
+
+At the end of the party, Pip counted what he had learned: *cut with care, cut at natural lines, share a little cheese between slices, label every slice, and taste-test before the next party.* Everyone cheered, and every guest went home with exactly the slice they needed.
+
+### 💡 The Explanation
 
 - **Splitting** cuts long text into chunks the AI can handle. It is the "slicing the pizza" step of RAG.
-- **`chunk_size`** is the maximum slice size. **`chunk_overlap`** is the shared edge between slices. **`length_function`** is the ruler. **`separator(s)`** are the dotted lines.
+- **`chunk_size`** is the maximum slice size. **`chunk_overlap`** is the shared edge. **`length_function`** is the ruler. **`separator(s)`** are the dotted lines.
 - A **`Document`** has `page_content` (text) and `metadata` (labels).
 - Use `split_text` for strings, `create_documents` to add metadata, and `split_documents` to split existing `Document`s.
 - **`CharacterTextSplitter`** uses one separator. It is simple but not smart.
 - **`RecursiveCharacterTextSplitter`** tries a list of separators. It is the **default recommendation**.
 - **`from_language(...)`** makes the recursive splitter understand code and LaTeX.
-- **Markdown/HTML header splitters** cut by document structure and store header paths in metadata.
+- **Markdown and HTML header splitters** cut by document structure and store header paths in metadata.
+- **`RecursiveJsonSplitter`** keeps every JSON chunk valid.
+- Measure in **tokens** when a model's token limit matters.
 - Use a **two-stage pipeline** (structure first, then size) for the best chunks.
 - Test your settings with **real questions**. Good chunks lead to good retrieval, which leads to good answers.
 
+### 💻 The Code
 
-## 20. Exercises
+A compact "cheat sheet" you can keep. It is runnable and prints one line per splitter.
 
-### Exercise 1: Change the separator for `CharacterTextSplitter`
+```python
+from langchain_text_splitters import (
+    CharacterTextSplitter, RecursiveCharacterTextSplitter,
+    MarkdownHeaderTextSplitter, Language,
+)
 
-Use `CharacterTextSplitter` on `companypolicies` with `separator="\n"`, `chunk_size=200`, `chunk_overlap=20`.
+text = "Cats purr.\n\nDogs bark.\n\nBirds sing."
 
-1. How many chunks do you get?
-2. Print the first chunk.
-3. Repeat with `separator="\n\n"` and `separator=""`. How do the number of chunks and the chunk boundaries change? Which one cuts words in half?
+print(CharacterTextSplitter(separator="\n\n", chunk_size=15, chunk_overlap=0).split_text(text))
+print(RecursiveCharacterTextSplitter(chunk_size=15, chunk_overlap=0).split_text(text))
+print(RecursiveCharacterTextSplitter.from_language(
+    language=Language.PYTHON, chunk_size=40, chunk_overlap=0
+).split_text("def a():\n    return 1\n\ndef b():\n    return 2"))
+print(MarkdownHeaderTextSplitter(headers_to_split_on=[("#", "H1")]).split_text("# Zoo\nLions roar."))
 
-### Exercise 2: Split LaTeX code
+# Output:
+# ['Cats purr.', 'Dogs bark.', 'Birds sing.']
+# ['Cats purr.', 'Dogs bark.', 'Birds sing.']
+# ['def a():\n    return 1', 'def b():\n    return 2']
+# [Document(page_content='Lions roar.', metadata={'H1': 'Zoo'})]
+# (Exact printing of Document objects differs slightly between versions.)
+```
 
-Split the LaTeX text below using `RecursiveCharacterTextSplitter.from_language(language=Language.LATEX, ...)` with `chunk_size=150` and `chunk_overlap=0`. Print each chunk with its number.
+## Exercises
 
-> **Hint:** the original lab used a normal string here. Use a **raw string** (`r"""..."""`) so that `\begin` is not read as a backspace.
+### Exercise 1: The Scissors Story (Change the Separator)
+
+📖 **Story:** Tom the tailor (from the character splitter section) has three pairs of scissors: one cuts at **new lines** (`"\n"`), one at **blank lines** (`"\n\n"`), and one cuts **anywhere** (`""`). He wants to cut the company policy handbook with each pair and compare the results.
+
+**Your task:** use `CharacterTextSplitter` on `companypolicies` with `chunk_size=200` and `chunk_overlap=20`, once for each separator.
+
+1. How many chunks do you get with each separator?
+2. Print the first chunk of each.
+3. Which separator cuts words in half? Which one produces warnings, and why?
+
+### Exercise 2: The Scientist's Paper (Split LaTeX)
+
+📖 **Story:** Dr. Amina wrote a research paper in LaTeX, a typesetting language that scientists love. She wants to split it into chunks for a RAG assistant, but she must not tear a section in half unless she has to.
+
+**Your task:** split the LaTeX text below using `RecursiveCharacterTextSplitter.from_language(language=Language.LATEX, ...)` with `chunk_size=150` and `chunk_overlap=0`. Print each chunk with its number. Then try `chunk_size=400` and compare.
+
+> **Hint:** the original lab used a normal string. Use a **raw string** (`r"""..."""`) so that `\begin` is not read as a backspace.
 
 ```python
 latex_text = r"""
@@ -1008,9 +1141,11 @@ LLMs have many applications in industry, including chatbots, content creation, a
 """
 ```
 
-### Exercise 3 (Capstone): Build a mini RAG "retrieval" step
+### Exercise 3 (Capstone): The Helpful Librarian Robot
 
-Build the **Split → Retrieve** part of a RAG system for this Markdown employee handbook:
+📖 **Story:** The school hires a robot librarian named **Robo-Lib**. Teachers ask it questions about the **Employee Handbook**, like "How many days of sick leave do I get?". Robo-Lib cannot read the whole handbook for every question, so you must **cut the handbook into good chunks** and teach Robo-Lib to **find the best chunk** for each question.
+
+Here is the handbook:
 
 ```python
 handbook_md = """# Employee Handbook
@@ -1029,17 +1164,23 @@ Passwords must be at least 12 characters long and changed every 90 days. Lost or
 """
 ```
 
-**Tasks:**
+**Your tasks:**
 
 1. Split `handbook_md` in **two stages**: `MarkdownHeaderTextSplitter` (keep the headers in the text), then `RecursiveCharacterTextSplitter` with `chunk_size=200` and `chunk_overlap=30`.
-2. Print each chunk's text and its metadata.
+2. Print each chunk's length, text, and metadata.
 3. Write a function `retrieve(question, docs, k=2)` that returns the `k` chunks sharing the **most words** with the question. (Real RAG uses embeddings, but word overlap is enough to see the idea.)
 4. Test it with: *"How many days of sick leave do I get?"* and *"How often must I change my password?"*
-5. Reflect: what would happen if you had used `chunk_size=1000`? What if you had used `chunk_size=40`?
+5. Reflect: what would happen with `chunk_size=1000`? And with `chunk_size=40`?
 
-## 21. Solutions
+## Solutions
 
-### Solution 1: Changing the separator
+### Solution 1: The Scissors Story
+
+**Explanation.** The separator decides *where cuts are allowed*; `chunk_size` decides *how much is merged back together*.
+
+- `"\n"` cuts at line breaks, then **merges whole lines** until adding another line would pass 200 characters. Chunks end at line ends, so sentences stay whole. Overlap is only used when whole lines fit inside the overlap size, so you may see little or none.
+- `"\n\n"` treats each **blank-line-separated block** as one unit. Several of our blocks are longer than 200 characters, so LangChain **warns** ("Created a chunk of size ..., which is longer than the specified 200") and keeps them whole, because this splitter has only one separator.
+- `""` cuts **every 200 characters** regardless of meaning, so it is the one that **cuts words in half**.
 
 ```python
 from langchain_text_splitters import CharacterTextSplitter
@@ -1052,21 +1193,19 @@ for sep in ["\n", "\n\n", ""]:
         length_function=len,
     )
     docs = splitter.create_documents([companypolicies])
-    label = repr(sep)
-    print(f"separator={label:6} -> {len(docs)} chunks")
-    print("  first chunk:", repr(docs[0].page_content[:80]), "...")
-    print()
+    print(f"separator={sep!r:6} -> {len(docs)} chunks, sizes={[len(d.page_content) for d in docs]}")
+    print("   first chunk:", repr(docs[0].page_content[:60]), "...")
+
+# Output (with the sample companypolicies from the Setup section):
+# separator='\n'   -> 6 chunks, sizes=[134, 183, 139, 164, 170, 143]
+# separator='\n\n' -> 5 chunks, sizes=[25, 193, 222, 238, 240]     (plus warnings: sizes above 200)
+# separator=''     -> 6 chunks, sizes=[200, 199, 199, 199, 199, 26]
+# Notice: "\n" gives tidy sizes under 200, "\n\n" breaks the limit, and "" is exact but blind.
 ```
 
-**Interpretation:**
+### Solution 2: The Scientist's Paper
 
-- With `separator="\n"`, the splitter cuts at line breaks, then **merges lines back together** until adding another line would exceed 200 characters. Chunks end at **whole lines**, so sentences are kept intact. Overlap is only applied when whole lines fit inside the overlap size, so it may be smaller than 20 characters or absent.
-- With `separator="\n\n"`, the splitter treats each **blank-line-separated block** (one policy section) as a unit. In our sample, each numbered section is roughly 200 to 300 characters, so you will usually get about **one chunk per section**. If a section is larger than 200 characters, you may see the warning `Created a chunk of size ..., which is longer than the specified 200`. The splitter keeps it whole because it has only one separator.
-- With `separator=""`, the text is cut **every 200 characters regardless of meaning**, so words can be cut in half. This is the least intelligent option.
-
-**Lesson learned:** the separator decides *where cuts are allowed*; `chunk_size` decides *how much is merged back together*. The exact chunk counts depend on your document, so run the code and compare.
-
-### Solution 2: Splitting LaTeX
+**Explanation.** The LaTeX separators prefer cutting **before `\section` and `\subsection`**, then fall back to paragraphs, lines, and words. With `chunk_size=150`, the long paragraphs (about 300 characters) do not fit, so each section is broken into several pieces. With `chunk_size=400`, each section fits in one chunk.
 
 ```python
 from langchain_text_splitters import Language, RecursiveCharacterTextSplitter
@@ -1090,48 +1229,45 @@ LLMs have many applications in industry, including chatbots, content creation, a
 \end{document}
 """
 
-# Configure the LaTeX text splitter
-latex_splitter = RecursiveCharacterTextSplitter.from_language(
-    language=Language.LATEX, chunk_size=150, chunk_overlap=0
-)
+for size in (150, 400):
+    latex_splitter = RecursiveCharacterTextSplitter.from_language(
+        language=Language.LATEX, chunk_size=size, chunk_overlap=0
+    )
+    latex_docs = latex_splitter.create_documents([latex_text])
+    print(f"===== chunk_size={size}: {len(latex_docs)} chunks =====")
+    for i, doc in enumerate(latex_docs, start=1):
+        first_line = doc.page_content.strip().splitlines()[0][:45]
+        print(f"Chunk {i} ({len(doc.page_content)} chars): {first_line}")
 
-# Split the document
-latex_docs = latex_splitter.create_documents([latex_text])
-for i, doc in enumerate(latex_docs):
-    print(f"Chunk {i + 1}:")
-    print(doc.page_content)
-    print("-" * 50)
+# Output:
+# ===== chunk_size=150: 9 chunks =====
+# Chunk 1 (53 chars): \documentclass{article}
+# Chunk 2 (149 chars): \section{Introduction}
+# Chunk 3 (143 chars): human-like language. In recent years, LLMs ...
+# Chunk 4 (53 chars): translation, text generation, and sentiment analysis.
+# Chunk 5 (143 chars): \subsection{History of LLMs}
+# Chunk 6 (148 chars): processed and the computational power ...
+# Chunk 7 (83 chars): train LLMs on massive datasets, ...
+# Chunk 8 (145 chars): \subsection{Applications of LLMs}
+# Chunk 9 (112 chars): also be used in academia for research ...
+# ===== chunk_size=400: 4 chunks =====
+# Chunk 1 (53 chars): \documentclass{article}
+# Chunk 2 (347 chars): \section{Introduction}
+# Chunk 3 (376 chars): \subsection{History of LLMs}
+# Chunk 4 (258 chars): \subsection{Applications of LLMs}
+# With 400, every section starts a new chunk and stays in one piece.
+# (The first-line previews above are shortened for display; your exact text may differ slightly.)
 ```
 
-**Interpretation:** the LaTeX separators prefer cutting **before `\section`, `\subsection`, and similar commands**, then fall back to paragraphs, lines, and words. Therefore each section starts a new chunk when possible. Because the paragraphs here are long (about 300 characters) and `chunk_size` is only 150, the splitter then cuts those paragraphs on spaces (words), so you will see each long section broken into several chunks. Try `chunk_size=400` and compare: sections now stay in one piece.
+### Solution 3 (Capstone): The Helpful Librarian Robot
 
-**A smaller verified example** (`chunk_size=100`, `chunk_overlap=0`) on a shorter LaTeX text:
+**Explanation.** Stage 1 cuts the handbook into one chunk per section and attaches header metadata. Stage 2 only cuts a chunk if it is longer than 200 characters, and it copies the metadata to the new pieces. The retriever then scores each chunk by shared words.
 
-```python
-lt = r"""\documentclass{article}
-\begin{document}
-\section{Introduction}
-Large language models are big. They learn from text. They are useful.
-\subsection{History}
-Early models were small. Newer ones are huge.
-\end{document}"""
+Two practical details to notice in the output:
 
-splitter = RecursiveCharacterTextSplitter.from_language(
-    language=Language.LATEX, chunk_size=100, chunk_overlap=0
-)
-for d in splitter.create_documents([lt]):
-    print(repr(d.page_content))
-```
-
-```
-'\\documentclass{article}\n\\begin{document}'
-'\\section{Introduction}\nLarge language models are big. They learn from text. They are useful.'
-'\\subsection{History}\nEarly models were small. Newer ones are huge.'
-```
-
-(`repr` shows each backslash doubled; the real text has a single backslash.) Each `\section` / `\subsection` starts its own chunk.
-
-### Solution 3 (Capstone): Mini RAG split and retrieve
+- The first chunk is just the headers `# Employee Handbook` and `## Remote Work`, because the handbook has no text between those two headers. A tiny header-only chunk like this is normal with `strip_headers=False`.
+- The **Remote Work** section is longer than 200 characters, so Stage 2 splits it into two chunks (chunks 2 and 3). **Both** carry the same header metadata.
+- Plain word matching misses "change" versus "changed". A tiny fix, comparing only the **first five letters** of each word (a crude "stemmer"), solves it. This is a small taste of why real systems use embeddings.
 
 ```python
 import re
@@ -1160,70 +1296,73 @@ headers_to_split_on = [("#", "Header 1"), ("##", "Header 2"), ("###", "Header 3"
 
 stage1 = MarkdownHeaderTextSplitter(
     headers_to_split_on=headers_to_split_on,
-    strip_headers=False,          # keep the header text inside page_content
+    strip_headers=False,            # keep the header text inside page_content
 ).split_text(handbook_md)
 
 stage2 = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=30)
 docs = stage2.split_documents(stage1)
 
-# ---------- Task 2: inspect chunks ----------
+# ---------- Task 2: inspect the chunks ----------
 for i, d in enumerate(docs, start=1):
-    print(f"Chunk {i} | {len(d.page_content)} chars")
-    print("  text    :", repr(d.page_content))
-    print("  metadata:", d.metadata)
-    print()
+    print(f"Chunk {i} | {len(d.page_content)} chars | {d.metadata}")
+    print("   ", repr(d.page_content[:60]))
 
-# ---------- Task 3: a tiny keyword retriever ----------
+# ---------- Task 3: a tiny retriever ----------
 STOPWORDS = {"the", "a", "an", "of", "do", "i", "how", "many", "must", "is", "to", "get", "my", "often"}
 
 def tokenize(text):
     words = re.findall(r"[a-z0-9']+", text.lower())
-    return {w for w in words if w not in STOPWORDS}
+    return {w[:5] for w in words if w not in STOPWORDS}     # first 5 letters = crude stemming
 
 def retrieve(question, docs, k=2):
     q_words = tokenize(question)
-    scored = []
-    for d in docs:
-        overlap = len(q_words & tokenize(d.page_content))
-        scored.append((overlap, d))
+    scored = [(len(q_words & tokenize(d.page_content)), d) for d in docs]
     scored.sort(key=lambda pair: pair[0], reverse=True)
     return scored[:k]
 
 # ---------- Task 4: test ----------
-questions = [
-    "How many days of sick leave do I get?",
-    "How often must I change my password?",
-]
-
-for q in questions:
-    print("QUESTION:", q)
+for q in ["How many days of sick leave do I get?",
+          "How often must I change my password?"]:
+    print("\nQUESTION:", q)
     for score, d in retrieve(q, docs, k=2):
-        print(f"  score={score} | {d.metadata}")
-        print(f"  {d.page_content[:90]!r}...")
-    print()
+        print(f"  score={score} | {d.metadata.get('Header 3') or d.metadata.get('Header 2')}")
+
+# Output (Task 2):
+# Chunk 1 | 36 chars  | {'Header 1': 'Employee Handbook', 'Header 2': 'Remote Work'}
+#     '# Employee Handbook  \n## Remote Work'
+# Chunk 2 | 193 chars | {'Header 1': 'Employee Handbook', 'Header 2': 'Remote Work'}
+#     'Employees may work remotely up to three days per week with m'
+# Chunk 3 | 33 chars  | {'Header 1': 'Employee Handbook', 'Header 2': 'Remote Work'}
+#     'must be kept secure at all times.'
+# Chunk 4 | 167 chars | {... 'Header 2': 'Leave Policy', 'Header 3': 'Annual Leave'}
+#     '## Leave Policy  \n### Annual Leave\nFull-time employees recei'
+# Chunk 5 | 96 chars  | {... 'Header 2': 'Leave Policy', 'Header 3': 'Sick Leave'}
+#     '### Sick Leave\nSick leave is granted for up to 10 days per y'
+# Chunk 6 | 168 chars | {'Header 1': 'Employee Handbook', 'Header 2': 'Information Security'}
+#     '## Information Security\nPasswords must be at least 12 charac'
+#
+# Output (Task 4):
+# QUESTION: How many days of sick leave do I get?
+#   score=3 | Sick Leave
+#   score=2 | Annual Leave
+#
+# QUESTION: How often must I change my password?
+#   score=2 | Information Security
+#   score=0 | Remote Work
 ```
 
-**What you should see (the important parts):**
-
-- For the **sick leave** question, the top chunk has metadata `{'Header 1': 'Employee Handbook', 'Header 2': 'Leave Policy', 'Header 3': 'Sick Leave'}` and contains *"Sick leave is granted for up to 10 days per year..."*.
-- For the **password** question, the top chunk comes from the `Information Security` section. Because that section is longer than 200 characters, the recursive splitter may cut it into two chunks. The password sentence appears in the first one, and **both pieces carry the same header metadata**.
-
-The exact chunk boundaries can vary slightly with your library version, so print and check them yourself.
-
-#### Task 5: Reflection answers
+**Task 5: Reflection**
 
 | Setting | What happens | Why it matters |
 |---|---|---|
-| `chunk_size=1000` | Stage 2 does almost nothing, since every section already fits. Each chunk is one whole section, so retrieval is still good here. | On a *bigger* handbook, a 1000-character chunk could mix several rules, so a question might retrieve a large chunk with mostly irrelevant text. |
-| `chunk_size=40` | Sentences are chopped into tiny fragments such as `"Passwords must be at least 12"` / `"characters long and changed"`. | The fragments lose meaning. A fragment like `"every 90 days."` alone does not say what happens every 90 days. Retrieval gets worse. |
+| `chunk_size=1000` | Stage 2 does nothing, because every section already fits. Each chunk is a whole section, so retrieval is still good here. | On a *bigger* handbook, a 1000-character chunk could mix several rules, so a question might retrieve a large chunk of mostly irrelevant text. |
+| `chunk_size=40` | Sentences are chopped into tiny fragments such as `"Passwords must be at least 12"` and `"characters long and changed"`. | Fragments lose meaning. A chunk like `"every 90 days."` does not say what happens every 90 days, so retrieval gets worse. |
 | `chunk_size=200` (our choice) | About one or two sentences per chunk, still tagged with their section headers. | A good balance for short policy text: each chunk holds one clear idea. |
 
-**Big idea:** *header metadata + sensibly sized chunks* give the retriever **precise** pieces that still **make sense on their own**. This is exactly why we study text splitting before building a full RAG system.
+**Big idea:** *header metadata plus sensibly sized chunks* give the retriever **precise** pieces that still **make sense on their own**. This is exactly why we study text splitting before building a full RAG system.
 
+### Bonus Challenges
 
-### Bonus Challenge
-
-1. Replace the word-overlap retriever with an **embedding-based** retriever (for example, using `FAISS` or `Chroma` and an embeddings model) and compare results.
-2. Try `chunk_size` values of 100, 200, 400, and 800 and record how often the correct chunk ranks first for 10 questions you write yourself.
-3. Convert `handbook_md` to HTML and repeat the exercise using `HTMLHeaderTextSplitter`.
-
+1. Replace the word-overlap retriever with an **embedding-based** retriever (for example, `FAISS` or `Chroma` with an embeddings model) and compare the results.
+2. Try `chunk_size` values of 100, 200, 400, and 800, and record how often the correct chunk ranks first for 10 questions you write yourself.
+3. Convert `handbook_md` to HTML and repeat the exercise with `HTMLHeaderTextSplitter`.
