@@ -1,10 +1,5 @@
 # Lesson 2: Apply Text Splitting Techniques to Enhance Model Responsiveness
 
-> **Level:** Beginner to Intermediate  |  **Time:** about 90 minutes  |  **Language:** Python
-> **Libraries:** `langchain`, `langchain-text-splitters`, `lxml`
->
-> **How every section works:** 📖 a short **story** → 💡 a plain **explanation** → 💻 **one single code block** that you can copy and run from top to bottom.
-
 ## Introduction
 
 Imagine handing someone a 500-page book and asking them a question about one small rule on page 312. They would not read every page again. They would flip to the right chapter and read only the part that matters. AI models work in a very similar way. They can only read a limited amount of text at one time, so large documents such as policy handbooks, websites, or code files must first be cut into smaller, meaningful pieces called **chunks**. This cutting step is called **text splitting**, and it is one of the most important steps in building a Retrieval-Augmented Generation (RAG) system. If the pieces are cut well, the system finds the right information quickly and gives accurate answers. If they are cut badly, with sentences broken in half or many topics mixed together, even a powerful model will give weak or wrong responses. In this lesson, you will learn how text splitting works, why settings like `chunk_size` and `chunk_overlap` matter, and how to use LangChain's splitters for plain text, code, Markdown, HTML, and JSON. By the end, you will be able to choose the right splitter for any document and prepare your data so that your AI responds with speed and precision.
