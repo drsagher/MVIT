@@ -133,4 +133,78 @@ len(texts)
 
 ### Split Code
 
+The `CodeTextSplitter` allows you to split your code, supporting multiple programming languages. It is based on the `RecursiveCharacterTextSplitter` strategy. Simply import enum `Language` and specify the language.
+
+```
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=100,
+    chunk_overlap=20,
+    length_function=len,
+)
+texts = text_splitter.create_documents([companypolicies])
+texts
+len(texts)
+```
+
+#### Python
+The following demonstrates how to split Python code using the `RecursiveCharacterTextSplitter` class.
+
+The main difference between splitting code and using the original `RecursiveCharacterTextSplitter` is that you need to call `.from_language` after the `RecursiveCharacterTextSplitter` and specify the `language`. The other parameter settings remain the same as before.
+
+```
+PYTHON_CODE = """
+    def hello_world():
+        print("Hello, World!")
+    
+    # Call the function
+    hello_world()
+"""
+python_splitter = RecursiveCharacterTextSplitter.from_language(
+    language=Language.PYTHON, chunk_size=50, chunk_overlap=0
+)
+python_docs = python_splitter.create_documents([PYTHON_CODE])
+python_docs
+```
+
+#### Javascript
+Let's see the separators for JSON language.
+
+The following code is used to separate the JSON language code.
+
+```
+RecursiveCharacterTextSplitter.get_separators_for_language(Language.JS)
+JS_CODE = """
+    function helloWorld() {
+      console.log("Hello, World!");
+    }
+    
+    // Call the function
+    helloWorld();
+"""
+
+js_splitter = RecursiveCharacterTextSplitter.from_language(
+    language=Language.JS, chunk_size=60, chunk_overlap=0
+)
+js_docs = js_splitter.create_documents([JS_CODE])
+js_docs
+```
+For more information about applying to other languages, you can refer [here](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/code_splitter/).
+
+### Markdown Header Text Splitter
+
+As mentioned, chunking often aims to keep text with a common context together. With this in mind, you might want to specifically honor the structure of the document itself. For example, a Markdown file is organized by headers. Creating chunks within specific header groups is an intuitive approach.
+
+To address this challenge, you can use `MarkdownHeaderTextSplitter`. This splitter will divide a Markdown file based on a specified set of headers.
+
+```
+markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on, strip_headers=False)
+md_header_splits = markdown_splitter.split_text(md)
+md_header_splits
+```
+From the split results, you can see that the Markdown file is divided into several chunks formatted as document objects. The `page_content` contains the text under the headings, and the `metadata` contains the header information corresponding to the `page_content`.
+If you want the headers appears in the page_content as well, you can specify `strip_headers=False` when you call the `MarkdownHeaderTextSplitter`.
+
+
+
 
