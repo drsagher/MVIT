@@ -205,6 +205,172 @@ md_header_splits
 From the split results, you can see that the Markdown file is divided into several chunks formatted as document objects. The `page_content` contains the text under the headings, and the `metadata` contains the header information corresponding to the `page_content`.
 If you want the headers appears in the page_content as well, you can specify `strip_headers=False` when you call the `MarkdownHeaderTextSplitter`.
 
+### Split by HTML
+#### Split by HTML header
+Similar in concept to the `MarkdownHeaderTextSplitter`, the HTMLHeaderTextSplitter is a "structure-aware" chunker that splits text at the element level and adds metadata for each header "relevant" to any given chunk. It can return chunks element by element or combine elements with the same metadata, with the objectives of (a) keeping related text grouped (more or less) semantically and (b) preserving context-rich information encoded in document structures. It can be used with other text splitters as part of a chunking pipeline.
+
+Split the HTML string using `HTMLHeaderTextSplitter`.
+
+```
+from langchain_text_splitters import HTMLHeaderTextSplitter
+html_string = """
+    <!DOCTYPE html>
+    <html>
+    <body>
+        <div>
+            <h1>Foo</h1>
+            <p>Some intro text about Foo.</p>
+            <div>
+                <h2>Bar main section</h2>
+                <p>Some intro text about Bar.</p>
+                <h3>Bar subsection 1</h3>
+                <p>Some text about the first subtopic of Bar.</p>
+                <h3>Bar subsection 2</h3>
+                <p>Some text about the second subtopic of Bar.</p>
+            </div>
+            <div>
+                <h2>Baz</h2>
+                <p>Some text about Baz</p>
+            </div>
+            <br>
+            <p>Some concluding text about Foo</p>
+        </div>
+    </body>
+    </html>
+"""
+headers_to_split_on = [
+    ("h1", "Header 1"),
+    ("h2", "Header 2"),
+    ("h3", "Header 3"),
+]
+html_splitter = HTMLHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
+html_header_splits = html_splitter.split_text(html_string)
+html_header_splits
+```
+From the split results, you can see that the context under the headings is extracted and put in the `page_content` parameter. The `metatdata` contains the header information.
+
+#### Split by HTML section
+Similar to the `HTMLHeaderTextSplitter`, the `HTMLSectionSplitter` is also a "structure-aware" chunker that splits text section by section based on headings.
+The following code is used to implement it.
+
+```
+from langchain_text_splitters import HTMLSectionSplitter
+
+html_string = """
+    <!DOCTYPE html>
+    <html>
+    <body>
+        <div>
+            <h1>Foo</h1>
+            <p>Some intro text about Foo.</p>
+            <div>
+                <h2>Bar main section</h2>
+                <p>Some intro text about Bar.</p>
+                <h3>Bar subsection 1</h3>
+                <p>Some text about the first subtopic of Bar.</p>
+                <h3>Bar subsection 2</h3>
+                <p>Some text about the second subtopic of Bar.</p>
+            </div>
+            <div>
+                <h2>Baz</h2>
+                <p>Some text about Baz</p>
+            </div>
+            <br>
+            <p>Some concluding text about Foo</p>
+        </div>
+    </body>
+    </html>
+"""
+
+headers_to_split_on = [("h1", "Header 1"), ("h2", "Header 2"), ("h3", "Header 3")]
+
+html_splitter = HTMLSectionSplitter(headers_to_split_on=headers_to_split_on)
+html_header_splits = html_splitter.split_text(html_string)
+html_header_splits
+```
+
+**Exercise 1**
+- Changing separator for CharacterTextSplitter Try to change to use another separator, for example `"\n"` to see how it affect the split and chunks.
+  ```
+  from langchain_text_splitters import CharacterTextSplitter
+
+# Configure the splitter using "\n" as the separator
+newline_splitter = CharacterTextSplitter(
+    separator="\n",
+    chunk_size=200,
+    chunk_overlap=20,
+    length_function=len,
+)
+
+# Split the document
+newline_texts = newline_splitter.create_documents([companypolicies])
+
+print(f"Total chunks generated: {len(newline_texts)}")
+print("\nFirst chunk sample:")
+print(newline_texts[0])
+```
+
+### Exercise 2 - Splitting Latex code Here is an example of Latex code. Try to split it.
+
+```
+latex_text = """
+    \documentclass{article}
+    
+    \begin{document}
+    
+    \maketitle
+    
+    \section{Introduction}
+    Large language models (LLMs) are a type of machine learning model that can be trained on vast amounts of text data to generate human-like language. In recent years, LLMs have made significant advances in a variety of natural language processing tasks, including language translation, text generation, and sentiment analysis.
+    
+    \subsection{History of LLMs}
+    The earliest LLMs were developed in the 1980s and 1990s, but they were limited by the amount of data that could be processed and the computational power available at the time. In the past decade, however, advances in hardware and software have made it possible to train LLMs on massive datasets, leading to significant improvements in performance.
+    
+    \subsection{Applications of LLMs}
+    LLMs have many applications in industry, including chatbots, content creation, and virtual assistants. They can also be used in academia for research in linguistics, psychology, and computational linguistics.
+    
+    \end{document}
+"""
+```
+
+**Solution**
+
+
+```
+from langchain_text_splitters import Language, RecursiveCharacterTextSplitter
+
+latex_text = """
+    \documentclass{article}
+    
+    \begin{document}
+    
+    \maketitle
+    
+    \section{Introduction}
+    Large language models (LLMs) are a type of machine learning model that can be trained on vast amounts of text data to generate human-like language. In recent years, LLMs have made significant advances in a variety of natural language processing tasks, including language translation, text generation, and sentiment analysis.
+    
+    \subsection{History of LLMs}
+    The earliest LLMs were developed in the 1980s and 1990s, but they were limited by the amount of data that could be processed and the computational power available at the time. In the past decade, however, advances in hardware and software have made it possible to train LLMs on massive datasets, leading to significant improvements in performance.
+    
+    \subsection{Applications of LLMs}
+    LLMs have many applications in industry, including chatbots, content creation, and virtual assistants. They can also be used in academia for research in linguistics, psychology, and computational linguistics.
+    
+    \end{document}
+"""
+
+# Configure the LaTeX text splitter
+latex_splitter = RecursiveCharacterTextSplitter.from_language(
+    language=Language.LATEX, chunk_size=150, chunk_overlap=0
+)
+
+# Split the document
+latex_docs = latex_splitter.create_documents([latex_text])
+for i, doc in enumerate(latex_docs):
+    print(f"Chunk {i+1}:")
+    print(doc.page_content)
+    print("-" * 50)
+
+ ```
 
 
 
