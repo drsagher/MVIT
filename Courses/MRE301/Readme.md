@@ -11,3 +11,5 @@ After completing this course, you will be able to:
 [Lesson 2 Apply Text Splitting Techniques to Enhance Model Responsiveness](Lesson_02/Readme.md)
 
 [Lesson 3 Turn Text Chunks into Embeddings and Store Them in Vector Stores for Smart Retrieval](Lesson_03/Readme.md)
+
+[Lesson 4 Embed Documents, Store Vectors, and Retrieve Smarter with LangChain](Lesson_04/Readme.md)
