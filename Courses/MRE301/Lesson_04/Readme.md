@@ -1,4 +1,4 @@
-# Lesson 3 Embed Documents, Store Vectors, and Retrieve Smarter with LangChain
+# Lesson 4 Embed Documents, Store Vectors, and Retrieve Smarter with LangChain
 
 Imagine a huge library where nobody has labelled the shelves. You could still find a book, but only by reading every spine, one by one. Now imagine a librarian who has read every book and placed it on a giant map, so that books with similar meaning sit close together. When you ask a question, the librarian walks straight to the right corner of the map. That map is made of **embeddings**, and the building that stores it is a **vector database**. In this lesson you will learn how to turn your document chunks into embeddings using IBM watsonx's embedding model, how to store them in vector databases such as **Chroma DB** and **FAISS**, and how to prepare your documents with LangChain before embedding them. Then you will meet four smarter ways of searching, called **retrievers**: the Vector Store-Based, Multi-Query, Self-Query, and Parent Document retrievers. Finally, you will compare RAG with fine-tuning through **InstructLab**, so you can decide which approach fits your own project best.
 
